@@ -1,73 +1,3613 @@
 date,fund,price
 2020-07-31,Age 65 Plus Fund,13.1500
+2020-07-31,Asia Pacific Equity Fund,31.3900
+2020-07-31,Balanced Fund,20.4200
+2020-07-31,Chinese Equity Fund,17.5700
+2020-07-31,Core Accumulation Fund,19.9500
+2020-07-31,European Equity Fund,12.3100
+2020-07-31,Global Bond Fund,13.5400
+2020-07-31,Global Equity Fund,15.3600
+2020-07-31,Growth Fund,20.4100
+2020-07-31,Guaranteed Fund,10.6800
+2020-07-31,HSBC Mandatory Provident Fund - SuperTrust Plus,13.1500
+2020-07-31,HSBC Provident Fund Trustee (Hong Kong) Limited,13.1500
+2020-07-31,Hang Seng China Enterprises Index Tracking Fund,9.2900
+2020-07-31,Hang Seng Index Tracking Fund,25.0800
+2020-07-31,Hong Kong and Chinese Equity Fund,25.2000
+2020-07-31,MPF Conservative Fund,12.8500
+2020-07-31,Manulife MPF 2020 Retirement Fund,13.5050
+2020-07-31,Manulife MPF 2025 Retirement Fund,14.2880
+2020-07-31,Manulife MPF 2030 Retirement Fund,14.8660
+2020-07-31,Manulife MPF 2035 Retirement Fund,15.0900
+2020-07-31,Manulife MPF 2040 Retirement Fund,15.1200
+2020-07-31,Manulife MPF 2045 Retirement Fund,15.2050
+2020-07-31,Manulife MPF Aggressive Fund,20.8740
+2020-07-31,Manulife MPF China Value Fund,30.2030
+2020-07-31,Manulife MPF Conservative Fund,11.3330
+2020-07-31,Manulife MPF Core Accumulation Fund,12.3150
+2020-07-31,Manulife MPF European Equity Fund,12.7730
+2020-07-31,Manulife MPF Fidelity Growth Fund,30.3620
+2020-07-31,Manulife MPF Fidelity Stable Growth Fund,23.4040
+2020-07-31,Manulife MPF Growth Fund,20.8290
+2020-07-31,Manulife MPF Hang Seng Index Tracking Fund,14.6210
+2020-07-31,Manulife MPF Healthcare Fund,23.5120
+2020-07-31,Manulife MPF Hong Kong Bond Fund,15.5140
+2020-07-31,Manulife MPF Hong Kong Equity Fund,25.2130
+2020-07-31,Manulife MPF International Bond Fund,17.9450
+2020-07-31,Manulife MPF International Equity Fund,17.7770
+2020-07-31,Manulife MPF Japan Equity Fund,11.7350
+2020-07-31,Manulife MPF North American Equity Fund,20.1520
+2020-07-31,Manulife MPF Pacific Asia Bond Fund,11.8940
+2020-07-31,Manulife MPF Pacific Asia Equity Fund,26.4310
+2020-07-31,Manulife MPF RMB Bond Fund,10.8800
+2020-07-31,Manulife MPF Smart Retirement Fund,12.9580
+2020-07-31,Manulife MPF Stable Fund,16.3570
+2020-07-31,Manulife Provident Funds Trust Company Limited,11.7450
+2020-07-31,North American Equity Fund,18.8300
+2020-07-31,Schroder MPF Age 65 Plus Fund - Class B,11.5500
+2020-07-31,Schroder MPF Core Accumulation Fund - Class B,11.9200
+2020-07-31,Stable Fund,12.9600
+2020-07-31,ValueChoice Asia Pacific Equity Fund,12.0000
+2020-07-31,ValueChoice Balanced Fund,14.3500
+2020-07-31,ValueChoice European Equity Fund,13.4200
+2020-07-31,ValueChoice US Equity Fund,25.0800
 2020-08-31,Age 65 Plus Fund,13.2600
+2020-08-31,Asia Pacific Equity Fund,32.1500
+2020-08-31,Balanced Fund,21.2100
+2020-08-31,Chinese Equity Fund,19.0100
+2020-08-31,Core Accumulation Fund,20.6900
+2020-08-31,European Equity Fund,12.8800
+2020-08-31,Global Bond Fund,13.4900
+2020-08-31,Global Equity Fund,16.3100
+2020-08-31,Growth Fund,21.4200
+2020-08-31,Guaranteed Fund,10.7000
+2020-08-31,HSBC Mandatory Provident Fund - SuperTrust Plus,13.2600
+2020-08-31,HSBC Provident Fund Trustee (Hong Kong) Limited,13.2600
+2020-08-31,Hang Seng China Enterprises Index Tracking Fund,9.2600
+2020-08-31,Hang Seng Index Tracking Fund,25.6900
+2020-08-31,Hong Kong and Chinese Equity Fund,26.4500
+2020-08-31,MPF Conservative Fund,12.8500
+2020-08-31,Manulife MPF 2020 Retirement Fund,13.8400
+2020-08-31,Manulife MPF 2025 Retirement Fund,14.7040
+2020-08-31,Manulife MPF 2030 Retirement Fund,15.4430
+2020-08-31,Manulife MPF 2035 Retirement Fund,15.7490
+2020-08-31,Manulife MPF 2040 Retirement Fund,15.8090
+2020-08-31,Manulife MPF 2045 Retirement Fund,15.9110
+2020-08-31,Manulife MPF Aggressive Fund,21.8280
+2020-08-31,Manulife MPF China Value Fund,30.8490
+2020-08-31,Manulife MPF Conservative Fund,11.3380
+2020-08-31,Manulife MPF Core Accumulation Fund,12.7200
+2020-08-31,Manulife MPF European Equity Fund,13.4530
+2020-08-31,Manulife MPF Fidelity Growth Fund,31.5440
+2020-08-31,Manulife MPF Fidelity Stable Growth Fund,23.8530
+2020-08-31,Manulife MPF Growth Fund,21.5640
+2020-08-31,Manulife MPF Hang Seng Index Tracking Fund,14.9550
+2020-08-31,Manulife MPF Healthcare Fund,24.0150
+2020-08-31,Manulife MPF Hong Kong Bond Fund,15.4280
+2020-08-31,Manulife MPF Hong Kong Equity Fund,26.1480
+2020-08-31,Manulife MPF International Bond Fund,17.8760
+2020-08-31,Manulife MPF International Equity Fund,18.9410
+2020-08-31,Manulife MPF Japan Equity Fund,12.7020
+2020-08-31,Manulife MPF North American Equity Fund,21.8510
+2020-08-31,Manulife MPF Pacific Asia Bond Fund,11.9540
+2020-08-31,Manulife MPF Pacific Asia Equity Fund,27.0690
+2020-08-31,Manulife MPF RMB Bond Fund,10.9500
+2020-08-31,Manulife MPF Smart Retirement Fund,13.2720
+2020-08-31,Manulife MPF Stable Fund,16.5520
+2020-08-31,Manulife Provident Funds Trust Company Limited,11.7850
+2020-08-31,North American Equity Fund,20.2100
+2020-08-31,Schroder MPF Age 65 Plus Fund - Class B,11.6100
+2020-08-31,Schroder MPF Core Accumulation Fund - Class B,12.3400
+2020-08-31,Stable Fund,13.1700
+2020-08-31,ValueChoice Asia Pacific Equity Fund,12.3900
+2020-08-31,ValueChoice Balanced Fund,14.9100
+2020-08-31,ValueChoice European Equity Fund,13.8900
+2020-08-31,ValueChoice US Equity Fund,27.0600
 2020-09-30,Age 65 Plus Fund,13.1900
+2020-09-30,Asia Pacific Equity Fund,31.5100
+2020-09-30,Balanced Fund,20.7400
+2020-09-30,Chinese Equity Fund,18.0800
+2020-09-30,Core Accumulation Fund,20.2600
+2020-09-30,European Equity Fund,12.5300
+2020-09-30,Global Bond Fund,13.4400
+2020-09-30,Global Equity Fund,15.7800
+2020-09-30,Growth Fund,20.8500
+2020-09-30,Guaranteed Fund,10.6800
+2020-09-30,HSBC Mandatory Provident Fund - SuperTrust Plus,13.1900
+2020-09-30,HSBC Provident Fund Trustee (Hong Kong) Limited,13.1900
+2020-09-30,Hang Seng China Enterprises Index Tracking Fund,8.7400
+2020-09-30,Hang Seng Index Tracking Fund,24.0300
+2020-09-30,Hong Kong and Chinese Equity Fund,25.3800
+2020-09-30,MPF Conservative Fund,12.8500
+2020-09-30,Manulife MPF 2020 Retirement Fund,13.6250
+2020-09-30,Manulife MPF 2025 Retirement Fund,14.4530
+2020-09-30,Manulife MPF 2030 Retirement Fund,15.1130
+2020-09-30,Manulife MPF 2035 Retirement Fund,15.3870
+2020-09-30,Manulife MPF 2040 Retirement Fund,15.4370
+2020-09-30,Manulife MPF 2045 Retirement Fund,15.5270
+2020-09-30,Manulife MPF Aggressive Fund,21.2750
+2020-09-30,Manulife MPF China Value Fund,29.9050
+2020-09-30,Manulife MPF Conservative Fund,11.3400
+2020-09-30,Manulife MPF Core Accumulation Fund,12.5010
+2020-09-30,Manulife MPF European Equity Fund,13.4390
+2020-09-30,Manulife MPF Fidelity Growth Fund,30.6760
+2020-09-30,Manulife MPF Fidelity Stable Growth Fund,23.4420
+2020-09-30,Manulife MPF Growth Fund,21.1010
+2020-09-30,Manulife MPF Hang Seng Index Tracking Fund,14.0440
+2020-09-30,Manulife MPF Healthcare Fund,23.6240
+2020-09-30,Manulife MPF Hong Kong Bond Fund,15.5060
+2020-09-30,Manulife MPF Hong Kong Equity Fund,25.1050
+2020-09-30,Manulife MPF International Bond Fund,17.8320
+2020-09-30,Manulife MPF International Equity Fund,18.3230
+2020-09-30,Manulife MPF Japan Equity Fund,12.8360
+2020-09-30,Manulife MPF North American Equity Fund,20.7160
+2020-09-30,Manulife MPF Pacific Asia Bond Fund,11.9070
+2020-09-30,Manulife MPF Pacific Asia Equity Fund,26.4700
+2020-09-30,Manulife MPF RMB Bond Fund,11.0360
+2020-09-30,Manulife MPF Retirement Income Fund,9.9980
+2020-09-30,Manulife MPF Smart Retirement Fund,13.0610
+2020-09-30,Manulife MPF Stable Fund,16.4380
+2020-09-30,Manulife Provident Funds Trust Company Limited,11.7730
+2020-09-30,North American Equity Fund,19.3500
+2020-09-30,Schroder MPF Age 65 Plus Fund - Class B,11.6000
+2020-09-30,Schroder MPF Core Accumulation Fund - Class B,12.1700
+2020-09-30,Stable Fund,13.0000
+2020-09-30,ValueChoice Asia Pacific Equity Fund,12.1100
+2020-09-30,ValueChoice Balanced Fund,14.5600
+2020-09-30,ValueChoice European Equity Fund,13.4300
+2020-09-30,ValueChoice US Equity Fund,25.9500
 2020-10-30,Age 65 Plus Fund,13.1000
+2020-10-30,Asia Pacific Equity Fund,32.4000
+2020-10-30,Balanced Fund,20.6000
+2020-10-30,Chinese Equity Fund,19.1400
+2020-10-30,Core Accumulation Fund,19.9700
+2020-10-30,European Equity Fund,11.7900
+2020-10-30,Global Bond Fund,13.3800
+2020-10-30,Global Equity Fund,15.4300
+2020-10-30,Growth Fund,20.6800
+2020-10-30,Guaranteed Fund,10.6900
+2020-10-30,HSBC Mandatory Provident Fund - SuperTrust Plus,13.1000
+2020-10-30,HSBC Provident Fund Trustee (Hong Kong) Limited,13.1000
+2020-10-30,Hang Seng China Enterprises Index Tracking Fund,9.0700
+2020-10-30,Hang Seng Index Tracking Fund,24.6800
+2020-10-30,Hong Kong and Chinese Equity Fund,26.1600
+2020-10-30,MPF Conservative Fund,12.8500
+2020-10-30,Manulife MPF 2020 Retirement Fund,13.5940
+2020-10-30,Manulife MPF 2025 Retirement Fund,14.4210
+2020-10-30,Manulife MPF 2030 Retirement Fund,15.0680
+2020-10-30,Manulife MPF 2035 Retirement Fund,15.3330
+2020-10-30,Manulife MPF 2040 Retirement Fund,15.3810
+2020-10-30,Manulife MPF 2045 Retirement Fund,15.4700
+2020-10-30,Manulife MPF Aggressive Fund,21.1830
+2020-10-30,Manulife MPF China Value Fund,30.8800
+2020-10-30,Manulife MPF Conservative Fund,11.3420
+2020-10-30,Manulife MPF Core Accumulation Fund,12.3090
+2020-10-30,Manulife MPF European Equity Fund,12.6630
+2020-10-30,Manulife MPF Fidelity Growth Fund,30.4310
+2020-10-30,Manulife MPF Fidelity Stable Growth Fund,23.3010
+2020-10-30,Manulife MPF Growth Fund,21.0260
+2020-10-30,Manulife MPF Hang Seng Index Tracking Fund,14.3890
+2020-10-30,Manulife MPF Healthcare Fund,22.5490
+2020-10-30,Manulife MPF Hong Kong Bond Fund,15.4960
+2020-10-30,Manulife MPF Hong Kong Equity Fund,26.1450
+2020-10-30,Manulife MPF International Bond Fund,17.8070
+2020-10-30,Manulife MPF International Equity Fund,17.8070
+2020-10-30,Manulife MPF Japan Equity Fund,12.6410
+2020-10-30,Manulife MPF North American Equity Fund,20.0560
+2020-10-30,Manulife MPF Pacific Asia Bond Fund,11.9580
+2020-10-30,Manulife MPF Pacific Asia Equity Fund,26.9180
+2020-10-30,Manulife MPF RMB Bond Fund,11.1490
+2020-10-30,Manulife MPF Retirement Income Fund,9.9990
+2020-10-30,Manulife MPF Smart Retirement Fund,13.0320
+2020-10-30,Manulife MPF Stable Fund,16.4390
+2020-10-30,Manulife Provident Funds Trust Company Limited,11.7010
+2020-10-30,North American Equity Fund,18.8300
+2020-10-30,Schroder MPF Age 65 Plus Fund - Class B,11.5400
+2020-10-30,Schroder MPF Core Accumulation Fund - Class B,12.0000
+2020-10-30,Stable Fund,12.9200
+2020-10-30,ValueChoice Asia Pacific Equity Fund,12.3600
+2020-10-30,ValueChoice Balanced Fund,14.4900
+2020-10-30,ValueChoice European Equity Fund,12.6300
+2020-10-30,ValueChoice US Equity Fund,25.4800
 2020-11-30,Age 65 Plus Fund,13.4800
+2020-11-30,Asia Pacific Equity Fund,35.7700
+2020-11-30,Balanced Fund,22.3100
+2020-11-30,Chinese Equity Fund,20.2600
+2020-11-30,Core Accumulation Fund,21.4400
+2020-11-30,European Equity Fund,13.6500
+2020-11-30,Global Bond Fund,13.5700
+2020-11-30,Global Equity Fund,17.1500
+2020-11-30,Growth Fund,22.8100
+2020-11-30,Guaranteed Fund,10.7500
+2020-11-30,HSBC Mandatory Provident Fund - SuperTrust Plus,13.4800
+2020-11-30,HSBC Provident Fund Trustee (Hong Kong) Limited,13.4800
+2020-11-30,Hang Seng China Enterprises Index Tracking Fund,9.8000
+2020-11-30,Hang Seng Index Tracking Fund,26.9800
+2020-11-30,Hong Kong and Chinese Equity Fund,27.9100
+2020-11-30,MPF Conservative Fund,12.8500
+2020-11-30,Manulife MPF 2020 Retirement Fund,14.3870
+2020-11-30,Manulife MPF 2025 Retirement Fund,15.3510
+2020-11-30,Manulife MPF 2030 Retirement Fund,16.2700
+2020-11-30,Manulife MPF 2035 Retirement Fund,16.6810
+2020-11-30,Manulife MPF 2040 Retirement Fund,16.7870
+2020-11-30,Manulife MPF 2045 Retirement Fund,16.8970
+2020-11-30,Manulife MPF Aggressive Fund,23.1410
+2020-11-30,Manulife MPF China Value Fund,32.8120
+2020-11-30,Manulife MPF Conservative Fund,11.3430
+2020-11-30,Manulife MPF Core Accumulation Fund,13.2170
+2020-11-30,Manulife MPF European Equity Fund,14.0690
+2020-11-30,Manulife MPF Fidelity Growth Fund,33.1920
+2020-11-30,Manulife MPF Fidelity Stable Growth Fund,24.6160
+2020-11-30,Manulife MPF Growth Fund,22.6190
+2020-11-30,Manulife MPF Hang Seng Index Tracking Fund,15.7190
+2020-11-30,Manulife MPF Healthcare Fund,24.0310
+2020-11-30,Manulife MPF Hong Kong Bond Fund,15.5630
+2020-11-30,Manulife MPF Hong Kong Equity Fund,28.2160
+2020-11-30,Manulife MPF International Bond Fund,18.0610
+2020-11-30,Manulife MPF International Equity Fund,19.7040
+2020-11-30,Manulife MPF Japan Equity Fund,13.7510
+2020-11-30,Manulife MPF North American Equity Fund,22.2530
+2020-11-30,Manulife MPF Pacific Asia Bond Fund,12.2510
+2020-11-30,Manulife MPF Pacific Asia Equity Fund,29.7340
+2020-11-30,Manulife MPF RMB Bond Fund,11.3050
+2020-11-30,Manulife MPF Retirement Income Fund,10.5080
+2020-11-30,Manulife MPF Smart Retirement Fund,13.7900
+2020-11-30,Manulife MPF Stable Fund,16.9430
+2020-11-30,Manulife Provident Funds Trust Company Limited,11.9980
+2020-11-30,North American Equity Fund,20.8600
+2020-11-30,Schroder MPF Age 65 Plus Fund - Class B,11.8300
+2020-11-30,Schroder MPF Core Accumulation Fund - Class B,12.8500
+2020-11-30,Stable Fund,13.5200
+2020-11-30,ValueChoice Asia Pacific Equity Fund,13.5600
+2020-11-30,ValueChoice Balanced Fund,15.7100
+2020-11-30,ValueChoice European Equity Fund,14.8000
+2020-11-30,ValueChoice US Equity Fund,28.1800
 2020-12-31,Age 65 Plus Fund,13.6600
+2020-12-31,Asia Pacific Equity Fund,38.8400
+2020-12-31,Balanced Fund,23.1500
+2020-12-31,Chinese Equity Fund,21.5500
+2020-12-31,Core Accumulation Fund,22.0800
+2020-12-31,European Equity Fund,14.2700
+2020-12-31,Global Bond Fund,13.7100
+2020-12-31,Global Equity Fund,17.8900
+2020-12-31,Growth Fund,23.9000
+2020-12-31,Guaranteed Fund,10.7800
+2020-12-31,HSBC Mandatory Provident Fund - SuperTrust Plus,13.6600
+2020-12-31,HSBC Provident Fund Trustee (Hong Kong) Limited,13.6600
+2020-12-31,Hang Seng China Enterprises Index Tracking Fund,9.9600
+2020-12-31,Hang Seng Index Tracking Fund,27.8700
+2020-12-31,Hong Kong and Chinese Equity Fund,28.9900
+2020-12-31,MPF Conservative Fund,12.8500
+2020-12-31,Manulife MPF 2020 Retirement Fund,14.8450
+2020-12-31,Manulife MPF 2025 Retirement Fund,15.8900
+2020-12-31,Manulife MPF 2030 Retirement Fund,16.9580
+2020-12-31,Manulife MPF 2035 Retirement Fund,17.4570
+2020-12-31,Manulife MPF 2040 Retirement Fund,17.5920
+2020-12-31,Manulife MPF 2045 Retirement Fund,17.7170
+2020-12-31,Manulife MPF Aggressive Fund,24.2560
+2020-12-31,Manulife MPF China Value Fund,34.3040
+2020-12-31,Manulife MPF Conservative Fund,11.3430
+2020-12-31,Manulife MPF Core Accumulation Fund,13.5810
+2020-12-31,Manulife MPF European Equity Fund,14.9060
+2020-12-31,Manulife MPF Fidelity Growth Fund,34.9980
+2020-12-31,Manulife MPF Fidelity Stable Growth Fund,25.4680
+2020-12-31,Manulife MPF Growth Fund,23.5170
+2020-12-31,Manulife MPF Hang Seng Index Tracking Fund,16.2000
+2020-12-31,Manulife MPF Healthcare Fund,25.1170
+2020-12-31,Manulife MPF Hong Kong Bond Fund,15.6240
+2020-12-31,Manulife MPF Hong Kong Equity Fund,29.3600
+2020-12-31,Manulife MPF International Bond Fund,18.2300
+2020-12-31,Manulife MPF International Equity Fund,20.5990
+2020-12-31,Manulife MPF Japan Equity Fund,14.2180
+2020-12-31,Manulife MPF North American Equity Fund,23.0910
+2020-12-31,Manulife MPF Pacific Asia Bond Fund,12.4450
+2020-12-31,Manulife MPF Pacific Asia Equity Fund,32.0050
+2020-12-31,Manulife MPF RMB Bond Fund,11.4220
+2020-12-31,Manulife MPF Retirement Income Fund,10.8360
+2020-12-31,Manulife MPF Smart Retirement Fund,14.2330
+2020-12-31,Manulife MPF Stable Fund,17.2310
+2020-12-31,Manulife Provident Funds Trust Company Limited,12.1160
+2020-12-31,North American Equity Fund,21.6900
+2020-12-31,Schroder MPF Age 65 Plus Fund - Class B,11.9500
+2020-12-31,Schroder MPF Core Accumulation Fund - Class B,13.2000
+2020-12-31,Stable Fund,13.8300
+2020-12-31,ValueChoice Asia Pacific Equity Fund,14.5200
+2020-12-31,ValueChoice Balanced Fund,16.2500
+2020-12-31,ValueChoice European Equity Fund,15.3700
+2020-12-31,ValueChoice US Equity Fund,29.0300
 2021-01-29,Age 65 Plus Fund,13.6000
+2021-01-29,Asia Pacific Equity Fund,40.5200
+2021-01-29,Balanced Fund,23.2900
+2021-01-29,Chinese Equity Fund,22.5800
+2021-01-29,Core Accumulation Fund,22.0500
+2021-01-29,European Equity Fund,14.0500
+2021-01-29,Global Bond Fund,13.5700
+2021-01-29,Global Equity Fund,17.8800
+2021-01-29,Growth Fund,24.1200
+2021-01-29,Guaranteed Fund,10.8200
+2021-01-29,HSBC Mandatory Provident Fund - SuperTrust Plus,13.6000
+2021-01-29,Hang Seng China Enterprises Index Tracking Fund,10.3900
+2021-01-29,Hang Seng Index Tracking Fund,28.9200
+2021-01-29,Hong Kong and Chinese Equity Fund,30.1400
+2021-01-29,MPF Conservative Fund,12.8500
+2021-01-29,Manulife MPF 2025 Retirement Fund,16.0650
+2021-01-29,Manulife MPF 2030 Retirement Fund,17.2030
+2021-01-29,Manulife MPF 2035 Retirement Fund,17.7420
+2021-01-29,Manulife MPF 2040 Retirement Fund,17.8950
+2021-01-29,Manulife MPF 2045 Retirement Fund,18.0260
+2021-01-29,Manulife MPF Aggressive Fund,24.6750
+2021-01-29,Manulife MPF China Value Fund,36.4470
+2021-01-29,Manulife MPF Conservative Fund,11.3430
+2021-01-29,Manulife MPF Core Accumulation Fund,13.4920
+2021-01-29,Manulife MPF European Equity Fund,14.8550
+2021-01-29,Manulife MPF Fidelity Growth Fund,35.4530
+2021-01-29,Manulife MPF Fidelity Stable Growth Fund,25.5660
+2021-01-29,Manulife MPF Growth Fund,23.8190
+2021-01-29,Manulife MPF Hang Seng Index Tracking Fund,16.8210
+2021-01-29,Manulife MPF Healthcare Fund,25.8770
+2021-01-29,Manulife MPF Hong Kong Bond Fund,15.6160
+2021-01-29,Manulife MPF Hong Kong Equity Fund,31.0300
+2021-01-29,Manulife MPF International Bond Fund,18.0530
+2021-01-29,Manulife MPF International Equity Fund,20.4840
+2021-01-29,Manulife MPF Japan Equity Fund,14.1680
+2021-01-29,Manulife MPF North American Equity Fund,22.7470
+2021-01-29,Manulife MPF Pacific Asia Bond Fund,12.3780
+2021-01-29,Manulife MPF Pacific Asia Equity Fund,32.8300
+2021-01-29,Manulife MPF RMB Bond Fund,11.5640
+2021-01-29,Manulife MPF Retirement Income Fund,10.9020
+2021-01-29,Manulife MPF Smart Retirement Fund,14.3690
+2021-01-29,Manulife MPF Stable Fund,17.3530
+2021-01-29,Manulife Provident Funds Trust Company Limited,12.0190
+2021-01-29,North American Equity Fund,21.6200
+2021-01-29,Schroder MPF Age 65 Plus Fund - Class B,11.8500
+2021-01-29,Schroder MPF Core Accumulation Fund - Class B,13.1000
+2021-01-29,Stable Fund,13.7800
+2021-01-29,ValueChoice Asia Pacific Equity Fund,14.8400
+2021-01-29,ValueChoice Balanced Fund,16.4100
+2021-01-29,ValueChoice European Equity Fund,15.2500
+2021-01-29,ValueChoice US Equity Fund,29.3800
 2021-02-26,Age 65 Plus Fund,13.4800
+2021-02-26,Asia Pacific Equity Fund,41.7900
+2021-02-26,Balanced Fund,23.5300
+2021-02-26,Chinese Equity Fund,21.9900
+2021-02-26,Core Accumulation Fund,22.2400
+2021-02-26,European Equity Fund,14.2900
+2021-02-26,Global Bond Fund,13.3000
+2021-02-26,Global Equity Fund,18.3100
+2021-02-26,Growth Fund,24.5700
+2021-02-26,Guaranteed Fund,10.8200
+2021-02-26,HSBC Mandatory Provident Fund - SuperTrust Plus,13.4800
+2021-02-26,Hang Seng China Enterprises Index Tracking Fund,10.4200
+2021-02-26,Hang Seng Index Tracking Fund,29.6500
+2021-02-26,Hong Kong and Chinese Equity Fund,30.5200
+2021-02-26,MPF Conservative Fund,12.8500
+2021-02-26,Manulife MPF 2025 Retirement Fund,16.1170
+2021-02-26,Manulife MPF 2030 Retirement Fund,17.3820
+2021-02-26,Manulife MPF 2035 Retirement Fund,17.9920
+2021-02-26,Manulife MPF 2040 Retirement Fund,18.1730
+2021-02-26,Manulife MPF 2045 Retirement Fund,18.3110
+2021-02-26,Manulife MPF Aggressive Fund,25.0560
+2021-02-26,Manulife MPF China Value Fund,36.7630
+2021-02-26,Manulife MPF Conservative Fund,11.3430
+2021-02-26,Manulife MPF Core Accumulation Fund,13.5710
+2021-02-26,Manulife MPF European Equity Fund,15.2140
+2021-02-26,Manulife MPF Fidelity Growth Fund,35.7560
+2021-02-26,Manulife MPF Fidelity Stable Growth Fund,25.4480
+2021-02-26,Manulife MPF Growth Fund,24.0150
+2021-02-26,Manulife MPF Hang Seng Index Tracking Fund,17.2580
+2021-02-26,Manulife MPF Healthcare Fund,24.9910
+2021-02-26,Manulife MPF Hong Kong Bond Fund,15.3250
+2021-02-26,Manulife MPF Hong Kong Equity Fund,30.9740
+2021-02-26,Manulife MPF International Bond Fund,17.7310
+2021-02-26,Manulife MPF International Equity Fund,21.0670
+2021-02-26,Manulife MPF Japan Equity Fund,14.6640
+2021-02-26,Manulife MPF North American Equity Fund,23.4540
+2021-02-26,Manulife MPF Pacific Asia Bond Fund,12.1660
+2021-02-26,Manulife MPF Pacific Asia Equity Fund,33.8690
+2021-02-26,Manulife MPF RMB Bond Fund,11.4790
+2021-02-26,Manulife MPF Retirement Income Fund,10.8630
+2021-02-26,Manulife MPF Smart Retirement Fund,14.3880
+2021-02-26,Manulife MPF Stable Fund,17.2020
+2021-02-26,Manulife Provident Funds Trust Company Limited,11.8620
+2021-02-26,North American Equity Fund,22.1200
+2021-02-26,Schroder MPF Age 65 Plus Fund - Class B,11.7100
+2021-02-26,Schroder MPF Core Accumulation Fund - Class B,13.1800
+2021-02-26,Stable Fund,13.7100
+2021-02-26,ValueChoice Asia Pacific Equity Fund,15.2900
+2021-02-26,ValueChoice Balanced Fund,16.5600
+2021-02-26,ValueChoice European Equity Fund,15.5000
+2021-02-26,ValueChoice US Equity Fund,29.8100
 2021-03-31,Age 65 Plus Fund,13.5000
+2021-03-31,Asia Pacific Equity Fund,40.9200
+2021-03-31,Balanced Fund,23.5300
+2021-03-31,Chinese Equity Fund,21.0900
+2021-03-31,Core Accumulation Fund,22.6600
+2021-03-31,European Equity Fund,14.8300
+2021-03-31,Global Bond Fund,13.0700
+2021-03-31,Global Equity Fund,19.0200
+2021-03-31,Growth Fund,24.7000
+2021-03-31,Guaranteed Fund,10.7300
+2021-03-31,HSBC Mandatory Provident Fund - SuperTrust Plus,13.5000
+2021-03-31,Hang Seng China Enterprises Index Tracking Fund,10.1500
+2021-03-31,Hang Seng Index Tracking Fund,29.0600
+2021-03-31,Hong Kong and Chinese Equity Fund,29.6900
+2021-03-31,MPF Conservative Fund,12.8500
+2021-03-31,Manulife MPF 2025 Retirement Fund,16.0420
+2021-03-31,Manulife MPF 2030 Retirement Fund,17.3470
+2021-03-31,Manulife MPF 2035 Retirement Fund,17.9810
+2021-03-31,Manulife MPF 2040 Retirement Fund,18.1780
+2021-03-31,Manulife MPF 2045 Retirement Fund,18.3180
+2021-03-31,Manulife MPF Aggressive Fund,25.0330
+2021-03-31,Manulife MPF China Value Fund,35.1340
+2021-03-31,Manulife MPF Conservative Fund,11.3430
+2021-03-31,Manulife MPF Core Accumulation Fund,13.8040
+2021-03-31,Manulife MPF European Equity Fund,15.8470
+2021-03-31,Manulife MPF Fidelity Growth Fund,35.7940
+2021-03-31,Manulife MPF Fidelity Stable Growth Fund,25.2740
+2021-03-31,Manulife MPF Growth Fund,23.9180
+2021-03-31,Manulife MPF Hang Seng Index Tracking Fund,16.9110
+2021-03-31,Manulife MPF Healthcare Fund,25.4390
+2021-03-31,Manulife MPF Hong Kong Bond Fund,15.2330
+2021-03-31,Manulife MPF Hong Kong Equity Fund,29.6820
+2021-03-31,Manulife MPF International Bond Fund,17.4460
+2021-03-31,Manulife MPF International Equity Fund,21.4950
+2021-03-31,Manulife MPF Japan Equity Fund,15.3910
+2021-03-31,Manulife MPF North American Equity Fund,24.0960
+2021-03-31,Manulife MPF Pacific Asia Bond Fund,12.0180
+2021-03-31,Manulife MPF Pacific Asia Equity Fund,33.2750
+2021-03-31,Manulife MPF RMB Bond Fund,11.4200
+2021-03-31,Manulife MPF Retirement Income Fund,10.7430
+2021-03-31,Manulife MPF Smart Retirement Fund,14.3080
+2021-03-31,Manulife MPF Stable Fund,17.0780
+2021-03-31,Manulife Provident Funds Trust Company Limited,11.8980
+2021-03-31,North American Equity Fund,23.0400
+2021-03-31,Schroder MPF Age 65 Plus Fund - Class B,11.7300
+2021-03-31,Schroder MPF Core Accumulation Fund - Class B,13.3800
+2021-03-31,Stable Fund,13.5800
+2021-03-31,ValueChoice Asia Pacific Equity Fund,15.1800
+2021-03-31,ValueChoice Balanced Fund,16.5600
+2021-03-31,ValueChoice European Equity Fund,16.1000
+2021-03-31,ValueChoice US Equity Fund,30.8900
 2021-04-30,Age 65 Plus Fund,13.6200
+2021-04-30,Asia Pacific Equity Fund,41.6700
+2021-04-30,Balanced Fund,24.0100
+2021-04-30,Chinese Equity Fund,21.2400
+2021-04-30,Core Accumulation Fund,23.2600
+2021-04-30,European Equity Fund,15.4200
+2021-04-30,Global Bond Fund,13.1500
+2021-04-30,Global Equity Fund,19.8300
+2021-04-30,Growth Fund,25.3400
+2021-04-30,Guaranteed Fund,10.7500
+2021-04-30,HSBC Mandatory Provident Fund - SuperTrust Plus,13.6200
+2021-04-30,Hang Seng China Enterprises Index Tracking Fund,10.0200
+2021-04-30,Hang Seng Index Tracking Fund,29.4600
+2021-04-30,Hong Kong and Chinese Equity Fund,30.1000
+2021-04-30,MPF Conservative Fund,12.8500
+2021-04-30,Manulife MPF 2025 Retirement Fund,16.4260
+2021-04-30,Manulife MPF 2030 Retirement Fund,17.8500
+2021-04-30,Manulife MPF 2035 Retirement Fund,18.5420
+2021-04-30,Manulife MPF 2040 Retirement Fund,18.7590
+2021-04-30,Manulife MPF 2045 Retirement Fund,18.9110
+2021-04-30,Manulife MPF Aggressive Fund,25.8380
+2021-04-30,Manulife MPF China Value Fund,36.3090
+2021-04-30,Manulife MPF Conservative Fund,11.3430
+2021-04-30,Manulife MPF Core Accumulation Fund,14.1530
+2021-04-30,Manulife MPF European Equity Fund,16.6940
+2021-04-30,Manulife MPF Fidelity Growth Fund,36.7160
+2021-04-30,Manulife MPF Fidelity Stable Growth Fund,25.7490
+2021-04-30,Manulife MPF Growth Fund,24.5720
+2021-04-30,Manulife MPF Hang Seng Index Tracking Fund,17.0440
+2021-04-30,Manulife MPF Healthcare Fund,25.8600
+2021-04-30,Manulife MPF Hong Kong Bond Fund,15.3490
+2021-04-30,Manulife MPF Hong Kong Equity Fund,30.4050
+2021-04-30,Manulife MPF International Bond Fund,17.6010
+2021-04-30,Manulife MPF International Equity Fund,22.5860
+2021-04-30,Manulife MPF Japan Equity Fund,15.0340
+2021-04-30,Manulife MPF North American Equity Fund,25.7460
+2021-04-30,Manulife MPF Pacific Asia Bond Fund,12.1580
+2021-04-30,Manulife MPF Pacific Asia Equity Fund,34.3030
+2021-04-30,Manulife MPF RMB Bond Fund,11.5530
+2021-04-30,Manulife MPF Retirement Income Fund,10.9640
+2021-04-30,Manulife MPF Smart Retirement Fund,14.6330
+2021-04-30,Manulife MPF Stable Fund,17.3190
+2021-04-30,Manulife Provident Funds Trust Company Limited,11.9960
+2021-04-30,North American Equity Fund,24.2400
+2021-04-30,Schroder MPF Age 65 Plus Fund - Class B,11.8200
+2021-04-30,Schroder MPF Core Accumulation Fund - Class B,13.7200
+2021-04-30,Stable Fund,13.7400
+2021-04-30,ValueChoice Asia Pacific Equity Fund,15.6900
+2021-04-30,ValueChoice Balanced Fund,16.9000
+2021-04-30,ValueChoice European Equity Fund,16.6300
+2021-04-30,ValueChoice US Equity Fund,32.5700
 2021-05-31,Age 65 Plus Fund,13.6900
+2021-05-31,Asia Pacific Equity Fund,42.5600
+2021-05-31,Balanced Fund,24.3700
+2021-05-31,Chinese Equity Fund,21.9300
+2021-05-31,Core Accumulation Fund,23.5300
+2021-05-31,European Equity Fund,15.9700
+2021-05-31,Global Bond Fund,13.2100
+2021-05-31,Global Equity Fund,20.1500
+2021-05-31,Growth Fund,25.8100
+2021-05-31,Guaranteed Fund,10.7700
+2021-05-31,HSBC Mandatory Provident Fund - SuperTrust Plus,13.6900
+2021-05-31,Hang Seng China Enterprises Index Tracking Fund,10.1100
+2021-05-31,Hang Seng Index Tracking Fund,30.0000
+2021-05-31,Hong Kong and Chinese Equity Fund,30.4500
+2021-05-31,MPF Conservative Fund,12.8500
+2021-05-31,Manulife MPF 2025 Retirement Fund,16.6710
+2021-05-31,Manulife MPF 2030 Retirement Fund,18.1420
+2021-05-31,Manulife MPF 2035 Retirement Fund,18.8630
+2021-05-31,Manulife MPF 2040 Retirement Fund,19.0930
+2021-05-31,Manulife MPF 2045 Retirement Fund,19.2470
+2021-05-31,Manulife MPF Aggressive Fund,26.2790
+2021-05-31,Manulife MPF China Value Fund,36.4850
+2021-05-31,Manulife MPF Conservative Fund,11.3430
+2021-05-31,Manulife MPF Core Accumulation Fund,14.2830
+2021-05-31,Manulife MPF European Equity Fund,17.0420
+2021-05-31,Manulife MPF Fidelity Growth Fund,37.3970
+2021-05-31,Manulife MPF Fidelity Stable Growth Fund,26.0910
+2021-05-31,Manulife MPF Growth Fund,24.9520
+2021-05-31,Manulife MPF Hang Seng Index Tracking Fund,17.3800
+2021-05-31,Manulife MPF Healthcare Fund,26.3810
+2021-05-31,Manulife MPF Hong Kong Bond Fund,15.4720
+2021-05-31,Manulife MPF Hong Kong Equity Fund,30.9290
+2021-05-31,Manulife MPF International Bond Fund,17.6730
+2021-05-31,Manulife MPF International Equity Fund,22.7700
+2021-05-31,Manulife MPF Japan Equity Fund,15.4350
+2021-05-31,Manulife MPF North American Equity Fund,25.5860
+2021-05-31,Manulife MPF Pacific Asia Bond Fund,12.2450
+2021-05-31,Manulife MPF Pacific Asia Equity Fund,35.0050
+2021-05-31,Manulife MPF RMB Bond Fund,11.7020
+2021-05-31,Manulife MPF Retirement Income Fund,11.0380
+2021-05-31,Manulife MPF Smart Retirement Fund,14.8430
+2021-05-31,Manulife MPF Stable Fund,17.4890
+2021-05-31,Manulife Provident Funds Trust Company Limited,12.0480
+2021-05-31,North American Equity Fund,24.4100
+2021-05-31,Schroder MPF Age 65 Plus Fund - Class B,11.8800
+2021-05-31,Schroder MPF Core Accumulation Fund - Class B,13.8500
+2021-05-31,Stable Fund,13.8800
+2021-05-31,ValueChoice Asia Pacific Equity Fund,16.0400
+2021-05-31,ValueChoice Balanced Fund,17.1600
+2021-05-31,ValueChoice European Equity Fund,17.3300
+2021-05-31,ValueChoice US Equity Fund,32.7600
 2021-06-30,Age 65 Plus Fund,13.7500
+2021-06-30,Asia Pacific Equity Fund,42.5800
+2021-06-30,Balanced Fund,24.3200
+2021-06-30,Chinese Equity Fund,21.7700
+2021-06-30,Core Accumulation Fund,23.7000
+2021-06-30,European Equity Fund,15.8400
+2021-06-30,Global Bond Fund,13.1400
+2021-06-30,Global Equity Fund,20.3900
+2021-06-30,Growth Fund,25.7300
+2021-06-30,Guaranteed Fund,10.7500
+2021-06-30,HSBC Mandatory Provident Fund - SuperTrust Plus,13.7500
+2021-06-30,Hang Seng China Enterprises Index Tracking Fund,9.9700
+2021-06-30,Hang Seng Index Tracking Fund,29.7700
+2021-06-30,Hong Kong and Chinese Equity Fund,30.3200
+2021-06-30,MPF Conservative Fund,12.8500
+2021-06-30,Manulife MPF 2025 Retirement Fund,16.7060
+2021-06-30,Manulife MPF 2030 Retirement Fund,18.2200
+2021-06-30,Manulife MPF 2035 Retirement Fund,18.9620
+2021-06-30,Manulife MPF 2040 Retirement Fund,19.2040
+2021-06-30,Manulife MPF 2045 Retirement Fund,19.3660
+2021-06-30,Manulife MPF Aggressive Fund,26.3990
+2021-06-30,Manulife MPF China Value Fund,36.1680
+2021-06-30,Manulife MPF Conservative Fund,11.3430
+2021-06-30,Manulife MPF Core Accumulation Fund,14.4150
+2021-06-30,Manulife MPF European Equity Fund,17.4660
+2021-06-30,Manulife MPF Fidelity Growth Fund,37.3390
+2021-06-30,Manulife MPF Fidelity Stable Growth Fund,26.0450
+2021-06-30,Manulife MPF Growth Fund,25.0170
+2021-06-30,Manulife MPF Hang Seng Index Tracking Fund,17.2730
+2021-06-30,Manulife MPF Healthcare Fund,27.0410
+2021-06-30,Manulife MPF Hong Kong Bond Fund,15.5480
+2021-06-30,Manulife MPF Hong Kong Equity Fund,30.8800
+2021-06-30,Manulife MPF International Bond Fund,17.5950
+2021-06-30,Manulife MPF International Equity Fund,23.2650
+2021-06-30,Manulife MPF Japan Equity Fund,15.4410
+2021-06-30,Manulife MPF North American Equity Fund,26.7130
+2021-06-30,Manulife MPF Pacific Asia Bond Fund,12.2000
+2021-06-30,Manulife MPF Pacific Asia Equity Fund,34.6640
+2021-06-30,Manulife MPF RMB Bond Fund,11.6120
+2021-06-30,Manulife MPF Retirement Income Fund,11.0400
+2021-06-30,Manulife MPF Smart Retirement Fund,14.8560
+2021-06-30,Manulife MPF Stable Fund,17.5700
+2021-06-30,Manulife Provident Funds Trust Company Limited,12.1270
+2021-06-30,North American Equity Fund,24.9000
+2021-06-30,Schroder MPF Age 65 Plus Fund - Class B,11.9400
+2021-06-30,Schroder MPF Core Accumulation Fund - Class B,13.9400
+2021-06-30,Stable Fund,13.8100
+2021-06-30,ValueChoice Asia Pacific Equity Fund,15.9800
+2021-06-30,ValueChoice Balanced Fund,17.1200
+2021-06-30,ValueChoice European Equity Fund,17.1900
+2021-06-30,ValueChoice US Equity Fund,33.2700
 2021-07-30,Age 65 Plus Fund,13.8800
+2021-07-30,Asia Pacific Equity Fund,39.5100
+2021-07-30,Balanced Fund,23.8000
+2021-07-30,Chinese Equity Fund,19.0700
+2021-07-30,Core Accumulation Fund,23.9400
+2021-07-30,European Equity Fund,16.1400
+2021-07-30,Global Bond Fund,13.2700
+2021-07-30,Global Equity Fund,20.6400
+2021-07-30,Growth Fund,25.0100
+2021-07-30,Guaranteed Fund,10.7100
+2021-07-30,HSBC Mandatory Provident Fund - SuperTrust Plus,13.8800
+2021-07-30,Hang Seng China Enterprises Index Tracking Fund,8.7000
+2021-07-30,Hang Seng Index Tracking Fund,26.9300
+2021-07-30,Hong Kong and Chinese Equity Fund,27.5500
+2021-07-30,MPF Conservative Fund,12.8500
+2021-07-30,Manulife MPF 2025 Retirement Fund,16.4840
+2021-07-30,Manulife MPF 2030 Retirement Fund,17.8830
+2021-07-30,Manulife MPF 2035 Retirement Fund,18.5670
+2021-07-30,Manulife MPF 2040 Retirement Fund,18.7890
+2021-07-30,Manulife MPF 2045 Retirement Fund,18.9460
+2021-07-30,Manulife MPF Aggressive Fund,25.7820
+2021-07-30,Manulife MPF China Value Fund,32.7740
+2021-07-30,Manulife MPF Conservative Fund,11.3440
+2021-07-30,Manulife MPF Core Accumulation Fund,14.5610
+2021-07-30,Manulife MPF European Equity Fund,18.4130
+2021-07-30,Manulife MPF Fidelity Growth Fund,35.9520
+2021-07-30,Manulife MPF Fidelity Stable Growth Fund,25.6680
+2021-07-30,Manulife MPF Growth Fund,24.5680
+2021-07-30,Manulife MPF Hang Seng Index Tracking Fund,15.6490
+2021-07-30,Manulife MPF Healthcare Fund,27.8100
+2021-07-30,Manulife MPF Hong Kong Bond Fund,15.7060
+2021-07-30,Manulife MPF Hong Kong Equity Fund,27.6060
+2021-07-30,Manulife MPF International Bond Fund,17.7990
+2021-07-30,Manulife MPF International Equity Fund,23.5880
+2021-07-30,Manulife MPF Japan Equity Fund,15.2960
+2021-07-30,Manulife MPF North American Equity Fund,27.4450
+2021-07-30,Manulife MPF Pacific Asia Bond Fund,12.2260
+2021-07-30,Manulife MPF Pacific Asia Equity Fund,33.2080
+2021-07-30,Manulife MPF RMB Bond Fund,11.6340
+2021-07-30,Manulife MPF Retirement Income Fund,10.9120
+2021-07-30,Manulife MPF Smart Retirement Fund,14.7000
+2021-07-30,Manulife MPF Stable Fund,17.4540
+2021-07-30,Manulife Provident Funds Trust Company Limited,12.2830
+2021-07-30,North American Equity Fund,25.4200
+2021-07-30,Schroder MPF Age 65 Plus Fund - Class B,12.1000
+2021-07-30,Schroder MPF Core Accumulation Fund - Class B,14.1000
+2021-07-30,Stable Fund,13.7500
+2021-07-30,ValueChoice Asia Pacific Equity Fund,15.0300
+2021-07-30,ValueChoice Balanced Fund,16.7700
+2021-07-30,ValueChoice European Equity Fund,17.4600
+2021-07-30,ValueChoice US Equity Fund,34.1900
 2021-08-31,Age 65 Plus Fund,13.9200
+2021-08-31,Asia Pacific Equity Fund,39.3400
+2021-08-31,Balanced Fund,24.0600
+2021-08-31,Chinese Equity Fund,19.1000
+2021-08-31,Core Accumulation Fund,24.2600
+2021-08-31,European Equity Fund,16.4700
+2021-08-31,Global Bond Fund,13.2300
+2021-08-31,Global Equity Fund,21.1100
+2021-08-31,Growth Fund,25.3600
+2021-08-31,Guaranteed Fund,10.6900
+2021-08-31,HSBC Mandatory Provident Fund - SuperTrust Plus,13.9200
+2021-08-31,Hang Seng China Enterprises Index Tracking Fund,8.6600
+2021-08-31,Hang Seng Index Tracking Fund,26.8900
+2021-08-31,Hong Kong and Chinese Equity Fund,27.4200
+2021-08-31,MPF Conservative Fund,12.8500
+2021-08-31,Manulife MPF 2025 Retirement Fund,16.6410
+2021-08-31,Manulife MPF 2030 Retirement Fund,18.1310
+2021-08-31,Manulife MPF 2035 Retirement Fund,18.8820
+2021-08-31,Manulife MPF 2040 Retirement Fund,19.1280
+2021-08-31,Manulife MPF 2045 Retirement Fund,19.2970
+2021-08-31,Manulife MPF Aggressive Fund,26.2410
+2021-08-31,Manulife MPF China Value Fund,32.8270
+2021-08-31,Manulife MPF Conservative Fund,11.3440
+2021-08-31,Manulife MPF Core Accumulation Fund,14.7570
+2021-08-31,Manulife MPF European Equity Fund,18.9670
+2021-08-31,Manulife MPF Fidelity Growth Fund,36.4570
+2021-08-31,Manulife MPF Fidelity Stable Growth Fund,25.8130
+2021-08-31,Manulife MPF Growth Fund,24.8810
+2021-08-31,Manulife MPF Hang Seng Index Tracking Fund,15.5720
+2021-08-31,Manulife MPF Healthcare Fund,28.6690
+2021-08-31,Manulife MPF Hong Kong Bond Fund,15.6500
+2021-08-31,Manulife MPF Hong Kong Equity Fund,27.6160
+2021-08-31,Manulife MPF International Bond Fund,17.7280
+2021-08-31,Manulife MPF International Equity Fund,24.2780
+2021-08-31,Manulife MPF Japan Equity Fund,15.9310
+2021-08-31,Manulife MPF North American Equity Fund,28.4780
+2021-08-31,Manulife MPF Pacific Asia Bond Fund,12.2830
+2021-08-31,Manulife MPF Pacific Asia Equity Fund,33.4980
+2021-08-31,Manulife MPF RMB Bond Fund,11.6700
+2021-08-31,Manulife MPF Retirement Income Fund,10.9370
+2021-08-31,Manulife MPF Smart Retirement Fund,14.8230
+2021-08-31,Manulife MPF Stable Fund,17.5070
+2021-08-31,Manulife Provident Funds Trust Company Limited,12.3100
+2021-08-31,North American Equity Fund,26.1500
+2021-08-31,Schroder MPF Age 65 Plus Fund - Class B,12.1200
+2021-08-31,Schroder MPF Core Accumulation Fund - Class B,14.3000
+2021-08-31,Stable Fund,13.7900
+2021-08-31,ValueChoice Asia Pacific Equity Fund,15.2900
+2021-08-31,ValueChoice Balanced Fund,16.9600
+2021-08-31,ValueChoice European Equity Fund,17.8200
+2021-08-31,ValueChoice US Equity Fund,35.2100
 2021-09-30,Age 65 Plus Fund,13.6800
+2021-09-30,Asia Pacific Equity Fund,38.7400
+2021-09-30,Balanced Fund,23.4000
+2021-09-30,Chinese Equity Fund,18.4500
+2021-09-30,Core Accumulation Fund,23.5400
+2021-09-30,European Equity Fund,15.7600
+2021-09-30,Global Bond Fund,13.0200
+2021-09-30,Global Equity Fund,20.2400
+2021-09-30,Growth Fund,24.5500
+2021-09-30,Guaranteed Fund,10.6200
+2021-09-30,HSBC Mandatory Provident Fund - SuperTrust Plus,13.6800
+2021-09-30,Hang Seng China Enterprises Index Tracking Fund,8.2500
+2021-09-30,Hang Seng Index Tracking Fund,25.6100
+2021-09-30,Hong Kong and Chinese Equity Fund,26.1300
+2021-09-30,MPF Conservative Fund,12.8500
+2021-09-30,Manulife MPF 2025 Retirement Fund,16.1290
+2021-09-30,Manulife MPF 2030 Retirement Fund,17.4760
+2021-09-30,Manulife MPF 2035 Retirement Fund,18.1400
+2021-09-30,Manulife MPF 2040 Retirement Fund,18.3520
+2021-09-30,Manulife MPF 2045 Retirement Fund,18.5060
+2021-09-30,Manulife MPF Aggressive Fund,25.1300
+2021-09-30,Manulife MPF China Value Fund,31.4790
+2021-09-30,Manulife MPF Conservative Fund,11.3440
+2021-09-30,Manulife MPF Core Accumulation Fund,14.3270
+2021-09-30,Manulife MPF European Equity Fund,17.5190
+2021-09-30,Manulife MPF Fidelity Growth Fund,35.3630
+2021-09-30,Manulife MPF Fidelity Stable Growth Fund,25.1620
+2021-09-30,Manulife MPF Growth Fund,23.9590
+2021-09-30,Manulife MPF Hang Seng Index Tracking Fund,14.8590
+2021-09-30,Manulife MPF Healthcare Fund,27.2430
+2021-09-30,Manulife MPF Hong Kong Bond Fund,15.4980
+2021-09-30,Manulife MPF Hong Kong Equity Fund,26.1880
+2021-09-30,Manulife MPF International Bond Fund,17.4520
+2021-09-30,Manulife MPF International Equity Fund,23.0890
+2021-09-30,Manulife MPF Japan Equity Fund,16.4300
+2021-09-30,Manulife MPF North American Equity Fund,26.9660
+2021-09-30,Manulife MPF Pacific Asia Bond Fund,12.0990
+2021-09-30,Manulife MPF Pacific Asia Equity Fund,32.2040
+2021-09-30,Manulife MPF RMB Bond Fund,11.6450
+2021-09-30,Manulife MPF Retirement Income Fund,10.6300
+2021-09-30,Manulife MPF Smart Retirement Fund,14.3820
+2021-09-30,Manulife MPF Stable Fund,17.1460
+2021-09-30,Manulife Provident Funds Trust Company Limited,12.0840
+2021-09-30,North American Equity Fund,24.9900
+2021-09-30,Schroder MPF Age 65 Plus Fund - Class B,11.9000
+2021-09-30,Schroder MPF Core Accumulation Fund - Class B,13.9000
+2021-09-30,Stable Fund,13.5200
+2021-09-30,ValueChoice Asia Pacific Equity Fund,14.7400
+2021-09-30,ValueChoice Balanced Fund,16.5400
+2021-09-30,ValueChoice European Equity Fund,17.1600
+2021-09-30,ValueChoice US Equity Fund,33.9900
 2021-10-29,Age 65 Plus Fund,13.7800
+2021-10-29,Asia Pacific Equity Fund,39.1000
+2021-10-29,Balanced Fund,23.7400
+2021-10-29,Chinese Equity Fund,18.6600
+2021-10-29,Core Accumulation Fund,24.1700
+2021-10-29,European Equity Fund,16.3100
+2021-10-29,Global Bond Fund,12.9700
+2021-10-29,Global Equity Fund,21.1800
+2021-10-29,Growth Fund,25.0100
+2021-10-29,Guaranteed Fund,10.5700
+2021-10-29,HSBC Mandatory Provident Fund - SuperTrust Plus,13.7800
+2021-10-29,Hang Seng China Enterprises Index Tracking Fund,8.4700
+2021-10-29,Hang Seng Index Tracking Fund,26.4300
+2021-10-29,Hong Kong and Chinese Equity Fund,26.6500
+2021-10-29,MPF Conservative Fund,12.8500
+2021-10-29,Manulife MPF 2025 Retirement Fund,16.3870
+2021-10-29,Manulife MPF 2030 Retirement Fund,17.8660
+2021-10-29,Manulife MPF 2035 Retirement Fund,18.6150
+2021-10-29,Manulife MPF 2040 Retirement Fund,18.8560
+2021-10-29,Manulife MPF 2045 Retirement Fund,19.0220
+2021-10-29,Manulife MPF Aggressive Fund,25.8370
+2021-10-29,Manulife MPF China Value Fund,32.3370
+2021-10-29,Manulife MPF Conservative Fund,11.3430
+2021-10-29,Manulife MPF Core Accumulation Fund,14.7380
+2021-10-29,Manulife MPF European Equity Fund,18.6530
+2021-10-29,Manulife MPF Fidelity Growth Fund,36.2670
+2021-10-29,Manulife MPF Fidelity Stable Growth Fund,25.4850
+2021-10-29,Manulife MPF Growth Fund,24.4930
+2021-10-29,Manulife MPF Hang Seng Index Tracking Fund,15.3400
+2021-10-29,Manulife MPF Healthcare Fund,28.4450
+2021-10-29,Manulife MPF Hong Kong Bond Fund,15.3380
+2021-10-29,Manulife MPF Hong Kong Equity Fund,27.0150
+2021-10-29,Manulife MPF International Bond Fund,17.3830
+2021-10-29,Manulife MPF International Equity Fund,24.0790
+2021-10-29,Manulife MPF Japan Equity Fund,15.8870
+2021-10-29,Manulife MPF North American Equity Fund,28.4010
+2021-10-29,Manulife MPF Pacific Asia Bond Fund,12.0960
+2021-10-29,Manulife MPF Pacific Asia Equity Fund,32.7930
+2021-10-29,Manulife MPF RMB Bond Fund,11.6430
+2021-10-29,Manulife MPF Retirement Income Fund,10.7060
+2021-10-29,Manulife MPF Smart Retirement Fund,14.5970
+2021-10-29,Manulife MPF Stable Fund,17.1570
+2021-10-29,Manulife Provident Funds Trust Company Limited,12.1790
+2021-10-29,North American Equity Fund,26.5300
+2021-10-29,Schroder MPF Age 65 Plus Fund - Class B,12.0100
+2021-10-29,Schroder MPF Core Accumulation Fund - Class B,14.3100
+2021-10-29,Stable Fund,13.5800
+2021-10-29,ValueChoice Asia Pacific Equity Fund,14.9500
+2021-10-29,ValueChoice Balanced Fund,16.6900
+2021-10-29,ValueChoice European Equity Fund,17.7400
+2021-10-29,ValueChoice US Equity Fund,35.5700
 2021-11-30,Age 65 Plus Fund,13.7900
+2021-11-30,Asia Pacific Equity Fund,38.0300
+2021-11-30,Balanced Fund,23.0500
+2021-11-30,Chinese Equity Fund,17.9700
+2021-11-30,Core Accumulation Fund,23.9300
+2021-11-30,European Equity Fund,15.6500
+2021-11-30,Global Bond Fund,12.9800
+2021-11-30,Global Equity Fund,20.8500
+2021-11-30,Growth Fund,24.0800
+2021-11-30,Guaranteed Fund,10.5100
+2021-11-30,HSBC Mandatory Provident Fund - SuperTrust Plus,13.7900
+2021-11-30,Hang Seng China Enterprises Index Tracking Fund,7.9000
+2021-11-30,Hang Seng Index Tracking Fund,24.4900
+2021-11-30,Hong Kong and Chinese Equity Fund,25.3200
+2021-11-30,MPF Conservative Fund,12.8500
+2021-11-30,Manulife MPF 2025 Retirement Fund,16.0620
+2021-11-30,Manulife MPF 2030 Retirement Fund,17.4060
+2021-11-30,Manulife MPF 2035 Retirement Fund,18.0720
+2021-11-30,Manulife MPF 2040 Retirement Fund,18.2810
+2021-11-30,Manulife MPF 2045 Retirement Fund,18.4380
+2021-11-30,Manulife MPF Aggressive Fund,25.0230
+2021-11-30,Manulife MPF China Value Fund,31.1780
+2021-11-30,Manulife MPF Conservative Fund,11.3440
+2021-11-30,Manulife MPF Core Accumulation Fund,14.6060
+2021-11-30,Manulife MPF European Equity Fund,18.2700
+2021-11-30,Manulife MPF Fidelity Growth Fund,34.8410
+2021-11-30,Manulife MPF Fidelity Stable Growth Fund,24.9440
+2021-11-30,Manulife MPF Growth Fund,23.8640
+2021-11-30,Manulife MPF Hang Seng Index Tracking Fund,14.2290
+2021-11-30,Manulife MPF Healthcare Fund,27.8010
+2021-11-30,Manulife MPF Hong Kong Bond Fund,15.3480
+2021-11-30,Manulife MPF Hong Kong Equity Fund,25.4060
+2021-11-30,Manulife MPF International Bond Fund,17.3810
+2021-11-30,Manulife MPF International Equity Fund,23.6350
+2021-11-30,Manulife MPF Japan Equity Fund,15.3710
+2021-11-30,Manulife MPF North American Equity Fund,28.1230
+2021-11-30,Manulife MPF Pacific Asia Bond Fund,12.0340
+2021-11-30,Manulife MPF Pacific Asia Equity Fund,31.6570
+2021-11-30,Manulife MPF RMB Bond Fund,11.7130
+2021-11-30,Manulife MPF Retirement Income Fund,10.5340
+2021-11-30,Manulife MPF Smart Retirement Fund,14.3270
+2021-11-30,Manulife MPF Stable Fund,16.9320
+2021-11-30,Manulife Provident Funds Trust Company Limited,12.2380
+2021-11-30,North American Equity Fund,26.2400
+2021-11-30,Schroder MPF Age 65 Plus Fund - Class B,12.0500
+2021-11-30,Schroder MPF Core Accumulation Fund - Class B,14.1400
+2021-11-30,Stable Fund,13.3900
+2021-11-30,ValueChoice Asia Pacific Equity Tracker Fund,14.2100
+2021-11-30,ValueChoice Balanced Fund,16.2000
+2021-11-30,ValueChoice Europe Equity Tracker Fund,17.1500
+2021-11-30,ValueChoice North America Equity Tracker Fund,35.5100
 2021-12-31,Age 65 Plus Fund,13.8500
+2021-12-31,Asia Pacific Equity Fund,38.6500
+2021-12-31,Balanced Fund,23.4300
+2021-12-31,Chinese Equity Fund,17.6200
+2021-12-31,Core Accumulation Fund,24.5700
+2021-12-31,European Equity Fund,16.5300
+2021-12-31,Global Bond Fund,12.9100
+2021-12-31,Global Equity Fund,21.7600
+2021-12-31,Growth Fund,24.6000
+2021-12-31,Guaranteed Fund,10.4800
+2021-12-31,HSBC Mandatory Provident Fund - SuperTrust Plus,13.8500
+2021-12-31,Hang Seng China Enterprises Index Tracking Fund,7.7700
+2021-12-31,Hang Seng Index Tracking Fund,24.3600
+2021-12-31,Hong Kong and Chinese Equity Fund,24.7900
+2021-12-31,MPF Conservative Fund,12.8500
+2021-12-31,Manulife MPF 2025 Retirement Fund,16.1830
+2021-12-31,Manulife MPF 2030 Retirement Fund,17.5640
+2021-12-31,Manulife MPF 2035 Retirement Fund,18.2660
+2021-12-31,Manulife MPF 2040 Retirement Fund,18.4900
+2021-12-31,Manulife MPF 2045 Retirement Fund,18.6490
+2021-12-31,Manulife MPF Aggressive Fund,25.3010
+2021-12-31,Manulife MPF China Value Fund,30.7210
+2021-12-31,Manulife MPF Conservative Fund,11.3440
+2021-12-31,Manulife MPF Core Accumulation Fund,14.9100
+2021-12-31,Manulife MPF European Equity Fund,18.9740
+2021-12-31,Manulife MPF Fidelity Growth Fund,35.3610
+2021-12-31,Manulife MPF Fidelity Stable Growth Fund,25.0680
+2021-12-31,Manulife MPF Growth Fund,24.0760
+2021-12-31,Manulife MPF Hang Seng Index Tracking Fund,14.1530
+2021-12-31,Manulife MPF Healthcare Fund,29.8550
+2021-12-31,Manulife MPF Hong Kong Bond Fund,15.3840
+2021-12-31,Manulife MPF Hong Kong Equity Fund,24.7230
+2021-12-31,Manulife MPF International Bond Fund,17.3100
+2021-12-31,Manulife MPF International Equity Fund,24.0970
+2021-12-31,Manulife MPF Japan Equity Fund,15.5880
+2021-12-31,Manulife MPF North American Equity Fund,28.4110
+2021-12-31,Manulife MPF Pacific Asia Bond Fund,12.1090
+2021-12-31,Manulife MPF Pacific Asia Equity Fund,32.3430
+2021-12-31,Manulife MPF RMB Bond Fund,11.7430
+2021-12-31,Manulife MPF Retirement Income Fund,10.5950
+2021-12-31,Manulife MPF Smart Retirement Fund,14.4330
+2021-12-31,Manulife MPF Stable Fund,16.9350
+2021-12-31,Manulife Provident Funds Trust Company Limited,12.2430
+2021-12-31,North American Equity Fund,27.4200
+2021-12-31,Schroder MPF Age 65 Plus Fund - Class B,12.0700
+2021-12-31,Schroder MPF Core Accumulation Fund - Class B,14.4800
+2021-12-31,Stable Fund,13.4700
+2021-12-31,ValueChoice Asia Pacific Equity Tracker Fund,14.4500
+2021-12-31,ValueChoice Balanced Fund,16.4300
+2021-12-31,ValueChoice Europe Equity Tracker Fund,18.0500
+2021-12-31,ValueChoice North America Equity Tracker Fund,36.9000
 2022-01-31,Age 65 Plus Fund,13.5500
+2022-01-31,Asia Pacific Equity Fund,36.7800
+2022-01-31,Balanced Fund,22.7500
+2022-01-31,Chinese Equity Fund,17.0100
+2022-01-31,Core Accumulation Fund,23.7400
+2022-01-31,European Equity Fund,15.7300
+2022-01-31,Global Bond Fund,12.6800
+2022-01-31,Global Equity Fund,20.7900
+2022-01-31,Growth Fund,23.7700
+2022-01-31,Guaranteed Fund,10.4000
+2022-01-31,HSBC Mandatory Provident Fund - SuperTrust Plus,13.5500
+2022-01-31,Hang Seng China Enterprises Index Tracking Fund,7.8700
+2022-01-31,Hang Seng Index Tracking Fund,24.7600
+2022-01-31,Hong Kong and Chinese Equity Fund,24.7500
+2022-01-31,MPF Conservative Fund,12.8500
+2022-01-31,Manulife MPF 2025 Retirement Fund,15.4600
+2022-01-31,Manulife MPF 2030 Retirement Fund,16.6420
+2022-01-31,Manulife MPF 2035 Retirement Fund,17.2240
+2022-01-31,Manulife MPF 2040 Retirement Fund,17.3930
+2022-01-31,Manulife MPF 2045 Retirement Fund,17.5360
+2022-01-31,Manulife MPF Aggressive Fund,23.7530
+2022-01-31,Manulife MPF China Value Fund,29.6240
+2022-01-31,Manulife MPF Conservative Fund,11.3440
+2022-01-31,Manulife MPF Core Accumulation Fund,14.3840
+2022-01-31,Manulife MPF European Equity Fund,16.3790
+2022-01-31,Manulife MPF Fidelity Growth Fund,34.1030
+2022-01-31,Manulife MPF Fidelity Stable Growth Fund,24.3220
+2022-01-31,Manulife MPF Growth Fund,22.8080
+2022-01-31,Manulife MPF Hang Seng Index Tracking Fund,14.4190
+2022-01-31,Manulife MPF Healthcare Fund,27.3850
+2022-01-31,Manulife MPF Hong Kong Bond Fund,15.1640
+2022-01-31,Manulife MPF Hong Kong Equity Fund,24.3120
+2022-01-31,Manulife MPF International Bond Fund,16.9630
+2022-01-31,Manulife MPF International Equity Fund,22.1820
+2022-01-31,Manulife MPF Japan Equity Fund,14.9020
+2022-01-31,Manulife MPF North American Equity Fund,26.1950
+2022-01-31,Manulife MPF Pacific Asia Bond Fund,11.9180
+2022-01-31,Manulife MPF Pacific Asia Equity Fund,31.1370
+2022-01-31,Manulife MPF RMB Bond Fund,11.7470
+2022-01-31,Manulife MPF Retirement Income Fund,10.2030
+2022-01-31,Manulife MPF Smart Retirement Fund,13.8090
+2022-01-31,Manulife MPF Stable Fund,16.4670
+2022-01-31,Manulife Provident Funds Trust Company Limited,11.9690
+2022-01-31,North American Equity Fund,25.9500
+2022-01-31,Schroder MPF Age 65 Plus Fund - Class B,11.8100
+2022-01-31,Schroder MPF Core Accumulation Fund - Class B,14.0000
+2022-01-31,Stable Fund,13.1600
+2022-01-31,ValueChoice Asia Pacific Equity Tracker Fund,13.9700
+2022-01-31,ValueChoice Balanced Fund,15.9700
+2022-01-31,ValueChoice Europe Equity Tracker Fund,17.3100
+2022-01-31,ValueChoice North America Equity Tracker Fund,34.9200
 2022-02-28,Age 65 Plus Fund,13.4000
+2022-02-28,Asia Pacific Equity Fund,35.1800
+2022-02-28,Balanced Fund,22.3000
+2022-02-28,Chinese Equity Fund,16.3900
+2022-02-28,Core Accumulation Fund,23.3700
+2022-02-28,European Equity Fund,15.3000
+2022-02-28,Global Bond Fund,12.5900
+2022-02-28,Global Equity Fund,20.3600
+2022-02-28,Growth Fund,23.2200
+2022-02-28,Guaranteed Fund,10.3200
+2022-02-28,HSBC Mandatory Provident Fund - SuperTrust Plus,13.4000
+2022-02-28,Hang Seng China Enterprises Index Tracking Fund,7.5600
+2022-02-28,Hang Seng Index Tracking Fund,23.6100
+2022-02-28,Hong Kong and Chinese Equity Fund,23.9500
+2022-02-28,MPF Conservative Fund,12.8500
+2022-02-28,Manulife MPF 2025 Retirement Fund,15.1480
+2022-02-28,Manulife MPF 2030 Retirement Fund,16.2280
+2022-02-28,Manulife MPF 2035 Retirement Fund,16.7560
+2022-02-28,Manulife MPF 2040 Retirement Fund,16.9010
+2022-02-28,Manulife MPF 2045 Retirement Fund,17.0370
+2022-02-28,Manulife MPF Aggressive Fund,23.0580
+2022-02-28,Manulife MPF China Value Fund,28.3710
+2022-02-28,Manulife MPF Conservative Fund,11.3440
+2022-02-28,Manulife MPF Core Accumulation Fund,14.1310
+2022-02-28,Manulife MPF European Equity Fund,15.6240
+2022-02-28,Manulife MPF Fidelity Growth Fund,33.0010
+2022-02-28,Manulife MPF Fidelity Stable Growth Fund,23.7960
+2022-02-28,Manulife MPF Growth Fund,22.2400
+2022-02-28,Manulife MPF Hang Seng Index Tracking Fund,13.7540
+2022-02-28,Manulife MPF Healthcare Fund,27.1120
+2022-02-28,Manulife MPF Hong Kong Bond Fund,15.0670
+2022-02-28,Manulife MPF Hong Kong Equity Fund,23.2130
+2022-02-28,Manulife MPF International Bond Fund,16.7780
+2022-02-28,Manulife MPF International Equity Fund,21.4340
+2022-02-28,Manulife MPF Japan Equity Fund,14.8040
+2022-02-28,Manulife MPF North American Equity Fund,25.1760
+2022-02-28,Manulife MPF Pacific Asia Bond Fund,11.9030
+2022-02-28,Manulife MPF Pacific Asia Equity Fund,30.5680
+2022-02-28,Manulife MPF RMB Bond Fund,11.8200
+2022-02-28,Manulife MPF Retirement Income Fund,10.0070
+2022-02-28,Manulife MPF Smart Retirement Fund,13.5450
+2022-02-28,Manulife MPF Stable Fund,16.2070
+2022-02-28,Manulife Provident Funds Trust Company Limited,11.8070
+2022-02-28,North American Equity Fund,25.1700
+2022-02-28,Schroder MPF Age 65 Plus Fund - Class B,11.6500
+2022-02-28,Schroder MPF Core Accumulation Fund - Class B,13.7500
+2022-02-28,Stable Fund,13.0000
+2022-02-28,ValueChoice Asia Pacific Equity Tracker Fund,13.8500
+2022-02-28,ValueChoice Balanced Fund,15.6400
+2022-02-28,ValueChoice Europe Equity Tracker Fund,16.7700
+2022-02-28,ValueChoice North America Equity Tracker Fund,33.9500
 2022-03-31,Age 65 Plus Fund,13.1900
+2022-03-31,Asia Pacific Equity Fund,34.3500
+2022-03-31,Balanced Fund,22.1200
+2022-03-31,Chinese Equity Fund,15.2200
+2022-03-31,Core Accumulation Fund,23.4800
+2022-03-31,European Equity Fund,15.3800
+2022-03-31,Global Bond Fund,12.2300
+2022-03-31,Global Equity Fund,20.8300
+2022-03-31,Growth Fund,23.1300
+2022-03-31,Guaranteed Fund,10.1400
+2022-03-31,HSBC Mandatory Provident Fund - SuperTrust Plus,13.1900
+2022-03-31,Hang Seng China Enterprises Index Tracking Fund,7.0900
+2022-03-31,Hang Seng Index Tracking Fund,22.9200
+2022-03-31,Hong Kong and Chinese Equity Fund,22.9800
+2022-03-31,MPF Conservative Fund,12.8500
+2022-03-31,Manulife MPF 2025 Retirement Fund,14.9200
+2022-03-31,Manulife MPF 2030 Retirement Fund,16.0080
+2022-03-31,Manulife MPF 2035 Retirement Fund,16.5550
+2022-03-31,Manulife MPF 2040 Retirement Fund,16.6990
+2022-03-31,Manulife MPF 2045 Retirement Fund,16.8360
+2022-03-31,Manulife MPF Aggressive Fund,22.7720
+2022-03-31,Manulife MPF China Value Fund,26.5610
+2022-03-31,Manulife MPF Conservative Fund,11.3440
+2022-03-31,Manulife MPF Core Accumulation Fund,14.2120
+2022-03-31,Manulife MPF European Equity Fund,15.7970
+2022-03-31,Manulife MPF Fidelity Growth Fund,32.3040
+2022-03-31,Manulife MPF Fidelity Stable Growth Fund,23.1890
+2022-03-31,Manulife MPF Growth Fund,21.9340
+2022-03-31,Manulife MPF Hang Seng Index Tracking Fund,13.3530
+2022-03-31,Manulife MPF Healthcare Fund,28.5770
+2022-03-31,Manulife MPF Hong Kong Bond Fund,14.6860
+2022-03-31,Manulife MPF Hong Kong Equity Fund,21.7620
+2022-03-31,Manulife MPF International Bond Fund,16.3550
+2022-03-31,Manulife MPF International Equity Fund,21.7530
+2022-03-31,Manulife MPF Japan Equity Fund,14.7000
+2022-03-31,Manulife MPF North American Equity Fund,25.8710
+2022-03-31,Manulife MPF Pacific Asia Bond Fund,11.6710
+2022-03-31,Manulife MPF Pacific Asia Equity Fund,30.4600
+2022-03-31,Manulife MPF RMB Bond Fund,11.6810
+2022-03-31,Manulife MPF Retirement Income Fund,9.8540
+2022-03-31,Manulife MPF Smart Retirement Fund,13.3400
+2022-03-31,Manulife MPF Stable Fund,15.7780
+2022-03-31,Manulife Provident Funds Trust Company Limited,11.6390
+2022-03-31,North American Equity Fund,26.0800
+2022-03-31,Schroder MPF Age 65 Plus Fund - Class B,11.4800
+2022-03-31,Schroder MPF Core Accumulation Fund - Class B,13.8400
+2022-03-31,Stable Fund,12.7600
+2022-03-31,ValueChoice Asia Pacific Equity Tracker Fund,13.7800
+2022-03-31,ValueChoice Balanced Fund,15.5000
+2022-03-31,ValueChoice Europe Equity Tracker Fund,16.8300
+2022-03-31,ValueChoice North America Equity Tracker Fund,35.1200
 2022-04-29,Age 65 Plus Fund,12.7100
+2022-04-29,Asia Pacific Equity Fund,32.0100
+2022-04-29,Balanced Fund,21.0200
+2022-04-29,Chinese Equity Fund,14.6300
+2022-04-29,Core Accumulation Fund,22.2500
+2022-04-29,European Equity Fund,14.7900
+2022-04-29,Global Bond Fund,11.6600
+2022-04-29,Global Equity Fund,19.3700
+2022-04-29,Growth Fund,21.8300
+2022-04-29,Guaranteed Fund,10.0100
+2022-04-29,HSBC Mandatory Provident Fund - SuperTrust Plus,12.7100
+2022-04-29,Hang Seng China Enterprises Index Tracking Fund,6.8700
+2022-04-29,Hang Seng Index Tracking Fund,21.9600
+2022-04-29,Hong Kong and Chinese Equity Fund,22.0200
+2022-04-29,MPF Conservative Fund,12.8500
+2022-04-29,Manulife MPF 2025 Retirement Fund,14.0370
+2022-04-29,Manulife MPF 2030 Retirement Fund,14.9410
+2022-04-29,Manulife MPF 2035 Retirement Fund,15.3730
+2022-04-29,Manulife MPF 2040 Retirement Fund,15.4650
+2022-04-29,Manulife MPF 2045 Retirement Fund,15.5890
+2022-04-29,Manulife MPF Aggressive Fund,21.0610
+2022-04-29,Manulife MPF China Value Fund,24.7290
+2022-04-29,Manulife MPF Conservative Fund,11.3440
+2022-04-29,Manulife MPF Core Accumulation Fund,13.3840
+2022-04-29,Manulife MPF European Equity Fund,14.5290
+2022-04-29,Manulife MPF Fidelity Growth Fund,30.4370
+2022-04-29,Manulife MPF Fidelity Stable Growth Fund,21.9660
+2022-04-29,Manulife MPF Growth Fund,20.4880
+2022-04-29,Manulife MPF Hang Seng Index Tracking Fund,12.7500
+2022-04-29,Manulife MPF Healthcare Fund,27.2320
+2022-04-29,Manulife MPF Hong Kong Bond Fund,14.3500
+2022-04-29,Manulife MPF Hong Kong Equity Fund,20.7330
+2022-04-29,Manulife MPF International Bond Fund,15.6010
+2022-04-29,Manulife MPF International Equity Fund,19.4360
+2022-04-29,Manulife MPF Japan Equity Fund,13.8520
+2022-04-29,Manulife MPF North American Equity Fund,22.5590
+2022-04-29,Manulife MPF Pacific Asia Bond Fund,11.2360
+2022-04-29,Manulife MPF Pacific Asia Equity Fund,28.8030
+2022-04-29,Manulife MPF RMB Bond Fund,11.2900
+2022-04-29,Manulife MPF Retirement Income Fund,9.3380
+2022-04-29,Manulife MPF Smart Retirement Fund,12.5620
+2022-04-29,Manulife MPF Stable Fund,15.1380
+2022-04-29,Manulife Provident Funds Trust Company Limited,11.1870
+2022-04-29,North American Equity Fund,23.9200
+2022-04-29,Schroder MPF Age 65 Plus Fund - Class B,11.0400
+2022-04-29,Schroder MPF Core Accumulation Fund - Class B,13.0600
+2022-04-29,Stable Fund,12.1900
+2022-04-29,ValueChoice Asia Pacific Equity Tracker Fund,13.1500
+2022-04-29,ValueChoice Balanced Fund,14.6500
+2022-04-29,ValueChoice Europe Equity Tracker Fund,16.1400
+2022-04-29,ValueChoice North America Equity Tracker Fund,32.0200
 2022-05-31,Age 65 Plus Fund,12.6700
+2022-05-31,Asia Pacific Equity Fund,32.3100
+2022-05-31,Balanced Fund,21.1900
+2022-05-31,Chinese Equity Fund,14.5800
+2022-05-31,Core Accumulation Fund,22.2400
+2022-05-31,European Equity Fund,14.8000
+2022-05-31,Global Bond Fund,11.6500
+2022-05-31,Global Equity Fund,19.3800
+2022-05-31,Growth Fund,22.0300
+2022-05-31,Guaranteed Fund,10.0400
+2022-05-31,HSBC Mandatory Provident Fund - SuperTrust Plus,12.6700
+2022-05-31,Hang Seng China Enterprises Index Tracking Fund,7.0000
+2022-05-31,Hang Seng Index Tracking Fund,22.4100
+2022-05-31,Hong Kong and Chinese Equity Fund,22.3000
+2022-05-31,MPF Conservative Fund,12.8500
+2022-05-31,Manulife MPF 2025 Retirement Fund,14.0450
+2022-05-31,Manulife MPF 2030 Retirement Fund,14.9430
+2022-05-31,Manulife MPF 2035 Retirement Fund,15.3660
+2022-05-31,Manulife MPF 2040 Retirement Fund,15.4570
+2022-05-31,Manulife MPF 2045 Retirement Fund,15.5800
+2022-05-31,Manulife MPF Aggressive Fund,21.0280
+2022-05-31,Manulife MPF China Value Fund,25.1600
+2022-05-31,Manulife MPF Conservative Fund,11.3440
+2022-05-31,Manulife MPF Core Accumulation Fund,13.3560
+2022-05-31,Manulife MPF European Equity Fund,13.9430
+2022-05-31,Manulife MPF Fidelity Growth Fund,30.5440
+2022-05-31,Manulife MPF Fidelity Stable Growth Fund,21.9770
+2022-05-31,Manulife MPF Growth Fund,20.4720
+2022-05-31,Manulife MPF Hang Seng Index Tracking Fund,12.9820
+2022-05-31,Manulife MPF Healthcare Fund,27.3230
+2022-05-31,Manulife MPF Hong Kong Bond Fund,14.4110
+2022-05-31,Manulife MPF Hong Kong Equity Fund,21.0400
+2022-05-31,Manulife MPF International Bond Fund,15.5700
+2022-05-31,Manulife MPF International Equity Fund,19.1940
+2022-05-31,Manulife MPF Japan Equity Fund,14.0890
+2022-05-31,Manulife MPF North American Equity Fund,22.1920
+2022-05-31,Manulife MPF Pacific Asia Bond Fund,11.2290
+2022-05-31,Manulife MPF Pacific Asia Equity Fund,28.9640
+2022-05-31,Manulife MPF RMB Bond Fund,11.3000
+2022-05-31,Manulife MPF Retirement Income Fund,9.3170
+2022-05-31,Manulife MPF Smart Retirement Fund,12.5750
+2022-05-31,Manulife MPF Stable Fund,15.1780
+2022-05-31,Manulife Provident Funds Trust Company Limited,11.1250
+2022-05-31,North American Equity Fund,24.0700
+2022-05-31,Schroder MPF Age 65 Plus Fund - Class B,10.9900
+2022-05-31,Schroder MPF Core Accumulation Fund - Class B,13.0800
+2022-05-31,Stable Fund,12.2400
+2022-05-31,ValueChoice Asia Pacific Equity Tracker Fund,13.1800
+2022-05-31,ValueChoice Balanced Fund,14.7100
+2022-05-31,ValueChoice Europe Equity Tracker Fund,16.2000
+2022-05-31,ValueChoice North America Equity Tracker Fund,31.9400
 2022-06-30,Age 65 Plus Fund,12.3500
+2022-06-30,Asia Pacific Equity Fund,30.0200
+2022-06-30,Balanced Fund,20.3400
+2022-06-30,Chinese Equity Fund,15.0800
+2022-06-30,Core Accumulation Fund,21.0700
+2022-06-30,European Equity Fund,13.4200
+2022-06-30,Global Bond Fund,11.3700
+2022-06-30,Global Equity Fund,17.7900
+2022-06-30,Growth Fund,20.9900
+2022-06-30,Guaranteed Fund,9.9600
+2022-06-30,HSBC Mandatory Provident Fund - SuperTrust Plus,12.3500
+2022-06-30,Hang Seng China Enterprises Index Tracking Fund,7.3100
+2022-06-30,Hang Seng Index Tracking Fund,23.0500
+2022-06-30,Hong Kong and Chinese Equity Fund,22.6400
+2022-06-30,MPF Conservative Fund,12.8500
+2022-06-30,Manulife MPF 2025 Retirement Fund,13.5450
+2022-06-30,Manulife MPF 2030 Retirement Fund,14.3240
+2022-06-30,Manulife MPF 2035 Retirement Fund,14.6800
+2022-06-30,Manulife MPF 2040 Retirement Fund,14.7370
+2022-06-30,Manulife MPF 2045 Retirement Fund,14.8460
+2022-06-30,Manulife MPF Aggressive Fund,20.0310
+2022-06-30,Manulife MPF China Value Fund,25.1900
+2022-06-30,Manulife MPF Conservative Fund,11.3440
+2022-06-30,Manulife MPF Core Accumulation Fund,12.6100
+2022-06-30,Manulife MPF European Equity Fund,12.2570
+2022-06-30,Manulife MPF Fidelity Growth Fund,29.3420
+2022-06-30,Manulife MPF Fidelity Stable Growth Fund,21.2590
+2022-06-30,Manulife MPF Growth Fund,19.6570
+2022-06-30,Manulife MPF Hang Seng Index Tracking Fund,13.3630
+2022-06-30,Manulife MPF Healthcare Fund,26.8200
+2022-06-30,Manulife MPF Hong Kong Bond Fund,14.1810
+2022-06-30,Manulife MPF Hong Kong Equity Fund,21.8610
+2022-06-30,Manulife MPF International Bond Fund,15.1010
+2022-06-30,Manulife MPF International Equity Fund,17.5560
+2022-06-30,Manulife MPF Japan Equity Fund,13.2550
+2022-06-30,Manulife MPF North American Equity Fund,20.2100
+2022-06-30,Manulife MPF Pacific Asia Bond Fund,10.8590
+2022-06-30,Manulife MPF Pacific Asia Equity Fund,27.2630
+2022-06-30,Manulife MPF RMB Bond Fund,11.2370
+2022-06-30,Manulife MPF Retirement Income Fund,8.9800
+2022-06-30,Manulife MPF Smart Retirement Fund,12.1420
+2022-06-30,Manulife MPF Stable Fund,14.8900
+2022-06-30,Manulife Provident Funds Trust Company Limited,10.8230
+2022-06-30,North American Equity Fund,22.1000
+2022-06-30,Schroder MPF Age 65 Plus Fund - Class B,10.6600
+2022-06-30,Schroder MPF Core Accumulation Fund - Class B,12.3200
+2022-06-30,Stable Fund,11.8800
+2022-06-30,ValueChoice Asia Pacific Equity Tracker Fund,12.4200
+2022-06-30,ValueChoice Balanced Fund,14.1200
+2022-06-30,ValueChoice Europe Equity Tracker Fund,14.7000
+2022-06-30,ValueChoice North America Equity Tracker Fund,29.2800
 2022-07-29,Age 65 Plus Fund,12.6500
+2022-07-29,Asia Pacific Equity Fund,29.9300
+2022-07-29,Balanced Fund,20.5900
+2022-07-29,Chinese Equity Fund,13.8300
+2022-07-29,Core Accumulation Fund,21.9600
+2022-07-29,European Equity Fund,14.0500
+2022-07-29,Global Bond Fund,11.5600
+2022-07-29,Global Equity Fund,18.9500
+2022-07-29,Growth Fund,21.2900
+2022-07-29,Guaranteed Fund,9.9800
+2022-07-29,HSBC Mandatory Provident Fund - SuperTrust Plus,12.6500
+2022-07-29,Hang Seng China Enterprises Index Tracking Fund,6.6400
+2022-07-29,Hang Seng Index Tracking Fund,21.3600
+2022-07-29,Hong Kong and Chinese Equity Fund,21.2100
+2022-07-29,MPF Conservative Fund,12.8500
+2022-07-29,Manulife MPF 2025 Retirement Fund,13.7160
+2022-07-29,Manulife MPF 2030 Retirement Fund,14.5410
+2022-07-29,Manulife MPF 2035 Retirement Fund,14.9230
+2022-07-29,Manulife MPF 2040 Retirement Fund,14.9880
+2022-07-29,Manulife MPF 2045 Retirement Fund,15.1050
+2022-07-29,Manulife MPF Aggressive Fund,20.3520
+2022-07-29,Manulife MPF China Value Fund,23.5170
+2022-07-29,Manulife MPF Conservative Fund,11.3460
+2022-07-29,Manulife MPF Core Accumulation Fund,13.2390
+2022-07-29,Manulife MPF European Equity Fund,13.8420
+2022-07-29,Manulife MPF Fidelity Growth Fund,29.2560
+2022-07-29,Manulife MPF Fidelity Stable Growth Fund,21.4220
+2022-07-29,Manulife MPF Growth Fund,19.9160
+2022-07-29,Manulife MPF Hang Seng Index Tracking Fund,12.3980
+2022-07-29,Manulife MPF Healthcare Fund,27.6650
+2022-07-29,Manulife MPF Hong Kong Bond Fund,14.3780
+2022-07-29,Manulife MPF Hong Kong Equity Fund,19.9830
+2022-07-29,Manulife MPF International Bond Fund,15.4460
+2022-07-29,Manulife MPF International Equity Fund,19.0780
+2022-07-29,Manulife MPF Japan Equity Fund,13.8230
+2022-07-29,Manulife MPF North American Equity Fund,22.6750
+2022-07-29,Manulife MPF Pacific Asia Bond Fund,10.9840
+2022-07-29,Manulife MPF Pacific Asia Equity Fund,27.5980
+2022-07-29,Manulife MPF RMB Bond Fund,11.2560
+2022-07-29,Manulife MPF Retirement Income Fund,9.0630
+2022-07-29,Manulife MPF Smart Retirement Fund,12.2920
+2022-07-29,Manulife MPF Stable Fund,14.9900
+2022-07-29,Manulife Provident Funds Trust Company Limited,11.1610
+2022-07-29,North American Equity Fund,24.0300
+2022-07-29,Schroder MPF Age 65 Plus Fund - Class B,10.9900
+2022-07-29,Schroder MPF Core Accumulation Fund - Class B,12.9100
+2022-07-29,Stable Fund,12.0300
+2022-07-29,ValueChoice Asia Pacific Equity Tracker Fund,12.3600
+2022-07-29,ValueChoice Balanced Fund,14.3100
+2022-07-29,ValueChoice Europe Equity Tracker Fund,15.4700
+2022-07-29,ValueChoice North America Equity Tracker Fund,31.8800
 2022-08-31,Age 65 Plus Fund,12.3100
+2022-08-31,Asia Pacific Equity Fund,29.8900
+2022-08-31,Balanced Fund,20.0800
+2022-08-31,Chinese Equity Fund,13.6900
+2022-08-31,Core Accumulation Fund,21.3300
+2022-08-31,European Equity Fund,13.2400
+2022-08-31,Global Bond Fund,11.1500
+2022-08-31,Global Equity Fund,18.2900
+2022-08-31,Growth Fund,20.7900
+2022-08-31,Guaranteed Fund,9.8500
+2022-08-31,HSBC Mandatory Provident Fund - SuperTrust Plus,12.3100
+2022-08-31,Hang Seng China Enterprises Index Tracking Fund,6.6200
+2022-08-31,Hang Seng Index Tracking Fund,21.1800
+2022-08-31,Hong Kong and Chinese Equity Fund,21.0500
+2022-08-31,MPF Conservative Fund,12.8500
+2022-08-31,Manulife MPF 2025 Retirement Fund,13.3510
+2022-08-31,Manulife MPF 2030 Retirement Fund,14.1250
+2022-08-31,Manulife MPF 2035 Retirement Fund,14.4730
+2022-08-31,Manulife MPF 2040 Retirement Fund,14.5280
+2022-08-31,Manulife MPF 2045 Retirement Fund,14.6410
+2022-08-31,Manulife MPF Aggressive Fund,19.7240
+2022-08-31,Manulife MPF China Value Fund,23.1760
+2022-08-31,Manulife MPF Conservative Fund,11.3440
+2022-08-31,Manulife MPF Core Accumulation Fund,12.7710
+2022-08-31,Manulife MPF European Equity Fund,12.5080
+2022-08-31,Manulife MPF Fidelity Growth Fund,28.4690
+2022-08-31,Manulife MPF Fidelity Stable Growth Fund,20.7210
+2022-08-31,Manulife MPF Growth Fund,19.3440
+2022-08-31,Manulife MPF Hang Seng Index Tracking Fund,12.2770
+2022-08-31,Manulife MPF Healthcare Fund,26.2850
+2022-08-31,Manulife MPF Hong Kong Bond Fund,14.1100
+2022-08-31,Manulife MPF Hong Kong Equity Fund,19.6420
+2022-08-31,Manulife MPF International Bond Fund,14.8430
+2022-08-31,Manulife MPF International Equity Fund,18.2370
+2022-08-31,Manulife MPF Japan Equity Fund,13.5770
+2022-08-31,Manulife MPF North American Equity Fund,21.5530
+2022-08-31,Manulife MPF Pacific Asia Bond Fund,10.8110
+2022-08-31,Manulife MPF Pacific Asia Equity Fund,27.4350
+2022-08-31,Manulife MPF RMB Bond Fund,11.1380
+2022-08-31,Manulife MPF Retirement Income Fund,8.8850
+2022-08-31,Manulife MPF Smart Retirement Fund,11.9690
+2022-08-31,Manulife MPF Stable Fund,14.6320
+2022-08-31,Manulife Provident Funds Trust Company Limited,10.7870
+2022-08-31,North American Equity Fund,23.0000
+2022-08-31,Schroder MPF Age 65 Plus Fund - Class B,10.6200
+2022-08-31,Schroder MPF Core Accumulation Fund - Class B,12.4500
+2022-08-31,Stable Fund,11.6800
+2022-08-31,ValueChoice Asia Pacific Equity Tracker Fund,12.3800
+2022-08-31,ValueChoice Balanced Fund,13.9100
+2022-08-31,ValueChoice Europe Equity Tracker Fund,14.6200
+2022-08-31,ValueChoice North America Equity Tracker Fund,30.6000
 2022-09-30,Age 65 Plus Fund,11.8100
+2022-09-30,Asia Pacific Equity Fund,25.7700
+2022-09-30,Balanced Fund,18.4500
+2022-09-30,Chinese Equity Fund,12.0600
+2022-09-30,Core Accumulation Fund,19.9600
+2022-09-30,European Equity Fund,12.2000
+2022-09-30,Global Bond Fund,10.6700
+2022-09-30,Global Equity Fund,16.6200
+2022-09-30,Growth Fund,18.8300
+2022-09-30,Guaranteed Fund,9.6500
+2022-09-30,HSBC Mandatory Provident Fund - SuperTrust Plus,11.8100
+2022-09-30,Hang Seng China Enterprises Index Tracking Fund,5.7400
+2022-09-30,Hang Seng Index Tracking Fund,18.4400
+2022-09-30,Hong Kong and Chinese Equity Fund,18.4200
+2022-09-30,MPF Conservative Fund,12.8500
+2022-09-30,Manulife MPF 2025 Retirement Fund,12.3470
+2022-09-30,Manulife MPF 2030 Retirement Fund,12.8650
+2022-09-30,Manulife MPF 2035 Retirement Fund,13.0540
+2022-09-30,Manulife MPF 2040 Retirement Fund,13.0480
+2022-09-30,Manulife MPF 2045 Retirement Fund,13.1390
+2022-09-30,Manulife MPF Aggressive Fund,17.6720
+2022-09-30,Manulife MPF China Value Fund,19.8390
+2022-09-30,Manulife MPF Conservative Fund,11.3440
+2022-09-30,Manulife MPF Core Accumulation Fund,11.8650
+2022-09-30,Manulife MPF European Equity Fund,11.2190
+2022-09-30,Manulife MPF Fidelity Growth Fund,25.5380
+2022-09-30,Manulife MPF Fidelity Stable Growth Fund,19.1380
+2022-09-30,Manulife MPF Growth Fund,17.6060
+2022-09-30,Manulife MPF Hang Seng Index Tracking Fund,10.7230
+2022-09-30,Manulife MPF Healthcare Fund,25.3480
+2022-09-30,Manulife MPF Hong Kong Bond Fund,13.7910
+2022-09-30,Manulife MPF Hong Kong Equity Fund,16.8460
+2022-09-30,Manulife MPF International Bond Fund,14.1370
+2022-09-30,Manulife MPF International Equity Fund,16.4000
+2022-09-30,Manulife MPF Japan Equity Fund,12.6000
+2022-09-30,Manulife MPF North American Equity Fund,19.3100
+2022-09-30,Manulife MPF Pacific Asia Bond Fund,10.2350
+2022-09-30,Manulife MPF Pacific Asia Equity Fund,24.5850
+2022-09-30,Manulife MPF RMB Bond Fund,10.8430
+2022-09-30,Manulife MPF Retirement Income Fund,8.2650
+2022-09-30,Manulife MPF Smart Retirement Fund,11.0820
+2022-09-30,Manulife MPF Stable Fund,13.8650
+2022-09-30,Manulife Provident Funds Trust Company Limited,10.2840
+2022-09-30,North American Equity Fund,20.9300
+2022-09-30,Schroder MPF Age 65 Plus Fund - Class B,10.1300
+2022-09-30,Schroder MPF Core Accumulation Fund - Class B,11.6000
+2022-09-30,Stable Fund,11.0300
+2022-09-30,ValueChoice Asia Pacific Equity Tracker Fund,10.9500
+2022-09-30,ValueChoice Balanced Fund,12.6500
+2022-09-30,ValueChoice Europe Equity Tracker Fund,13.4700
+2022-09-30,ValueChoice North America Equity Tracker Fund,27.8000
 2022-10-31,Age 65 Plus Fund,11.8500
+2022-10-31,Asia Pacific Equity Fund,23.5900
+2022-10-31,Balanced Fund,18.0900
+2022-10-31,Chinese Equity Fund,10.1900
+2022-10-31,Core Accumulation Fund,20.5300
+2022-10-31,European Equity Fund,13.0300
+2022-10-31,Global Bond Fund,10.5800
+2022-10-31,Global Equity Fund,17.5700
+2022-10-31,Growth Fund,18.4500
+2022-10-31,Guaranteed Fund,9.5100
+2022-10-31,HSBC Mandatory Provident Fund - SuperTrust Plus,11.8500
+2022-10-31,Hang Seng China Enterprises Index Tracking Fund,4.7900
+2022-10-31,Hang Seng Index Tracking Fund,15.7200
+2022-10-31,Hong Kong and Chinese Equity Fund,15.7900
+2022-10-31,MPF Conservative Fund,12.8500
+2022-10-31,Manulife MPF 2025 Retirement Fund,12.1620
+2022-10-31,Manulife MPF 2030 Retirement Fund,12.6330
+2022-10-31,Manulife MPF 2035 Retirement Fund,12.8090
+2022-10-31,Manulife MPF 2040 Retirement Fund,12.7990
+2022-10-31,Manulife MPF 2045 Retirement Fund,12.8930
+2022-10-31,Manulife MPF Aggressive Fund,17.3310
+2022-10-31,Manulife MPF China Value Fund,17.2450
+2022-10-31,Manulife MPF Conservative Fund,11.3500
+2022-10-31,Manulife MPF Core Accumulation Fund,12.2580
+2022-10-31,Manulife MPF European Equity Fund,12.0250
+2022-10-31,Manulife MPF Fidelity Growth Fund,24.9560
+2022-10-31,Manulife MPF Fidelity Stable Growth Fund,18.8400
+2022-10-31,Manulife MPF Growth Fund,17.2950
+2022-10-31,Manulife MPF Hang Seng Index Tracking Fund,9.2500
+2022-10-31,Manulife MPF Healthcare Fund,27.4090
+2022-10-31,Manulife MPF Hong Kong Bond Fund,13.5080
+2022-10-31,Manulife MPF Hong Kong Equity Fund,14.2970
+2022-10-31,Manulife MPF International Bond Fund,14.0880
+2022-10-31,Manulife MPF International Equity Fund,16.9550
+2022-10-31,Manulife MPF Japan Equity Fund,12.9260
+2022-10-31,Manulife MPF North American Equity Fund,19.9920
+2022-10-31,Manulife MPF Pacific Asia Bond Fund,9.9620
+2022-10-31,Manulife MPF Pacific Asia Equity Fund,24.2320
+2022-10-31,Manulife MPF RMB Bond Fund,10.5990
+2022-10-31,Manulife MPF Retirement Income Fund,8.1040
+2022-10-31,Manulife MPF Smart Retirement Fund,10.9180
+2022-10-31,Manulife MPF Stable Fund,13.4240
+2022-10-31,Manulife Provident Funds Trust Company Limited,10.3510
+2022-10-31,North American Equity Fund,22.5000
+2022-10-31,Schroder MPF Age 65 Plus Fund - Class B,10.2300
+2022-10-31,Schroder MPF Core Accumulation Fund - Class B,12.0500
+2022-10-31,Stable Fund,10.8800
+2022-10-31,ValueChoice Asia Pacific Equity Tracker Fund,10.4800
+2022-10-31,ValueChoice Balanced Fund,12.4600
+2022-10-31,ValueChoice Europe Equity Tracker Fund,14.3800
+2022-10-31,ValueChoice North America Equity Tracker Fund,29.9400
 2022-11-30,Age 65 Plus Fund,12.2400
+2022-11-30,Asia Pacific Equity Fund,28.3800
+2022-11-30,Balanced Fund,20.0000
+2022-11-30,Chinese Equity Fund,12.4700
+2022-11-30,Core Accumulation Fund,21.5400
+2022-11-30,European Equity Fund,14.1600
+2022-11-30,Global Bond Fund,10.9700
+2022-11-30,Global Equity Fund,18.7200
+2022-11-30,Growth Fund,20.7500
+2022-11-30,Guaranteed Fund,9.7000
+2022-11-30,HSBC Mandatory Provident Fund - SuperTrust Plus,12.2400
+2022-11-30,Hang Seng China Enterprises Index Tracking Fund,6.1800
+2022-11-30,Hang Seng Index Tracking Fund,19.9100
+2022-11-30,Hong Kong and Chinese Equity Fund,19.5100
+2022-11-30,MPF Conservative Fund,12.8500
+2022-11-30,Manulife MPF 2025 Retirement Fund,13.0940
+2022-11-30,Manulife MPF 2030 Retirement Fund,13.8670
+2022-11-30,Manulife MPF 2035 Retirement Fund,14.2370
+2022-11-30,Manulife MPF 2040 Retirement Fund,14.3000
+2022-11-30,Manulife MPF 2045 Retirement Fund,14.4340
+2022-11-30,Manulife MPF Aggressive Fund,19.4130
+2022-11-30,Manulife MPF China Value Fund,21.4860
+2022-11-30,Manulife MPF Conservative Fund,11.3720
+2022-11-30,Manulife MPF Core Accumulation Fund,12.8840
+2022-11-30,Manulife MPF European Equity Fund,13.3950
+2022-11-30,Manulife MPF Fidelity Growth Fund,28.0710
+2022-11-30,Manulife MPF Fidelity Stable Growth Fund,20.3370
+2022-11-30,Manulife MPF Growth Fund,18.9670
+2022-11-30,Manulife MPF Hang Seng Index Tracking Fund,11.5460
+2022-11-30,Manulife MPF Healthcare Fund,28.5080
+2022-11-30,Manulife MPF Hong Kong Bond Fund,13.7610
+2022-11-30,Manulife MPF Hong Kong Equity Fund,18.0980
+2022-11-30,Manulife MPF International Bond Fund,14.5950
+2022-11-30,Manulife MPF International Equity Fund,18.1140
+2022-11-30,Manulife MPF Japan Equity Fund,13.8000
+2022-11-30,Manulife MPF North American Equity Fund,20.8800
+2022-11-30,Manulife MPF Pacific Asia Bond Fund,10.6010
+2022-11-30,Manulife MPF Pacific Asia Equity Fund,27.2600
+2022-11-30,Manulife MPF RMB Bond Fund,10.8070
+2022-11-30,Manulife MPF Retirement Income Fund,8.5710
+2022-11-30,Manulife MPF Smart Retirement Fund,11.7450
+2022-11-30,Manulife MPF Stable Fund,14.1860
+2022-11-30,Manulife Provident Funds Trust Company Limited,10.6720
+2022-11-30,North American Equity Fund,23.5900
+2022-11-30,Schroder MPF Age 65 Plus Fund - Class B,10.5500
+2022-11-30,Schroder MPF Core Accumulation Fund - Class B,12.6700
+2022-11-30,Stable Fund,11.5700
+2022-11-30,ValueChoice Asia Pacific Equity Tracker Fund,12.1200
+2022-11-30,ValueChoice Balanced Fund,13.8800
+2022-11-30,ValueChoice Europe Equity Tracker Fund,15.7100
+2022-11-30,ValueChoice North America Equity Tracker Fund,31.4200
 2022-12-30,Age 65 Plus Fund,12.0200
+2022-12-30,Asia Pacific Equity Fund,28.8300
+2022-12-30,Balanced Fund,20.1300
+2022-12-30,Chinese Equity Fund,13.1100
+2022-12-30,Core Accumulation Fund,21.0000
+2022-12-30,European Equity Fund,14.0900
+2022-12-30,Global Bond Fund,10.9100
+2022-12-30,Global Equity Fund,18.0000
+2022-12-30,Growth Fund,20.9300
+2022-12-30,Guaranteed Fund,9.7700
+2022-12-30,HSBC Mandatory Provident Fund - SuperTrust Plus,12.0200
+2022-12-30,Hang Seng China Enterprises Index Tracking Fund,6.4900
+2022-12-30,Hang Seng Index Tracking Fund,21.1700
+2022-12-30,Hong Kong and Chinese Equity Fund,20.7400
+2022-12-30,MPF Conservative Fund,12.9000
+2022-12-30,Manulife MPF 2025 Retirement Fund,13.0680
+2022-12-30,Manulife MPF 2030 Retirement Fund,13.8340
+2022-12-30,Manulife MPF 2035 Retirement Fund,14.2050
+2022-12-30,Manulife MPF 2040 Retirement Fund,14.2730
+2022-12-30,Manulife MPF 2045 Retirement Fund,14.4090
+2022-12-30,Manulife MPF Aggressive Fund,19.3620
+2022-12-30,Manulife MPF China Value Fund,22.1900
+2022-12-30,Manulife MPF Conservative Fund,11.4020
+2022-12-30,Manulife MPF Core Accumulation Fund,12.5000
+2022-12-30,Manulife MPF European Equity Fund,13.0700
+2022-12-30,Manulife MPF Fidelity Growth Fund,27.9690
+2022-12-30,Manulife MPF Fidelity Stable Growth Fund,20.2410
+2022-12-30,Manulife MPF Growth Fund,18.9140
+2022-12-30,Manulife MPF Hang Seng Index Tracking Fund,12.2830
+2022-12-30,Manulife MPF Healthcare Fund,28.0460
+2022-12-30,Manulife MPF Hong Kong Bond Fund,13.9280
+2022-12-30,Manulife MPF Hong Kong Equity Fund,19.1880
+2022-12-30,Manulife MPF International Bond Fund,14.5220
+2022-12-30,Manulife MPF International Equity Fund,17.2790
+2022-12-30,Manulife MPF Japan Equity Fund,13.8260
+2022-12-30,Manulife MPF North American Equity Fund,19.3370
+2022-12-30,Manulife MPF Pacific Asia Bond Fund,10.7880
+2022-12-30,Manulife MPF Pacific Asia Equity Fund,26.7900
+2022-12-30,Manulife MPF RMB Bond Fund,11.0370
+2022-12-30,Manulife MPF Retirement Income Fund,8.5100
+2022-12-30,Manulife MPF Smart Retirement Fund,11.7280
+2022-12-30,Manulife MPF Stable Fund,14.3550
+2022-12-30,Manulife Provident Funds Trust Company Limited,10.4380
+2022-12-30,North American Equity Fund,22.2000
+2022-12-30,Schroder MPF Age 65 Plus Fund - Class B,10.3200
+2022-12-30,Schroder MPF Core Accumulation Fund - Class B,12.3100
+2022-12-30,Stable Fund,11.5800
+2022-12-30,ValueChoice Asia Pacific Equity Tracker Fund,12.0600
+2022-12-30,ValueChoice Balanced Fund,13.9400
+2022-12-30,ValueChoice Europe Equity Tracker Fund,15.5800
+2022-12-30,ValueChoice North America Equity Tracker Fund,29.5900
 2023-01-31,Age 65 Plus Fund,12.4200
+2023-01-31,Asia Pacific Equity Fund,31.2300
+2023-01-31,Balanced Fund,21.5200
+2023-01-31,Chinese Equity Fund,14.5300
+2023-01-31,Core Accumulation Fund,22.0800
+2023-01-31,European Equity Fund,15.3200
+2023-01-31,Global Bond Fund,11.2700
+2023-01-31,Global Equity Fund,19.2300
+2023-01-31,Growth Fund,22.5400
+2023-01-31,Guaranteed Fund,9.9400
+2023-01-31,HSBC Mandatory Provident Fund - SuperTrust Plus,12.4200
+2023-01-31,Hang Seng China Enterprises Index Tracking Fund,7.1800
+2023-01-31,Hang Seng Index Tracking Fund,23.3600
+2023-01-31,Hong Kong and Chinese Equity Fund,23.0300
+2023-01-31,MPF Conservative Fund,12.9400
+2023-01-31,Manulife MPF 2025 Retirement Fund,13.8360
+2023-01-31,Manulife MPF 2030 Retirement Fund,14.8190
+2023-01-31,Manulife MPF 2035 Retirement Fund,15.3390
+2023-01-31,Manulife MPF 2040 Retirement Fund,15.4550
+2023-01-31,Manulife MPF 2045 Retirement Fund,15.6140
+2023-01-31,Manulife MPF Aggressive Fund,20.9820
+2023-01-31,Manulife MPF China Value Fund,24.7430
+2023-01-31,Manulife MPF Conservative Fund,11.4390
+2023-01-31,Manulife MPF Core Accumulation Fund,13.1610
+2023-01-31,Manulife MPF European Equity Fund,14.4470
+2023-01-31,Manulife MPF Fidelity Growth Fund,30.4420
+2023-01-31,Manulife MPF Fidelity Stable Growth Fund,21.5410
+2023-01-31,Manulife MPF Growth Fund,20.2430
+2023-01-31,Manulife MPF Hang Seng Index Tracking Fund,13.5370
+2023-01-31,Manulife MPF Healthcare Fund,27.8840
+2023-01-31,Manulife MPF Hong Kong Bond Fund,14.2870
+2023-01-31,Manulife MPF Hong Kong Equity Fund,21.3000
+2023-01-31,Manulife MPF International Bond Fund,14.9840
+2023-01-31,Manulife MPF International Equity Fund,18.7890
+2023-01-31,Manulife MPF Japan Equity Fund,14.6480
+2023-01-31,Manulife MPF North American Equity Fund,21.2700
+2023-01-31,Manulife MPF Pacific Asia Bond Fund,11.3040
+2023-01-31,Manulife MPF Pacific Asia Equity Fund,28.8140
+2023-01-31,Manulife MPF RMB Bond Fund,11.3560
+2023-01-31,Manulife MPF Retirement Income Fund,8.9150
+2023-01-31,Manulife MPF Smart Retirement Fund,12.4110
+2023-01-31,Manulife MPF Stable Fund,15.0180
+2023-01-31,Manulife Provident Funds Trust Company Limited,10.7670
+2023-01-31,North American Equity Fund,23.7500
+2023-01-31,Schroder MPF Age 65 Plus Fund - Class B,10.6300
+2023-01-31,Schroder MPF Core Accumulation Fund - Class B,12.9400
+2023-01-31,Stable Fund,12.1200
+2023-01-31,ValueChoice Asia Pacific Equity Tracker Fund,13.0700
+2023-01-31,ValueChoice Balanced Fund,14.8700
+2023-01-31,ValueChoice Europe Equity Tracker Fund,16.8900
+2023-01-31,ValueChoice North America Equity Tracker Fund,31.6100
 2023-02-28,Age 65 Plus Fund,12.1500
+2023-02-28,Asia Pacific Equity Fund,28.8700
+2023-02-28,Balanced Fund,20.5900
+2023-02-28,Chinese Equity Fund,12.9000
+2023-02-28,Core Accumulation Fund,21.5900
+2023-02-28,European Equity Fund,15.4100
+2023-02-28,Global Bond Fund,10.9500
+2023-02-28,Global Equity Fund,18.8100
+2023-02-28,Growth Fund,21.4600
+2023-02-28,Guaranteed Fund,9.7800
+2023-02-28,HSBC Mandatory Provident Fund - SuperTrust Plus,12.1500
+2023-02-28,Hang Seng China Enterprises Index Tracking Fund,6.3600
+2023-02-28,Hang Seng Index Tracking Fund,21.1500
+2023-02-28,Hong Kong and Chinese Equity Fund,20.7600
+2023-02-28,MPF Conservative Fund,12.9700
+2023-02-28,Manulife MPF 2025 Retirement Fund,13.2620
+2023-02-28,Manulife MPF 2030 Retirement Fund,14.1410
+2023-02-28,Manulife MPF 2035 Retirement Fund,14.6020
+2023-02-28,Manulife MPF 2040 Retirement Fund,14.6950
+2023-02-28,Manulife MPF 2045 Retirement Fund,14.8400
+2023-02-28,Manulife MPF Aggressive Fund,19.9270
+2023-02-28,Manulife MPF China Value Fund,22.9120
+2023-02-28,Manulife MPF Conservative Fund,11.4710
+2023-02-28,Manulife MPF Core Accumulation Fund,12.8470
+2023-02-28,Manulife MPF European Equity Fund,14.5930
+2023-02-28,Manulife MPF Fidelity Growth Fund,28.8190
+2023-02-28,Manulife MPF Fidelity Stable Growth Fund,20.5930
+2023-02-28,Manulife MPF Growth Fund,19.3100
+2023-02-28,Manulife MPF Hang Seng Index Tracking Fund,12.3040
+2023-02-28,Manulife MPF Healthcare Fund,26.6230
+2023-02-28,Manulife MPF Hong Kong Bond Fund,14.0220
+2023-02-28,Manulife MPF Hong Kong Equity Fund,19.1630
+2023-02-28,Manulife MPF International Bond Fund,14.5480
+2023-02-28,Manulife MPF International Equity Fund,18.2550
+2023-02-28,Manulife MPF Japan Equity Fund,14.4390
+2023-02-28,Manulife MPF North American Equity Fund,20.8110
+2023-02-28,Manulife MPF Pacific Asia Bond Fund,10.8650
+2023-02-28,Manulife MPF Pacific Asia Equity Fund,27.1690
+2023-02-28,Manulife MPF RMB Bond Fund,11.1960
+2023-02-28,Manulife MPF Retirement Income Fund,8.5270
+2023-02-28,Manulife MPF Smart Retirement Fund,11.9000
+2023-02-28,Manulife MPF Stable Fund,14.5070
+2023-02-28,Manulife Provident Funds Trust Company Limited,10.5430
+2023-02-28,North American Equity Fund,23.1400
+2023-02-28,Schroder MPF Age 65 Plus Fund - Class B,10.4000
+2023-02-28,Schroder MPF Core Accumulation Fund - Class B,12.6200
+2023-02-28,Stable Fund,11.7000
+2023-02-28,ValueChoice Asia Pacific Equity Tracker Fund,12.2200
+2023-02-28,ValueChoice Balanced Fund,14.2600
+2023-02-28,ValueChoice Europe Equity Tracker Fund,16.8900
+2023-02-28,ValueChoice North America Equity Tracker Fund,30.8100
 2023-03-31,Age 65 Plus Fund,12.4700
+2023-03-31,Asia Pacific Equity Fund,29.2900
+2023-03-31,Balanced Fund,21.1500
+2023-03-31,Chinese Equity Fund,13.3400
+2023-03-31,Core Accumulation Fund,22.1600
+2023-03-31,European Equity Fund,15.6500
+2023-03-31,Global Bond Fund,11.3000
+2023-03-31,Global Equity Fund,19.3500
+2023-03-31,Growth Fund,22.0500
+2023-03-31,Guaranteed Fund,9.9500
+2023-03-31,HSBC Mandatory Provident Fund - SuperTrust Plus,12.4700
+2023-03-31,Hang Seng China Enterprises Index Tracking Fund,6.7300
+2023-03-31,Hang Seng Index Tracking Fund,21.8700
+2023-03-31,Hong Kong and Chinese Equity Fund,21.4700
+2023-03-31,MPF Conservative Fund,13.0100
+2023-03-31,Manulife MPF 2025 Retirement Fund,13.7370
+2023-03-31,Manulife MPF 2030 Retirement Fund,14.6930
+2023-03-31,Manulife MPF 2035 Retirement Fund,15.1890
+2023-03-31,Manulife MPF 2040 Retirement Fund,15.2920
+2023-03-31,Manulife MPF 2045 Retirement Fund,15.4460
+2023-03-31,Manulife MPF Aggressive Fund,20.7330
+2023-03-31,Manulife MPF China Value Fund,23.6050
+2023-03-31,Manulife MPF Conservative Fund,11.5050
+2023-03-31,Manulife MPF Core Accumulation Fund,13.2100
+2023-03-31,Manulife MPF European Equity Fund,15.4760
+2023-03-31,Manulife MPF Fidelity Growth Fund,29.5610
+2023-03-31,Manulife MPF Fidelity Stable Growth Fund,21.1720
+2023-03-31,Manulife MPF Growth Fund,20.0460
+2023-03-31,Manulife MPF Hang Seng Index Tracking Fund,12.6390
+2023-03-31,Manulife MPF Healthcare Fund,27.3860
+2023-03-31,Manulife MPF Hong Kong Bond Fund,14.3380
+2023-03-31,Manulife MPF Hong Kong Equity Fund,19.7780
+2023-03-31,Manulife MPF International Bond Fund,14.9980
+2023-03-31,Manulife MPF International Equity Fund,19.2280
+2023-03-31,Manulife MPF Japan Equity Fund,14.7890
+2023-03-31,Manulife MPF North American Equity Fund,22.1090
+2023-03-31,Manulife MPF Pacific Asia Bond Fund,11.1210
+2023-03-31,Manulife MPF Pacific Asia Equity Fund,27.8230
+2023-03-31,Manulife MPF RMB Bond Fund,11.3370
+2023-03-31,Manulife MPF Retirement Income Fund,8.7310
+2023-03-31,Manulife MPF Smart Retirement Fund,12.3200
+2023-03-31,Manulife MPF Stable Fund,14.9060
+2023-03-31,Manulife Provident Funds Trust Company Limited,10.8180
+2023-03-31,North American Equity Fund,23.9000
+2023-03-31,Schroder MPF Age 65 Plus Fund - Class B,10.6600
+2023-03-31,Schroder MPF Core Accumulation Fund - Class B,12.9200
+2023-03-31,Stable Fund,12.0300
+2023-03-31,ValueChoice Asia Pacific Equity Tracker Fund,12.5200
+2023-03-31,ValueChoice Balanced Fund,14.6800
+2023-03-31,ValueChoice Europe Equity Tracker Fund,17.1500
+2023-03-31,ValueChoice North America Equity Tracker Fund,31.8200
 2023-04-28,Age 65 Plus Fund,12.5200
+2023-04-28,Asia Pacific Equity Fund,28.3500
+2023-04-28,Balanced Fund,21.1100
+2023-04-28,Chinese Equity Fund,12.7300
+2023-04-28,Core Accumulation Fund,22.3900
+2023-04-28,European Equity Fund,16.0600
+2023-04-28,Global Bond Fund,11.3500
+2023-04-28,Global Equity Fund,19.6500
+2023-04-28,Growth Fund,21.9700
+2023-04-28,Guaranteed Fund,9.9500
+2023-04-28,HSBC Mandatory Provident Fund - SuperTrust Plus,12.5200
+2023-04-28,Hang Seng China Enterprises Index Tracking Fund,6.4700
+2023-04-28,Hang Seng Index Tracking Fund,21.3300
+2023-04-28,Hong Kong and Chinese Equity Fund,20.7200
+2023-04-28,MPF Conservative Fund,13.0400
+2023-04-28,Manulife MPF 2025 Retirement Fund,13.6660
+2023-04-28,Manulife MPF 2030 Retirement Fund,14.5780
+2023-04-28,Manulife MPF 2035 Retirement Fund,15.0410
+2023-04-28,Manulife MPF 2040 Retirement Fund,15.1330
+2023-04-28,Manulife MPF 2045 Retirement Fund,15.2830
+2023-04-28,Manulife MPF Aggressive Fund,20.4960
+2023-04-28,Manulife MPF China Value Fund,22.3320
+2023-04-28,Manulife MPF Conservative Fund,11.5350
+2023-04-28,Manulife MPF Core Accumulation Fund,13.3280
+2023-04-28,Manulife MPF European Equity Fund,15.4720
+2023-04-28,Manulife MPF Fidelity Growth Fund,29.3990
+2023-04-28,Manulife MPF Fidelity Stable Growth Fund,21.1180
+2023-04-28,Manulife MPF Growth Fund,19.8800
+2023-04-28,Manulife MPF Hang Seng Index Tracking Fund,12.3420
+2023-04-28,Manulife MPF Healthcare Fund,28.3720
+2023-04-28,Manulife MPF Hong Kong Bond Fund,14.4260
+2023-04-28,Manulife MPF Hong Kong Equity Fund,18.9790
+2023-04-28,Manulife MPF International Bond Fund,15.0220
+2023-04-28,Manulife MPF International Equity Fund,19.2750
+2023-04-28,Manulife MPF Japan Equity Fund,14.8510
+2023-04-28,Manulife MPF North American Equity Fund,22.2970
+2023-04-28,Manulife MPF Pacific Asia Bond Fund,11.1540
+2023-04-28,Manulife MPF Pacific Asia Equity Fund,27.4020
+2023-04-28,Manulife MPF RMB Bond Fund,11.3320
+2023-04-28,Manulife MPF Retirement Income Fund,8.6940
+2023-04-28,Manulife MPF Smart Retirement Fund,12.2600
+2023-04-28,Manulife MPF Stable Fund,14.8640
+2023-04-28,Manulife Provident Funds Trust Company Limited,10.8570
+2023-04-28,North American Equity Fund,24.1800
+2023-04-28,Schroder MPF Age 65 Plus Fund - Class B,10.6900
+2023-04-28,Schroder MPF Core Accumulation Fund - Class B,13.0300
+2023-04-28,Stable Fund,12.0300
+2023-04-28,ValueChoice Asia Pacific Equity Tracker Fund,12.3800
+2023-04-28,ValueChoice Balanced Fund,14.6800
+2023-04-28,ValueChoice Europe Equity Tracker Fund,17.8400
+2023-04-28,ValueChoice North America Equity Tracker Fund,32.2300
 2023-05-31,Age 65 Plus Fund,12.3500
+2023-05-31,Asia Pacific Equity Fund,27.4700
+2023-05-31,Balanced Fund,20.4300
+2023-05-31,Chinese Equity Fund,11.5600
+2023-05-31,Core Accumulation Fund,22.0200
+2023-05-31,European Equity Fund,15.2100
+2023-05-31,Global Bond Fund,11.1000
+2023-05-31,Global Equity Fund,19.3500
+2023-05-31,Growth Fund,21.2000
+2023-05-31,Guaranteed Fund,9.8300
+2023-05-31,HSBC Mandatory Provident Fund - SuperTrust Plus,12.3500
+2023-05-31,Hang Seng China Enterprises Index Tracking Fund,5.9600
+2023-05-31,Hang Seng Index Tracking Fund,19.6400
+2023-05-31,Hong Kong and Chinese Equity Fund,18.9400
+2023-05-31,MPF Conservative Fund,13.0700
+2023-05-31,Manulife MPF 2025 Retirement Fund,13.3430
+2023-05-31,Manulife MPF 2030 Retirement Fund,14.2320
+2023-05-31,Manulife MPF 2035 Retirement Fund,14.6700
+2023-05-31,Manulife MPF 2040 Retirement Fund,14.7560
+2023-05-31,Manulife MPF 2045 Retirement Fund,14.9010
+2023-05-31,Manulife MPF Aggressive Fund,19.9750
+2023-05-31,Manulife MPF China Value Fund,21.1710
+2023-05-31,Manulife MPF Conservative Fund,11.5670
+2023-05-31,Manulife MPF Core Accumulation Fund,13.1750
+2023-05-31,Manulife MPF European Equity Fund,15.2490
+2023-05-31,Manulife MPF Fidelity Growth Fund,28.1200
+2023-05-31,Manulife MPF Fidelity Stable Growth Fund,20.4120
+2023-05-31,Manulife MPF Growth Fund,19.3840
+2023-05-31,Manulife MPF Hang Seng Index Tracking Fund,11.4100
+2023-05-31,Manulife MPF Healthcare Fund,27.3760
+2023-05-31,Manulife MPF Hong Kong Bond Fund,14.2810
+2023-05-31,Manulife MPF Hong Kong Equity Fund,17.4320
+2023-05-31,Manulife MPF International Bond Fund,14.7350
+2023-05-31,Manulife MPF International Equity Fund,19.4760
+2023-05-31,Manulife MPF Japan Equity Fund,15.2500
+2023-05-31,Manulife MPF North American Equity Fund,23.0900
+2023-05-31,Manulife MPF Pacific Asia Bond Fund,10.9850
+2023-05-31,Manulife MPF Pacific Asia Equity Fund,27.0510
+2023-05-31,Manulife MPF RMB Bond Fund,11.1620
+2023-05-31,Manulife MPF Retirement Income Fund,8.5050
+2023-05-31,Manulife MPF Smart Retirement Fund,11.9730
+2023-05-31,Manulife MPF Stable Fund,14.5720
+2023-05-31,Manulife Provident Funds Trust Company Limited,10.7530
+2023-05-31,North American Equity Fund,24.1700
+2023-05-31,Schroder MPF Age 65 Plus Fund - Class B,10.6000
+2023-05-31,Schroder MPF Core Accumulation Fund - Class B,12.8700
+2023-05-31,Stable Fund,11.7200
+2023-05-31,ValueChoice Asia Pacific Equity Tracker Fund,12.0400
+2023-05-31,ValueChoice Balanced Fund,14.2500
+2023-05-31,ValueChoice Europe Equity Tracker Fund,16.8500
+2023-05-31,ValueChoice North America Equity Tracker Fund,32.2300
 2023-06-30,Age 65 Plus Fund,12.4200
+2023-06-30,Asia Pacific Equity Fund,28.2600
+2023-06-30,Balanced Fund,20.9700
+2023-06-30,Chinese Equity Fund,12.0200
+2023-06-30,Core Accumulation Fund,22.7400
+2023-06-30,European Equity Fund,15.8600
+2023-06-30,Global Bond Fund,11.0800
+2023-06-30,Global Equity Fund,20.4800
+2023-06-30,Growth Fund,21.9000
+2023-06-30,Guaranteed Fund,9.8100
+2023-06-30,HSBC Mandatory Provident Fund - SuperTrust Plus,12.4200
+2023-06-30,Hang Seng China Enterprises Index Tracking Fund,6.2600
+2023-06-30,Hang Seng Index Tracking Fund,20.5000
+2023-06-30,Hong Kong and Chinese Equity Fund,19.5400
+2023-06-30,MPF Conservative Fund,13.1000
+2023-06-30,Manulife MPF 2025 Retirement Fund,13.6570
+2023-06-30,Manulife MPF 2030 Retirement Fund,14.6830
+2023-06-30,Manulife MPF 2035 Retirement Fund,15.2110
+2023-06-30,Manulife MPF 2040 Retirement Fund,15.3290
+2023-06-30,Manulife MPF 2045 Retirement Fund,15.4880
+2023-06-30,Manulife MPF Aggressive Fund,20.7560
+2023-06-30,Manulife MPF China Value Fund,21.9470
+2023-06-30,Manulife MPF Conservative Fund,11.6000
+2023-06-30,Manulife MPF Core Accumulation Fund,13.6010
+2023-06-30,Manulife MPF European Equity Fund,15.7650
+2023-06-30,Manulife MPF Fidelity Growth Fund,29.1280
+2023-06-30,Manulife MPF Fidelity Stable Growth Fund,20.8020
+2023-06-30,Manulife MPF Growth Fund,19.9810
+2023-06-30,Manulife MPF Hang Seng Index Tracking Fund,11.8730
+2023-06-30,Manulife MPF Healthcare Fund,28.1400
+2023-06-30,Manulife MPF Hong Kong Bond Fund,14.2030
+2023-06-30,Manulife MPF Hong Kong Equity Fund,18.2610
+2023-06-30,Manulife MPF International Bond Fund,14.7430
+2023-06-30,Manulife MPF International Equity Fund,20.4420
+2023-06-30,Manulife MPF Japan Equity Fund,15.9590
+2023-06-30,Manulife MPF North American Equity Fund,24.4780
+2023-06-30,Manulife MPF Pacific Asia Bond Fund,10.9720
+2023-06-30,Manulife MPF Pacific Asia Equity Fund,27.8740
+2023-06-30,Manulife MPF RMB Bond Fund,11.0570
+2023-06-30,Manulife MPF Retirement Income Fund,8.6090
+2023-06-30,Manulife MPF Smart Retirement Fund,12.2450
+2023-06-30,Manulife MPF Stable Fund,14.7150
+2023-06-30,Manulife Provident Funds Trust Company Limited,10.8300
+2023-06-30,North American Equity Fund,25.6900
+2023-06-30,Schroder MPF Age 65 Plus Fund - Class B,10.6700
+2023-06-30,Schroder MPF Core Accumulation Fund - Class B,13.2800
+2023-06-30,Stable Fund,11.8400
+2023-06-30,ValueChoice Asia Pacific Equity Tracker Fund,12.4100
+2023-06-30,ValueChoice Balanced Fund,14.6600
+2023-06-30,ValueChoice Europe Equity Tracker Fund,17.5100
+2023-06-30,ValueChoice North America Equity Tracker Fund,34.2900
 2023-07-31,Age 65 Plus Fund,12.4700
+2023-07-31,Asia Pacific Equity Fund,29.2700
+2023-07-31,Balanced Fund,21.6100
+2023-07-31,Chinese Equity Fund,12.8000
+2023-07-31,Core Accumulation Fund,23.1400
+2023-07-31,European Equity Fund,16.1500
+2023-07-31,Global Bond Fund,11.0600
+2023-07-31,Global Equity Fund,21.0800
+2023-07-31,Growth Fund,22.7400
+2023-07-31,Guaranteed Fund,9.8600
+2023-07-31,HSBC Mandatory Provident Fund - SuperTrust Plus,12.4700
+2023-07-31,Hang Seng China Enterprises Index Tracking Fund,6.8200
+2023-07-31,Hang Seng Index Tracking Fund,21.8800
+2023-07-31,Hong Kong and Chinese Equity Fund,20.8700
+2023-07-31,MPF Conservative Fund,13.1400
+2023-07-31,Manulife MPF 2025 Retirement Fund,13.9480
+2023-07-31,Manulife MPF 2030 Retirement Fund,15.0870
+2023-07-31,Manulife MPF 2035 Retirement Fund,15.7110
+2023-07-31,Manulife MPF 2040 Retirement Fund,15.8660
+2023-07-31,Manulife MPF 2045 Retirement Fund,16.0410
+2023-07-31,Manulife MPF Aggressive Fund,21.5210
+2023-07-31,Manulife MPF China Value Fund,23.1060
+2023-07-31,Manulife MPF Conservative Fund,11.6350
+2023-07-31,Manulife MPF Core Accumulation Fund,13.8320
+2023-07-31,Manulife MPF European Equity Fund,15.9420
+2023-07-31,Manulife MPF Fidelity Growth Fund,30.2410
+2023-07-31,Manulife MPF Fidelity Stable Growth Fund,21.2300
+2023-07-31,Manulife MPF Growth Fund,20.5590
+2023-07-31,Manulife MPF Hang Seng Index Tracking Fund,12.6480
+2023-07-31,Manulife MPF Healthcare Fund,28.2800
+2023-07-31,Manulife MPF Hong Kong Bond Fund,14.1370
+2023-07-31,Manulife MPF Hong Kong Equity Fund,19.5190
+2023-07-31,Manulife MPF International Bond Fund,14.7610
+2023-07-31,Manulife MPF International Equity Fund,21.0630
+2023-07-31,Manulife MPF Japan Equity Fund,16.2660
+2023-07-31,Manulife MPF North American Equity Fund,25.3280
+2023-07-31,Manulife MPF Pacific Asia Bond Fund,11.0720
+2023-07-31,Manulife MPF Pacific Asia Equity Fund,28.7920
+2023-07-31,Manulife MPF RMB Bond Fund,11.1610
+2023-07-31,Manulife MPF Retirement Income Fund,8.7000
+2023-07-31,Manulife MPF Smart Retirement Fund,12.5070
+2023-07-31,Manulife MPF Stable Fund,14.8670
+2023-07-31,Manulife Provident Funds Trust Company Limited,10.8610
+2023-07-31,North American Equity Fund,26.3800
+2023-07-31,Schroder MPF Age 65 Plus Fund - Class B,10.7000
+2023-07-31,Schroder MPF Core Accumulation Fund - Class B,13.4700
+2023-07-31,Stable Fund,11.9900
+2023-07-31,ValueChoice Asia Pacific Equity Tracker Fund,12.9700
+2023-07-31,ValueChoice Balanced Fund,15.1100
+2023-07-31,ValueChoice Europe Equity Tracker Fund,17.9300
+2023-07-31,ValueChoice North America Equity Tracker Fund,35.2800
 2023-08-31,Age 65 Plus Fund,12.3700
+2023-08-31,Asia Pacific Equity Fund,27.8200
+2023-08-31,Balanced Fund,20.9000
+2023-08-31,Chinese Equity Fund,12.0000
+2023-08-31,Core Accumulation Fund,22.7900
+2023-08-31,European Equity Fund,15.8400
+2023-08-31,Global Bond Fund,10.9600
+2023-08-31,Global Equity Fund,20.6500
+2023-08-31,Growth Fund,21.8400
+2023-08-31,Guaranteed Fund,9.8400
+2023-08-31,HSBC Mandatory Provident Fund - SuperTrust Plus,12.3700
+2023-08-31,Hang Seng China Enterprises Index Tracking Fund,6.2600
+2023-08-31,Hang Seng Index Tracking Fund,20.1100
+2023-08-31,Hong Kong and Chinese Equity Fund,19.2700
+2023-08-31,MPF Conservative Fund,13.1900
+2023-08-31,Manulife MPF 2025 Retirement Fund,13.5840
+2023-08-31,Manulife MPF 2030 Retirement Fund,14.5980
+2023-08-31,Manulife MPF 2035 Retirement Fund,15.1070
+2023-08-31,Manulife MPF 2040 Retirement Fund,15.2110
+2023-08-31,Manulife MPF 2045 Retirement Fund,15.3680
+2023-08-31,Manulife MPF Aggressive Fund,20.5990
+2023-08-31,Manulife MPF China Value Fund,21.4390
+2023-08-31,Manulife MPF Conservative Fund,11.6770
+2023-08-31,Manulife MPF Core Accumulation Fund,13.6340
+2023-08-31,Manulife MPF European Equity Fund,14.9700
+2023-08-31,Manulife MPF Fidelity Growth Fund,28.7800
+2023-08-31,Manulife MPF Fidelity Stable Growth Fund,20.5680
+2023-08-31,Manulife MPF Growth Fund,19.8410
+2023-08-31,Manulife MPF Hang Seng Index Tracking Fund,11.6540
+2023-08-31,Manulife MPF Healthcare Fund,28.4780
+2023-08-31,Manulife MPF Hong Kong Bond Fund,14.1740
+2023-08-31,Manulife MPF Hong Kong Equity Fund,17.8630
+2023-08-31,Manulife MPF International Bond Fund,14.6390
+2023-08-31,Manulife MPF International Equity Fund,20.6350
+2023-08-31,Manulife MPF Japan Equity Fund,16.2160
+2023-08-31,Manulife MPF North American Equity Fund,25.0390
+2023-08-31,Manulife MPF Pacific Asia Bond Fund,10.8550
+2023-08-31,Manulife MPF Pacific Asia Equity Fund,27.6120
+2023-08-31,Manulife MPF RMB Bond Fund,11.0750
+2023-08-31,Manulife MPF Retirement Income Fund,8.5040
+2023-08-31,Manulife MPF Smart Retirement Fund,12.1820
+2023-08-31,Manulife MPF Stable Fund,14.6290
+2023-08-31,Manulife Provident Funds Trust Company Limited,10.7900
+2023-08-31,North American Equity Fund,25.8800
+2023-08-31,Stable Fund,11.7600
+2023-08-31,ValueChoice Asia Pacific Equity Tracker Fund,12.3700
+2023-08-31,ValueChoice Balanced Fund,14.6300
+2023-08-31,ValueChoice Europe Equity Tracker Fund,17.3300
+2023-08-31,ValueChoice North America Equity Tracker Fund,34.7600
 2023-09-29,Age 65 Plus Fund,12.0600
+2023-09-29,Asia Pacific Equity Fund,26.8600
+2023-09-29,Balanced Fund,20.2700
+2023-09-29,Chinese Equity Fund,11.5800
+2023-09-29,Core Accumulation Fund,22.1400
+2023-09-29,European Equity Fund,15.3300
+2023-09-29,Global Bond Fund,10.6100
+2023-09-29,Global Equity Fund,19.9800
+2023-09-29,Growth Fund,21.1400
+2023-09-29,Guaranteed Fund,9.7800
+2023-09-29,HSBC Mandatory Provident Fund - SuperTrust Plus,12.0600
+2023-09-29,Hang Seng China Enterprises Index Tracking Fund,6.1100
+2023-09-29,Hang Seng Index Tracking Fund,19.5800
+2023-09-29,Hong Kong and Chinese Equity Fund,18.7400
+2023-09-29,MPF Conservative Fund,13.2300
+2023-09-29,Manulife MPF 2025 Retirement Fund,13.1350
+2023-09-29,Manulife MPF 2030 Retirement Fund,14.0860
+2023-09-29,Manulife MPF 2035 Retirement Fund,14.5470
+2023-09-29,Manulife MPF 2040 Retirement Fund,14.6340
+2023-09-29,Manulife MPF 2045 Retirement Fund,14.7830
+2023-09-29,Manulife MPF Aggressive Fund,19.8100
+2023-09-29,Manulife MPF China Value Fund,20.5540
+2023-09-29,Manulife MPF Conservative Fund,11.7110
+2023-09-29,Manulife MPF Core Accumulation Fund,13.1800
+2023-09-29,Manulife MPF European Equity Fund,14.0550
+2023-09-29,Manulife MPF Fidelity Growth Fund,27.7000
+2023-09-29,Manulife MPF Fidelity Stable Growth Fund,19.8830
+2023-09-29,Manulife MPF Growth Fund,19.1200
+2023-09-29,Manulife MPF Hang Seng Index Tracking Fund,11.3420
+2023-09-29,Manulife MPF Healthcare Fund,27.4920
+2023-09-29,Manulife MPF Hong Kong Bond Fund,14.0070
+2023-09-29,Manulife MPF Hong Kong Equity Fund,17.2660
+2023-09-29,Manulife MPF International Bond Fund,14.2350
+2023-09-29,Manulife MPF International Equity Fund,19.6030
+2023-09-29,Manulife MPF Japan Equity Fund,16.0620
+2023-09-29,Manulife MPF North American Equity Fund,23.7320
+2023-09-29,Manulife MPF Pacific Asia Bond Fund,10.6330
+2023-09-29,Manulife MPF Pacific Asia Equity Fund,26.8830
+2023-09-29,Manulife MPF RMB Bond Fund,11.0140
+2023-09-29,Manulife MPF Retirement Income Fund,8.2540
+2023-09-29,Manulife MPF Smart Retirement Fund,11.7970
+2023-09-29,Manulife MPF Stable Fund,14.3190
+2023-09-29,Manulife Provident Funds Trust Company Limited,10.5190
+2023-09-29,North American Equity Fund,24.8400
+2023-09-29,Stable Fund,11.4200
+2023-09-29,ValueChoice Asia Pacific Equity Tracker Fund,12.0100
+2023-09-29,ValueChoice Balanced Fund,14.1500
+2023-09-29,ValueChoice Europe Equity Tracker Fund,16.7900
+2023-09-29,ValueChoice North America Equity Tracker Fund,33.1200
 2023-10-31,Age 65 Plus Fund,11.9100
+2023-10-31,Asia Pacific Equity Fund,25.8000
+2023-10-31,Balanced Fund,19.6500
+2023-10-31,Chinese Equity Fund,11.0000
+2023-10-31,Core Accumulation Fund,21.7200
+2023-10-31,European Equity Fund,14.7800
+2023-10-31,Global Bond Fund,10.4700
+2023-10-31,Global Equity Fund,19.4700
+2023-10-31,Growth Fund,20.3600
+2023-10-31,Guaranteed Fund,9.7700
+2023-10-31,HSBC Mandatory Provident Fund - SuperTrust Plus,11.9100
+2023-10-31,Hang Seng China Enterprises Index Tracking Fund,5.8200
+2023-10-31,Hang Seng Index Tracking Fund,18.8100
+2023-10-31,Hong Kong and Chinese Equity Fund,17.8000
+2023-10-31,MPF Conservative Fund,13.2800
+2023-10-31,Manulife MPF 2025 Retirement Fund,12.7600
+2023-10-31,Manulife MPF 2030 Retirement Fund,13.5940
+2023-10-31,Manulife MPF 2035 Retirement Fund,13.9850
+2023-10-31,Manulife MPF 2040 Retirement Fund,14.0550
+2023-10-31,Manulife MPF 2045 Retirement Fund,14.1970
+2023-10-31,Manulife MPF Aggressive Fund,18.9990
+2023-10-31,Manulife MPF China Value Fund,19.6220
+2023-10-31,Manulife MPF Conservative Fund,11.7520
+2023-10-31,Manulife MPF Core Accumulation Fund,12.9040
+2023-10-31,Manulife MPF European Equity Fund,13.3460
+2023-10-31,Manulife MPF Fidelity Growth Fund,26.5420
+2023-10-31,Manulife MPF Fidelity Stable Growth Fund,19.3180
+2023-10-31,Manulife MPF Growth Fund,18.4400
+2023-10-31,Manulife MPF Hang Seng Index ESG Fund,10.9150
+2023-10-31,Manulife MPF Healthcare Fund,26.7040
+2023-10-31,Manulife MPF Hong Kong Bond Fund,13.9810
+2023-10-31,Manulife MPF Hong Kong Equity Fund,16.4730
+2023-10-31,Manulife MPF International Bond Fund,14.0480
+2023-10-31,Manulife MPF International Equity Fund,18.9930
+2023-10-31,Manulife MPF Japan Equity Fund,15.4690
+2023-10-31,Manulife MPF North American Equity Fund,23.2140
+2023-10-31,Manulife MPF Pacific Asia Equity Fund,25.6180
+2023-10-31,Manulife MPF RMB Bond Fund,10.9090
+2023-10-31,Manulife MPF Retirement Income Fund,8.0260
+2023-10-31,Manulife MPF Smart Retirement Fund,11.5180
+2023-10-31,Manulife MPF Stable Fund,14.0950
+2023-10-31,Manulife MPF Sustainable Pacific Asia Bond Fund,10.4490
+2023-10-31,Manulife Provident Funds Trust Company Limited,10.4010
+2023-10-31,North American Equity Fund,24.2600
+2023-10-31,Stable Fund,11.2100
+2023-10-31,ValueChoice Asia Pacific Equity Tracker Fund,11.5400
+2023-10-31,ValueChoice Balanced Fund,13.7200
+2023-10-31,ValueChoice Europe Equity Tracker Fund,16.1800
+2023-10-31,ValueChoice North America Equity Tracker Fund,32.2800
 2023-11-30,Age 65 Plus Fund,12.4300
+2023-11-30,Asia Pacific Equity Fund,27.2900
+2023-11-30,Balanced Fund,20.6300
+2023-11-30,Chinese Equity Fund,11.0900
+2023-11-30,Core Accumulation Fund,23.0600
+2023-11-30,European Equity Fund,15.9800
+2023-11-30,Global Bond Fund,10.9600
+2023-11-30,Global Equity Fund,21.0200
+2023-11-30,Growth Fund,21.4600
+2023-11-30,Guaranteed Fund,9.8800
+2023-11-30,HSBC Mandatory Provident Fund - SuperTrust Plus,12.4300
+2023-11-30,Hang Seng China Enterprises Index Tracking Fund,5.8200
+2023-11-30,Hang Seng Index Tracking Fund,18.7700
+2023-11-30,Hong Kong and Chinese Equity Fund,17.9300
+2023-11-30,MPF Conservative Fund,13.3200
+2023-11-30,Manulife MPF 2025 Retirement Fund,13.4410
+2023-11-30,Manulife MPF 2030 Retirement Fund,14.4250
+2023-11-30,Manulife MPF 2035 Retirement Fund,14.8880
+2023-11-30,Manulife MPF 2040 Retirement Fund,14.9650
+2023-11-30,Manulife MPF 2045 Retirement Fund,15.1160
+2023-11-30,Manulife MPF Aggressive Fund,20.3130
+2023-11-30,Manulife MPF China Value Fund,20.5150
+2023-11-30,Manulife MPF Conservative Fund,11.7910
+2023-11-30,Manulife MPF Core Accumulation Fund,13.7300
+2023-11-30,Manulife MPF European Equity Fund,15.1300
+2023-11-30,Manulife MPF Fidelity Growth Fund,28.2410
+2023-11-30,Manulife MPF Fidelity Stable Growth Fund,20.3490
+2023-11-30,Manulife MPF Growth Fund,19.5610
+2023-11-30,Manulife MPF Hang Seng Index ESG Fund,10.8000
+2023-11-30,Manulife MPF Healthcare Fund,28.0210
+2023-11-30,Manulife MPF Hong Kong Bond Fund,14.3900
+2023-11-30,Manulife MPF Hong Kong Equity Fund,16.5830
+2023-11-30,Manulife MPF International Bond Fund,14.6590
+2023-11-30,Manulife MPF International Equity Fund,20.8730
+2023-11-30,Manulife MPF Japan Equity Fund,16.7980
+2023-11-30,Manulife MPF North American Equity Fund,25.6080
+2023-11-30,Manulife MPF Pacific Asia Equity Fund,27.2310
+2023-11-30,Manulife MPF RMB Bond Fund,11.2280
+2023-11-30,Manulife MPF Retirement Income Fund,8.3920
+2023-11-30,Manulife MPF Smart Retirement Fund,12.0930
+2023-11-30,Manulife MPF Stable Fund,14.6360
+2023-11-30,Manulife MPF Sustainable Pacific Asia Bond Fund,10.8290
+2023-11-30,Manulife Provident Funds Trust Company Limited,10.8190
+2023-11-30,North American Equity Fund,26.2200
+2023-11-30,Stable Fund,11.7000
+2023-11-30,ValueChoice Asia Pacific Equity Tracker Fund,12.2500
+2023-11-30,ValueChoice Balanced Fund,14.4400
+2023-11-30,ValueChoice Europe Equity Tracker Fund,17.5400
+2023-11-30,ValueChoice North America Equity Tracker Fund,35.2000
 2023-12-29,Age 65 Plus Fund,12.8800
+2023-12-29,Asia Pacific Equity Fund,28.4600
+2023-12-29,Balanced Fund,21.2400
+2023-12-29,Chinese Equity Fund,10.7300
+2023-12-29,Core Accumulation Fund,24.0000
+2023-12-29,European Equity Fund,16.6100
+2023-12-29,Global Bond Fund,11.4000
+2023-12-29,Global Equity Fund,21.9800
+2023-12-29,Growth Fund,22.0900
+2023-12-29,Guaranteed Fund,9.9800
+2023-12-29,HSBC Mandatory Provident Fund - SuperTrust Plus,12.8800
+2023-12-29,Hang Seng China Enterprises Index Tracking Fund,5.7300
+2023-12-29,Hang Seng Index Tracking Fund,18.7800
+2023-12-29,Hong Kong and Chinese Equity Fund,17.7400
+2023-12-29,MPF Conservative Fund,13.3700
+2023-12-29,Manulife MPF 2025 Retirement Fund,13.8180
+2023-12-29,Manulife MPF 2030 Retirement Fund,14.8610
+2023-12-29,Manulife MPF 2035 Retirement Fund,15.3240
+2023-12-29,Manulife MPF 2040 Retirement Fund,15.3690
+2023-12-29,Manulife MPF 2045 Retirement Fund,15.5270
+2023-12-29,Manulife MPF Aggressive Fund,20.9110
+2023-12-29,Manulife MPF China Value Fund,20.3940
+2023-12-29,Manulife MPF Conservative Fund,11.8330
+2023-12-29,Manulife MPF Core Accumulation Fund,14.2790
+2023-12-29,Manulife MPF European Equity Fund,16.1630
+2023-12-29,Manulife MPF Fidelity Growth Fund,29.1330
+2023-12-29,Manulife MPF Fidelity Stable Growth Fund,21.0430
+2023-12-29,Manulife MPF Growth Fund,20.1030
+2023-12-29,Manulife MPF Hang Seng Index ESG Fund,10.6450
+2023-12-29,Manulife MPF Healthcare Fund,29.1550
+2023-12-29,Manulife MPF Hong Kong Bond Fund,14.7150
+2023-12-29,Manulife MPF Hong Kong Equity Fund,16.3150
+2023-12-29,Manulife MPF International Bond Fund,15.2520
+2023-12-29,Manulife MPF International Equity Fund,21.8600
+2023-12-29,Manulife MPF Japan Equity Fund,17.2580
+2023-12-29,Manulife MPF North American Equity Fund,26.8180
+2023-12-29,Manulife MPF Pacific Asia Equity Fund,28.2770
+2023-12-29,Manulife MPF RMB Bond Fund,11.3230
+2023-12-29,Manulife MPF Retirement Income Fund,8.5960
+2023-12-29,Manulife MPF Smart Retirement Fund,12.4320
+2023-12-29,Manulife MPF Stable Fund,14.9600
+2023-12-29,Manulife MPF Sustainable Pacific Asia Bond Fund,11.1330
+2023-12-29,Manulife Provident Funds Trust Company Limited,11.1850
+2023-12-29,North American Equity Fund,27.4000
+2023-12-29,Stable Fund,12.0800
+2023-12-29,ValueChoice Asia Pacific Equity Tracker Fund,12.7600
+2023-12-29,ValueChoice Balanced Fund,14.9000
+2023-12-29,ValueChoice Europe Equity Tracker Fund,18.3200
+2023-12-29,ValueChoice North America Equity Tracker Fund,36.7900
 2024-01-31,Age 65 Plus Fund,12.8600
+2024-01-31,Asia Pacific Equity Fund,27.4800
+2024-01-31,Balanced Fund,20.8900
+2024-01-31,Chinese Equity Fund,10.0600
+2024-01-31,Core Accumulation Fund,24.1000
+2024-01-31,European Equity Fund,16.6500
+2024-01-31,Global Bond Fund,11.2700
+2024-01-31,Global Equity Fund,22.2100
+2024-01-31,Growth Fund,21.6800
+2024-01-31,Guaranteed Fund,9.9400
+2024-01-31,HSBC Mandatory Provident Fund - SuperTrust Plus,12.8600
+2024-01-31,Hang Seng China Enterprises Index Tracking Fund,5.1600
+2024-01-31,Hang Seng Index Tracking Fund,17.0500
+2024-01-31,Hong Kong and Chinese Equity Fund,16.5000
+2024-01-31,MPF Conservative Fund,13.4300
+2024-01-31,Manulife MPF 2025 Retirement Fund,13.5770
+2024-01-31,Manulife MPF 2030 Retirement Fund,14.4820
+2024-01-31,Manulife MPF 2035 Retirement Fund,14.8590
+2024-01-31,Manulife MPF 2040 Retirement Fund,14.8500
+2024-01-31,Manulife MPF 2045 Retirement Fund,14.9960
+2024-01-31,Manulife MPF Aggressive Fund,20.3450
+2024-01-31,Manulife MPF China Value Fund,18.6360
+2024-01-31,Manulife MPF Conservative Fund,11.8790
+2024-01-31,Manulife MPF Core Accumulation Fund,14.3120
+2024-01-31,Manulife MPF European Equity Fund,16.1870
+2024-01-31,Manulife MPF Fidelity Growth Fund,28.5170
+2024-01-31,Manulife MPF Fidelity Stable Growth Fund,20.7310
+2024-01-31,Manulife MPF Growth Fund,19.6390
+2024-01-31,Manulife MPF Hang Seng Index ESG Fund,9.2690
+2024-01-31,Manulife MPF Healthcare Fund,29.9360
+2024-01-31,Manulife MPF Hong Kong Bond Fund,14.6480
+2024-01-31,Manulife MPF Hong Kong Equity Fund,14.7880
+2024-01-31,Manulife MPF International Bond Fund,15.0520
+2024-01-31,Manulife MPF International Equity Fund,21.8970
+2024-01-31,Manulife MPF Japan Equity Fund,18.1300
+2024-01-31,Manulife MPF North American Equity Fund,27.1410
+2024-01-31,Manulife MPF Pacific Asia Equity Fund,27.2530
+2024-01-31,Manulife MPF RMB Bond Fund,11.3340
+2024-01-31,Manulife MPF Retirement Income Fund,8.4360
+2024-01-31,Manulife MPF Smart Retirement Fund,12.2480
+2024-01-31,Manulife MPF Stable Fund,14.7070
+2024-01-31,Manulife MPF Sustainable Pacific Asia Bond Fund,11.1570
+2024-01-31,Manulife Provident Funds Trust Company Limited,11.1590
+2024-01-31,North American Equity Fund,27.9100
+2024-01-31,Stable Fund,11.9300
+2024-01-31,ValueChoice Asia Pacific Equity Tracker Fund,12.2700
+2024-01-31,ValueChoice Balanced Fund,14.5700
+2024-01-31,ValueChoice Europe Equity Tracker Fund,18.3700
+2024-01-31,ValueChoice North America Equity Tracker Fund,37.3500
 2024-02-29,Age 65 Plus Fund,12.8400
+2024-02-29,Asia Pacific Equity Fund,28.9300
+2024-02-29,Balanced Fund,21.4400
+2024-02-29,Chinese Equity Fund,10.8400
+2024-02-29,Core Accumulation Fund,24.5700
+2024-02-29,European Equity Fund,16.7900
+2024-02-29,Global Bond Fund,11.1200
+2024-02-29,Global Equity Fund,23.1200
+2024-02-29,Growth Fund,22.4800
+2024-02-29,Guaranteed Fund,9.9400
+2024-02-29,HSBC Mandatory Provident Fund - SuperTrust Plus,12.8400
+2024-02-29,Hang Seng China Enterprises Index Tracking Fund,5.6300
+2024-02-29,Hang Seng Index Tracking Fund,18.1700
+2024-02-29,Hong Kong and Chinese Equity Fund,17.4900
+2024-02-29,MPF Conservative Fund,13.4700
+2024-02-29,Manulife MPF 2025 Retirement Fund,13.8580
+2024-02-29,Manulife MPF 2030 Retirement Fund,14.9460
+2024-02-29,Manulife MPF 2035 Retirement Fund,15.4610
+2024-02-29,Manulife MPF 2040 Retirement Fund,15.5460
+2024-02-29,Manulife MPF 2045 Retirement Fund,15.6980
+2024-02-29,Manulife MPF Aggressive Fund,21.1650
+2024-02-29,Manulife MPF China Value Fund,19.8740
+2024-02-29,Manulife MPF Conservative Fund,11.9170
+2024-02-29,Manulife MPF Core Accumulation Fund,14.6260
+2024-02-29,Manulife MPF European Equity Fund,16.7410
+2024-02-29,Manulife MPF Fidelity Growth Fund,29.5460
+2024-02-29,Manulife MPF Fidelity Stable Growth Fund,21.0370
+2024-02-29,Manulife MPF Growth Fund,20.2260
+2024-02-29,Manulife MPF Hang Seng Index ESG Fund,9.8620
+2024-02-29,Manulife MPF Healthcare Fund,30.8430
+2024-02-29,Manulife MPF Hong Kong Bond Fund,14.5310
+2024-02-29,Manulife MPF Hong Kong Equity Fund,15.8120
+2024-02-29,Manulife MPF International Bond Fund,14.8640
+2024-02-29,Manulife MPF International Equity Fund,22.8120
+2024-02-29,Manulife MPF Japan Equity Fund,18.6520
+2024-02-29,Manulife MPF North American Equity Fund,28.4800
+2024-02-29,Manulife MPF Pacific Asia Equity Fund,28.5030
+2024-02-29,Manulife MPF RMB Bond Fund,11.3420
+2024-02-29,Manulife MPF Retirement Income Fund,8.5260
+2024-02-29,Manulife MPF Smart Retirement Fund,12.4370
+2024-02-29,Manulife MPF Stable Fund,14.8250
+2024-02-29,Manulife MPF Sustainable Pacific Asia Bond Fund,11.1050
+2024-02-29,Manulife Provident Funds Trust Company Limited,11.1680
+2024-02-29,North American Equity Fund,29.2900
+2024-02-29,Stable Fund,11.9700
+2024-02-29,ValueChoice Asia Pacific Equity Tracker Fund,12.8100
+2024-02-29,ValueChoice Balanced Fund,15.0000
+2024-02-29,ValueChoice Europe Equity Tracker Fund,18.7200
+2024-02-29,ValueChoice North America Equity Tracker Fund,39.2600
 2024-03-28,Age 65 Plus Fund,12.9900
+2024-03-28,Asia Pacific Equity Fund,29.5200
+2024-03-28,Balanced Fund,21.7900
+2024-03-28,Chinese Equity Fund,10.9800
+2024-03-28,Core Accumulation Fund,25.0700
+2024-03-28,European Equity Fund,17.4000
+2024-03-28,Global Bond Fund,11.1900
+2024-03-28,Global Equity Fund,23.7700
+2024-03-28,Growth Fund,22.9100
+2024-03-28,Guaranteed Fund,9.9600
+2024-03-28,HSBC Mandatory Provident Fund - SuperTrust Plus,12.9900
+2024-03-28,Hang Seng China Enterprises Index Tracking Fund,5.7600
+2024-03-28,Hang Seng Index Tracking Fund,18.2700
+2024-03-28,Hong Kong and Chinese Equity Fund,17.5100
+2024-03-28,MPF Conservative Fund,13.5100
+2024-03-28,Manulife MPF 2025 Retirement Fund,14.0910
+2024-03-28,Manulife MPF 2030 Retirement Fund,15.2530
+2024-03-28,Manulife MPF 2035 Retirement Fund,15.8090
+2024-03-28,Manulife MPF 2040 Retirement Fund,15.9100
+2024-03-28,Manulife MPF 2045 Retirement Fund,16.0690
+2024-03-28,Manulife MPF Aggressive Fund,21.6270
+2024-03-28,Manulife MPF China Value Fund,20.1620
+2024-03-28,Manulife MPF Conservative Fund,11.9530
+2024-03-28,Manulife MPF Core Accumulation Fund,14.9200
+2024-03-28,Manulife MPF European Equity Fund,17.1720
+2024-03-28,Manulife MPF Fidelity Growth Fund,30.2480
+2024-03-28,Manulife MPF Fidelity Stable Growth Fund,21.3830
+2024-03-28,Manulife MPF Growth Fund,20.5830
+2024-03-28,Manulife MPF Hang Seng Index ESG Fund,9.6950
+2024-03-28,Manulife MPF Healthcare Fund,31.4500
+2024-03-28,Manulife MPF Hong Kong Bond Fund,14.6020
+2024-03-28,Manulife MPF Hong Kong Equity Fund,15.8670
+2024-03-28,Manulife MPF International Bond Fund,14.9370
+2024-03-28,Manulife MPF International Equity Fund,23.5070
+2024-03-28,Manulife MPF Japan Equity Fund,19.3590
+2024-03-28,Manulife MPF North American Equity Fund,29.3140
+2024-03-28,Manulife MPF Pacific Asia Equity Fund,29.6310
+2024-03-28,Manulife MPF RMB Bond Fund,11.3300
+2024-03-28,Manulife MPF Retirement Income Fund,8.6210
+2024-03-28,Manulife MPF Smart Retirement Fund,12.6190
+2024-03-28,Manulife MPF Stable Fund,14.9510
+2024-03-28,Manulife MPF Sustainable Pacific Asia Bond Fund,11.1720
+2024-03-28,Manulife Provident Funds Trust Company Limited,11.2860
+2024-03-28,North American Equity Fund,30.1400
+2024-03-28,Stable Fund,12.1000
+2024-03-28,ValueChoice Asia Pacific Equity Tracker Fund,13.0900
+2024-03-28,ValueChoice Balanced Fund,15.2400
+2024-03-28,ValueChoice Europe Equity Tracker Fund,19.4400
+2024-03-28,ValueChoice North America Equity Tracker Fund,40.4200
 2024-04-30,Age 65 Plus Fund,12.6700
+2024-04-30,Asia Pacific Equity Fund,29.7600
+2024-04-30,Balanced Fund,21.6200
+2024-04-30,Chinese Equity Fund,11.5800
+2024-04-30,Core Accumulation Fund,24.3500
+2024-04-30,European Equity Fund,17.1600
+2024-04-30,Global Bond Fund,10.8700
+2024-04-30,Global Equity Fund,23.0500
+2024-04-30,Growth Fund,22.8300
+2024-04-30,Guaranteed Fund,9.9800
+2024-04-30,HSBC Mandatory Provident Fund - SuperTrust Plus,12.6700
+2024-04-30,Hang Seng China Enterprises Index Tracking Fund,6.2200
+2024-04-30,Hang Seng Index Tracking Fund,19.6200
+2024-04-30,Hong Kong and Chinese Equity Fund,18.6300
+2024-04-30,MPF Conservative Fund,13.5500
+2024-04-30,Manulife MPF 2025 Retirement Fund,13.9940
+2024-04-30,Manulife MPF 2030 Retirement Fund,15.1800
+2024-04-30,Manulife MPF 2035 Retirement Fund,15.7830
+2024-04-30,Manulife MPF 2040 Retirement Fund,15.9540
+2024-04-30,Manulife MPF 2045 Retirement Fund,16.1170
+2024-04-30,Manulife MPF Aggressive Fund,21.5400
+2024-04-30,Manulife MPF China Value Fund,20.8630
+2024-04-30,Manulife MPF Conservative Fund,11.9940
+2024-04-30,Manulife MPF Core Accumulation Fund,14.5160
+2024-04-30,Manulife MPF European Equity Fund,16.5080
+2024-04-30,Manulife MPF Fidelity Growth Fund,30.2010
+2024-04-30,Manulife MPF Fidelity Stable Growth Fund,21.1110
+2024-04-30,Manulife MPF Growth Fund,20.4700
+2024-04-30,Manulife MPF Hang Seng Index ESG Fund,10.2460
+2024-04-30,Manulife MPF Healthcare Fund,30.1680
+2024-04-30,Manulife MPF Hong Kong Bond Fund,14.5080
+2024-04-30,Manulife MPF Hong Kong Equity Fund,16.8430
+2024-04-30,Manulife MPF International Bond Fund,14.5530
+2024-04-30,Manulife MPF International Equity Fund,22.7990
+2024-04-30,Manulife MPF Japan Equity Fund,18.8420
+2024-04-30,Manulife MPF North American Equity Fund,28.3230
+2024-04-30,Manulife MPF Pacific Asia Equity Fund,29.9220
+2024-04-30,Manulife MPF RMB Bond Fund,11.3140
+2024-04-30,Manulife MPF Retirement Income Fund,8.4800
+2024-04-30,Manulife MPF Smart Retirement Fund,12.5310
+2024-04-30,Manulife MPF Stable Fund,14.9170
+2024-04-30,Manulife MPF Sustainable Pacific Asia Bond Fund,10.9840
+2024-04-30,Manulife Provident Funds Trust Company Limited,11.0420
+2024-04-30,North American Equity Fund,28.7600
+2024-04-30,Stable Fund,11.8800
+2024-04-30,ValueChoice Asia Pacific Equity Tracker Fund,13.2100
+2024-04-30,ValueChoice Balanced Fund,15.1800
+2024-04-30,ValueChoice Europe Equity Tracker Fund,19.1300
+2024-04-30,ValueChoice North America Equity Tracker Fund,38.7200
 2024-05-31,Age 65 Plus Fund,12.8600
+2024-05-31,Asia Pacific Equity Fund,30.3100
+2024-05-31,Balanced Fund,22.0800
+2024-05-31,Chinese Equity Fund,11.5800
+2024-05-31,Core Accumulation Fund,25.0300
+2024-05-31,European Equity Fund,17.8600
+2024-05-31,Global Bond Fund,11.0000
+2024-05-31,Global Equity Fund,23.9500
+2024-05-31,Growth Fund,23.3700
+2024-05-31,Guaranteed Fund,10.0300
+2024-05-31,HSBC Mandatory Provident Fund - SuperTrust Plus,12.8600
+2024-05-31,Hang Seng China Enterprises Index Tracking Fund,6.3500
+2024-05-31,Hang Seng Index Tracking Fund,20.1100
+2024-05-31,Hong Kong and Chinese Equity Fund,18.9200
+2024-05-31,MPF Conservative Fund,13.6000
+2024-05-31,Manulife MPF 2025 Retirement Fund,14.2880
+2024-05-31,Manulife MPF 2030 Retirement Fund,15.5620
+2024-05-31,Manulife MPF 2035 Retirement Fund,16.2090
+2024-05-31,Manulife MPF 2040 Retirement Fund,16.3980
+2024-05-31,Manulife MPF 2045 Retirement Fund,16.5660
+2024-05-31,Manulife MPF Aggressive Fund,22.1070
+2024-05-31,Manulife MPF China Value Fund,21.2830
+2024-05-31,Manulife MPF Conservative Fund,12.0310
+2024-05-31,Manulife MPF Core Accumulation Fund,14.9010
+2024-05-31,Manulife MPF European Equity Fund,17.1720
+2024-05-31,Manulife MPF Fidelity Growth Fund,30.9880
+2024-05-31,Manulife MPF Fidelity Stable Growth Fund,21.5060
+2024-05-31,Manulife MPF Growth Fund,20.9350
+2024-05-31,Manulife MPF Hang Seng Index ESG Fund,10.3950
+2024-05-31,Manulife MPF Healthcare Fund,30.9020
+2024-05-31,Manulife MPF Hong Kong Bond Fund,14.6510
+2024-05-31,Manulife MPF Hong Kong Equity Fund,17.1310
+2024-05-31,Manulife MPF International Bond Fund,14.7200
+2024-05-31,Manulife MPF International Equity Fund,23.7770
+2024-05-31,Manulife MPF Japan Equity Fund,19.4450
+2024-05-31,Manulife MPF North American Equity Fund,29.7590
+2024-05-31,Manulife MPF Pacific Asia Equity Fund,30.2820
+2024-05-31,Manulife MPF RMB Bond Fund,11.3720
+2024-05-31,Manulife MPF Retirement Income Fund,8.6040
+2024-05-31,Manulife MPF Smart Retirement Fund,12.7590
+2024-05-31,Manulife MPF Stable Fund,15.1470
+2024-05-31,Manulife MPF Sustainable Pacific Asia Bond Fund,11.1190
+2024-05-31,Manulife Provident Funds Trust Company Limited,11.1750
+2024-05-31,North American Equity Fund,30.0400
+2024-05-31,Stable Fund,12.0600
+2024-05-31,ValueChoice Asia Pacific Equity Tracker Fund,13.4600
+2024-05-31,ValueChoice Balanced Fund,15.5000
+2024-05-31,ValueChoice Europe Equity Tracker Fund,19.9200
+2024-05-31,ValueChoice North America Equity Tracker Fund,40.4900
 2024-06-28,Age 65 Plus Fund,12.9600
+2024-06-28,Asia Pacific Equity Fund,31.9400
+2024-06-28,Balanced Fund,22.1500
+2024-06-28,Chinese Equity Fund,11.7600
+2024-06-28,Core Accumulation Fund,25.3200
+2024-06-28,European Equity Fund,17.3000
+2024-06-28,Global Bond Fund,11.0200
+2024-06-28,Global Equity Fund,24.3700
+2024-06-28,Growth Fund,23.4600
+2024-06-28,Guaranteed Fund,10.0500
+2024-06-28,HSBC Mandatory Provident Fund - SuperTrust Plus,12.9600
+2024-06-28,Hang Seng China Enterprises Index Tracking Fund,6.3500
+2024-06-28,Hang Seng Index Tracking Fund,19.8700
+2024-06-28,Hong Kong and Chinese Equity Fund,18.8200
+2024-06-28,MPF Conservative Fund,13.6400
+2024-06-28,Manulife MPF 2025 Retirement Fund,14.4280
+2024-06-28,Manulife MPF 2030 Retirement Fund,15.7160
+2024-06-28,Manulife MPF 2035 Retirement Fund,16.3440
+2024-06-28,Manulife MPF 2040 Retirement Fund,16.5430
+2024-06-28,Manulife MPF 2045 Retirement Fund,16.7020
+2024-06-28,Manulife MPF Aggressive Fund,22.1310
+2024-06-28,Manulife MPF China Value Fund,21.5950
+2024-06-28,Manulife MPF Conservative Fund,12.0660
+2024-06-28,Manulife MPF Core Accumulation Fund,15.0960
+2024-06-28,Manulife MPF European Equity Fund,16.9340
+2024-06-28,Manulife MPF Fidelity Growth Fund,31.0400
+2024-06-28,Manulife MPF Fidelity Stable Growth Fund,21.5570
+2024-06-28,Manulife MPF Growth Fund,20.9590
+2024-06-28,Manulife MPF Hang Seng Index ESG Fund,10.0800
+2024-06-28,Manulife MPF Healthcare Fund,31.5170
+2024-06-28,Manulife MPF Hong Kong Bond Fund,14.8000
+2024-06-28,Manulife MPF Hong Kong Equity Fund,16.8480
+2024-06-28,Manulife MPF International Bond Fund,14.7420
+2024-06-28,Manulife MPF International Equity Fund,24.1550
+2024-06-28,Manulife MPF Japan Equity Fund,19.6640
+2024-06-28,Manulife MPF North American Equity Fund,30.5300
+2024-06-28,Manulife MPF Pacific Asia Equity Fund,31.5470
+2024-06-28,Manulife MPF RMB Bond Fund,11.3580
+2024-06-28,Manulife MPF Retirement Income Fund,8.6380
+2024-06-28,Manulife MPF Smart Retirement Fund,12.8820
+2024-06-28,Manulife MPF Stable Fund,15.2020
+2024-06-28,Manulife MPF Sustainable Pacific Asia Bond Fund,11.1740
+2024-06-28,Manulife Provident Funds Trust Company Limited,11.2570
+2024-06-28,North American Equity Fund,30.9400
+2024-06-28,Stable Fund,12.0800
+2024-06-28,ValueChoice Asia Pacific Equity Tracker Fund,13.9100
+2024-06-28,ValueChoice Balanced Fund,15.5300
+2024-06-28,ValueChoice Europe Equity Tracker Fund,19.4900
+2024-06-28,ValueChoice North America Equity Tracker Fund,41.7400
 2024-07-31,Age 65 Plus Fund,13.2000
+2024-07-31,Asia Pacific Equity Fund,31.5400
+2024-07-31,Balanced Fund,22.4400
+2024-07-31,Chinese Equity Fund,11.4800
+2024-07-31,Core Accumulation Fund,25.8200
+2024-07-31,European Equity Fund,17.5100
+2024-07-31,Global Bond Fund,11.2900
+2024-07-31,Global Equity Fund,24.8500
+2024-07-31,Growth Fund,23.7300
+2024-07-31,Guaranteed Fund,10.1300
+2024-07-31,HSBC Mandatory Provident Fund - SuperTrust Plus,13.2000
+2024-07-31,Hang Seng China Enterprises Index Tracking Fund,6.2200
+2024-07-31,Hang Seng Index Tracking Fund,19.6400
+2024-07-31,Hong Kong and Chinese Equity Fund,18.5200
+2024-07-31,MPF Conservative Fund,13.6900
+2024-07-31,Manulife MPF 2025 Retirement Fund,14.5820
+2024-07-31,Manulife MPF 2030 Retirement Fund,15.8640
+2024-07-31,Manulife MPF 2035 Retirement Fund,16.4690
+2024-07-31,Manulife MPF 2040 Retirement Fund,16.6380
+2024-07-31,Manulife MPF 2045 Retirement Fund,16.7970
+2024-07-31,Manulife MPF Aggressive Fund,22.3470
+2024-07-31,Manulife MPF China Value Fund,20.7460
+2024-07-31,Manulife MPF Conservative Fund,12.1130
+2024-07-31,Manulife MPF Core Accumulation Fund,15.3530
+2024-07-31,Manulife MPF European Equity Fund,16.9800
+2024-07-31,Manulife MPF Fidelity Growth Fund,31.3760
+2024-07-31,Manulife MPF Fidelity Stable Growth Fund,21.8950
+2024-07-31,Manulife MPF Growth Fund,21.1980
+2024-07-31,Manulife MPF Hang Seng Index ESG Fund,9.8510
+2024-07-31,Manulife MPF Healthcare Fund,32.0540
+2024-07-31,Manulife MPF Hong Kong Bond Fund,15.1210
+2024-07-31,Manulife MPF Hong Kong Equity Fund,16.5800
+2024-07-31,Manulife MPF International Bond Fund,15.0820
+2024-07-31,Manulife MPF International Equity Fund,24.5700
+2024-07-31,Manulife MPF Japan Equity Fund,20.5060
+2024-07-31,Manulife MPF North American Equity Fund,31.1400
+2024-07-31,Manulife MPF Pacific Asia Equity Fund,31.4840
+2024-07-31,Manulife MPF RMB Bond Fund,11.5100
+2024-07-31,Manulife MPF Retirement Income Fund,8.7520
+2024-07-31,Manulife MPF Smart Retirement Fund,13.0350
+2024-07-31,Manulife MPF Stable Fund,15.4540
+2024-07-31,Manulife MPF Sustainable Pacific Asia Bond Fund,11.3870
+2024-07-31,Manulife Provident Funds Trust Company Limited,11.4540
+2024-07-31,North American Equity Fund,31.4600
+2024-07-31,Stable Fund,12.2900
+2024-07-31,ValueChoice Asia Pacific Equity Tracker Fund,13.9800
+2024-07-31,ValueChoice Balanced Fund,15.7500
+2024-07-31,ValueChoice Europe Equity Tracker Fund,19.8800
+2024-07-31,ValueChoice North America Equity Tracker Fund,42.3000
 2024-08-30,Age 65 Plus Fund,13.3600
+2024-08-30,Asia Pacific Equity Fund,32.1300
+2024-08-30,Balanced Fund,22.8500
+2024-08-30,Chinese Equity Fund,11.6200
+2024-08-30,Core Accumulation Fund,26.2100
+2024-08-30,European Equity Fund,17.8900
+2024-08-30,Global Bond Fund,11.4600
+2024-08-30,Global Equity Fund,25.2200
+2024-08-30,Growth Fund,24.1900
+2024-08-30,Guaranteed Fund,10.2000
+2024-08-30,HSBC Mandatory Provident Fund - SuperTrust Plus,13.3600
+2024-08-30,Hang Seng China Enterprises Index Tracking Fund,6.4400
+2024-08-30,Hang Seng Index Tracking Fund,20.3600
+2024-08-30,Hong Kong and Chinese Equity Fund,18.9800
+2024-08-30,MPF Conservative Fund,13.7300
+2024-08-30,Manulife MPF 2025 Retirement Fund,14.8190
+2024-08-30,Manulife MPF 2030 Retirement Fund,16.1530
+2024-08-30,Manulife MPF 2035 Retirement Fund,16.7860
+2024-08-30,Manulife MPF 2040 Retirement Fund,16.9700
+2024-08-30,Manulife MPF 2045 Retirement Fund,17.1330
+2024-08-30,Manulife MPF Aggressive Fund,22.7500
+2024-08-30,Manulife MPF China Value Fund,21.1700
+2024-08-30,Manulife MPF Conservative Fund,12.1540
+2024-08-30,Manulife MPF Core Accumulation Fund,15.6360
+2024-08-30,Manulife MPF European Equity Fund,17.3010
+2024-08-30,Manulife MPF Fidelity Growth Fund,31.8690
+2024-08-30,Manulife MPF Fidelity Stable Growth Fund,22.1820
+2024-08-30,Manulife MPF Growth Fund,21.5580
+2024-08-30,Manulife MPF Hang Seng Index ESG Fund,10.2560
+2024-08-30,Manulife MPF Healthcare Fund,33.7410
+2024-08-30,Manulife MPF Hong Kong Bond Fund,15.2920
+2024-08-30,Manulife MPF Hong Kong Equity Fund,16.9350
+2024-08-30,Manulife MPF International Bond Fund,15.3590
+2024-08-30,Manulife MPF International Equity Fund,24.9830
+2024-08-30,Manulife MPF Japan Equity Fund,20.7270
+2024-08-30,Manulife MPF North American Equity Fund,31.5100
+2024-08-30,Manulife MPF Pacific Asia Equity Fund,32.0230
+2024-08-30,Manulife MPF RMB Bond Fund,11.7260
+2024-08-30,Manulife MPF Retirement Income Fund,8.8500
+2024-08-30,Manulife MPF Smart Retirement Fund,13.2420
+2024-08-30,Manulife MPF Stable Fund,15.6590
+2024-08-30,Manulife MPF Sustainable Pacific Asia Bond Fund,11.5320
+2024-08-30,Manulife Provident Funds Trust Company Limited,11.5880
+2024-08-30,North American Equity Fund,32.1300
+2024-08-30,Stable Fund,12.4900
+2024-08-30,ValueChoice Asia Pacific Equity Tracker Fund,14.2600
+2024-08-30,ValueChoice Balanced Fund,16.0500
+2024-08-30,ValueChoice Europe Equity Tracker Fund,20.4100
+2024-08-30,ValueChoice North America Equity Tracker Fund,43.2900
 2024-09-30,Age 65 Plus Fund,13.5000
+2024-09-30,Asia Pacific Equity Fund,34.2600
+2024-09-30,Balanced Fund,24.0500
+2024-09-30,Chinese Equity Fund,13.7700
+2024-09-30,Core Accumulation Fund,26.5300
+2024-09-30,European Equity Fund,17.8100
+2024-09-30,Global Bond Fund,11.5800
+2024-09-30,Global Equity Fund,25.5300
+2024-09-30,Growth Fund,25.7000
+2024-09-30,Guaranteed Fund,10.3200
+2024-09-30,HSBC Mandatory Provident Fund - SuperTrust Plus,13.5000
+2024-09-30,Hang Seng China Enterprises Index Tracking Fund,7.6800
+2024-09-30,Hang Seng Index Tracking Fund,24.0100
+2024-09-30,Hong Kong and Chinese Equity Fund,22.3700
+2024-09-30,MPF Conservative Fund,13.7700
+2024-09-30,Manulife MPF 2025 Retirement Fund,15.4180
+2024-09-30,Manulife MPF 2030 Retirement Fund,17.0620
+2024-09-30,Manulife MPF 2035 Retirement Fund,17.9270
+2024-09-30,Manulife MPF 2040 Retirement Fund,18.2680
+2024-09-30,Manulife MPF 2045 Retirement Fund,18.4440
+2024-09-30,Manulife MPF Aggressive Fund,24.2180
+2024-09-30,Manulife MPF China Value Fund,24.3800
+2024-09-30,Manulife MPF Conservative Fund,12.1870
+2024-09-30,Manulife MPF Core Accumulation Fund,15.8570
+2024-09-30,Manulife MPF European Equity Fund,17.3070
+2024-09-30,Manulife MPF Fidelity Growth Fund,33.9170
+2024-09-30,Manulife MPF Fidelity Stable Growth Fund,23.0740
+2024-09-30,Manulife MPF Growth Fund,22.7010
+2024-09-30,Manulife MPF Hang Seng Index ESG Fund,12.6250
+2024-09-30,Manulife MPF Healthcare Fund,32.2330
+2024-09-30,Manulife MPF Hong Kong Bond Fund,15.3930
+2024-09-30,Manulife MPF Hong Kong Equity Fund,20.0700
+2024-09-30,Manulife MPF International Bond Fund,15.5340
+2024-09-30,Manulife MPF International Equity Fund,25.4520
+2024-09-30,Manulife MPF Japan Equity Fund,20.7470
+2024-09-30,Manulife MPF North American Equity Fund,31.9150
+2024-09-30,Manulife MPF Pacific Asia Equity Fund,33.9130
+2024-09-30,Manulife MPF RMB Bond Fund,11.8570
+2024-09-30,Manulife MPF Retirement Income Fund,9.0160
+2024-09-30,Manulife MPF Smart Retirement Fund,13.6840
+2024-09-30,Manulife MPF Stable Fund,16.1890
+2024-09-30,Manulife MPF Sustainable Pacific Asia Bond Fund,11.6480
+2024-09-30,Manulife Provident Funds Trust Company Limited,11.7080
+2024-09-30,North American Equity Fund,32.5000
+2024-09-30,Stable Fund,12.8500
+2024-09-30,ValueChoice Asia Pacific Equity Tracker Fund,15.2700
+2024-09-30,ValueChoice Balanced Fund,16.9200
+2024-09-30,ValueChoice Europe Equity Tracker Fund,20.3700
+2024-09-30,ValueChoice North America Equity Tracker Fund,43.9900
 2024-10-31,Age 65 Plus Fund,13.2100
+2024-10-31,Asia Pacific Equity Fund,32.6700
+2024-10-31,Balanced Fund,23.0600
+2024-10-31,Chinese Equity Fund,12.7600
+2024-10-31,Core Accumulation Fund,25.8500
+2024-10-31,European Equity Fund,16.9500
+2024-10-31,Global Bond Fund,11.2500
+2024-10-31,Global Equity Fund,24.8300
+2024-10-31,Growth Fund,24.5400
+2024-10-31,Guaranteed Fund,10.2400
+2024-10-31,HSBC Mandatory Provident Fund - SuperTrust Plus,13.2100
+2024-10-31,Hang Seng China Enterprises Index Tracking Fund,7.4200
+2024-10-31,Hang Seng Index Tracking Fund,23.0800
+2024-10-31,Hong Kong and Chinese Equity Fund,20.8100
+2024-10-31,MPF Conservative Fund,13.8100
+2024-10-31,Manulife MPF 2025 Retirement Fund,14.9810
+2024-10-31,Manulife MPF 2030 Retirement Fund,16.4540
+2024-10-31,Manulife MPF 2035 Retirement Fund,17.2230
+2024-10-31,Manulife MPF 2040 Retirement Fund,17.5290
+2024-10-31,Manulife MPF 2045 Retirement Fund,17.7010
+2024-10-31,Manulife MPF Aggressive Fund,23.1720
+2024-10-31,Manulife MPF China Value Fund,23.5660
+2024-10-31,Manulife MPF Conservative Fund,12.2160
+2024-10-31,Manulife MPF Core Accumulation Fund,15.5490
+2024-10-31,Manulife MPF European Equity Fund,16.1620
+2024-10-31,Manulife MPF Fidelity Growth Fund,32.3100
+2024-10-31,Manulife MPF Fidelity Stable Growth Fund,22.1300
+2024-10-31,Manulife MPF Growth Fund,21.8190
+2024-10-31,Manulife MPF Hang Seng Index ESG Fund,12.0430
+2024-10-31,Manulife MPF Healthcare Fund,30.6490
+2024-10-31,Manulife MPF Hong Kong Bond Fund,15.1960
+2024-10-31,Manulife MPF Hong Kong Equity Fund,19.0820
+2024-10-31,Manulife MPF International Bond Fund,15.0230
+2024-10-31,Manulife MPF International Equity Fund,24.8230
+2024-10-31,Manulife MPF Japan Equity Fund,20.0690
+2024-10-31,Manulife MPF North American Equity Fund,31.5860
+2024-10-31,Manulife MPF Pacific Asia Equity Fund,32.3560
+2024-10-31,Manulife MPF RMB Bond Fund,11.7020
+2024-10-31,Manulife MPF Retirement Income Fund,8.7620
+2024-10-31,Manulife MPF Smart Retirement Fund,13.3330
+2024-10-31,Manulife MPF Stable Fund,15.7880
+2024-10-31,Manulife MPF Sustainable Pacific Asia Bond Fund,11.4470
+2024-10-31,Manulife Provident Funds Trust Company Limited,11.5110
+2024-10-31,North American Equity Fund,32.2400
+2024-10-31,Stable Fund,12.4300
+2024-10-31,ValueChoice Asia Pacific Equity Tracker Fund,14.5700
+2024-10-31,ValueChoice Balanced Fund,16.3000
+2024-10-31,ValueChoice Europe Equity Tracker Fund,19.4200
+2024-10-31,ValueChoice North America Equity Tracker Fund,43.6300
 2024-11-29,Age 65 Plus Fund,13.4300
+2024-11-29,Asia Pacific Equity Fund,31.2200
+2024-11-29,Balanced Fund,23.0200
+2024-11-29,Chinese Equity Fund,12.2200
+2024-11-29,Core Accumulation Fund,26.4800
+2024-11-29,European Equity Fund,16.6600
+2024-11-29,Global Bond Fund,11.3300
+2024-11-29,Global Equity Fund,25.6900
+2024-11-29,Growth Fund,24.4600
+2024-11-29,Guaranteed Fund,10.2500
+2024-11-29,HSBC Mandatory Provident Fund - SuperTrust Plus,13.4300
+2024-11-29,Hang Seng China Enterprises Index Tracking Fund,7.0900
+2024-11-29,Hang Seng Index Tracking Fund,22.0900
+2024-11-29,Hong Kong and Chinese Equity Fund,19.9300
+2024-11-29,MPF Conservative Fund,13.8400
+2024-11-29,Manulife MPF 2025 Retirement Fund,14.9810
+2024-11-29,Manulife MPF 2030 Retirement Fund,16.4330
+2024-11-29,Manulife MPF 2035 Retirement Fund,17.1840
+2024-11-29,Manulife MPF 2040 Retirement Fund,17.4510
+2024-11-29,Manulife MPF 2045 Retirement Fund,17.6240
+2024-11-29,Manulife MPF Aggressive Fund,23.1040
+2024-11-29,Manulife MPF China Value Fund,22.5390
+2024-11-29,Manulife MPF Conservative Fund,12.2450
+2024-11-29,Manulife MPF Core Accumulation Fund,15.9670
+2024-11-29,Manulife MPF European Equity Fund,15.9960
+2024-11-29,Manulife MPF Fidelity Growth Fund,32.4490
+2024-11-29,Manulife MPF Fidelity Stable Growth Fund,22.2840
+2024-11-29,Manulife MPF Growth Fund,21.7820
+2024-11-29,Manulife MPF Hang Seng Index ESG Fund,11.4630
+2024-11-29,Manulife MPF Healthcare Fund,30.7860
+2024-11-29,Manulife MPF Hong Kong Bond Fund,15.2230
+2024-11-29,Manulife MPF Hong Kong Equity Fund,18.1990
+2024-11-29,Manulife MPF International Bond Fund,15.1500
+2024-11-29,Manulife MPF International Equity Fund,25.6780
+2024-11-29,Manulife MPF Japan Equity Fund,20.6730
+2024-11-29,Manulife MPF North American Equity Fund,33.4560
+2024-11-29,Manulife MPF Pacific Asia Equity Fund,31.8010
+2024-11-29,Manulife MPF RMB Bond Fund,11.5570
+2024-11-29,Manulife MPF Retirement Income Fund,8.7680
+2024-11-29,Manulife MPF Smart Retirement Fund,13.3420
+2024-11-29,Manulife MPF Stable Fund,15.7420
+2024-11-29,Manulife MPF Sustainable Pacific Asia Bond Fund,11.5260
+2024-11-29,Manulife Provident Funds Trust Company Limited,11.6900
+2024-11-29,North American Equity Fund,34.2400
+2024-11-29,Stable Fund,12.4600
+2024-11-29,ValueChoice Asia Pacific Equity Tracker Fund,14.2800
+2024-11-29,ValueChoice Balanced Fund,16.2900
+2024-11-29,ValueChoice Europe Equity Tracker Fund,19.2800
+2024-11-29,ValueChoice North America Equity Tracker Fund,46.3300
 2024-12-31,Age 65 Plus Fund,13.2100
+2024-12-31,Asia Pacific Equity Fund,30.8600
+2024-12-31,Balanced Fund,22.7600
+2024-12-31,Chinese Equity Fund,12.4200
+2024-12-31,Core Accumulation Fund,25.9000
+2024-12-31,European Equity Fund,16.3500
+2024-12-31,Global Bond Fund,11.0900
+2024-12-31,Global Equity Fund,25.0500
+2024-12-31,Growth Fund,24.2300
+2024-12-31,Guaranteed Fund,10.2400
+2024-12-31,HSBC Mandatory Provident Fund - SuperTrust Plus,13.2100
+2024-12-31,Hang Seng China Enterprises Index Tracking Fund,7.4300
+2024-12-31,Hang Seng Index Tracking Fund,22.8000
+2024-12-31,Hong Kong and Chinese Equity Fund,20.4200
+2024-12-31,MPF Conservative Fund,13.8900
+2024-12-31,Manulife MPF 2025 Retirement Fund,14.8090
+2024-12-31,Manulife MPF 2030 Retirement Fund,16.2610
+2024-12-31,Manulife MPF 2035 Retirement Fund,17.0330
+2024-12-31,Manulife MPF 2040 Retirement Fund,17.3790
+2024-12-31,Manulife MPF 2045 Retirement Fund,17.5520
+2024-12-31,Manulife MPF Aggressive Fund,22.9200
+2024-12-31,Manulife MPF China Value Fund,23.1140
+2024-12-31,Manulife MPF Conservative Fund,12.2780
+2024-12-31,Manulife MPF Core Accumulation Fund,15.6540
+2024-12-31,Manulife MPF European Equity Fund,15.7090
+2024-12-31,Manulife MPF Fidelity Growth Fund,31.9590
+2024-12-31,Manulife MPF Fidelity Stable Growth Fund,21.8830
+2024-12-31,Manulife MPF Growth Fund,21.5590
+2024-12-31,Manulife MPF Hang Seng Index ESG Fund,11.8300
+2024-12-31,Manulife MPF Healthcare Fund,28.7030
+2024-12-31,Manulife MPF Hong Kong Bond Fund,15.0970
+2024-12-31,Manulife MPF Hong Kong Equity Fund,18.6180
+2024-12-31,Manulife MPF International Bond Fund,14.8210
+2024-12-31,Manulife MPF International Equity Fund,25.1530
+2024-12-31,Manulife MPF Japan Equity Fund,20.9320
+2024-12-31,Manulife MPF North American Equity Fund,32.5120
+2024-12-31,Manulife MPF Pacific Asia Equity Fund,31.6140
+2024-12-31,Manulife MPF RMB Bond Fund,11.4780
+2024-12-31,Manulife MPF Retirement Income Fund,8.6120
+2024-12-31,Manulife MPF Smart Retirement Fund,13.1860
+2024-12-31,Manulife MPF Stable Fund,15.6540
+2024-12-31,Manulife MPF Sustainable Pacific Asia Bond Fund,11.3450
+2024-12-31,Manulife Provident Funds Trust Company Limited,11.5310
+2024-12-31,North American Equity Fund,33.2400
+2024-12-31,Stable Fund,12.2700
+2024-12-31,ValueChoice Asia Pacific Equity Tracker Fund,14.1000
+2024-12-31,ValueChoice Balanced Fund,16.1400
+2024-12-31,ValueChoice Europe Equity Tracker Fund,18.9200
+2024-12-31,ValueChoice North America Equity Tracker Fund,45.0300
 2025-01-28,Age 65 Plus Fund,13.3100
+2025-01-28,Asia Pacific Equity Fund,30.9400
+2025-01-28,Balanced Fund,23.0800
+2025-01-28,Chinese Equity Fund,12.5700
+2025-01-28,Core Accumulation Fund,26.4300
+2025-01-28,European Equity Fund,17.2000
+2025-01-28,Global Bond Fund,11.1400
+2025-01-28,Global Equity Fund,25.8800
+2025-01-28,Growth Fund,24.6400
+2025-01-28,Guaranteed Fund,10.2800
+2025-01-28,HSBC Mandatory Provident Fund - SuperTrust Plus,13.3100
+2025-01-28,Hang Seng China Enterprises Index Tracking Fund,7.5800
+2025-01-28,Hang Seng Index Tracking Fund,23.0500
+2025-01-28,Hong Kong and Chinese Equity Fund,20.6600
+2025-01-28,MPF Conservative Fund,13.9200
+2025-01-28,Manulife MPF 2025 Retirement Fund,15.0030
+2025-01-28,Manulife MPF 2030 Retirement Fund,16.5170
+2025-01-28,Manulife MPF 2035 Retirement Fund,17.3160
+2025-01-28,Manulife MPF 2040 Retirement Fund,17.6840
+2025-01-28,Manulife MPF 2045 Retirement Fund,17.8590
+2025-01-28,Manulife MPF Aggressive Fund,23.3430
+2025-01-28,Manulife MPF China Value Fund,23.3420
+2025-01-28,Manulife MPF Conservative Fund,12.3210
+2025-01-28,Manulife MPF Core Accumulation Fund,15.9800
+2025-01-28,Manulife MPF European Equity Fund,16.6560
+2025-01-28,Manulife MPF Fidelity Growth Fund,32.4350
+2025-01-28,Manulife MPF Fidelity Stable Growth Fund,22.0910
+2025-01-28,Manulife MPF Growth Fund,21.8920
+2025-01-28,Manulife MPF Hang Seng Index ESG Fund,11.8390
+2025-01-28,Manulife MPF Healthcare Fund,30.3600
+2025-01-28,Manulife MPF Hong Kong Bond Fund,15.2010
+2025-01-28,Manulife MPF Hong Kong Equity Fund,18.7120
+2025-01-28,Manulife MPF International Bond Fund,14.8710
+2025-01-28,Manulife MPF International Equity Fund,26.0450
+2025-01-28,Manulife MPF Japan Equity Fund,20.8400
+2025-01-28,Manulife MPF North American Equity Fund,33.9500
+2025-01-28,Manulife MPF Pacific Asia Equity Fund,31.7510
+2025-01-28,Manulife MPF RMB Bond Fund,11.6250
+2025-01-28,Manulife MPF Retirement Income Fund,8.6670
+2025-01-28,Manulife MPF Smart Retirement Fund,13.3440
+2025-01-28,Manulife MPF Stable Fund,15.8130
+2025-01-28,Manulife MPF Sustainable Pacific Asia Bond Fund,11.4250
+2025-01-28,Manulife Provident Funds Trust Company Limited,11.6180
+2025-01-28,North American Equity Fund,34.2600
+2025-01-28,Stable Fund,12.3600
+2025-01-28,ValueChoice Asia Pacific Equity Tracker Fund,14.1700
+2025-01-28,ValueChoice Balanced Fund,16.4000
+2025-01-28,ValueChoice Europe Equity Tracker Fund,19.9900
+2025-01-28,ValueChoice North America Equity Tracker Fund,46.6200
 2025-02-28,Age 65 Plus Fund,13.4500
+2025-02-28,Asia Pacific Equity Fund,30.9800
+2025-02-28,Balanced Fund,23.7200
+2025-02-28,Chinese Equity Fund,13.9600
+2025-02-28,Core Accumulation Fund,26.5000
+2025-02-28,European Equity Fund,17.9300
+2025-02-28,Global Bond Fund,11.2900
+2025-02-28,Global Equity Fund,25.7100
+2025-02-28,Growth Fund,25.3800
+2025-02-28,Guaranteed Fund,10.3600
+2025-02-28,HSBC Mandatory Provident Fund - SuperTrust Plus,13.4500
+2025-02-28,Hang Seng China Enterprises Index Tracking Fund,8.6200
+2025-02-28,Hang Seng Index Tracking Fund,26.1300
+2025-02-28,Hong Kong and Chinese Equity Fund,23.1200
+2025-02-28,MPF Conservative Fund,13.9600
+2025-02-28,Manulife MPF 2025 Retirement Fund,15.2810
+2025-02-28,Manulife MPF 2030 Retirement Fund,16.9260
+2025-02-28,Manulife MPF 2035 Retirement Fund,17.8440
+2025-02-28,Manulife MPF 2040 Retirement Fund,18.3010
+2025-02-28,Manulife MPF 2045 Retirement Fund,18.4820
+2025-02-28,Manulife MPF Aggressive Fund,24.0120
+2025-02-28,Manulife MPF China Value Fund,24.8150
+2025-02-28,Manulife MPF Conservative Fund,12.3460
+2025-02-28,Manulife MPF Core Accumulation Fund,15.9880
+2025-02-28,Manulife MPF European Equity Fund,16.9600
+2025-02-28,Manulife MPF Fidelity Growth Fund,33.2390
+2025-02-28,Manulife MPF Fidelity Stable Growth Fund,22.5580
+2025-02-28,Manulife MPF Growth Fund,22.4690
+2025-02-28,Manulife MPF Hang Seng Index ESG Fund,13.5020
+2025-02-28,Manulife MPF Healthcare Fund,30.8080
+2025-02-28,Manulife MPF Hong Kong Bond Fund,15.3330
+2025-02-28,Manulife MPF Hong Kong Equity Fund,20.9140
+2025-02-28,Manulife MPF International Bond Fund,15.0660
+2025-02-28,Manulife MPF International Equity Fund,25.5810
+2025-02-28,Manulife MPF Japan Equity Fund,20.9380
+2025-02-28,Manulife MPF North American Equity Fund,32.7490
+2025-02-28,Manulife MPF Pacific Asia Equity Fund,31.4770
+2025-02-28,Manulife MPF RMB Bond Fund,11.6080
+2025-02-28,Manulife MPF Retirement Income Fund,8.7940
+2025-02-28,Manulife MPF Smart Retirement Fund,13.5860
+2025-02-28,Manulife MPF Stable Fund,16.2000
+2025-02-28,Manulife MPF Sustainable Pacific Asia Bond Fund,11.6180
+2025-02-28,Manulife Provident Funds Trust Company Limited,11.7100
+2025-02-28,North American Equity Fund,33.3600
+2025-02-28,Stable Fund,12.6000
+2025-02-28,ValueChoice Asia Pacific Equity Tracker Fund,14.2400
+2025-02-28,ValueChoice Balanced Fund,16.8300
+2025-02-28,ValueChoice Europe Equity Tracker Fund,20.8800
+2025-02-28,ValueChoice North America Equity Tracker Fund,45.6700
 2025-03-31,Age 65 Plus Fund,13.3000
+2025-03-31,Asia Pacific Equity Fund,30.8100
+2025-03-31,Balanced Fund,23.5800
+2025-03-31,Chinese Equity Fund,14.0400
+2025-03-31,Core Accumulation Fund,25.8600
+2025-03-31,European Equity Fund,17.7800
+2025-03-31,Global Bond Fund,11.3200
+2025-03-31,Global Equity Fund,24.6800
+2025-03-31,Growth Fund,25.1700
+2025-03-31,Guaranteed Fund,10.3800
+2025-03-31,HSBC Mandatory Provident Fund - SuperTrust Plus,13.3000
+2025-03-31,Hang Seng China Enterprises Index Tracking Fund,8.7200
+2025-03-31,Hang Seng Index Tracking Fund,26.4100
+2025-03-31,Hong Kong and Chinese Equity Fund,23.4300
+2025-03-31,MPF Conservative Fund,13.9900
+2025-03-31,Manulife MPF 2025 Retirement Fund,15.1860
+2025-03-31,Manulife MPF 2030 Retirement Fund,16.7390
+2025-03-31,Manulife MPF 2035 Retirement Fund,17.6150
+2025-03-31,Manulife MPF 2040 Retirement Fund,18.0510
+2025-03-31,Manulife MPF 2045 Retirement Fund,18.2340
+2025-03-31,Manulife MPF Aggressive Fund,23.6420
+2025-03-31,Manulife MPF China Value Fund,24.1060
+2025-03-31,Manulife MPF Conservative Fund,12.3800
+2025-03-31,Manulife MPF Core Accumulation Fund,15.5890
+2025-03-31,Manulife MPF European Equity Fund,15.9620
+2025-03-31,Manulife MPF Fidelity Growth Fund,32.8880
+2025-03-31,Manulife MPF Fidelity Stable Growth Fund,22.4080
+2025-03-31,Manulife MPF Growth Fund,22.2360
+2025-03-31,Manulife MPF Hang Seng Index ESG Fund,13.6280
+2025-03-31,Manulife MPF Healthcare Fund,29.9570
+2025-03-31,Manulife MPF Hong Kong Bond Fund,15.4610
+2025-03-31,Manulife MPF Hong Kong Equity Fund,21.2200
+2025-03-31,Manulife MPF International Bond Fund,15.0750
+2025-03-31,Manulife MPF International Equity Fund,24.2650
+2025-03-31,Manulife MPF Japan Equity Fund,20.8770
+2025-03-31,Manulife MPF North American Equity Fund,30.5390
+2025-03-31,Manulife MPF Pacific Asia Equity Fund,31.2850
+2025-03-31,Manulife MPF RMB Bond Fund,11.6910
+2025-03-31,Manulife MPF Retirement Income Fund,8.7350
+2025-03-31,Manulife MPF Smart Retirement Fund,13.5080
+2025-03-31,Manulife MPF Stable Fund,16.2390
+2025-03-31,Manulife MPF Sustainable Pacific Asia Bond Fund,11.6030
+2025-03-31,Manulife Provident Funds Trust Company Limited,11.5760
+2025-03-31,North American Equity Fund,31.4100
+2025-03-31,Stable Fund,12.5800
+2025-03-31,ValueChoice Asia Pacific Equity Tracker Fund,14.2000
+2025-03-31,ValueChoice Balanced Fund,16.7400
+2025-03-31,ValueChoice Europe Equity Tracker Fund,20.5800
+2025-03-31,ValueChoice North America Equity Tracker Fund,43.0500
 2025-04-30,Age 65 Plus Fund,13.4200
+2025-04-30,Asia Pacific Equity Fund,30.8600
+2025-04-30,Balanced Fund,23.7500
+2025-04-30,Chinese Equity Fund,13.4800
+2025-04-30,Core Accumulation Fund,26.0000
+2025-04-30,European Equity Fund,18.2000
+2025-04-30,Global Bond Fund,11.5400
+2025-04-30,Global Equity Fund,24.6200
+2025-04-30,Growth Fund,25.3100
+2025-04-30,Guaranteed Fund,10.4200
+2025-04-30,HSBC Mandatory Provident Fund - SuperTrust Plus,13.4200
+2025-04-30,Hang Seng China Enterprises Index Tracking Fund,8.3000
+2025-04-30,Hang Seng Index Tracking Fund,25.3300
+2025-04-30,Hong Kong and Chinese Equity Fund,22.5700
+2025-04-30,MPF Conservative Fund,14.0300
+2025-04-30,Manulife MPF 2025 Retirement Fund,15.1440
+2025-04-30,Manulife MPF 2030 Retirement Fund,16.6420
+2025-04-30,Manulife MPF 2035 Retirement Fund,17.4740
+2025-04-30,Manulife MPF 2040 Retirement Fund,17.8930
+2025-04-30,Manulife MPF 2045 Retirement Fund,18.0770
+2025-04-30,Manulife MPF Aggressive Fund,23.5840
+2025-04-30,Manulife MPF China Value Fund,23.3640
+2025-04-30,Manulife MPF Conservative Fund,12.4120
+2025-04-30,Manulife MPF Core Accumulation Fund,15.7380
+2025-04-30,Manulife MPF European Equity Fund,16.1520
+2025-04-30,Manulife MPF Fidelity Growth Fund,32.7420
+2025-04-30,Manulife MPF Fidelity Stable Growth Fund,22.4420
+2025-04-30,Manulife MPF Growth Fund,22.2290
+2025-04-30,Manulife MPF Hang Seng Index ESG Fund,13.1570
+2025-04-30,Manulife MPF Healthcare Fund,29.4420
+2025-04-30,Manulife MPF Hong Kong Bond Fund,15.5930
+2025-04-30,Manulife MPF Hong Kong Equity Fund,20.3700
+2025-04-30,Manulife MPF International Bond Fund,15.4180
+2025-04-30,Manulife MPF International Equity Fund,24.2760
+2025-04-30,Manulife MPF Japan Equity Fund,21.5100
+2025-04-30,Manulife MPF North American Equity Fund,30.1170
+2025-04-30,Manulife MPF Pacific Asia Equity Fund,31.2640
+2025-04-30,Manulife MPF RMB Bond Fund,11.7200
+2025-04-30,Manulife MPF Retirement Income Fund,8.7200
+2025-04-30,Manulife MPF Smart Retirement Fund,13.4810
+2025-04-30,Manulife MPF Stable Fund,16.2710
+2025-04-30,Manulife MPF Sustainable Pacific Asia Bond Fund,11.5980
+2025-04-30,Manulife Provident Funds Trust Company Limited,11.6950
+2025-04-30,North American Equity Fund,31.1400
+2025-04-30,Stable Fund,12.7300
+2025-04-30,ValueChoice Asia Pacific Equity Tracker Fund,14.3500
+2025-04-30,ValueChoice Balanced Fund,16.9000
+2025-04-30,ValueChoice Europe Equity Tracker Fund,21.0200
+2025-04-30,ValueChoice North America Equity Tracker Fund,42.7800
 2025-09-30,Age 65 Plus Fund,13.9100
+2025-09-30,Asia Pacific Equity Fund,36.8800
+2025-09-30,Balanced Fund,27.1600
+2025-09-30,Chinese Equity Fund,17.6000
+2025-09-30,Core Accumulation Fund,28.9500
+2025-09-30,European Equity Fund,20.0000
+2025-09-30,Global Bond Fund,11.6900
+2025-09-30,Global Equity Fund,29.2200
+2025-09-30,Growth Fund,29.8700
+2025-09-30,Guaranteed Fund,10.6200
+2025-09-30,HSBC Mandatory Provident Fund - SuperTrust Plus,13.9100
+2025-09-30,Hang Seng China Enterprises Index Tracking Fund,9.9500
+2025-09-30,Hang Seng Index Tracking Fund,31.2600
+2025-09-30,Hong Kong and Chinese Equity Fund,28.9000
+2025-09-30,MPF Conservative Fund,14.1400
+2025-09-30,Manulife MPF 2025 Retirement Fund,16.6060
+2025-09-30,Manulife MPF 2030 Retirement Fund,18.9120
+2025-09-30,Manulife MPF 2035 Retirement Fund,20.3100
+2025-09-30,Manulife MPF 2040 Retirement Fund,21.2050
+2025-09-30,Manulife MPF 2045 Retirement Fund,21.4540
+2025-09-30,Manulife MPF Aggressive Fund,27.4580
+2025-09-30,Manulife MPF China Value Fund,32.4450
+2025-09-30,Manulife MPF Conservative Fund,12.4990
+2025-09-30,Manulife MPF Core Accumulation Fund,17.4530
+2025-09-30,Manulife MPF European Equity Fund,17.2650
+2025-09-30,Manulife MPF Fidelity Growth Fund,38.0240
+2025-09-30,Manulife MPF Fidelity Stable Growth Fund,24.6050
+2025-09-30,Manulife MPF Growth Fund,25.1500
+2025-09-30,Manulife MPF Hang Seng Index ESG Fund,16.4940
+2025-09-30,Manulife MPF Healthcare Fund,29.9700
+2025-09-30,Manulife MPF Hong Kong Bond Fund,15.8860
+2025-09-30,Manulife MPF Hong Kong Equity Fund,25.8280
+2025-09-30,Manulife MPF International Bond Fund,15.6500
+2025-09-30,Manulife MPF International Equity Fund,28.0680
+2025-09-30,Manulife MPF Japan Equity Fund,24.2000
+2025-09-30,Manulife MPF North American Equity Fund,35.6610
+2025-09-30,Manulife MPF Pacific Asia Equity Fund,37.4040
+2025-09-30,Manulife MPF RMB Bond Fund,12.1150
+2025-09-30,Manulife MPF Retirement Income Fund,9.1780
+2025-09-30,Manulife MPF Smart Retirement Fund,14.7280
+2025-09-30,Manulife MPF Stable Fund,17.1860
+2025-09-30,Manulife MPF Sustainable Pacific Asia Bond Fund,12.0160
+2025-09-30,Manulife Provident Funds Trust Company Limited,12.0830
+2025-09-30,North American Equity Fund,36.9600
+2025-09-30,Stable Fund,13.5600
+2025-09-30,ValueChoice Asia Pacific Equity Tracker Fund,17.4700
+2025-09-30,ValueChoice Balanced Fund,19.2900
+2025-09-30,ValueChoice Europe Equity Tracker Fund,23.0300
+2025-09-30,ValueChoice North America Equity Tracker Fund,51.3400
 2025-10-31,Age 65 Plus Fund,14.0300
+2025-10-31,Asia Pacific Equity Fund,38.0000
+2025-10-31,Balanced Fund,27.2500
+2025-10-31,Chinese Equity Fund,16.6300
+2025-10-31,Core Accumulation Fund,29.3300
+2025-10-31,European Equity Fund,20.2400
+2025-10-31,Global Bond Fund,11.6900
+2025-10-31,Global Equity Fund,29.7500
+2025-10-31,Growth Fund,30.0500
+2025-10-31,Guaranteed Fund,10.6300
+2025-10-31,HSBC Mandatory Provident Fund - SuperTrust Plus,14.0300
+2025-10-31,Hang Seng China Enterprises Index Tracking Fund,9.5400
+2025-10-31,Hang Seng Index Tracking Fund,30.1500
+2025-10-31,Hong Kong and Chinese Equity Fund,27.5700
+2025-10-31,MPF Conservative Fund,14.1700
+2025-10-31,Manulife MPF 2025 Retirement Fund,16.7500
+2025-10-31,Manulife MPF 2030 Retirement Fund,19.0810
+2025-10-31,Manulife MPF 2035 Retirement Fund,20.4640
+2025-10-31,Manulife MPF 2040 Retirement Fund,21.3240
+2025-10-31,Manulife MPF 2045 Retirement Fund,21.5710
+2025-10-31,Manulife MPF Aggressive Fund,27.5280
+2025-10-31,Manulife MPF China Value Fund,32.0230
+2025-10-31,Manulife MPF Conservative Fund,12.5210
+2025-10-31,Manulife MPF Core Accumulation Fund,17.7090
+2025-10-31,Manulife MPF European Equity Fund,17.3040
+2025-10-31,Manulife MPF Fidelity Growth Fund,38.2840
+2025-10-31,Manulife MPF Fidelity Stable Growth Fund,24.6860
+2025-10-31,Manulife MPF Growth Fund,25.1880
+2025-10-31,Manulife MPF Hang Seng Index ESG Fund,15.8080
+2025-10-31,Manulife MPF Healthcare Fund,31.2580
+2025-10-31,Manulife MPF Hong Kong Bond Fund,15.9480
+2025-10-31,Manulife MPF Hong Kong Equity Fund,24.8080
+2025-10-31,Manulife MPF International Bond Fund,15.6030
+2025-10-31,Manulife MPF International Equity Fund,28.4460
+2025-10-31,Manulife MPF Japan Equity Fund,24.7480
+2025-10-31,Manulife MPF North American Equity Fund,36.2050
+2025-10-31,Manulife MPF Pacific Asia Equity Fund,38.9150
+2025-10-31,Manulife MPF RMB Bond Fund,12.1310
+2025-10-31,Manulife MPF Retirement Income Fund,9.2150
+2025-10-31,Manulife MPF Smart Retirement Fund,14.8560
+2025-10-31,Manulife MPF Stable Fund,17.1900
+2025-10-31,Manulife MPF Sustainable Pacific Asia Bond Fund,12.0750
+2025-10-31,Manulife Provident Funds Trust Company Limited,12.2000
+2025-10-31,North American Equity Fund,37.6700
+2025-10-31,Stable Fund,13.5800
+2025-10-31,ValueChoice Asia Pacific Equity Tracker Fund,18.0900
+2025-10-31,ValueChoice Balanced Fund,19.4100
+2025-10-31,ValueChoice Europe Equity Tracker Fund,23.3200
+2025-10-31,ValueChoice North America Equity Tracker Fund,52.3800
 2025-11-28,Age 65 Plus Fund,14.0400
+2025-11-28,Asia Pacific Equity Fund,36.9700
+2025-11-28,Balanced Fund,27.1000
+2025-11-28,Chinese Equity Fund,16.0400
+2025-11-28,Core Accumulation Fund,29.3500
+2025-11-28,European Equity Fund,20.6400
+2025-11-28,Global Bond Fund,11.7400
+2025-11-28,Global Equity Fund,29.8100
+2025-11-28,Growth Fund,29.8200
+2025-11-28,Guaranteed Fund,10.6700
+2025-11-28,HSBC Mandatory Provident Fund - SuperTrust Plus,14.0400
+2025-11-28,Hang Seng China Enterprises Index Tracking Fund,9.5000
+2025-11-28,Hang Seng Index Tracking Fund,30.1100
+2025-11-28,Hong Kong and Chinese Equity Fund,27.1400
+2025-11-28,MPF Conservative Fund,14.1900
+2025-11-28,Manulife MPF 2025 Retirement Fund,16.7580
+2025-11-28,Manulife MPF 2030 Retirement Fund,19.0540
+2025-11-28,Manulife MPF 2035 Retirement Fund,20.4020
+2025-11-28,Manulife MPF 2040 Retirement Fund,21.2350
+2025-11-28,Manulife MPF 2045 Retirement Fund,21.4760
+2025-11-28,Manulife MPF Aggressive Fund,27.5120
+2025-11-28,Manulife MPF China Value Fund,31.1220
+2025-11-28,Manulife MPF Conservative Fund,12.5530
+2025-11-28,Manulife MPF Core Accumulation Fund,17.7410
+2025-11-28,Manulife MPF European Equity Fund,17.4550
+2025-11-28,Manulife MPF Fidelity Growth Fund,37.9040
+2025-11-28,Manulife MPF Fidelity Stable Growth Fund,24.5630
+2025-11-28,Manulife MPF Growth Fund,25.2060
+2025-11-28,Manulife MPF Hang Seng Index ESG Fund,15.6050
+2025-11-28,Manulife MPF Healthcare Fund,34.3910
+2025-11-28,Manulife MPF Hong Kong Bond Fund,16.0770
+2025-11-28,Manulife MPF Hong Kong Equity Fund,24.4880
+2025-11-28,Manulife MPF International Bond Fund,15.6290
+2025-11-28,Manulife MPF International Equity Fund,28.6450
+2025-11-28,Manulife MPF Japan Equity Fund,25.1800
+2025-11-28,Manulife MPF North American Equity Fund,36.3970
+2025-11-28,Manulife MPF Pacific Asia Equity Fund,37.9320
+2025-11-28,Manulife MPF RMB Bond Fund,12.2060
+2025-11-28,Manulife MPF Retirement Income Fund,9.2210
+2025-11-28,Manulife MPF Smart Retirement Fund,14.8640
+2025-11-28,Manulife MPF Stable Fund,17.3000
+2025-11-28,Manulife MPF Sustainable Pacific Asia Bond Fund,12.1310
+2025-11-28,Manulife Provident Funds Trust Company Limited,12.2240
+2025-11-28,North American Equity Fund,38.0800
+2025-11-28,Stable Fund,13.5700
+2025-11-28,ValueChoice Asia Pacific Equity Tracker Fund,17.6700
+2025-11-28,ValueChoice Balanced Fund,19.3500
+2025-11-28,ValueChoice Europe Equity Tracker Fund,23.6500
+2025-11-28,ValueChoice North America Equity Tracker Fund,52.5400
 2025-12-31,Age 65 Plus Fund,14.0400
+2025-12-31,Asia Pacific Equity Fund,38.0900
+2025-12-31,Balanced Fund,27.4100
+2025-12-31,Chinese Equity Fund,16.2000
+2025-12-31,Core Accumulation Fund,29.5400
+2025-12-31,European Equity Fund,21.4000
+2025-12-31,Global Bond Fund,11.7200
+2025-12-31,Global Equity Fund,30.2200
+2025-12-31,Growth Fund,30.2800
+2025-12-31,Guaranteed Fund,10.6800
+2025-12-31,HSBC Mandatory Provident Fund - SuperTrust Plus,14.0400
+2025-12-31,Hang Seng China Enterprises Index Tracking Fund,9.3000
+2025-12-31,Hang Seng Index Tracking Fund,29.9000
+2025-12-31,Hong Kong and Chinese Equity Fund,27.2000
+2025-12-31,MPF Conservative Fund,14.2200
+2025-12-31,Manulife MPF 2025 Retirement Fund,16.8810
+2025-12-31,Manulife MPF 2030 Retirement Fund,19.2550
+2025-12-31,Manulife MPF 2035 Retirement Fund,20.6400
+2025-12-31,Manulife MPF 2040 Retirement Fund,21.5330
+2025-12-31,Manulife MPF 2045 Retirement Fund,21.7780
+2025-12-31,Manulife MPF Aggressive Fund,27.9650
+2025-12-31,Manulife MPF China Value Fund,31.8350
+2025-12-31,Manulife MPF Conservative Fund,12.5840
+2025-12-31,Manulife MPF Core Accumulation Fund,17.8060
+2025-12-31,Manulife MPF European Equity Fund,18.0390
+2025-12-31,Manulife MPF Fidelity Growth Fund,38.3530
+2025-12-31,Manulife MPF Fidelity Stable Growth Fund,24.7060
+2025-12-31,Manulife MPF Growth Fund,25.5320
+2025-12-31,Manulife MPF Hang Seng Index ESG Fund,15.5000
+2025-12-31,Manulife MPF Healthcare Fund,33.9510
+2025-12-31,Manulife MPF Hong Kong Bond Fund,16.1030
+2025-12-31,Manulife MPF Hong Kong Equity Fund,24.5790
+2025-12-31,Manulife MPF International Bond Fund,15.5980
+2025-12-31,Manulife MPF International Equity Fund,28.9640
+2025-12-31,Manulife MPF Japan Equity Fund,25.2790
+2025-12-31,Manulife MPF North American Equity Fund,36.4630
+2025-12-31,Manulife MPF Pacific Asia Equity Fund,39.1900
+2025-12-31,Manulife MPF RMB Bond Fund,12.3120
+2025-12-31,Manulife MPF Retirement Income Fund,9.2350
+2025-12-31,Manulife MPF Smart Retirement Fund,14.9720
+2025-12-31,Manulife MPF Stable Fund,17.3580
+2025-12-31,Manulife MPF Sustainable Pacific Asia Bond Fund,12.0940
+2025-12-31,Manulife Provident Funds Trust Company Limited,12.1990
+2025-12-31,North American Equity Fund,38.2100
+2025-12-31,Stable Fund,13.6300
+2025-12-31,ValueChoice Asia Pacific Equity Tracker Fund,18.1300
+2025-12-31,ValueChoice Balanced Fund,19.5500
+2025-12-31,ValueChoice Europe Equity Tracker Fund,24.4800
+2025-12-31,ValueChoice North America Equity Tracker Fund,52.4900
 2026-01-30,Age 65 Plus Fund,14.1743
+2026-01-30,Asia Pacific Equity Fund,41.0500
+2026-01-30,Balanced Fund,28.6465
+2026-01-30,Chinese Equity Fund,17.2474
+2026-01-30,Core Accumulation Fund,30.1896
+2026-01-30,European Equity Fund,22.1598
+2026-01-30,Global Bond Fund,11.8369
+2026-01-30,Global Equity Fund,31.4637
+2026-01-30,Growth Fund,31.9591
+2026-01-30,Guaranteed Fund,10.6962
+2026-01-30,HSBC Mandatory Provident Fund - SuperTrust Plus,14.1746
+2026-01-30,Hang Seng China Enterprises Index Tracking Fund,9.7204
+2026-01-30,Hang Seng Index Tracking Fund,31.9386
+2026-01-30,Hong Kong and Chinese Equity Fund,29.3327
+2026-01-30,MPF Conservative Fund,14.2454
+2026-01-30,Manulife MPF 2025 Retirement Fund,17.3510
+2026-01-30,Manulife MPF 2030 Retirement Fund,20.0480
+2026-01-30,Manulife MPF 2035 Retirement Fund,21.6640
+2026-01-30,Manulife MPF 2040 Retirement Fund,22.7640
+2026-01-30,Manulife MPF 2045 Retirement Fund,23.0300
+2026-01-30,Manulife MPF Aggressive Fund,29.3370
+2026-01-30,Manulife MPF China Value Fund,34.6830
+2026-01-30,Manulife MPF Conservative Fund,12.6040
+2026-01-30,Manulife MPF Core Accumulation Fund,18.1380
+2026-01-30,Manulife MPF European Equity Fund,18.6980
+2026-01-30,Manulife MPF Fidelity Growth Fund,40.1810
+2026-01-30,Manulife MPF Fidelity Stable Growth Fund,25.4320
+2026-01-30,Manulife MPF Growth Fund,26.5830
+2026-01-30,Manulife MPF Hang Seng Index ESG Fund,16.4840
+2026-01-30,Manulife MPF Healthcare Fund,34.3020
+2026-01-30,Manulife MPF Hong Kong Bond Fund,16.0540
+2026-01-30,Manulife MPF Hong Kong Equity Fund,26.5730
+2026-01-30,Manulife MPF International Bond Fund,15.7790
+2026-01-30,Manulife MPF International Equity Fund,29.6050
+2026-01-30,Manulife MPF Japan Equity Fund,26.1700
+2026-01-30,Manulife MPF North American Equity Fund,36.3800
+2026-01-30,Manulife MPF Pacific Asia Equity Fund,42.7520
+2026-01-30,Manulife MPF RMB Bond Fund,12.3890
+2026-01-30,Manulife MPF Retirement Income Fund,9.3880
+2026-01-30,Manulife MPF Smart Retirement Fund,15.3850
+2026-01-30,Manulife MPF Stable Fund,17.5110
+2026-01-30,Manulife MPF Sustainable Pacific Asia Bond Fund,12.1210
+2026-01-30,Manulife Provident Funds Trust Company Limited,12.2770
+2026-01-30,North American Equity Fund,39.0725
+2026-01-30,Stable Fund,13.9540
+2026-01-30,ValueChoice Asia Pacific Equity Tracker Fund,19.6197
+2026-01-30,ValueChoice Balanced Fund,20.3595
+2026-01-30,ValueChoice Europe Equity Tracker Fund,25.4940
+2026-01-30,ValueChoice North America Equity Tracker Fund,53.1373
 2026-02-27,Age 65 Plus Fund,14.4002
+2026-02-27,Asia Pacific Equity Fund,42.9118
+2026-02-27,Balanced Fund,29.2973
+2026-02-27,Chinese Equity Fund,16.7041
+2026-02-27,Core Accumulation Fund,30.6963
+2026-02-27,European Equity Fund,22.7990
+2026-02-27,Global Bond Fund,11.9844
+2026-02-27,Global Equity Fund,31.9710
+2026-02-27,Growth Fund,32.8194
+2026-02-27,Guaranteed Fund,10.7663
+2026-02-27,HSBC Mandatory Provident Fund - SuperTrust Plus,14.4006
+2026-02-27,Hang Seng China Enterprises Index Tracking Fund,9.2363
+2026-02-27,Hang Seng Index Tracking Fund,31.0345
+2026-02-27,Hong Kong and Chinese Equity Fund,28.5969
+2026-02-27,MPF Conservative Fund,14.2690
+2026-02-27,Manulife MPF 2025 Retirement Fund,17.7790
+2026-02-27,Manulife MPF 2030 Retirement Fund,20.6110
+2026-02-27,Manulife MPF 2035 Retirement Fund,22.2860
+2026-02-27,Manulife MPF 2040 Retirement Fund,23.4180
+2026-02-27,Manulife MPF 2045 Retirement Fund,23.6720
+2026-02-27,Manulife MPF Aggressive Fund,30.1500
+2026-02-27,Manulife MPF China Value Fund,35.8850
+2026-02-27,Manulife MPF Conservative Fund,12.6310
+2026-02-27,Manulife MPF Core Accumulation Fund,18.4000
+2026-02-27,Manulife MPF European Equity Fund,19.2700
+2026-02-27,Manulife MPF Fidelity Growth Fund,41.3730
+2026-02-27,Manulife MPF Fidelity Stable Growth Fund,26.0590
+2026-02-27,Manulife MPF Growth Fund,27.1940
+2026-02-27,Manulife MPF Hang Seng Index ESG Fund,16.0600
+2026-02-27,Manulife MPF Healthcare Fund,35.5880
+2026-02-27,Manulife MPF Hong Kong Bond Fund,16.3690
+2026-02-27,Manulife MPF Hong Kong Equity Fund,26.3830
+2026-02-27,Manulife MPF International Bond Fund,16.0020
+2026-02-27,Manulife MPF International Equity Fund,29.8690
+2026-02-27,Manulife MPF Japan Equity Fund,28.2530
+2026-02-27,Manulife MPF North American Equity Fund,35.4170
+2026-02-27,Manulife MPF Pacific Asia Equity Fund,46.0740
+2026-02-27,Manulife MPF RMB Bond Fund,12.5660
+2026-02-27,Manulife MPF Retirement Income Fund,9.5780
+2026-02-27,Manulife MPF Smart Retirement Fund,15.7610
+2026-02-27,Manulife MPF Stable Fund,17.7990
+2026-02-27,Manulife MPF Sustainable Pacific Asia Bond Fund,12.3040
+2026-02-27,Manulife Provident Funds Trust Company Limited,12.4550
+2026-02-27,North American Equity Fund,38.9463
+2026-02-27,Stable Fund,14.2052
+2026-02-27,ValueChoice Asia Pacific Equity Tracker Fund,20.8180
+2026-02-27,ValueChoice Balanced Fund,20.7439
+2026-02-27,ValueChoice Europe Equity Tracker Fund,26.3920
+2026-02-27,ValueChoice North America Equity Tracker Fund,52.8162
 2026-03-31,Age 65 Plus Fund,13.9159
+2026-03-31,Asia Pacific Equity Fund,37.2650
+2026-03-31,Balanced Fund,27.0718
+2026-03-31,Chinese Equity Fund,15.0711
+2026-03-31,Core Accumulation Fund,29.0396
+2026-03-31,European Equity Fund,20.5809
+2026-03-31,Global Bond Fund,11.6676
+2026-03-31,Global Equity Fund,29.7314
+2026-03-31,Growth Fund,29.8489
+2026-03-31,Guaranteed Fund,10.6462
+2026-03-31,HSBC Mandatory Provident Fund - SuperTrust Plus,13.9163
+2026-03-31,Hang Seng China Enterprises Index Tracking Fund,8.7245
+2026-03-31,Hang Seng Index Tracking Fund,28.9483
+2026-03-31,Hong Kong and Chinese Equity Fund,25.8978
+2026-03-31,MPF Conservative Fund,14.2923
+2026-03-31,Manulife MPF 2025 Retirement Fund,16.8590
+2026-03-31,Manulife MPF 2030 Retirement Fund,19.1120
+2026-03-31,Manulife MPF 2035 Retirement Fund,20.3920
+2026-03-31,Manulife MPF 2040 Retirement Fund,21.1970
+2026-03-31,Manulife MPF 2045 Retirement Fund,21.3820
+2026-03-31,Manulife MPF Aggressive Fund,27.3740
+2026-03-31,Manulife MPF China Value Fund,32.4510
+2026-03-31,Manulife MPF Conservative Fund,12.6470
+2026-03-31,Manulife MPF Core Accumulation Fund,17.4750
+2026-03-31,Manulife MPF European Equity Fund,17.3080
+2026-03-31,Manulife MPF Fidelity Growth Fund,37.3790
+2026-03-31,Manulife MPF Fidelity Stable Growth Fund,24.3200
+2026-03-31,Manulife MPF Growth Fund,25.0660
+2026-03-31,Manulife MPF Hang Seng Index ESG Fund,14.5040
+2026-03-31,Manulife MPF Healthcare Fund,32.8750
+2026-03-31,Manulife MPF Hong Kong Bond Fund,16.2330
+2026-03-31,Manulife MPF Hong Kong Equity Fund,23.9460
+2026-03-31,Manulife MPF International Bond Fund,15.4760
+2026-03-31,Manulife MPF International Equity Fund,27.6130
+2026-03-31,Manulife MPF Japan Equity Fund,24.8480
+2026-03-31,Manulife MPF North American Equity Fund,33.4220
+2026-03-31,Manulife MPF Pacific Asia Equity Fund,40.0810
+2026-03-31,Manulife MPF RMB Bond Fund,12.5220
+2026-03-31,Manulife MPF Retirement Income Fund,9.1410
+2026-03-31,Manulife MPF Smart Retirement Fund,14.9450
+2026-03-31,Manulife MPF Stable Fund,17.2510
+2026-03-31,Manulife MPF Sustainable Pacific Asia Bond Fund,12.0760
+2026-03-31,Manulife Provident Funds Trust Company Limited,12.0790
+2026-03-31,North American Equity Fund,37.2498
+2026-03-31,Stable Fund,13.5356
+2026-03-31,ValueChoice Asia Pacific Equity Tracker Fund,18.1317
+2026-03-31,ValueChoice Balanced Fund,19.2786
+2026-03-31,ValueChoice Europe Equity Tracker Fund,24.0429
+2026-03-31,ValueChoice North America Equity Tracker Fund,50.2183
 2026-04-30,Age 65 Plus Fund,14.2135
+2026-04-30,Asia Pacific Equity Fund,42.2979
+2026-04-30,Balanced Fund,28.8540
+2026-04-30,Chinese Equity Fund,16.5561
+2026-04-30,Core Accumulation Fund,30.8611
+2026-04-30,European Equity Fund,21.9491
+2026-04-30,Global Bond Fund,11.7398
+2026-04-30,Global Equity Fund,32.6831
+2026-04-30,Growth Fund,32.3484
+2026-04-30,Guaranteed Fund,10.6660
+2026-04-30,HSBC Mandatory Provident Fund - SuperTrust Plus,14.2139
+2026-04-30,Hang Seng China Enterprises Index Tracking Fund,9.0458
+2026-04-30,Hang Seng Index Tracking Fund,30.1011
+2026-04-30,Hong Kong and Chinese Equity Fund,27.5002
+2026-04-30,MPF Conservative Fund,14.3112
+2026-04-30,Manulife MPF 2025 Retirement Fund,17.6510
+2026-04-30,Manulife MPF 2030 Retirement Fund,20.4760
+2026-04-30,Manulife MPF 2035 Retirement Fund,22.1190
+2026-04-30,Manulife MPF 2040 Retirement Fund,23.1980
+2026-04-30,Manulife MPF 2045 Retirement Fund,23.4420
+2026-04-30,Manulife MPF Aggressive Fund,29.7880
+2026-04-30,Manulife MPF China Value Fund,38.2390
+2026-04-30,Manulife MPF Conservative Fund,12.6610
+2026-04-30,Manulife MPF Core Accumulation Fund,18.4980
+2026-04-30,Manulife MPF European Equity Fund,18.4010
+2026-04-30,Manulife MPF Fidelity Growth Fund,40.4980
+2026-04-30,Manulife MPF Fidelity Stable Growth Fund,25.4660
+2026-04-30,Manulife MPF Growth Fund,26.8420
+2026-04-30,Manulife MPF Hang Seng Index ESG Fund,15.0350
+2026-04-30,Manulife MPF Healthcare Fund,32.6350
+2026-04-30,Manulife MPF Hong Kong Bond Fund,16.1790
+2026-04-30,Manulife MPF Hong Kong Equity Fund,25.5470
+2026-04-30,Manulife MPF International Bond Fund,15.5790
+2026-04-30,Manulife MPF International Equity Fund,30.3030
+2026-04-30,Manulife MPF Japan Equity Fund,26.7650
+2026-04-30,Manulife MPF North American Equity Fund,37.1860
+2026-04-30,Manulife MPF Pacific Asia Equity Fund,46.4040
+2026-04-30,Manulife MPF RMB Bond Fund,12.6300
+2026-04-30,Manulife MPF Retirement Income Fund,9.4110
+2026-04-30,Manulife MPF Smart Retirement Fund,15.6480
+2026-04-30,Manulife MPF Stable Fund,17.5340
+2026-04-30,Manulife MPF Sustainable Pacific Asia Bond Fund,12.1270
+2026-04-30,Manulife Provident Funds Trust Company Limited,12.2980
+2026-04-30,North American Equity Fund,41.0979
+2026-04-30,Stable Fund,13.9546
+2026-04-30,ValueChoice Asia Pacific Equity Tracker Fund,20.5828
+2026-04-30,ValueChoice Balanced Fund,20.4512
+2026-04-30,ValueChoice Europe Equity Tracker Fund,25.5223
+2026-04-30,ValueChoice North America Equity Tracker Fund,55.2667
 2026-05-29,Age 65 Plus Fund,14.4606
+2026-05-29,Asia Pacific Equity Fund,46.1197
+2026-05-29,Balanced Fund,29.8309
+2026-05-29,Chinese Equity Fund,17.0125
+2026-05-29,Core Accumulation Fund,32.0379
+2026-05-29,European Equity Fund,22.6562
+2026-05-29,Global Bond Fund,11.7850
+2026-05-29,Global Equity Fund,34.4073
+2026-05-29,Growth Fund,33.7586
+2026-05-29,Guaranteed Fund,10.6636
+2026-05-29,HSBC Mandatory Provident Fund - SuperTrust Plus,14.4610
+2026-05-29,Hang Seng China Enterprises Index Tracking Fund,8.8052
+2026-05-29,Hang Seng Index Tracking Fund,29.5555
+2026-05-29,Hong Kong and Chinese Equity Fund,27.4276
+2026-05-29,MPF Conservative Fund,14.3298
+2026-05-29,Manulife MPF 2025 Retirement Fund,18.0410
+2026-05-29,Manulife MPF 2030 Retirement Fund,21.1520
+2026-05-29,Manulife MPF 2035 Retirement Fund,22.9790
+2026-05-29,Manulife MPF 2040 Retirement Fund,24.2080
+2026-05-29,Manulife MPF 2045 Retirement Fund,24.4860
+2026-05-29,Manulife MPF Aggressive Fund,31.0100
+2026-05-29,Manulife MPF China Value Fund,41.1310
+2026-05-29,Manulife MPF Conservative Fund,12.6790
+2026-05-29,Manulife MPF Core Accumulation Fund,19.1010
+2026-05-29,Manulife MPF European Equity Fund,18.8350
+2026-05-29,Manulife MPF Fidelity Growth Fund,42.1250
+2026-05-29,Manulife MPF Fidelity Stable Growth Fund,26.1090
+2026-05-29,Manulife MPF Growth Fund,27.6770
+2026-05-29,Manulife MPF Hang Seng Index ESG Fund,15.0250
+2026-05-29,Manulife MPF Healthcare Fund,33.2400
+2026-05-29,Manulife MPF Hong Kong Bond Fund,16.1040
+2026-05-29,Manulife MPF Hong Kong Equity Fund,25.5890
+2026-05-29,Manulife MPF International Bond Fund,15.6490
+2026-05-29,Manulife MPF International Equity Fund,31.6580
+2026-05-29,Manulife MPF Japan Equity Fund,29.3250
+2026-05-29,Manulife MPF North American Equity Fund,38.4390
+2026-05-29,Manulife MPF Pacific Asia Equity Fund,51.7000
+2026-05-29,Manulife MPF RMB Bond Fund,12.7290
+2026-05-29,Manulife MPF Retirement Income Fund,9.5200
+2026-05-29,Manulife MPF Smart Retirement Fund,15.9970
+2026-05-29,Manulife MPF Stable Fund,17.6190
+2026-05-29,Manulife MPF Sustainable Pacific Asia Bond Fund,12.1540
+2026-05-29,Manulife Provident Funds Trust Company Limited,12.4620
+2026-05-29,North American Equity Fund,42.7742
+2026-05-29,Stable Fund,14.2072
+2026-05-29,ValueChoice Asia Pacific Equity Tracker Fund,22.5800
+2026-05-29,ValueChoice Balanced Fund,21.0119
+2026-05-29,ValueChoice Europe Equity Tracker Fund,26.2061
+2026-05-29,ValueChoice North America Equity Tracker Fund,58.0838
 2026-06-30,Age 65 Plus Fund,14.4683
+2026-06-30,Asia Pacific Equity Fund,45.2066
+2026-06-30,Balanced Fund,29.3480
+2026-06-30,Chinese Equity Fund,16.2249
+2026-06-30,Core Accumulation Fund,31.9150
+2026-06-30,European Equity Fund,23.0661
+2026-06-30,Global Bond Fund,11.7536
+2026-06-30,Global Equity Fund,34.1795
+2026-06-30,Growth Fund,33.1068
+2026-06-30,Guaranteed Fund,10.6208
+2026-06-30,HSBC Mandatory Provident Fund - SuperTrust Plus,14.4687
+2026-06-30,Hang Seng China Enterprises Index Tracking Fund,7.9632
+2026-06-30,Hang Seng Index Tracking Fund,27.0212
+2026-06-30,Hong Kong and Chinese Equity Fund,25.3855
+2026-06-30,MPF Conservative Fund,14.3524
+2026-06-30,Manulife MPF 2025 Retirement Fund,17.8550
+2026-06-30,Manulife MPF 2030 Retirement Fund,20.8040
+2026-06-30,Manulife MPF 2035 Retirement Fund,22.5080
+2026-06-30,Manulife MPF 2040 Retirement Fund,23.6110
+2026-06-30,Manulife MPF 2045 Retirement Fund,23.8620
+2026-06-30,Manulife MPF Aggressive Fund,30.5810
+2026-06-30,Manulife MPF China Value Fund,40.9230
+2026-06-30,Manulife MPF Conservative Fund,12.6980
+2026-06-30,Manulife MPF Core Accumulation Fund,19.0150
+2026-06-30,Manulife MPF European Equity Fund,19.0680
+2026-06-30,Manulife MPF Fidelity Growth Fund,41.6360
+2026-06-30,Manulife MPF Fidelity Stable Growth Fund,25.9670
+2026-06-30,Manulife MPF Growth Fund,27.3350
+2026-06-30,Manulife MPF Hang Seng Index ESG Fund,13.7220
+2026-06-30,Manulife MPF Healthcare Fund,35.1000
+2026-06-30,Manulife MPF Hong Kong Bond Fund,16.0680
+2026-06-30,Manulife MPF Hong Kong Equity Fund,24.1010
+2026-06-30,Manulife MPF International Bond Fund,15.5420
+2026-06-30,Manulife MPF International Equity Fund,31.3510
+2026-06-30,Manulife MPF Japan Equity Fund,29.0760
+2026-06-30,Manulife MPF North American Equity Fund,37.3340
+2026-06-30,Manulife MPF Pacific Asia Equity Fund,50.8210
+2026-06-30,Manulife MPF RMB Bond Fund,12.7550
+2026-06-30,Manulife MPF Retirement Income Fund,9.4180
+2026-06-30,Manulife MPF Smart Retirement Fund,15.8330
+2026-06-30,Manulife MPF Stable Fund,17.4650
+2026-06-30,Manulife MPF Sustainable Pacific Asia Bond Fund,12.1630
+2026-06-30,Manulife Provident Funds Trust Company Limited,12.4630
+2026-06-30,North American Equity Fund,42.4798
+2026-06-30,Stable Fund,14.0886
+2026-06-30,ValueChoice Asia Pacific Equity Tracker Fund,22.2609
+2026-06-30,ValueChoice Balanced Fund,20.6624
+2026-06-30,ValueChoice Europe Equity Tracker Fund,26.6114
+2026-06-30,ValueChoice North America Equity Tracker Fund,57.5405
 2026-07-31,Age 65 Plus Fund,14.2967
+2026-07-31,Asia Pacific Equity Fund,43.0120
+2026-07-31,Balanced Fund,29.4617
+2026-07-31,Chinese Equity Fund,15.8156
+2026-07-31,Core Accumulation Fund,31.6635
+2026-07-31,European Equity Fund,23.4853
+2026-07-31,Global Bond Fund,11.6507
+2026-07-31,Global Equity Fund,34.2241
+2026-07-31,Growth Fund,33.3227
+2026-07-31,Guaranteed Fund,10.6082
+2026-07-31,HSBC Mandatory Provident Fund - SuperTrust Plus,14.2971
+2026-07-31,Hang Seng China Enterprises Index Tracking Fund,9.0959
+2026-07-31,Hang Seng Index Tracking Fund,30.6288
+2026-07-31,Hong Kong and Chinese Equity Fund,27.2904
+2026-07-31,MPF Conservative Fund,14.3790
+2026-07-31,Manulife MPF 2025 Retirement Fund,17.7160
+2026-07-31,Manulife MPF 2030 Retirement Fund,20.7360
+2026-07-31,Manulife MPF 2035 Retirement Fund,22.5410
+2026-07-31,Manulife MPF 2040 Retirement Fund,23.7870
+2026-07-31,Manulife MPF 2045 Retirement Fund,24.0940
+2026-07-31,Manulife MPF Aggressive Fund,30.6200
+2026-07-31,Manulife MPF China Value Fund,38.1100
+2026-07-31,Manulife MPF Conservative Fund,12.7220
+2026-07-31,Manulife MPF Core Accumulation Fund,18.9590
+2026-07-31,Manulife MPF European Equity Fund,19.4040
+2026-07-31,Manulife MPF Fidelity Growth Fund,41.3990
+2026-07-31,Manulife MPF Fidelity Stable Growth Fund,25.5940
+2026-07-31,Manulife MPF Growth Fund,27.2980
+2026-07-31,Manulife MPF Hang Seng Index ESG Fund,15.5310
+2026-07-31,Manulife MPF Healthcare Fund,35.4200
+2026-07-31,Manulife MPF Hong Kong Bond Fund,15.9580
+2026-07-31,Manulife MPF Hong Kong Equity Fund,25.3400
+2026-07-31,Manulife MPF International Bond Fund,15.4200
+2026-07-31,Manulife MPF International Equity Fund,31.2230
+2026-07-31,Manulife MPF Japan Equity Fund,29.7070
+2026-07-31,Manulife MPF North American Equity Fund,37.4160
+2026-07-31,Manulife MPF Pacific Asia Equity Fund,48.9560
+2026-07-31,Manulife MPF RMB Bond Fund,12.8760
+2026-07-31,Manulife MPF Retirement Income Fund,9.3130
+2026-07-31,Manulife MPF Smart Retirement Fund,15.7130
+2026-07-31,Manulife MPF Stable Fund,17.5000
+2026-07-31,Manulife MPF Sustainable Pacific Asia Bond Fund,12.0580
+2026-07-31,Manulife Provident Funds Trust Company Limited,12.3580
+2026-07-31,North American Equity Fund,42.4211
+2026-07-31,Stable Fund,14.0418
+2026-07-31,ValueChoice Asia Pacific Equity Tracker Fund,21.6323
+2026-07-31,ValueChoice Balanced Fund,20.9629
+2026-07-31,ValueChoice Europe Equity Tracker Fund,27.0302
+2026-07-31,ValueChoice North America Equity Tracker Fund,57.4925
 2026-08-31,Age 65 Plus Fund,14.3735
+2026-08-31,Asia Pacific Equity Fund,44.1482
+2026-08-31,Balanced Fund,29.8727
+2026-08-31,Chinese Equity Fund,16.0184
+2026-08-31,Core Accumulation Fund,32.1834
+2026-08-31,European Equity Fund,23.7372
+2026-08-31,Global Bond Fund,11.6621
+2026-08-31,Global Equity Fund,34.5879
+2026-08-31,Growth Fund,33.9149
+2026-08-31,Guaranteed Fund,10.6056
+2026-08-31,HSBC Mandatory Provident Fund - SuperTrust Plus,14.3739
+2026-08-31,Hang Seng China Enterprises Index Tracking Fund,9.0007
+2026-08-31,Hang Seng Index Tracking Fund,30.2998
+2026-08-31,Hong Kong and Chinese Equity Fund,27.2229
+2026-08-31,MPF Conservative Fund,14.4032
+2026-08-31,Manulife MPF 2025 Retirement Fund,17.9980
+2026-08-31,Manulife MPF 2030 Retirement Fund,21.1440
+2026-08-31,Manulife MPF 2035 Retirement Fund,23.0470
+2026-08-31,Manulife MPF 2040 Retirement Fund,24.3490
+2026-08-31,Manulife MPF 2045 Retirement Fund,24.6660
+2026-08-31,Manulife MPF Aggressive Fund,31.3750
+2026-08-31,Manulife MPF China Value Fund,39.5440
+2026-08-31,Manulife MPF Conservative Fund,12.7470
+2026-08-31,Manulife MPF Core Accumulation Fund,19.2470
+2026-08-31,Manulife MPF European Equity Fund,19.5550
+2026-08-31,Manulife MPF Fidelity Growth Fund,42.2010
+2026-08-31,Manulife MPF Fidelity Stable Growth Fund,25.9000
+2026-08-31,Manulife MPF Growth Fund,27.8980
+2026-08-31,Manulife MPF Hang Seng Index ESG Fund,15.3360
+2026-08-31,Manulife MPF Healthcare Fund,36.4560
+2026-08-31,Manulife MPF Hong Kong Bond Fund,15.9500
+2026-08-31,Manulife MPF Hong Kong Equity Fund,25.3350
+2026-08-31,Manulife MPF International Bond Fund,15.4620
+2026-08-31,Manulife MPF International Equity Fund,32.1240
+2026-08-31,Manulife MPF Japan Equity Fund,30.7260
+2026-08-31,Manulife MPF North American Equity Fund,38.3630
+2026-08-31,Manulife MPF Pacific Asia Equity Fund,50.4250
+2026-08-31,Manulife MPF RMB Bond Fund,12.9710
+2026-08-31,Manulife MPF Retirement Income Fund,9.4270
+2026-08-31,Manulife MPF Smart Retirement Fund,15.9600
+2026-08-31,Manulife MPF Stable Fund,17.5600
+2026-08-31,Manulife MPF Sustainable Pacific Asia Bond Fund,12.0790
+2026-08-31,Manulife Provident Funds Trust Company Limited,12.4070
+2026-08-31,North American Equity Fund,43.4237
+2026-08-31,Stable Fund,14.1485
+2026-08-31,ValueChoice Asia Pacific Equity Tracker Fund,22.3158
+2026-08-31,ValueChoice Balanced Fund,21.2112
+2026-08-31,ValueChoice Europe Equity Tracker Fund,27.3305
+2026-08-31,ValueChoice North America Equity Tracker Fund,59.0719
 2026-09-30,Age 65 Plus Fund,14.1360
+2026-09-30,Asia Pacific Equity Fund,43.7714
+2026-09-30,Balanced Fund,29.2003
+2026-09-30,Chinese Equity Fund,15.2173
+2026-09-30,Core Accumulation Fund,31.7237
+2026-09-30,European Equity Fund,22.7900
+2026-09-30,Global Bond Fund,11.4071
+2026-09-30,Global Equity Fund,34.3473
+2026-09-30,Growth Fund,33.1304
+2026-09-30,Guaranteed Fund,10.4431
+2026-09-30,HSBC Mandatory Provident Fund - SuperTrust Plus,14.1364
+2026-09-30,Hang Seng China Enterprises Index Tracking Fund,8.7142
+2026-09-30,Hang Seng Index Tracking Fund,29.2800
+2026-09-30,Hong Kong and Chinese Equity Fund,26.2682
+2026-09-30,MPF Conservative Fund,14.4281
+2026-09-30,Manulife MPF 2025 Retirement Fund,17.6590
+2026-09-30,Manulife MPF 2030 Retirement Fund,20.7290
+2026-09-30,Manulife MPF 2035 Retirement Fund,22.5740
+2026-09-30,Manulife MPF 2040 Retirement Fund,23.8450
+2026-09-30,Manulife MPF 2045 Retirement Fund,24.1520
+2026-09-30,Manulife MPF Aggressive Fund,30.6790
+2026-09-30,Manulife MPF China Value Fund,38.8080
+2026-09-30,Manulife MPF Conservative Fund,12.7730
+2026-09-30,Manulife MPF Core Accumulation Fund,18.9990
+2026-09-30,Manulife MPF European Equity Fund,18.8350
+2026-09-30,Manulife MPF Fidelity Growth Fund,41.5370
+2026-09-30,Manulife MPF Fidelity Stable Growth Fund,25.4780
+2026-09-30,Manulife MPF Growth Fund,27.3280
+2026-09-30,Manulife MPF Hang Seng Index ESG Fund,14.8470
+2026-09-30,Manulife MPF Healthcare Fund,35.6880
+2026-09-30,Manulife MPF Hong Kong Bond Fund,15.6580
+2026-09-30,Manulife MPF Hong Kong Equity Fund,24.1760
+2026-09-30,Manulife MPF International Bond Fund,15.0720
+2026-09-30,Manulife MPF International Equity Fund,31.6560
+2026-09-30,Manulife MPF Japan Equity Fund,30.5050
+2026-09-30,Manulife MPF North American Equity Fund,38.1670
+2026-09-30,Manulife MPF Pacific Asia Equity Fund,49.5380
+2026-09-30,Manulife MPF RMB Bond Fund,12.9730
+2026-09-30,Manulife MPF Retirement Income Fund,9.2450
+2026-09-30,Manulife MPF Smart Retirement Fund,15.6590
+2026-09-30,Manulife MPF Stable Fund,17.2400
+2026-09-30,Manulife MPF Sustainable Pacific Asia Bond Fund,11.8240
+2026-09-30,Manulife Provident Funds Trust Company Limited,12.2200
+2026-09-30,North American Equity Fund,43.3717
+2026-09-30,Stable Fund,13.8634
+2026-09-30,ValueChoice Asia Pacific Equity Tracker Fund,21.9549
+2026-09-30,ValueChoice Balanced Fund,20.7344
+2026-09-30,ValueChoice Europe Equity Tracker Fund,26.3229
+2026-09-30,ValueChoice North America Equity Tracker Fund,58.7204
 2026-10-30,Age 65 Plus Fund,14.2282
+2026-10-30,Asia Pacific Equity Fund,40.6404
+2026-10-30,Balanced Fund,28.3584
+2026-10-30,Chinese Equity Fund,13.6753
+2026-10-30,Core Accumulation Fund,31.4581
+2026-10-30,European Equity Fund,22.9467
+2026-10-30,Global Bond Fund,11.5782
+2026-10-30,Global Equity Fund,33.6376
+2026-10-30,Growth Fund,31.7863
+2026-10-30,Guaranteed Fund,10.5206
+2026-10-30,HSBC Mandatory Provident Fund - SuperTrust Plus,14.2287
+2026-10-30,Hang Seng China Enterprises Index Tracking Fund,8.3512
+2026-10-30,Hang Seng Index Tracking Fund,27.7299
+2026-10-30,Hong Kong and Chinese Equity Fund,24.1537
+2026-10-30,MPF Conservative Fund,14.4560
+2026-10-30,Manulife MPF 2025 Retirement Fund,17.4050
+2026-10-30,Manulife MPF 2030 Retirement Fund,20.1700
+2026-10-30,Manulife MPF 2035 Retirement Fund,21.7640
+2026-10-30,Manulife MPF 2040 Retirement Fund,22.7880
+2026-10-30,Manulife MPF 2045 Retirement Fund,23.0370
+2026-10-30,Manulife MPF Aggressive Fund,29.3610
+2026-10-30,Manulife MPF China Value Fund,34.7620
+2026-10-30,Manulife MPF Conservative Fund,12.7990
+2026-10-30,Manulife MPF Core Accumulation Fund,18.9320
+2026-10-30,Manulife MPF European Equity Fund,18.8460
+2026-10-30,Manulife MPF Fidelity Growth Fund,39.8860
+2026-10-30,Manulife MPF Fidelity Stable Growth Fund,25.0580
+2026-10-30,Manulife MPF Growth Fund,26.4390
+2026-10-30,Manulife MPF Hang Seng Index ESG Fund,13.8780
+2026-10-30,Manulife MPF Healthcare Fund,39.0760
+2026-10-30,Manulife MPF Hong Kong Bond Fund,15.8900
+2026-10-30,Manulife MPF Hong Kong Equity Fund,21.8770
+2026-10-30,Manulife MPF International Bond Fund,15.3080
+2026-10-30,Manulife MPF International Equity Fund,31.0230
+2026-10-30,Manulife MPF Japan Equity Fund,30.3050
+2026-10-30,Manulife MPF North American Equity Fund,37.4310
+2026-10-30,Manulife MPF Pacific Asia Equity Fund,45.3430
+2026-10-30,Manulife MPF RMB Bond Fund,13.0550
+2026-10-30,Manulife MPF Retirement Income Fund,9.1630
+2026-10-30,Manulife MPF Smart Retirement Fund,15.4350
+2026-10-30,Manulife MPF Stable Fund,17.2630
+2026-10-30,Manulife MPF Sustainable Pacific Asia Bond Fund,11.9740
+2026-10-30,Manulife Provident Funds Trust Company Limited,12.3330
+2026-10-30,North American Equity Fund,43.0911
+2026-10-30,Stable Fund,13.7691
+2026-10-30,ValueChoice Asia Pacific Equity Tracker Fund,20.5336
+2026-10-30,ValueChoice Balanced Fund,20.2542
+2026-10-30,ValueChoice Europe Equity Tracker Fund,26.4268
+2026-10-30,ValueChoice North America Equity Tracker Fund,58.1611

@@ -1,4 +1,4 @@
-// 恒生強積金智選計劃：最新數據抓取 ＋ 長線趨勢分析 ＋ 自動提醒
+// 恒生強積金智選計劃：最新數據抓取 ＋ 長線趨勢分析 ＋ 自動提醒（已修復積金局合併儲存格解析）
 import fs from 'node:fs';
 
 const HS_PAGES = process.env.HS_URL ? [process.env.HS_URL] : [
@@ -62,19 +62,6 @@ async function scrapeHangSeng() {
   });
 
   const page = await context.newPage();
-  const seenJson = [];
-  page.on('response', async res => {
-    try {
-      const ct = res.headers()['content-type'] || '';
-      if (!/json/i.test(ct)) return;
-      const body = await res.text();
-      if (/price|bid|offer|nav|constituent/i.test(body)) {
-        seenJson.push({ url: res.url(), body });
-        fs.writeFileSync(`debug/json_${seenJson.length}.txt`, res.url() + '\n\n' + body.slice(0, 30000));
-      }
-    } catch (e) {}
-  });
-
   let result = null, lastErr = '';
   for (const url of HS_PAGES) {
     try {
@@ -99,20 +86,12 @@ async function scrapeHangSeng() {
         const m = body.match(/(unit\s*price[s]?\s*(as\s*at|as\s*of)?|valuation\s*date|dealing\s*date)[^\n]{0,45}/i);
         return { rows, dateText: m ? m[0] : '' };
       });
-      await page.screenshot({ path: 'debug/hangseng.png', fullPage: true });
       if (data.rows.length) { result = data; break; }
       lastErr = '頁面未渲染價格表';
     } catch (e) {
       lastErr = e.message.split('\n')[0];
       console.log('  ⚠ ' + lastErr);
     }
-  }
-
-  if (!result) {
-    try {
-      await page.screenshot({ path: 'debug/hangseng.png', fullPage: true });
-      fs.writeFileSync('debug/hangseng.html', await page.content());
-    } catch (e) {}
   }
   await browser.close();
 
@@ -144,6 +123,8 @@ async function fetchBuf(url) {
   return buf;
 }
 function lastDay(y, m) { return new Date(Date.UTC(y, m, 0)).toISOString().slice(0, 10); }
+
+// 修復：正確處理積金局 Excel 合併儲存格（往下連續讀取所有恒生基金，直到出現其他受託人計劃名稱）
 function parseMpfaXls(buf, fallbackDate) {
   const XLSX = globalThis.__XLSX;
   const wb = XLSX.read(buf, { type: 'buffer' });
@@ -152,29 +133,38 @@ function parseMpfaXls(buf, fallbackDate) {
     const rows = XLSX.utils.sheet_to_json(wb.Sheets[sn], { header: 1, raw: false, defval: '' });
     let date = '';
     for (const r of rows.slice(0, 15)) { const d = parseDate(r.join(' ')); if (d) { date = d; break; } }
-    let hi = rows.findIndex(r => r.some(c => /scheme/i.test(c)) && r.some(c => /fund/i.test(c)));
-    if (hi < 0) hi = rows.findIndex(r => r.some(c => /constituent/i.test(c)));
-    const head = hi >= 0 ? rows[hi].map(c => String(c)) : [];
-    const col = re => head.findIndex(c => re.test(c));
-    const cScheme = col(/scheme/i), cFund = col(/constituent|fund name/i);
-    let cPrice = col(/unit\s*price|nav|price/i);
-    let scheme = '';
-    for (let i = hi + 1; i < rows.length; i++) {
-      const r = rows[i];
-      const txt = r.join(' | ');
-      if (cScheme >= 0 && r[cScheme]) scheme = r[cScheme];
-      else if (SCHEME.test(txt) && !r.some(c => /^\s*\d+(\.\d+)?\s*$/.test(String(c).replace(/,/g, '')))) scheme = txt;
-      const isHS = SCHEME.test(scheme) || SCHEME.test(txt);
-      if (!isHS) continue;
-      let fund = cFund >= 0 ? r[cFund] : '';
-      let price = cPrice >= 0 ? num(r[cPrice]) : NaN;
-      if (!fund) fund = r.find(c => /fund/i.test(c) && !SCHEME.test(c)) || '';
-      if (!(price > 0)) {
-        const n = r.map(c => String(c).replace(/,/g, '')).filter(c => /^\d{1,4}\.\d{2,}$/.test(c.trim()));
-        price = n.length ? +n[n.length - 1] : NaN;
+
+    let inHS = false;
+    for (let i = 0; i < rows.length; i++) {
+      const r = rows[i].map(c => String(c || '').trim());
+      const fullLine = r.join(' ');
+      if (!fullLine.trim()) continue;
+
+      // 偵測是否進入恒生強積金計劃區塊
+      if (SCHEME.test(fullLine)) {
+        inHS = true;
+      } else if (inHS) {
+        // 如果第一欄（計劃名稱欄）出現新的其他計劃名稱（含 Scheme / Plan / Trust / MPF / Provident），代表已離開恒生區塊
+        const firstCol = r[0] || '';
+        if (firstCol.length > 5 && !/fund/i.test(firstCol) && /scheme|plan|trust|provident|mpf|aia|manulife|hsbc|sun\s*life|bct|boc|principal|fidelity|schroder|bea/i.test(firstCol)) {
+          inHS = false;
+          continue;
+        }
       }
-      fund = cleanName(String(fund).replace(SCHEME, '').replace(/^[\s\-–—]*(supertrust plus)?[\s\-–—]*/i, ''));
-      if (fund && price > 0 && price < 10000) out.push({ date: date || fallbackDate, fund, price: price.toFixed(4) });
+
+      if (!inHS) continue;
+
+      // 在這一行尋找基金名稱與單位價格
+      const fundCell = r.find(c => /fund/i.test(c) && !SCHEME.test(c));
+      const numCells = r.map(c => c.replace(/,/g, '')).filter(c => /^\d{1,4}\.\d{2,}$/.test(c));
+      const price = numCells.length ? +numCells[numCells.length - 1] : NaN;
+
+      if (fundCell && price > 0 && price < 10000) {
+        const fund = cleanName(fundCell.replace(SCHEME, '').replace(/^[\s\-–—]*(supertrust plus)?[\s\-–—]*/i, ''));
+        if (fund && !/constituent\s*fund/i.test(fund)) {
+          out.push({ date: date || fallbackDate, fund, price: price.toFixed(4) });
+        }
+      }
     }
   }
   const map = new Map(); out.forEach(r => map.set(r.fund, r));
@@ -200,11 +190,15 @@ async function monthlyUpdate() {
       if (![...urls.keys()].some(x => x.toLowerCase() === u.toLowerCase())) urls.set(u, lastDay(d.getUTCFullYear(), d.getUTCMonth() + 1));
     }
   }
-  const have = new Set(readCsv('data/monthly.csv').map(r => r.date));
+
+  // 統計每個月目前已抓到幾隻基金，若少於 10 隻代表之前漏抓，強制重新補抓
+  const monthCounts = new Map();
+  readCsv('data/monthly.csv').forEach(r => monthCounts.set(r.date, (monthCounts.get(r.date) || 0) + 1));
+
   const out = [];
   let miss = 0;
   for (const [u, d] of [...urls].sort((a, b) => a[1] < b[1] ? 1 : -1)) {
-    if (have.has(d) && !backfill) continue;
+    if ((monthCounts.get(d) || 0) >= 10 && !backfill) continue;
     try {
       const rows = parseMpfaXls(await fetchBuf(u), d);
       if (!rows.length) continue;
@@ -213,7 +207,7 @@ async function monthlyUpdate() {
     } catch (e) {
       if (++miss >= 6 && backfill) break;
     }
-    await new Promise(r => setTimeout(r, 400));
+    await new Promise(r => setTimeout(r, 300));
   }
   return out;
 }
@@ -318,6 +312,8 @@ if (monthly.length) {
 
 console.log('▶ 3. 執行長線牛熊趨勢與雙動能分析');
 const analysis = runAnalysis(readCsv('data/daily.csv'), readCsv('data/monthly.csv'));
+console.log(`  ✔ 成功完成 ${analysis.length} 隻基金的 10個月均線與 6個月動能分析`);
+
 const prevFile = 'data/signals.json';
 const prevData = fs.existsSync(prevFile) ? JSON.parse(fs.readFileSync(prevFile, 'utf8')) : { funds: [] };
 const prevMap = new Map((prevData.funds || []).map(f => [f.key, f]));

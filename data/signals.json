@@ -1,0 +1,16 @@
+{
+  "updated": "2026-11-23T14:34:07.675Z",
+  "funds": [
+    {
+      "key": "age65plusfund",
+      "name": "Age 65 Plus Fund",
+      "date": "2026-11-23",
+      "price": 13.9799,
+      "sma10m": 14.2419,
+      "dev": -1.84,
+      "mom6": -1.64,
+      "state": "WARN",
+      "isEquity": false
+    }
+  ]
+}

@@ -4,12 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="theme-color" content="#0f172a">
-<title>恒生強積金走勢</title>
+<title>恒生強積金長線趨勢決策系統</title>
 <style>
   :root {
     --bg: #0f172a; --surface: #1e293b; --surface-2: #0b1120;
     --border: rgba(255,255,255,0.08); --text: #f8fafc; --muted: #94a3b8;
-    --accent: #f59e0b; --primary: #ea580c; --up: #4ade80; --down: #f87171; --radius: 14px;
+    --accent: #f59e0b; --primary: #ea580c; --up: #4ade80; --down: #f87171; --warn: #fbbf24; --radius: 14px;
     --s1: #3987e5; --s2: #d95926; --s3: #199e70; --s4: #c98500; --s5: #d55181;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -19,8 +19,8 @@
     background: var(--bg); color: var(--text); min-height: 100vh; line-height: 1.5;
     padding: calc(12px + env(safe-area-inset-top)) calc(12px + env(safe-area-inset-right)) calc(40px + env(safe-area-inset-bottom)) calc(12px + env(safe-area-inset-left));
   }
-  .container { max-width: 860px; margin: 0 auto; }
-  header { padding: 6px 2px 14px; }
+  .container { max-width: 920px; margin: 0 auto; }
+  header { padding: 6px 2px 14px; display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 8px; }
   h1 { font-size: 1.25rem; font-weight: 700; }
   .subtitle { color: var(--muted); font-size: 0.8rem; }
   .panel { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; margin-bottom: 14px; }
@@ -33,43 +33,47 @@
     font-size: 0.82rem; font-weight: 600; cursor: pointer; }
   .chip.active { color: var(--accent); border-color: rgba(245,158,11,0.5); background: rgba(245,158,11,0.08); }
   .segmented { display: flex; background: var(--surface-2); padding: 4px; border-radius: 10px; border: 1px solid var(--border); gap: 3px; }
-  .seg-btn { flex: 1; padding: 7px 4px; border-radius: 7px; border: none; background: transparent; color: var(--muted); font-weight: 600; font-size: 0.8rem; cursor: pointer; }
+  .seg-btn { flex: 1; padding: 7px 6px; border-radius: 7px; border: none; background: transparent; color: var(--muted); font-weight: 600; font-size: 0.8rem; cursor: pointer; white-space: nowrap; }
   .seg-btn.active { background: var(--surface); color: var(--accent); }
-  .btn { padding: 8px 12px; border: 1px solid var(--border); border-radius: 8px; background: rgba(255,255,255,0.06); color: var(--text); font-size: 0.82rem; font-weight: 600; cursor: pointer; }
-
-  /* 基金一覽 */
+  .strategy-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; margin-top: 8px; }
+  .scard { background: var(--surface-2); border: 1px solid var(--border); border-radius: 10px; padding: 12px; }
+  .scard-title { font-size: 0.76rem; color: var(--muted); margin-bottom: 4px; }
+  .scard-main { font-size: 1.05rem; font-weight: 700; color: var(--text); }
+  .scard-sub { font-size: 0.78rem; color: var(--muted); margin-top: 3px; }
+  .badge { display: inline-flex; align-items: center; gap: 4px; padding: 2px 8px; border-radius: 999px; font-size: 0.74rem; font-weight: 700; white-space: nowrap; }
+  .b-bull { background: rgba(74,222,128,0.14); color: #4ade80; border: 1px solid rgba(74,222,128,0.3); }
+  .b-warn { background: rgba(251,191,36,0.14); color: #fbbf24; border: 1px solid rgba(251,191,36,0.3); }
+  .b-bear { background: rgba(248,113,113,0.14); color: #f87171; border: 1px solid rgba(248,113,113,0.3); }
+  .b-flat { background: rgba(148,163,184,0.12); color: #94a3b8; border: 1px solid rgba(148,163,184,0.2); }
   .fund-table { width: 100%; border-collapse: collapse; font-size: 0.84rem; }
   .fund-table th { color: var(--muted); font-weight: 500; font-size: 0.76rem; text-align: right; padding: 6px 4px; border-bottom: 1px solid var(--border); cursor: pointer; white-space: nowrap; user-select: none; }
   .fund-table th:first-child { text-align: left; }
   .fund-table th.sorted { color: var(--accent); }
-  .fund-table td { padding: 8px 4px; border-bottom: 1px solid var(--border); text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .fund-table td { padding: 9px 4px; border-bottom: 1px solid var(--border); text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
   .fund-table td:first-child { text-align: left; white-space: normal; }
   .fund-table tr { cursor: pointer; }
-  .fund-table tr.sel td { background: rgba(255,255,255,0.03); }
+  .fund-table tr:hover td { background: rgba(255,255,255,0.02); }
+  .fund-table tr.sel td { background: rgba(255,255,255,0.04); }
   .fname { display: flex; align-items: center; gap: 8px; }
   .fname small { display: block; color: var(--muted); font-size: 0.72rem; line-height: 1.3; }
   .dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; border: 1.5px solid var(--muted); }
-  .up { color: var(--up); } .down { color: var(--down); } .flat { color: var(--muted); }
-  .col-hide { }
-  @media (max-width: 540px) { .col-hide { display: none; } .panel { padding: 13px; } .fund-table { font-size: 0.8rem; } }
-
-  /* 圖表 */
+  .up { color: var(--up); } .down { color: var(--down); } .warn { color: var(--warn); } .flat { color: var(--muted); }
+  @media (max-width: 600px) { .col-hide { display: none; } .panel { padding: 13px; } .fund-table { font-size: 0.79rem; } }
   .chart-wrap { position: relative; width: 100%; margin-top: 10px; }
   .chart-wrap svg { width: 100%; height: auto; display: block; touch-action: pan-y; }
   .chart-tip { position: absolute; pointer-events: none; background: #020617; border: 1px solid var(--border); border-radius: 8px;
-    padding: 7px 10px; font-size: 0.78rem; color: var(--text); display: none; z-index: 5; min-width: 150px; }
-  .chart-tip .row { display: flex; justify-content: space-between; gap: 10px; align-items: center; }
-  .legend { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 0.8rem; color: var(--text); margin-top: 8px; }
+    padding: 8px 10px; font-size: 0.78rem; color: var(--text); display: none; z-index: 5; min-width: 170px; box-shadow: 0 8px 24px rgba(0,0,0,0.5); }
+  .chart-tip .row { display: flex; justify-content: space-between; gap: 10px; align-items: center; margin-top: 2px; }
+  .legend { display: flex; flex-wrap: wrap; gap: 8px 14px; font-size: 0.8rem; color: var(--text); margin-top: 8px; align-items: center; }
   .legend span { display: inline-flex; align-items: center; gap: 6px; }
   .legend i { width: 14px; height: 3px; border-radius: 2px; display: inline-block; }
-
-  /* 我的組合 */
+  .legend i.dashed { background: transparent !important; border-top: 2px dashed var(--accent); height: 0; }
   .pf-row { display: grid; grid-template-columns: 1fr 110px; gap: 8px; align-items: center; padding: 6px 0; border-bottom: 1px solid var(--border); font-size: 0.84rem; }
   .pf-row input { padding: 7px 8px; border-radius: 8px; border: 1px solid var(--border); background: var(--surface-2); color: var(--text); font-size: 16px; width: 100%; text-align: right; }
-  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 8px; margin-bottom: 10px; }
+  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 8px; margin-bottom: 10px; }
   .tile { background: var(--surface-2); border: 1px solid var(--border); border-radius: 10px; padding: 10px; }
   .tile div { font-size: 0.75rem; color: var(--muted); }
-  .tile b { font-size: 1.15rem; font-variant-numeric: tabular-nums; }
+  .tile b { font-size: 1.1rem; font-variant-numeric: tabular-nums; }
   details summary { cursor: pointer; color: var(--muted); font-size: 0.84rem; padding: 4px 0; }
   footer { text-align: center; padding: 16px 8px; color: var(--muted); font-size: 0.76rem; line-height: 1.7; }
   footer a { color: #60a5fa; text-decoration: none; }
@@ -78,61 +82,70 @@
 <body>
 <div class="container">
   <header>
-    <h1>📈 恒生強積金走勢</h1>
-    <div class="subtitle">恒生強積金智選計劃 · 成分基金價格</div>
+    <div>
+      <h1>📈 恒生強積金長線趨勢決策系統</h1>
+      <div class="subtitle">10個月牛熊濾網（SMA 10M / 200D）＋ 6個月動能輪動分析</div>
+    </div>
   </header>
 
   <div class="panel">
-    <div id="status" class="hint">載入資料中…</div>
+    <div id="status" class="hint">載入最新數據中…</div>
+    <div class="strategy-grid" id="strategyCards" style="display:none;"></div>
   </div>
 
   <div class="panel">
     <div class="panel-head">
-      <h2>走勢比較</h2>
-      <div class="segmented" id="modeSeg" style="min-width:150px;">
-        <button class="seg-btn active" data-mode="pct">升跌 %</button>
-        <button class="seg-btn" data-mode="price">價格</button>
+      <h2>長線走勢與牛熊分界線</h2>
+      <div style="display:flex; gap:6px; flex-wrap:wrap;">
+        <div class="segmented" id="smaSeg">
+          <button class="seg-btn active" data-sma="1">顯示 10月均線</button>
+          <button class="seg-btn" data-sma="0">隱藏均線</button>
+        </div>
+        <div class="segmented" id="modeSeg">
+          <button class="seg-btn active" data-mode="pct">升跌 %</button>
+          <button class="seg-btn" data-mode="price">價格</button>
+        </div>
       </div>
     </div>
     <div class="segmented" id="rangeSeg">
-      <button class="seg-btn" data-r="30">1月</button>
-      <button class="seg-btn" data-r="91">3月</button>
       <button class="seg-btn" data-r="182">6月</button>
-      <button class="seg-btn active" data-r="365">1年</button>
-      <button class="seg-btn" data-r="1095">3年</button>
+      <button class="seg-btn" data-r="365">1年</button>
+      <button class="seg-btn active" data-r="1095">3年</button>
       <button class="seg-btn" data-r="1826">5年</button>
       <button class="seg-btn" data-r="all">全部</button>
     </div>
     <div class="chart-wrap" id="chartWrap"><div class="chart-tip" id="tip"></div></div>
     <div class="legend" id="legend"></div>
-    <div class="hint" id="chartNote" style="margin-top:6px;">喺下面「基金一覽」撳基金名，最多可以揀 5 隻放入圖表比較。</div>
+    <div class="hint" id="chartNote" style="margin-top:8px;">
+      💡 <b>實戰用法：</b>虛線為該基金的「10個月移動平均線（約200個交易日）」。當價格<b>高於虛線 +2%</b> 為長線牛市（進攻）；當價格<b>跌穿虛線 -2%</b> 為長線熊市（存量轉入保守基金避險，新供款繼續買入儲平貨）。
+    </div>
   </div>
 
   <div class="panel">
     <div class="panel-head">
-      <h2>基金一覽</h2>
+      <h2>基金長線訊號與動能排名</h2>
       <div class="chips" id="catChips"></div>
     </div>
     <table class="fund-table" id="fundTable"></table>
-    <div class="hint" style="margin-top:8px;">撳表頭可以排序。「1日」用最近兩個每日價格計；1月、3月、1年用最接近嗰日嘅價格計。</div>
+    <div class="hint" style="margin-top:8px;">
+      點擊表頭可排序。「偏離10月線」衡量現價與長線成本的距離；「6月動能」用於比較不同股票基金的強弱（資金流向最強市場）。
+    </div>
   </div>
 
   <div class="panel">
-    <div class="panel-head"><h2>我的組合</h2></div>
-    <div class="hint" style="margin-bottom:10px;">輸入你每隻基金持有嘅單位數目（可以喺積金易或者週年權益報表搵到），就會計到總值同升跌。資料只會儲存喺你部機。</div>
+    <div class="panel-head"><h2>我的組合與持倉風險診斷</h2></div>
+    <div class="hint" style="margin-bottom:10px;">輸入你每隻基金持有的單位數目（資料僅存於本機瀏覽器），系統會自動檢查你目前持倉中有多少比例處於「長線跌浪」風險中。</div>
     <div class="tiles" id="pfTiles"></div>
-    <details id="pfDetails"><summary>✏️ 輸入持有單位</summary><div id="pfInputs" style="margin-top:6px;"></div></details>
+    <details id="pfDetails"><summary>✏️ 輸入 / 修改持有單位</summary><div id="pfInputs" style="margin-top:6px;"></div></details>
   </div>
 
   <footer>
-    每日價格讀取自 <a href="https://www.hangseng.com/en-hk/personal/insurance-mpf/e-mpf/fund-price-performance/" target="_blank" rel="noopener">恒生強積金網頁</a>（買入價），較早期嘅每月價格來自 <a href="https://www.mpfa.org.hk/en/info-centre/fund-information/monthly-fund-price/monthly-unit-prices-of-mpf-constituent-funds" target="_blank" rel="noopener">積金局每月價格表</a>。<br>
-    資料由程式自動讀取，可能有延誤或錯誤，一切以受託人公佈為準。<br>
-    ⚠️ 過往表現唔代表將來表現，本頁唔構成任何投資建議。
+    數據來源：<a href="https://www.hangseng.com/en-hk/personal/insurance-mpf/e-mpf/fund-price-performance/" target="_blank" rel="noopener">恒生強積金每日價格</a> ＋ <a href="https://www.mpfa.org.hk/en/info-centre/fund-information/monthly-fund-price/monthly-unit-prices-of-mpf-constituent-funds" target="_blank" rel="noopener">積金局每月綜合價格表</a>。<br>
+    ⚠️ 本工具提供之趨勢濾網及動能指標僅作量化歷史規律參考，不構成受規管投資建議。
   </footer>
 </div>
 
 <script>
-// ===== 基金中文名同類別 =====
 const FUND_INFO = [
   [/age\s*65/i, '65歲後基金', '混合資產'],
   [/core\s*accumulation/i, '核心累積基金', '混合資產'],
@@ -166,17 +179,16 @@ const fmtDate = d => d ? `${d.slice(0, 4)}/${d.slice(5, 7)}/${d.slice(8, 10)}` :
 const DAY = 86400000;
 const toT = d => Date.parse(d + 'T00:00:00Z');
 
-// ===== 狀態 =====
-let FUNDS = [];                 // [{ key, name, zh, cat, pts:[{d,t,v,daily}] }]
-let selected = [];              // 已揀入圖表嘅 key（順序決定顏色）
-let rangeDays = '365', chartMode = 'pct', sortKey = 'name', sortDir = 1, catFilter = '全部';
+let FUNDS = [];
+let selected = [];
+let rangeDays = '1095', chartMode = 'pct', showSma = true, sortKey = 'mom6', sortDir = -1, catFilter = '全部';
 try { const s = JSON.parse(localStorage.getItem('mpf_selected') || 'null'); if (Array.isArray(s)) selected = s; } catch (e) {}
 let holdings = {};
 try { holdings = JSON.parse(localStorage.getItem('mpf_units') || '{}') || {}; } catch (e) {}
 
-// ===== 讀取資料 =====
 function parseCsv(text) {
   const lines = text.split(/\r?\n/).filter(Boolean);
+  if (!lines.length) return [];
   const head = lines.shift().split(',');
   return lines.map(l => {
     const c = l.match(/("([^"]|"")*"|[^,]*)(,|$)/g).map(x => x.replace(/,$/, '').replace(/^"|"$/g, '').replace(/""/g, '"'));
@@ -187,37 +199,117 @@ async function getCsv(path) {
   try { const r = await fetch(path + '?_=' + Date.now(), { cache: 'no-store' }); return r.ok ? parseCsv(await r.text()) : []; }
   catch (e) { return []; }
 }
+async function getJson(path) {
+  try { const r = await fetch(path + '?_=' + Date.now(), { cache: 'no-store' }); return r.ok ? await r.json() : null; }
+  catch (e) { return null; }
+}
+
+function calcSma10M(pts, targetT) {
+  const vals = [];
+  for (let m = 0; m < 10; m++) {
+    const cut = targetT - m * 30.4375 * DAY;
+    let best = null;
+    for (const p of pts) {
+      if (p.t <= cut) best = p;
+      else break;
+    }
+    if (best) vals.push(best.v);
+  }
+  if (vals.length < 8) return null;
+  return vals.reduce((a, b) => a + b, 0) / vals.length;
+}
+
+function getSignal(f) {
+  if (f.cat === '保守' || f.cat === '保證') return { code: 'SAFE', label: '避險資金池', cls: 'b-flat', dev: null };
+  const last = f.pts[f.pts.length - 1];
+  const sma = last.sma;
+  if (!sma) return { code: 'NA', label: '數據不足', cls: 'b-flat', dev: null };
+  const dev = last.v / sma - 1;
+  if (dev >= 0.02) return { code: 'BULL', label: '🟢 強勢進攻', cls: 'b-bull', dev };
+  if (dev <= -0.02) return { code: 'BEAR', label: '🔴 長線轉弱', cls: 'b-bear', dev };
+  return { code: 'WARN', label: '🟡 均線爭持', cls: 'b-warn', dev };
+}
+
 async function load() {
-  const [daily, monthly] = await Promise.all([getCsv('data/daily.csv'), getCsv('data/monthly.csv')]);
+  const [daily, monthly, statusJson] = await Promise.all([
+    getCsv('data/daily.csv'),
+    getCsv('data/monthly.csv'),
+    getJson('data/status.json')
+  ]);
   const map = new Map();
   const add = (name, d, v, isDaily) => {
     if (!d || !(v > 0)) return;
     const k = keyOf(name);
     if (!map.has(k)) map.set(k, { key: k, name, pts: new Map() });
     const f = map.get(k);
-    if (isDaily) f.name = name;                                  // 用恒生網頁嘅名
+    if (isDaily) f.name = name;
     if (isDaily || !f.pts.has(d)) f.pts.set(d, { d, t: toT(d), v, daily: isDaily });
   };
   monthly.forEach(r => add(r.fund, r.date, +r.price, false));
   daily.forEach(r => add(r.fund, r.date, +r.bid, true));
-  FUNDS = [...map.values()].map(f => ({ ...f, ...infoOf(f.name), pts: [...f.pts.values()].sort((a, b) => a.t - b.t) }))
-    .filter(f => f.pts.length);
+
+  FUNDS = [...map.values()].map(f => {
+    const pts = [...f.pts.values()].sort((a, b) => a.t - b.t);
+    pts.forEach(p => { p.sma = calcSma10M(pts, p.t); });
+    const info = infoOf(f.name);
+    const obj = { ...f, ...info, pts };
+    obj.sig = getSignal(obj);
+    obj.mom6 = changeOver(obj, 182);
+    obj.y1 = changeOver(obj, 365);
+    obj.d1 = change1d(obj);
+    return obj;
+  }).filter(f => f.pts.length);
+
   const st = document.getElementById('status');
   if (!FUNDS.length) {
-    st.innerHTML = '<span class="nowin">暫時未有資料。</span>請到 GitHub 嘅 Actions 運行一次「更新強積金價格」。如果直接開啟 HTML 檔案，亦會讀唔到資料。';
+    st.innerHTML = '<span class="nowin">尚未讀取到數據。</span>請先在 GitHub Actions 運行一次「更新強積金價格與長線趨勢提醒」（勾選 backfill 下載歷史數據），並確認已啟用 GitHub Pages。';
     return;
   }
+
   const lastDaily = daily.reduce((m, r) => r.date > m ? r.date : m, '');
-  const firstAll = FUNDS.reduce((m, f) => f.pts[0].d < m ? f.pts[0].d : m, '9999');
+  const lastAny = FUNDS.reduce((m, f) => f.pts[f.pts.length - 1].d > m ? f.pts[f.pts.length - 1].d : m, '');
   const dailyDays = new Set(daily.map(r => r.date)).size;
-  st.innerHTML = `共 <b>${FUNDS.length}</b> 隻基金 ｜ 最新價格日期 <b>${lastDaily ? fmtDate(lastDaily) : '—'}</b><br>` +
-    `資料由 ${fmtDate(firstAll)} 開始（每日價格已累積 ${dailyDays} 日，較早期係每月一個價）`;
+  const syncTime = statusJson?.updated ? new Date(statusJson.updated).toLocaleString('zh-HK', { timeZone: 'Asia/Hong_Kong' }) : '未知';
+
+  st.innerHTML = `共追蹤 <b>${FUNDS.length}</b> 隻基金 ｜ 最新報價日期：<b>${fmtDate(lastDaily || lastAny)}</b>（系統最後檢查：${syncTime}，已累積 ${dailyDays} 個交易日數據）`;
+
+  renderStrategySummary();
   selected = selected.filter(k => FUNDS.some(f => f.key === k));
-  if (!selected.length) selected = FUNDS.filter(f => /growth|hang\s*seng\s*index|conservative/i.test(f.name) && !/china/i.test(f.name)).slice(0, 3).map(f => f.key);
+  if (!selected.length) {
+    selected = FUNDS.filter(f => /north\s*america|hang\s*seng\s*index|global\s*equity/i.test(f.name) && !/valuechoice|china/i.test(f.name)).slice(0, 3).map(f => f.key);
+    if (!selected.length) selected = FUNDS.slice(0, 3).map(f => f.key);
+  }
   buildChips(); renderTable(); renderChart(); renderPortfolio();
 }
 
-// ===== 回報計算 =====
+function renderStrategySummary() {
+  const box = document.getElementById('strategyCards');
+  const eqFunds = FUNDS.filter(f => f.cat === '股票' && f.mom6 != null).sort((a, b) => b.mom6 - a.mom6);
+  const topEq = eqFunds[0];
+  const bullCount = FUNDS.filter(f => f.sig.code === 'BULL').length;
+  const bearCount = FUNDS.filter(f => f.sig.code === 'BEAR').length;
+
+  let topAdvice = '數據計算中';
+  if (topEq) {
+    if (topEq.sig.code === 'BULL') topAdvice = `${topEq.zh || topEq.name}`;
+    else topAdvice = `強積金保守基金（全球股市轉弱）`;
+  }
+
+  box.style.display = 'grid';
+  box.innerHTML = `
+    <div class="scard">
+      <div class="scard-title">🏆 雙動能策略首選（6個月最強＋企穩均線）</div>
+      <div class="scard-main" style="color:var(--up);">${esc(topAdvice)}</div>
+      <div class="scard-sub">${topEq ? `最強股票基金 6個月回報 ${fmtPct(topEq.mom6)}，偏離10月線 ${fmtPct(topEq.sig.dev)}` : ''}</div>
+    </div>
+    <div class="scard">
+      <div class="scard-title">🧭 整體市場牛熊分佈</div>
+      <div class="scard-main"><span class="up">${bullCount} 隻強勢</span> / <span class="down">${bearCount} 隻轉弱</span></div>
+      <div class="scard-sub">高於 10月均線 +2% 為強勢；跌穿 -2% 建議避險</div>
+    </div>
+  `;
+}
+
 function priceAtOrBefore(f, t) {
   let best = null;
   for (const p of f.pts) { if (p.t <= t) best = p; else break; }
@@ -237,15 +329,15 @@ function change1d(f) {
   return b.v / a.v - 1;
 }
 
-// ===== 基金一覽 =====
 function buildChips() {
   const cats = ['全部', ...['股票', '混合資產', '債券', '保守', '保證', '其他'].filter(c => FUNDS.some(f => f.cat === c))];
   document.getElementById('catChips').innerHTML = cats.map(c => `<button class="chip ${c === catFilter ? 'active' : ''}" data-cat="${c}">${c}</button>`).join('');
   document.querySelectorAll('[data-cat]').forEach(b => b.onclick = () => { catFilter = b.dataset.cat; buildChips(); renderTable(); });
 }
+
 function renderTable() {
   const rows = FUNDS.filter(f => catFilter === '全部' || f.cat === catFilter).map(f => ({
-    f, price: f.pts[f.pts.length - 1].v, d1: change1d(f), m1: changeOver(f, 30), m3: changeOver(f, 91), y1: changeOver(f, 365)
+    f, price: f.pts[f.pts.length - 1].v, dev: f.sig.dev, mom6: f.mom6, y1: f.y1
   }));
   const val = (r, k) => k === 'name' ? (r.f.zh || r.f.name) : r[k];
   rows.sort((a, b) => {
@@ -255,17 +347,17 @@ function renderTable() {
   });
   const th = (k, label, cls = '') => `<th data-sort="${k}" class="${cls} ${sortKey === k ? 'sorted' : ''}">${label}${sortKey === k ? (sortDir > 0 ? ' ▲' : ' ▼') : ''}</th>`;
   document.getElementById('fundTable').innerHTML =
-    `<tr>${th('name', '基金')}${th('price', '價格')}${th('d1', '1日')}${th('m1', '1月', 'col-hide')}${th('m3', '3月', 'col-hide')}${th('y1', '1年')}</tr>` +
+    `<tr>${th('name', '基金')}${th('price', '最新價', 'col-hide')}<th style="text-align:center;">長線趨勢訊號</th>${th('dev', '偏離10月線')}${th('mom6', '6月動能')}${th('y1', '1年回報', 'col-hide')}</tr>` +
     rows.map(r => {
       const si = selected.indexOf(r.f.key);
       const dot = si >= 0 ? `style="background:${SERIES_COLORS[si]};border-color:${SERIES_COLORS[si]}"` : '';
       return `<tr data-key="${r.f.key}" class="${si >= 0 ? 'sel' : ''}">
         <td><div class="fname"><span class="dot" ${dot}></span><div>${esc(r.f.zh || r.f.name)}<small>${esc(r.f.name)}</small></div></div></td>
-        <td>${r.price.toFixed(4)}</td>
-        <td class="${clsPct(r.d1)}">${fmtPct(r.d1)}</td>
-        <td class="col-hide ${clsPct(r.m1)}">${fmtPct(r.m1)}</td>
-        <td class="col-hide ${clsPct(r.m3)}">${fmtPct(r.m3)}</td>
-        <td class="${clsPct(r.y1)}">${fmtPct(r.y1)}</td></tr>`;
+        <td class="col-hide">${r.price.toFixed(4)}</td>
+        <td style="text-align:center;"><span class="badge ${r.f.sig.cls}">${r.f.sig.label}</span></td>
+        <td class="${clsPct(r.dev)}">${fmtPct(r.dev)}</td>
+        <td class="${clsPct(r.mom6)}"><b>${fmtPct(r.mom6)}</b></td>
+        <td class="col-hide ${clsPct(r.y1)}">${fmtPct(r.y1)}</td></tr>`;
     }).join('');
   document.querySelectorAll('[data-sort]').forEach(h => h.onclick = ev => {
     ev.stopPropagation();
@@ -275,46 +367,65 @@ function renderTable() {
   });
   document.querySelectorAll('#fundTable tr[data-key]').forEach(tr => tr.onclick = () => toggleSelect(tr.dataset.key));
 }
+
 function toggleSelect(k) {
   const i = selected.indexOf(k);
   if (i >= 0) selected.splice(i, 1);
-  else { if (selected.length >= 5) { document.getElementById('chartNote').innerHTML = '<span class="nowin">最多揀 5 隻基金，請先撳走其中一隻。</span>'; return; } selected.push(k); }
-  document.getElementById('chartNote').textContent = '喺下面「基金一覽」撳基金名，最多可以揀 5 隻放入圖表比較。';
+  else {
+    if (selected.length >= 5) {
+      document.getElementById('chartNote').innerHTML = '<span class="nowin">圖表最多同時顯示 5 隻基金，請先取消其中一隻。</span>';
+      return;
+    }
+    selected.push(k);
+  }
   try { localStorage.setItem('mpf_selected', JSON.stringify(selected)); } catch (e) {}
   renderTable(); renderChart();
 }
 
-// ===== 走勢圖 =====
 function niceTicks(lo, hi, n = 5) {
   const span = hi - lo || Math.abs(hi) || 1, raw = span / n, mag = Math.pow(10, Math.floor(Math.log10(raw)));
   const step = [1, 2, 2.5, 5, 10].map(s => s * mag).find(s => span / s <= n) || 10 * mag;
   const out = []; for (let v = Math.ceil(lo / step) * step; v <= hi + 1e-9; v += step) out.push(+v.toFixed(10));
   return out;
 }
+
 function renderChart() {
   const wrap = document.getElementById('chartWrap'), tip = document.getElementById('tip');
   wrap.querySelectorAll('svg').forEach(s => s.remove());
   const legend = document.getElementById('legend');
   const sel = selected.map(k => FUNDS.find(f => f.key === k)).filter(Boolean);
-  if (!sel.length) { legend.innerHTML = ''; wrap.insertAdjacentHTML('afterbegin', '<svg viewBox="0 0 300 60"><text x="150" y="34" fill="#94a3b8" font-size="12" text-anchor="middle">未揀基金</text></svg>'); return; }
+  if (!sel.length) {
+    legend.innerHTML = '';
+    wrap.insertAdjacentHTML('afterbegin', '<svg viewBox="0 0 300 60"><text x="150" y="34" fill="#94a3b8" font-size="12" text-anchor="middle">請在下方表格點選基金</text></svg>');
+    return;
+  }
   const tEnd = Math.max(...sel.map(f => f.pts[f.pts.length - 1].t));
   const tStart = rangeDays === 'all' ? Math.min(...sel.map(f => f.pts[0].t)) : tEnd - +rangeDays * DAY;
   const series = sel.map((f, i) => {
     let pts = f.pts.filter(p => p.t >= tStart);
-    const before = priceAtOrBefore(f, tStart);           // 由範圍開始前一點起計，線先唔會斷
+    const before = priceAtOrBefore(f, tStart);
     if (before && (!pts.length || pts[0].t > before.t)) pts = [before, ...pts];
     const base = pts.length ? pts[0].v : 1;
-    return { f, color: SERIES_COLORS[i], pts: pts.map(p => ({ ...p, y: chartMode === 'pct' ? (p.v / base - 1) * 100 : p.v })) };
+    return {
+      f, color: SERIES_COLORS[i],
+      pts: pts.map(p => ({
+        ...p,
+        y: chartMode === 'pct' ? (p.v / base - 1) * 100 : p.v,
+        smaY: p.sma ? (chartMode === 'pct' ? (p.sma / base - 1) * 100 : p.sma) : null
+      }))
+    };
   }).filter(s => s.pts.length);
-  const W = Math.max(300, Math.round(wrap.clientWidth || 700)), H = Math.round(Math.min(300, Math.max(210, W * 0.55)));
-  const L = chartMode === 'pct' ? 44 : 50, R = 10, T = 12, B = 24;
-  const allY = series.flatMap(s => s.pts.map(p => p.y));
+
+  const W = Math.max(300, Math.round(wrap.clientWidth || 700)), H = Math.round(Math.min(320, Math.max(220, W * 0.52)));
+  const L = chartMode === 'pct' ? 46 : 52, R = 10, T = 12, B = 24;
+  const allY = series.flatMap(s => s.pts.flatMap(p => showSma && p.smaY != null ? [p.y, p.smaY] : [p.y]));
   let lo = Math.min(...allY), hi = Math.max(...allY);
   if (chartMode === 'pct') { lo = Math.min(lo, 0); hi = Math.max(hi, 0); }
   const pad = (hi - lo) * 0.08 || 1; lo -= pad; hi += pad;
   const x0 = Math.min(tStart, ...series.map(s => s.pts[0].t));
   const x = t => L + (t - x0) / Math.max(DAY, tEnd - x0) * (W - L - R);
   const y = v => T + (hi - v) / (hi - lo) * (H - T - B);
+
   let g = '';
   niceTicks(lo, hi).forEach(v => {
     g += `<line x1="${L}" x2="${W - R}" y1="${y(v)}" y2="${y(v)}" stroke="${chartMode === 'pct' && v === 0 ? 'rgba(255,255,255,0.3)' : 'rgba(255,255,255,0.06)'}"/>` +
@@ -322,14 +433,24 @@ function renderChart() {
   });
   const dates = [x0, (x0 + tEnd) / 2, tEnd].map(t => new Date(t).toISOString().slice(0, 10));
   g += dates.map((d, i) => `<text x="${x(toT(d))}" y="${H - 6}" fill="#94a3b8" font-size="11" text-anchor="${['start', 'middle', 'end'][i]}">${fmtDate(d)}</text>`).join('');
-  const lines = series.map(s => `<path d="${s.pts.map((p, i) => `${i ? 'L' : 'M'}${x(p.t).toFixed(1)},${y(p.y).toFixed(1)}`).join('')}" fill="none" stroke="${s.color}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>`).join('');
-  wrap.insertAdjacentHTML('afterbegin', `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="基金走勢圖">${g}${lines}
+
+  const smaLines = showSma ? series.map(s => {
+    const sPts = s.pts.filter(p => p.smaY != null);
+    if (sPts.length < 2) return '';
+    return `<path d="${sPts.map((p, i) => `${i ? 'L' : 'M'}${x(p.t).toFixed(1)},${y(p.smaY).toFixed(1)}`).join('')}" fill="none" stroke="${s.color}" stroke-width="1.4" stroke-dasharray="4 4" opacity="0.65"/>`;
+  }).join('') : '';
+
+  const lines = series.map(s => `<path d="${s.pts.map((p, i) => `${i ? 'L' : 'M'}${x(p.t).toFixed(1)},${y(p.y).toFixed(1)}`).join('')}" fill="none" stroke="${s.color}" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>`).join('');
+
+  wrap.insertAdjacentHTML('afterbegin', `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="基金長線走勢圖">${g}${smaLines}${lines}
     <line id="cross" y1="${T}" y2="${H - B}" stroke="rgba(255,255,255,0.35)" visibility="hidden"/>
     ${series.map((s, i) => `<circle id="dot${i}" r="4.5" fill="${s.color}" stroke="#1e293b" stroke-width="2" visibility="hidden"/>`).join('')}</svg>`);
+
   legend.innerHTML = series.map(s => {
     const last = s.pts[s.pts.length - 1].y;
     return `<span><i style="background:${s.color}"></i>${esc(s.f.zh || s.f.name)} <b class="${chartMode === 'pct' ? clsPct(last) : ''}">${chartMode === 'pct' ? fmtPct(last / 100) : last.toFixed(4)}</b></span>`;
-  }).join('');
+  }).join('') + (showSma ? `<span><i class="dashed"></i>虛線 = 10個月均線</span>` : '');
+
   const svg = wrap.querySelector('svg'), cross = svg.querySelector('#cross');
   const move = ev => {
     const pt = ev.touches ? ev.touches[0] : ev;
@@ -342,8 +463,9 @@ function renderChart() {
       const dot = svg.querySelector('#dot' + i);
       dot.setAttribute('cx', x(p.t)); dot.setAttribute('cy', y(p.y)); dot.setAttribute('visibility', 'visible');
       if (tx === null) tx = p.t;
+      const devTxt = p.sma ? ` (均線${fmtPct(p.v / p.sma - 1)})` : '';
       html += `<div class="row"><span style="display:flex;align-items:center;gap:5px;"><i style="width:8px;height:8px;border-radius:50%;background:${s.color};display:inline-block"></i>${esc(s.f.zh || s.f.name)}</span>` +
-        `<b>${chartMode === 'pct' ? fmtPct(p.y / 100) : p.v.toFixed(4)}</b></div>`;
+        `<b>${chartMode === 'pct' ? fmtPct(p.y / 100) : p.v.toFixed(4)}<small style="color:#94a3b8;font-weight:400">${devTxt}</small></b></div>`;
     });
     cross.setAttribute('x1', x(tx)); cross.setAttribute('x2', x(tx)); cross.setAttribute('visibility', 'visible');
     tip.innerHTML = `<div style="color:#94a3b8;margin-bottom:3px;">${fmtDate(new Date(tx).toISOString().slice(0, 10))}</div>${html}`;
@@ -357,6 +479,7 @@ function renderChart() {
   svg.addEventListener('touchstart', move, { passive: true }); svg.addEventListener('touchmove', move, { passive: true });
   svg.addEventListener('touchend', () => setTimeout(leave, 2000));
 }
+
 document.querySelectorAll('#rangeSeg .seg-btn').forEach(b => b.onclick = () => {
   rangeDays = b.dataset.r;
   document.querySelectorAll('#rangeSeg .seg-btn').forEach(x => x.classList.toggle('active', x === b));
@@ -367,15 +490,19 @@ document.querySelectorAll('#modeSeg .seg-btn').forEach(b => b.onclick = () => {
   document.querySelectorAll('#modeSeg .seg-btn').forEach(x => x.classList.toggle('active', x === b));
   renderChart();
 });
+document.querySelectorAll('#smaSeg .seg-btn').forEach(b => b.onclick = () => {
+  showSma = b.dataset.sma === '1';
+  document.querySelectorAll('#smaSeg .seg-btn').forEach(x => x.classList.toggle('active', x === b));
+  renderChart();
+});
 let rT = 0;
 window.addEventListener('resize', () => { clearTimeout(rT); rT = setTimeout(() => FUNDS.length && renderChart(), 200); });
 
-// ===== 我的組合 =====
 const money = v => 'HK$' + v.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 function renderPortfolio() {
   const box = document.getElementById('pfInputs');
   if (!box.childElementCount) {
-    box.innerHTML = FUNDS.map(f => `<div class="pf-row"><div>${esc(f.zh || f.name)}<div class="hint" style="font-size:.72rem;">${esc(f.name)}</div></div>
+    box.innerHTML = FUNDS.map(f => `<div class="pf-row"><div>${esc(f.zh || f.name)} <span class="badge ${f.sig.cls}" style="margin-left:4px;">${f.sig.label}</span><div class="hint" style="font-size:.72rem;">${esc(f.name)}</div></div>
       <input type="number" inputmode="decimal" min="0" step="any" placeholder="單位" data-unit="${f.key}" value="${holdings[f.key] ?? ''}"></div>`).join('');
     box.querySelectorAll('[data-unit]').forEach(inp => inp.oninput = () => {
       const v = parseFloat(inp.value);
@@ -386,19 +513,21 @@ function renderPortfolio() {
   }
   const held = FUNDS.filter(f => holdings[f.key] > 0);
   const tiles = document.getElementById('pfTiles');
-  if (!held.length) { tiles.innerHTML = '<div class="hint">未輸入持有單位。</div>'; return; }
-  let now = 0, prev1d = 0, has1d = true, prev1m = 0, has1m = true;
+  if (!held.length) { tiles.innerHTML = '<div class="hint">尚未輸入持有單位（展開下方列表即可輸入）。</div>'; return; }
+  let now = 0, bearVal = 0, prev1m = 0, has1m = true;
   held.forEach(f => {
     const u = holdings[f.key], last = f.pts[f.pts.length - 1].v;
-    now += u * last;
-    const d1 = change1d(f); if (d1 == null) has1d = false; else prev1d += u * last / (1 + d1);
-    const m1 = changeOver(f, 30); if (m1 == null) has1m = false; else prev1m += u * last / (1 + m1);
+    const val = u * last;
+    now += val;
+    if (f.sig.code === 'BEAR') bearVal += val;
+    const m1 = changeOver(f, 30); if (m1 == null) has1m = false; else prev1m += val / (1 + m1);
   });
+  const bearRatio = now > 0 ? bearVal / now : 0;
   const tile = (label, val, cls = '') => `<div class="tile"><div>${label}</div><b class="${cls}">${val}</b></div>`;
   const diff = (p, ok) => ok ? `${now - p >= 0 ? '+' : '−'}${money(Math.abs(now - p))}（${fmtPct(now / p - 1)}）` : '—';
   tiles.innerHTML = tile('組合總值', money(now)) +
-    tile('今日變動', diff(prev1d, has1d), has1d ? clsPct(now / prev1d - 1) : '') +
-    tile('1 個月變動', diff(prev1m, has1m), has1m ? clsPct(now / prev1m - 1) : '');
+    tile('1 個月變動', diff(prev1m, has1m), has1m ? clsPct(now / prev1m - 1) : '') +
+    tile('處於長線跌浪資產', `${money(bearVal)}（${(bearRatio * 100).toFixed(0)}%）`, bearVal > 0 ? 'down' : 'up');
 }
 
 load();

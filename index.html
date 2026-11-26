@@ -19,7 +19,7 @@
     background: var(--bg); color: var(--text); min-height: 100vh; line-height: 1.5;
     padding: calc(12px + env(safe-area-inset-top)) calc(12px + env(safe-area-inset-right)) calc(40px + env(safe-area-inset-bottom)) calc(12px + env(safe-area-inset-left));
   }
-  .container { max-width: 960px; margin: 0 auto; }
+  .container { max-width: 1000px; margin: 0 auto; }
   header { padding: 6px 2px 14px; }
   h1 { font-size: 1.25rem; font-weight: 700; }
   .subtitle { color: var(--muted); font-size: 0.8rem; }
@@ -32,17 +32,31 @@
   .chip { padding: 6px 11px; border-radius: 999px; border: 1px solid var(--border); background: var(--surface-2); color: var(--muted);
     font-size: 0.8rem; font-weight: 600; cursor: pointer; }
   .chip.active { color: var(--accent); border-color: rgba(245,158,11,0.5); background: rgba(245,158,11,0.1); }
+  .chip.sub { font-size: 0.76rem; padding: 5px 10px; }
+  .chip.sub.active { color: var(--cyan); border-color: rgba(56,189,248,0.5); background: rgba(56,189,248,0.1); }
   .btn-action { padding: 7px 12px; border-radius: 8px; border: 1px solid rgba(245,158,11,0.45); background: rgba(245,158,11,0.12); color: var(--accent); font-size: 0.8rem; font-weight: 700; cursor: pointer; }
   .btn-action:hover { background: rgba(245,158,11,0.2); }
+  .btn-action.cyan { border-color: rgba(56,189,248,0.45); background: rgba(56,189,248,0.1); color: var(--cyan); }
   .segmented { display: flex; background: var(--surface-2); padding: 4px; border-radius: 10px; border: 1px solid var(--border); gap: 3px; }
   .seg-btn { flex: 1; padding: 7px 6px; border-radius: 7px; border: none; background: transparent; color: var(--muted); font-weight: 600; font-size: 0.8rem; cursor: pointer; white-space: nowrap; }
   .seg-btn.active { background: var(--surface); color: var(--accent); }
+
+  /* 市場脈搏卡片 */
+  .pulse { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; margin-bottom: 14px; }
+  .pcard { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 12px 13px; cursor: pointer; transition: border-color .15s, transform .15s; min-width: 0; }
+  .pcard:hover { border-color: rgba(245,158,11,0.45); }
+  .pcard.static { cursor: default; }
+  .pcard.static:hover { border-color: var(--border); }
+  .pc-title { font-size: 0.75rem; color: var(--muted); font-weight: 600; }
+  .pc-main { font-size: 1.35rem; font-weight: 800; font-variant-numeric: tabular-nums; line-height: 1.25; margin: 4px 0 2px; }
+  .pc-sub { font-size: 0.75rem; color: var(--muted); line-height: 1.4; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+  .pc-sub b { color: var(--text); }
 
   /* Top 5 排行榜 */
   .top-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 8px; margin-top: 8px; }
   .top-item { background: var(--surface-2); border: 1px solid var(--border); border-radius: 10px; padding: 10px; cursor: pointer; transition: border-color .15s; }
   .top-item:hover { border-color: rgba(245,158,11,0.45); }
-  .top-rank { font-size: 0.72rem; color: var(--accent); font-weight: 700; display: flex; justify-content: space-between; }
+  .top-rank { font-size: 0.72rem; color: var(--accent); font-weight: 700; display: flex; justify-content: space-between; gap: 4px; }
   .top-name { font-size: 0.85rem; font-weight: 700; margin: 3px 0; line-height: 1.3; }
   .top-meta { font-size: 0.75rem; color: var(--muted); }
 
@@ -56,49 +70,105 @@
   .b-flat { background: rgba(148,163,184,0.1); color: #94a3b8; border: 1px solid rgba(148,163,184,0.2); }
   .ptag { display: inline-block; padding: 1px 6px; border-radius: 5px; font-size: 0.7rem; background: rgba(255,255,255,0.07); color: #cbd5e1; margin-right: 4px; }
 
+  /* Alpha 徽章 */
+  .ab { display: inline-flex; align-items: center; gap: 4px; padding: 1px 7px; border-radius: 6px; font-size: 0.71rem; font-weight: 700; white-space: nowrap; }
+  .ab i { font-style: normal; opacity: .7; font-weight: 600; }
+  .a-out { background: rgba(74,222,128,0.16); color: #4ade80; border: 1px solid rgba(74,222,128,0.35); }
+  .a-under { background: rgba(249,115,22,0.15); color: #fb923c; border: 1px solid rgba(249,115,22,0.35); }
+  .a-near { background: rgba(148,163,184,0.12); color: #cbd5e1; border: 1px solid rgba(148,163,184,0.25); }
+  .a-bench { background: rgba(59,130,246,0.15); color: #93c5fd; border: 1px solid rgba(59,130,246,0.35); }
+  .astack { display: inline-flex; flex-direction: column; align-items: flex-end; gap: 3px; }
+  .astack small { color: var(--muted); font-size: 0.66rem; }
+
   /* 基金一覽 */
+  .tbl-wrap { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
   .fund-table { width: 100%; border-collapse: collapse; font-size: 0.83rem; }
   .fund-table th { color: var(--muted); font-weight: 500; font-size: 0.75rem; text-align: right; padding: 6px 4px; border-bottom: 1px solid var(--border); cursor: pointer; white-space: nowrap; user-select: none; }
   .fund-table th:first-child { text-align: left; }
   .fund-table th.sorted { color: var(--accent); }
-  .fund-table td { padding: 9px 4px; border-bottom: 1px solid var(--border); text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .fund-table td { padding: 9px 5px; border-bottom: 1px solid var(--border); text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; background-repeat: no-repeat; }
   .fund-table td:first-child { text-align: left; white-space: normal; }
   .fund-table tr { cursor: pointer; }
-  .fund-table tr:hover td { background: rgba(255,255,255,0.02); }
-  .fund-table tr.sel td { background: rgba(255,255,255,0.04); }
+  .fund-table tr:hover td { background-color: rgba(255,255,255,0.025); }
+  .fund-table tr.sel td { background-color: rgba(255,255,255,0.045); }
   .fname { display: flex; align-items: center; gap: 8px; }
   .fname small { display: block; color: var(--muted); font-size: 0.71rem; line-height: 1.3; }
   .dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; border: 1.5px solid var(--muted); }
   .up { color: var(--up); } .down { color: var(--down); } .warn { color: var(--warn); } .flat { color: var(--muted); }
-  @media (max-width: 640px) { .col-hide { display: none; } .panel { padding: 13px; } .fund-table { font-size: 0.78rem; } }
+  .sub2 { display: block; font-size: 0.68rem; color: var(--muted); font-weight: 500; }
+  .m-only { display: none; }
+  .filter-note { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin: 4px 0 8px; font-size: 0.78rem; color: var(--cyan); }
+  .filter-note button { background: none; border: 1px solid rgba(56,189,248,0.4); color: var(--cyan); border-radius: 999px; padding: 2px 9px; font-size: 0.74rem; cursor: pointer; }
+  .tbl-tools { display: flex; gap: 8px; align-items: center; justify-content: space-between; flex-wrap: wrap; margin-bottom: 8px; }
+  details.rules summary { cursor: pointer; color: var(--muted); font-size: 0.78rem; }
+  details.rules ul { margin: 6px 0 0 18px; color: var(--muted); font-size: 0.76rem; line-height: 1.6; }
 
   /* 圖表 */
   .chart-wrap { position: relative; width: 100%; margin-top: 10px; }
   .chart-wrap svg { width: 100%; height: auto; display: block; touch-action: pan-y; }
   .chart-tip { position: absolute; pointer-events: none; background: #020617; border: 1px solid var(--border); border-radius: 8px;
-    padding: 8px 10px; font-size: 0.78rem; color: var(--text); display: none; z-index: 5; min-width: 185px; box-shadow: 0 8px 24px rgba(0,0,0,0.5); }
+    padding: 8px 10px; font-size: 0.78rem; color: var(--text); display: none; z-index: 5; min-width: 185px; max-width: 320px; box-shadow: 0 8px 24px rgba(0,0,0,0.5); }
   .chart-tip .row { display: flex; justify-content: space-between; gap: 10px; align-items: center; margin-top: 2px; }
+  .chart-tip .alpha { margin-top: 6px; padding-top: 5px; border-top: 1px dashed rgba(255,255,255,0.15); font-size: 0.74rem; }
   .legend { display: flex; flex-wrap: wrap; gap: 8px 14px; font-size: 0.8rem; color: var(--text); margin-top: 8px; align-items: center; }
   .legend span { display: inline-flex; align-items: center; gap: 6px; }
   .legend i { width: 14px; height: 3px; border-radius: 2px; display: inline-block; }
   .legend i.dashed { background: transparent !important; border-top: 2px dashed var(--accent); height: 0; }
+  .chart-msg { font-size: 0.8rem; margin-top: 6px; min-height: 0; }
 
   /* 我的組合 */
-  .pf-row { display: grid; grid-template-columns: 1fr 110px; gap: 8px; align-items: center; padding: 6px 0; border-bottom: 1px solid var(--border); font-size: 0.84rem; }
+  .pf-head, .pf-row { display: grid; grid-template-columns: 1fr 96px 76px; gap: 8px; align-items: center; }
+  .pf-head { font-size: 0.72rem; color: var(--muted); padding: 4px 0; border-bottom: 1px solid var(--border); text-align: right; }
+  .pf-head span:first-child { text-align: left; }
+  .pf-row { padding: 6px 0; border-bottom: 1px solid var(--border); font-size: 0.84rem; }
   .pf-row input { padding: 7px 8px; border-radius: 8px; border: 1px solid var(--border); background: var(--surface-2); color: var(--text); font-size: 16px; width: 100%; text-align: right; }
-  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 8px; margin-bottom: 10px; }
+  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 8px; margin-bottom: 10px; }
   .tile { background: var(--surface-2); border: 1px solid var(--border); border-radius: 10px; padding: 10px; }
   .tile div { font-size: 0.75rem; color: var(--muted); }
-  .tile b { font-size: 1.1rem; font-variant-numeric: tabular-nums; }
+  .tile b { font-size: 1.05rem; font-variant-numeric: tabular-nums; }
+  .rb-list { display: grid; gap: 8px; margin-bottom: 12px; }
+  .rb-item { background: var(--surface-2); border: 1px solid var(--border); border-radius: 10px; padding: 10px 11px; }
+  .rb-top { display: flex; justify-content: space-between; gap: 8px; align-items: flex-start; flex-wrap: wrap; }
+  .rb-name { font-size: 0.85rem; font-weight: 700; }
+  .rb-meta { font-size: 0.75rem; color: var(--muted); margin-top: 3px; font-variant-numeric: tabular-nums; }
+  .rb-meta b { color: var(--text); }
+  .track { position: relative; height: 6px; background: rgba(255,255,255,0.06); border-radius: 3px; margin-top: 7px; }
+  .track .fill { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 3px; background: var(--s1); }
+  .track .mark { position: absolute; top: -3px; width: 2px; height: 12px; background: var(--accent); border-radius: 1px; }
+  .act { display: inline-block; padding: 2px 8px; border-radius: 6px; font-size: 0.74rem; font-weight: 700; white-space: nowrap; }
+  .act-sell { background: rgba(251,191,36,0.16); color: #fbbf24; border: 1px solid rgba(251,191,36,0.35); }
+  .act-buy { background: rgba(56,189,248,0.14); color: #38bdf8; border: 1px solid rgba(56,189,248,0.35); }
+  .act-ok { background: rgba(74,222,128,0.12); color: #4ade80; border: 1px solid rgba(74,222,128,0.3); }
+  .advice { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 10px; margin-bottom: 12px; }
+  .adv { border-radius: 10px; padding: 11px 12px; border: 1px solid var(--border); background: var(--surface-2); font-size: 0.82rem; line-height: 1.6; }
+  .adv h3 { font-size: 0.86rem; margin-bottom: 4px; }
+  .adv ul { margin: 4px 0 0 18px; color: var(--muted); font-size: 0.78rem; }
+  .adv.stock { border-color: rgba(248,113,113,0.3); }
+  .adv.flow { border-color: rgba(56,189,248,0.3); }
   details summary { cursor: pointer; color: var(--muted); font-size: 0.84rem; padding: 4px 0; }
   footer { text-align: center; padding: 16px 8px; color: var(--muted); font-size: 0.76rem; line-height: 1.7; }
+
+  @media (max-width: 640px) {
+    .col-hide { display: none; }
+    .m-hide { display: none !important; }
+    .m-only { display: inline-flex; margin-top: 3px; }
+    .panel { padding: 13px; }
+    .fund-table { font-size: 0.76rem; }
+    .fund-table td { padding: 8px 3px; }
+    .fname small { display: none; }
+    .ab { font-size: 0.66rem; padding: 1px 5px; }
+    .pulse { grid-template-columns: 1fr 1fr; gap: 8px; }
+    .pc-main { font-size: 1.1rem; }
+    .pf-head, .pf-row { grid-template-columns: 1fr 84px 62px; gap: 6px; }
+    .seg-btn { font-size: 0.76rem; }
+  }
 </style>
 </head>
 <body>
 <div class="container">
   <header>
     <h1>📈 全港強積金長線趨勢與轉勢決策系統</h1>
-    <div class="subtitle">支援 11 大強積金公司篩選切換 · Top 5 強勢榜同圖對比 · 轉強 / 轉差先行預警</div>
+    <div class="subtitle">11 大強積金公司切換 · 大市基準 Alpha 對比 · 風險性價比 · 轉強 / 轉差先行預警 · 雙軌再平衡</div>
   </header>
 
   <div class="panel">
@@ -106,6 +176,9 @@
     <div style="font-size:0.78rem; color:var(--muted); margin-bottom:6px;">🏢 選擇強積金受託人公司（平時可單看自己公司，選「全部公司」可跨受託人比較）：</div>
     <div class="chips" id="providerChips"></div>
   </div>
+
+  <!-- 市場脈搏概覽 -->
+  <div class="pulse" id="pulse"></div>
 
   <div class="panel" id="topPanel" style="display:none;">
     <div class="panel-head">
@@ -120,6 +193,7 @@
     <div class="panel-head">
       <h2>同圖走勢比較與 10個月牛熊線</h2>
       <div style="display:flex; gap:6px; flex-wrap:wrap;">
+        <button class="btn-action cyan" id="btnAddBench">⚡ 加入對應大市基準</button>
         <div class="segmented" id="smaSeg">
           <button class="seg-btn active" data-sma="1">顯示 10月均線</button>
           <button class="seg-btn" data-sma="0">隱藏均線</button>
@@ -139,29 +213,52 @@
     </div>
     <div class="chart-wrap" id="chartWrap"><div class="chart-tip" id="tip"></div></div>
     <div class="legend" id="legend"></div>
-    <div class="hint" id="chartNote" style="margin-top:8px;">
-      💡 <b>轉勢指標說明：</b>「🚀 加速轉強」代表近 3 個月升幅已超越過去半年平均速度且均線向上；「⚠️ 動能轉差」代表從 1 年高點回撤超過 6% 或近一季轉跌；「🔴 長線轉弱」代表跌穿 10個月均線 -2%（建議存量轉入保守基金避險）。
+    <div class="chart-msg" id="chartMsg"></div>
+    <div class="hint" style="margin-top:8px;">
+      💡 <b>轉勢指標說明：</b>「🚀 加速轉強」代表近 3 個月升幅已超越過去半年平均速度且均線向上；「⚠️ 動能轉差」代表從 1 年高點回撤超過 6% 或近一季轉跌；「🔴 長線轉弱」代表跌穿 10個月均線 -2%（建議存量轉入保守基金避險）。圖表同時有基金及其基準時，游標提示會顯示「相對大市超額表現」。
     </div>
   </div>
 
-  <div class="panel">
+  <div class="panel" id="tablePanel">
     <div class="panel-head">
       <h2>基金轉勢預警與動能總表</h2>
       <div class="chips" id="catChips"></div>
     </div>
-    <table class="fund-table" id="fundTable"></table>
+    <div class="chips" id="regionChips" style="margin-bottom:8px;"></div>
+    <div class="tbl-tools">
+      <div class="segmented" id="viewSeg" style="flex:1; max-width:460px;">
+        <button class="seg-btn active" data-view="A">📊 趨勢動能與大市對比</button>
+        <button class="seg-btn" data-view="B">🛡️ 風險回撤與性價比</button>
+      </div>
+      <button class="btn-action cyan" id="btnRegionPk" style="display:none;">⚔️ 前 5 隻放入圖表 PK</button>
+    </div>
+    <div id="filterNote"></div>
+    <div class="tbl-wrap"><table class="fund-table" id="fundTable"></table></div>
+    <details class="rules" style="margin-top:10px;">
+      <summary>ℹ️ 大市基準對應規則與指標定義</summary>
+      <ul>
+        <li>港股 / 中國 → 恒生指數基金；北美 / 美股 → 北美股票追蹤基金；歐洲 → 歐洲股票追蹤基金；亞太 → 亞太股票追蹤基金。</li>
+        <li>日本 / 韓國 / 台灣、康健護理 → 全港同類基金平均（同業平均）。</li>
+        <li>環球股票 / 混合資產 → 同計劃「核心累積基金」（DIS）；債券 / 保證 → 同計劃「強積金保守基金」。</li>
+        <li>優先使用同計劃內的基準基金；若無，則回退至恒生 ValueChoice 或其他計劃的同類追蹤基金。</li>
+        <li>Alpha ＝ 基金回報 − 基準回報，兩者以<b>相同的結束日期</b>計算（避免每日與每月數據錯開）。≥ +1.5% 強於大市；≤ −1.5% 弱於大市。</li>
+        <li>年化波幅：以近 3 年月末價格計算對數回報標準差，年化係數按實際平均數據間距動態調整（月度 ≈ √12）。風險回報比 ＝ 同期年化回報 ÷ 年化波幅；✓ 代表高於同計劃 DIS 核心累積基金。</li>
+      </ul>
+    </details>
   </div>
 
   <div class="panel">
-    <div class="panel-head"><h2>我的組合與持倉風險診斷</h2></div>
-    <div class="hint" style="margin-bottom:10px;">輸入你持有的基金單位數目（僅存於本機瀏覽器），自動計算總值及是否持有「轉差 / 轉弱」基金。</div>
+    <div class="panel-head"><h2>我的組合：雙軌再平衡計算器</h2></div>
+    <div class="hint" style="margin-bottom:10px;">輸入持有單位及目標佔比（僅存於本機瀏覽器），自動計算實際佔比、偏離值及建議轉換金額。偏離 ≥ ±5% 觸發再平衡建議。</div>
     <div class="tiles" id="pfTiles"></div>
-    <details id="pfDetails"><summary>✏️ 輸入 / 修改持有單位（顯示目前所選公司之基金）</summary><div id="pfInputs" style="margin-top:6px;"></div></details>
+    <div class="advice" id="pfAdvice"></div>
+    <div class="rb-list" id="pfRebal"></div>
+    <details id="pfDetails"><summary>✏️ 輸入 / 修改持有單位與目標佔比（顯示目前所選公司之基金）</summary><div id="pfInputs" style="margin-top:6px;"></div></details>
   </div>
 
   <footer>
     數據來源：恒生強積金每日價格 ＋ 積金局（MPFA）全港每月綜合價格表（涵蓋恒生、宏利、滙豐、永明、友邦、海通、中銀保誠、BCT、富達、信安、東亞）。<br>
-    ⚠️ 本工具提供之量化趨勢及動能分析僅供個人紀錄參考，不構成任何投資建議。
+    ⚠️ 本工具提供之量化趨勢、大市對比及再平衡計算僅供個人紀錄參考，不構成任何投資建議。
   </footer>
 </div>
 
@@ -184,17 +281,17 @@ const FUND_INFO = [
   [/age\s*65/i, '65歲後基金', '混合資產'],
   [/core\s*accumulation/i, '核心累積基金', '混合資產'],
   [/retirement\s*income/i, '環球退休入息基金', '混合資產'],
-  [/healthcare/i, '康健護理基金', '股票'],
+  [/healthcare|health\s*care/i, '康健護理基金', '股票'],
   [/north\s*america/i, '北美股票基金', '股票'],
   [/united\s*states|u\.s\./i, '美國股票基金', '股票'],
   [/europe/i, '歐洲股票基金', '股票'],
+  [/asia\s*pacific|asian\s*equity/i, '亞太/亞洲股票基金', '股票'],
   [/japan/i, '日本股票基金', '股票'],
   [/china\s*enterprises|h-?share/i, '恒生中國企業指數基金', '股票'],
   [/hang\s*seng\s*index/i, '恒生指數基金', '股票'],
-  [/hong\s*kong\s*and\s*chinese/i, '香港及中國股票基金', '股票'],
+  [/hong\s*kong\s*(and|&)\s*chin(ese|a)/i, '香港及中國股票基金', '股票'],
   [/hong\s*kong\s*equity/i, '香港股票基金', '股票'],
   [/chinese\s*equity|china\s*equity/i, '中國股票基金', '股票'],
-  [/asia\s*pacific|asian\s*equity/i, '亞太/亞洲股票基金', '股票'],
   [/global\s*equity|international\s*equity/i, '環球/國際股票基金', '股票'],
   [/global\s*bond|international\s*bond/i, '環球債券基金', '債券'],
   [/rmb\s*bond/i, '人民幣債券基金', '債券'],
@@ -215,18 +312,29 @@ const keyOf = (p, name) => `${p}_${String(name).toLowerCase().replace(/\(.*?\)/g
 const SERIES_COLORS = ['var(--s1)', 'var(--s2)', 'var(--s3)', 'var(--s4)', 'var(--s5)'];
 const esc = t => String(t).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const fmtPct = v => v == null || !isFinite(v) ? '—' : (v > 0 ? '+' : '') + (v * 100).toFixed(2) + '%';
+const fmtPct1 = v => v == null || !isFinite(v) ? '—' : (v > 0 ? '+' : '') + (v * 100).toFixed(1) + '%';
 const clsPct = v => v == null || !isFinite(v) ? 'flat' : v > 0.00005 ? 'up' : v < -0.00005 ? 'down' : 'flat';
 const fmtDate = d => d ? `${d.slice(0, 4)}/${d.slice(5, 7)}/${d.slice(8, 10)}` : '';
 const DAY = 86400000;
 const toT = d => Date.parse(d + 'T00:00:00Z');
+const money = v => 'HK$' + v.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+const money0 = v => 'HK$' + Math.round(v).toLocaleString('en-US');
+const ALPHA_TH = 0.015;
+const SIG_ORDER = { RISING: 5, BULL: 4, WARN: 3, FADING: 2, BEAR: 1, SAFE: 0, NA: -1 };
+const SIG_NAMES = { RISING: '🚀 加速轉強', FADING: '⚠️ 動能轉差', BEAR: '🔴 長線轉弱' };
 
 let FUNDS = [];
 let selected = [];
-let providerFilter = 'hangseng'; // 預設先顯示恒生，可隨時切換至全部或其他公司
+let providerFilter = 'hangseng';
 let rangeDays = '1095', chartMode = 'pct', showSma = true, sortKey = 'score', sortDir = -1, catFilter = '全部';
+let viewMode = 'A', regionFilter = 'all', sigFilter = null;
 try { const s = JSON.parse(localStorage.getItem('mpf_selected_v2') || 'null'); if (Array.isArray(s)) selected = s; } catch (e) {}
 let holdings = {};
 try { holdings = JSON.parse(localStorage.getItem('mpf_units_v2') || '{}') || {}; } catch (e) {}
+let targets = {};
+try { targets = JSON.parse(localStorage.getItem('mpf_targets_v2') || '{}') || {}; } catch (e) {}
+try { const v = localStorage.getItem('mpf_view_v2'); if (v === 'A' || v === 'B') viewMode = v; } catch (e) {}
+const saveSelected = () => { try { localStorage.setItem('mpf_selected_v2', JSON.stringify(selected)); } catch (e) {} };
 
 function parseCsv(text) {
   const lines = text.split(/\r?\n/).filter(Boolean);
@@ -246,6 +354,7 @@ async function getJson(path) {
   catch (e) { return null; }
 }
 
+/* ================= 量化核心（保留原有邏輯） ================= */
 function calcSma10M(pts, targetT) {
   const vals = [];
   for (let m = 0; m < 10; m++) {
@@ -257,7 +366,6 @@ function calcSma10M(pts, targetT) {
   if (vals.length < 8) return null;
   return vals.reduce((a, b) => a + b, 0) / vals.length;
 }
-
 function priceAtOrBefore(f, t) {
   let best = null;
   for (const p of f.pts) { if (p.t <= t) best = p; else break; }
@@ -269,7 +377,6 @@ function changeOver(f, days) {
   if (!base || last.t - base.t < days * DAY * 0.8 || base === last) return null;
   return last.v / base.v - 1;
 }
-
 function analyzeFund(obj) {
   if (obj.cat === '保守' || obj.cat === '保證') {
     return { code: 'SAFE', label: '避險資金池', cls: 'b-flat', dev: null, dd: null, score: -999 };
@@ -287,7 +394,6 @@ function analyzeFund(obj) {
 
   const m3 = obj.mom3, m6 = obj.mom6;
   let code = 'WARN', label = '🟡 均線爭持', cls = 'b-warn';
-
   if (dev <= -0.02) {
     code = 'BEAR'; label = '🔴 長線轉弱'; cls = 'b-bear';
   } else if (dev >= 0.02 && (dd <= -0.06 || (m3 != null && m3 < -0.02))) {
@@ -297,11 +403,143 @@ function analyzeFund(obj) {
   } else if (dev >= 0.02) {
     code = 'BULL'; label = '🟢 穩步強勢'; cls = 'b-bull';
   }
-
   const score = (m6 ?? 0) * 0.5 + (m3 ?? 0) * 0.3 + dev * 0.2;
   return { code, label, cls, dev, dd, score };
 }
 
+/* ================= 新增：風險指標 ================= */
+function maxDrawdown1y(f) {
+  const last = f.pts[f.pts.length - 1];
+  let peak = -Infinity, mdd = 0;
+  for (const p of f.pts) {
+    if (p.t < last.t - 365 * DAY) continue;
+    peak = Math.max(peak, p.v);
+    mdd = Math.min(mdd, p.v / peak - 1);
+  }
+  return mdd;
+}
+// 以月末取樣（近 3 年）計算年化波幅；年化係數由實際平均間距動態推算（月度≈√12，每日≈√252）
+function riskStats(f) {
+  const last = f.pts[f.pts.length - 1];
+  const samples = [];
+  for (let m = 0; m <= 36; m++) {
+    const p = priceAtOrBefore(f, last.t - m * 30.4375 * DAY);
+    if (!p) break;
+    if (samples.length && samples[samples.length - 1] === p) continue;
+    samples.push(p);
+  }
+  samples.reverse();
+  if (samples.length < 7) return null;
+  const rets = [];
+  for (let i = 1; i < samples.length; i++) rets.push(Math.log(samples[i].v / samples[i - 1].v));
+  const spanDays = (samples[samples.length - 1].t - samples[0].t) / DAY;
+  const avgGap = spanDays / rets.length;
+  const isDailyLike = avgGap < 5;
+  const factor = isDailyLike ? Math.sqrt(252) : Math.sqrt(365.25 / avgGap);
+  const mean = rets.reduce((a, b) => a + b, 0) / rets.length;
+  const sd = Math.sqrt(rets.reduce((a, b) => a + (b - mean) ** 2, 0) / (rets.length - 1));
+  const vol = sd * factor;
+  const years = spanDays / 365.25;
+  const annRet = Math.pow(samples[samples.length - 1].v / samples[0].v, 1 / years) - 1;
+  return { vol, annRet, rr: vol > 0 ? annRet / vol : null, years };
+}
+
+/* ================= 新增：大市基準匹配引擎 ================= */
+const REGION_RULES = [
+  ['health', /health\s*care|healthcare/i],
+  ['jp', /japan|korea|taiwan/i],
+  ['hk', /hong\s*kong|china|chinese|h-?share|hang\s*seng/i],
+  ['na', /north\s*america|united\s*states|u\.s\.|\bus\s+equity|\bs&p/i],
+  ['eu', /europe/i],
+  ['ap', /asia|pacific/i],
+  ['glb', /global|international|world/i],
+];
+const REGION_LABELS = { hk: '港股/中國', na: '北美/美股', glb: '環球股票', apjp: '亞太/日本', eu: '歐洲', health: '康健護理' };
+function regionOf(f) {
+  if (f.cat === '保守' || f.cat === '保證' || f.cat === '債券') return 'safe';
+  if (f.cat === '混合資產') return 'mix';
+  if (f.cat !== '股票') return 'other';
+  const n = f.name.replace(/ex[-\s.]*(japan|hong\s*kong|china|asia)/gi, '');
+  const r = REGION_RULES.find(([, re]) => re.test(n));
+  return r ? r[0] : 'eq-other';
+}
+const regionGroup = r => (r === 'ap' || r === 'jp') ? 'apjp' : r;
+const isTracker = n => /tracker|tracking|index/i.test(n);
+const BENCH_RULES = {
+  hk: { label: '恒指', test: n => (/hang\s*seng\s*index/i.test(n) && !/china\s*enterprises|h-?share|tech/i.test(n)) || (/hong\s*kong/i.test(n) && /tracker/i.test(n) && !/china/i.test(n)) },
+  na: { label: '北美追蹤', test: n => /north\s*america|united\s*states|u\.s\.|\bus\s+equity|s&p/i.test(n) && isTracker(n) },
+  eu: { label: '歐洲追蹤', test: n => /europe/i.test(n) && isTracker(n) },
+  ap: { label: '亞太追蹤', test: n => /asia/i.test(n) && /pacific/i.test(n) && isTracker(n) },
+  core: { label: '核心累積', test: n => /core\s*accumulation/i.test(n) },
+  cons: { label: '保守基金', test: n => /conservative/i.test(n) },
+};
+function benchTypeOf(f) {
+  const r = f.region;
+  if (r === 'hk' || r === 'na' || r === 'eu' || r === 'ap') return r;
+  if (r === 'jp' || r === 'health') return 'peer';
+  if (r === 'safe') return 'cons';
+  return 'core'; // glb / mix / eq-other / other
+}
+function pickBenchFund(f, type) {
+  const rule = BENCH_RULES[type];
+  const cands = FUNDS.filter(g => g !== f && rule.test(g.name) && g.pts.length >= 8);
+  if (!cands.length) return null;
+  const longest = arr => arr.sort((a, b) => b.pts.length - a.pts.length)[0];
+  const same = cands.filter(g => g.provider === f.provider);
+  if (same.length) return { fund: longest(same), scope: '同計劃' };
+  const hs = cands.filter(g => g.provider === 'hangseng');
+  const fb = hs.length ? longest(hs) : longest(cands);
+  return { fund: fb, scope: fb.providerName + '回退' };
+}
+function assignBenchmark(f) {
+  const type = benchTypeOf(f);
+  if (/age\s*65/i.test(f.name) || (BENCH_RULES[type] && BENCH_RULES[type].test(f.name))) {
+    return { type: 'self', label: /age\s*65|core\s*accumulation/i.test(f.name) ? 'DIS 基準' : '大市基準' };
+  }
+  if (type === 'peer') {
+    const all = FUNDS.filter(g => g !== f && g.cat === '股票' && g.region === f.region);
+    const same = all.filter(g => g.provider === f.provider);
+    const peers = same.length >= 2 ? same : all;
+    if (!peers.length) {
+      const pick = pickBenchFund(f, 'core'); // 無同類可比 → 回退至核心累積基金
+      return pick ? { type: 'fund', fund: pick.fund, label: BENCH_RULES.core.label, scope: pick.scope } : { type: 'none', label: '' };
+    }
+    return { type: 'peer', peers, label: `同業平均(${peers.length})`, scope: same.length >= 2 ? '同計劃' : '全港' };
+  }
+  const pick = pickBenchFund(f, type);
+  if (!pick) return { type: 'none', label: '' };
+  return { type: 'fund', fund: pick.fund, label: BENCH_RULES[type].label, scope: pick.scope };
+}
+function retWindow(f, tEnd, days) {
+  const end = priceAtOrBefore(f, tEnd);
+  if (!end || tEnd - end.t > 45 * DAY) return null;
+  const base = priceAtOrBefore(f, tEnd - days * DAY);
+  if (!base || base === end || end.t - base.t < days * DAY * 0.8) return null;
+  return end.v / base.v - 1;
+}
+// Alpha：基金與基準使用相同結束日期，避免每日／每月數據錯開
+function alphaOf(f, days) {
+  const b = f.bench;
+  const fLast = f.pts[f.pts.length - 1].t;
+  if (b.type === 'fund') {
+    const tEnd = Math.min(fLast, b.fund.pts[b.fund.pts.length - 1].t);
+    const rf = retWindow(f, tEnd, days), rb = retWindow(b.fund, tEnd, days);
+    return rf == null || rb == null ? null : { rf, rb, a: rf - rb };
+  }
+  if (b.type === 'peer') {
+    const tEnd = Math.min(fLast, Math.max(...b.peers.map(p => p.pts[p.pts.length - 1].t)));
+    const rf = retWindow(f, tEnd, days);
+    const rs = b.peers.map(p => retWindow(p, tEnd, days)).filter(v => v != null);
+    if (rf == null || !rs.length) return null;
+    const rb = rs.reduce((x, y) => x + y, 0) / rs.length;
+    return { rf, rb, a: rf - rb };
+  }
+  return null;
+}
+const coreOf = provider => FUNDS.find(g => g.provider === provider && /core\s*accumulation/i.test(g.name));
+const consOf = provider => FUNDS.find(g => g.provider === provider && /conservative/i.test(g.name));
+
+/* ================= 載入 ================= */
 async function load() {
   const [daily, monthly, statusJson] = await Promise.all([
     getCsv('data/daily.csv'),
@@ -330,15 +568,26 @@ async function load() {
     obj.mom6 = changeOver(obj, 182);
     obj.y1 = changeOver(obj, 365);
     obj.sig = analyzeFund(obj);
+    obj.mdd1y = maxDrawdown1y(obj);
+    obj.risk = riskStats(obj);
     return obj;
   }).filter(f => f.pts.length);
+
+  FUNDS.forEach(f => { f.region = regionOf(f); });
+  FUNDS.forEach(f => { f.bench = assignBenchmark(f); });
+  FUNDS.forEach(f => {
+    const a6 = alphaOf(f, 182), a1 = alphaOf(f, 365);
+    f.a6 = a6 ? a6.a : null; f.b6 = a6 ? a6.rb : null;
+    f.a1 = a1 ? a1.a : null; f.b1 = a1 ? a1.rb : null;
+    const core = coreOf(f.provider) || coreOf('hangseng');
+    f.coreRR = core && core.risk ? core.risk.rr : null;
+  });
 
   const st = document.getElementById('status');
   if (!FUNDS.length) {
     st.innerHTML = '<span class="nowin">尚未讀取到數據。</span>請到 GitHub Actions 運行一次「更新強積金價格與長線趨勢提醒」。';
     return;
   }
-
   const availProviders = [...new Set(FUNDS.map(f => f.provider))];
   if (!availProviders.includes(providerFilter)) providerFilter = availProviders[0] || 'all';
 
@@ -351,13 +600,14 @@ async function load() {
 }
 
 function buildProviderChips(availProviders) {
-  const list = ['all', ...Object.keys(PROVIDERS).filter(id => availProviders.includes(id))];
+  const list = ['all', ...Object.keys(PROVIDERS).filter(id => availProviders.includes(id)), ...availProviders.filter(id => !PROVIDERS[id])];
   document.getElementById('providerChips').innerHTML = list.map(id => {
-    const label = id === 'all' ? '🌐 全部公司（跨受託人比較）' : PROVIDERS[id];
+    const label = id === 'all' ? '🌐 全部公司（跨受託人比較）' : (PROVIDERS[id] || id);
     return `<button class="chip ${id === providerFilter ? 'active' : ''}" data-prov="${id}">${label}</button>`;
   }).join('');
   document.querySelectorAll('[data-prov]').forEach(b => b.onclick = () => {
     providerFilter = b.dataset.prov;
+    sigFilter = null;
     buildProviderChips(availProviders);
     refreshAllViews();
   });
@@ -369,6 +619,7 @@ function getFilteredFunds() {
 
 function refreshAllViews() {
   const pool = getFilteredFunds();
+  renderPulse(pool);
   renderTop5(pool);
   selected = selected.filter(k => FUNDS.some(f => f.key === k));
   if (!selected.length) {
@@ -381,42 +632,153 @@ function refreshAllViews() {
   renderPortfolio(pool);
 }
 
+/* ================= 市場脈搏卡片 ================= */
+function alphaBadge(a, period) {
+  if (a == null || !isFinite(a)) return '';
+  const cls = a >= ALPHA_TH ? 'a-out' : a <= -ALPHA_TH ? 'a-under' : 'a-near';
+  const txt = a >= ALPHA_TH ? '強於大市' : a <= -ALPHA_TH ? '弱於大市' : '貼近大市';
+  return `<span class="ab ${cls}">${period ? `<i>${period}</i>` : ''}${txt} ${fmtPct1(a)}</span>`;
+}
+function renderPulse(pool) {
+  const el = document.getElementById('pulse');
+  // 1. Top Alpha
+  const alphaPool = pool.filter(f => f.a6 != null && f.bench.type !== 'self');
+  const top = alphaPool.sort((a, b) => b.a6 - a.a6)[0];
+  // 2. RISING
+  const rising = pool.filter(f => f.sig.code === 'RISING');
+  // 3. DIS core
+  let coreHtml;
+  if (providerFilter === 'all') {
+    const cores = [...new Set(FUNDS.map(f => f.provider))].map(coreOf).filter(Boolean);
+    const avg = k => { const v = cores.map(c => c[k]).filter(x => x != null); return v.length ? v.reduce((a, b) => a + b, 0) / v.length : null; };
+    coreHtml = cores.length
+      ? `<div class="pc-main ${clsPct(avg('y1'))}">${fmtPct1(avg('y1'))}</div><div class="pc-sub">全港 ${cores.length} 個計劃平均 · 1年 · 6月 <b class="${clsPct(avg('mom6'))}">${fmtPct1(avg('mom6'))}</b></div>`
+      : `<div class="pc-main flat">—</div><div class="pc-sub">未有核心累積基金數據</div>`;
+  } else {
+    const c = coreOf(providerFilter);
+    coreHtml = c
+      ? `<div class="pc-main ${clsPct(c.y1)}">${fmtPct1(c.y1)}</div><div class="pc-sub">1年回報 · 6月 <b class="${clsPct(c.mom6)}">${fmtPct1(c.mom6)}</b>${c.risk ? ` · 風險回報比 <b>${c.risk.rr.toFixed(2)}</b>` : ''}</div>`
+      : `<div class="pc-main flat">—</div><div class="pc-sub">此計劃未有核心累積基金數據</div>`;
+  }
+  // 4. 警示
+  const fading = pool.filter(f => f.sig.code === 'FADING').length;
+  const bear = pool.filter(f => f.sig.code === 'BEAR').length;
+
+  el.innerHTML = `
+    <div class="pcard" data-pulse="alpha" title="點擊把基金及其基準加入走勢圖">
+      <div class="pc-title">🏆 跑贏大市冠軍（6月 Alpha）</div>
+      ${top ? `<div class="pc-main ${clsPct(top.a6)}">${fmtPct1(top.a6)}</div>
+        <div class="pc-sub">${providerFilter === 'all' ? `[${esc(top.providerName)}] ` : ''}<b>${esc(top.zh || top.name)}</b> vs ${esc(top.bench.label)}</div>`
+        : `<div class="pc-main flat">—</div><div class="pc-sub">未有可比較基金</div>`}
+    </div>
+    <div class="pcard" data-pulse="rising" title="點擊篩選加速轉強基金">
+      <div class="pc-title">🚀 轉勢動能新星</div>
+      <div class="pc-main" style="color:var(--cyan)">${rising.length} <span style="font-size:.8rem;font-weight:600;color:var(--muted)">隻</span></div>
+      <div class="pc-sub">處於「加速轉強」狀態 · 點擊篩選</div>
+    </div>
+    <div class="pcard static">
+      <div class="pc-title">🧭 DIS 核心累積及格線</div>
+      ${coreHtml}
+    </div>
+    <div class="pcard" data-pulse="risk" title="點擊篩選轉差／轉弱基金">
+      <div class="pc-title">⚠️ 高位轉差 / 跌穿牛熊線</div>
+      <div class="pc-main ${fading + bear ? 'down' : 'up'}">${fading + bear} <span style="font-size:.8rem;font-weight:600;color:var(--muted)">隻</span></div>
+      <div class="pc-sub">動能轉差 <b class="warn">${fading}</b> · 長線轉弱 <b class="down">${bear}</b></div>
+    </div>`;
+
+  el.querySelector('[data-pulse="alpha"]').onclick = () => {
+    if (!top) return;
+    selected = [top.key];
+    if (top.bench.type === 'fund') selected.push(top.bench.fund.key);
+    setChartMode('pct');
+    saveSelected();
+    renderTable(getFilteredFunds()); renderChart();
+    document.getElementById('chartWrap').scrollIntoView({ behavior: 'smooth', block: 'center' });
+  };
+  const goFilter = codes => {
+    sigFilter = codes; catFilter = '全部'; regionFilter = 'all';
+    buildCatChips(getFilteredFunds()); renderTable(getFilteredFunds());
+    document.getElementById('tablePanel').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+  el.querySelector('[data-pulse="rising"]').onclick = () => goFilter(['RISING']);
+  el.querySelector('[data-pulse="risk"]').onclick = () => goFilter(['FADING', 'BEAR']);
+}
+
+/* ================= Top 5 ================= */
 function renderTop5(pool) {
   const panel = document.getElementById('topPanel');
   const eq = pool.filter(f => f.cat === '股票' && f.mom6 != null).sort((a, b) => b.sig.score - a.sig.score).slice(0, 5);
   if (!eq.length) { panel.style.display = 'none'; return; }
   panel.style.display = 'block';
-  const scopeName = providerFilter === 'all' ? '全港跨公司' : PROVIDERS[providerFilter];
+  const scopeName = providerFilter === 'all' ? '全港跨公司' : (PROVIDERS[providerFilter] || providerFilter);
   document.getElementById('topTitle').textContent = `🏆 ${scopeName}：最強股票基金 Top ${eq.length}`;
-
   document.getElementById('topList').innerHTML = eq.map((f, idx) => `
     <div class="top-item" data-topkey="${f.key}">
-      <div class="top-rank"><span>#${idx + 1} ${providerFilter === 'all' ? f.providerName : ''}</span><span>${f.sig.label}</span></div>
+      <div class="top-rank"><span>#${idx + 1} ${providerFilter === 'all' ? esc(f.providerName) : ''}</span><span>${f.sig.label}</span></div>
       <div class="top-name">${esc(f.zh || f.name)}</div>
       <div class="top-meta">6月 <b class="${clsPct(f.mom6)}">${fmtPct(f.mom6)}</b> · 3月 <b class="${clsPct(f.mom3)}">${fmtPct(f.mom3)}</b></div>
-    </div>
-  `).join('');
-
+      <div style="margin-top:4px;">${f.bench.type === 'self' ? `<span class="ab a-bench">${f.bench.label}</span>` : alphaBadge(f.a6, '6月')}</div>
+    </div>`).join('');
   document.querySelectorAll('[data-topkey]').forEach(el => el.onclick = () => toggleSelect(el.dataset.topkey));
   document.getElementById('btnCompareTop').onclick = () => {
     selected = eq.map(f => f.key);
-    try { localStorage.setItem('mpf_selected_v2', JSON.stringify(selected)); } catch (e) {}
+    saveSelected();
     renderTable(getFilteredFunds());
     renderChart();
     document.getElementById('chartWrap').scrollIntoView({ behavior: 'smooth', block: 'center' });
   };
 }
 
+/* ================= 分類與地區篩選 ================= */
 function buildCatChips(pool) {
   const cats = ['全部', ...['股票', '混合資產', '債券', '保守', '保證', '其他'].filter(c => pool.some(f => f.cat === c))];
   if (!cats.includes(catFilter)) catFilter = '全部';
   document.getElementById('catChips').innerHTML = cats.map(c => `<button class="chip ${c === catFilter ? 'active' : ''}" data-cat="${c}">${c}</button>`).join('');
-  document.querySelectorAll('[data-cat]').forEach(b => b.onclick = () => { catFilter = b.dataset.cat; buildCatChips(pool); renderTable(pool); });
+  document.querySelectorAll('[data-cat]').forEach(b => b.onclick = () => {
+    catFilter = b.dataset.cat; regionFilter = 'all'; sigFilter = null;
+    buildCatChips(pool); renderTable(pool);
+  });
+  buildRegionChips(pool);
+}
+function buildRegionChips(pool) {
+  const box = document.getElementById('regionChips');
+  const pkBtn = document.getElementById('btnRegionPk');
+  if (catFilter !== '股票') { box.innerHTML = ''; box.style.display = 'none'; pkBtn.style.display = 'none'; regionFilter = 'all'; return; }
+  const present = Object.keys(REGION_LABELS).filter(g => pool.some(f => f.cat === '股票' && regionGroup(f.region) === g));
+  if (regionFilter !== 'all' && !present.includes(regionFilter)) regionFilter = 'all';
+  box.style.display = 'flex';
+  box.innerHTML = `<span style="font-size:.74rem;color:var(--muted);align-self:center;">${providerFilter === 'all' ? '⚔️ 跨公司同類 PK：' : '地區：'}</span>` +
+    [['all', '全部股票'], ...present.map(g => [g, REGION_LABELS[g]])]
+      .map(([g, l]) => `<button class="chip sub ${g === regionFilter ? 'active' : ''}" data-region="${g}">${l}</button>`).join('');
+  box.querySelectorAll('[data-region]').forEach(b => b.onclick = () => { regionFilter = b.dataset.region; buildRegionChips(pool); renderTable(pool); });
+  pkBtn.style.display = regionFilter !== 'all' ? 'inline-block' : 'none';
 }
 
+/* ================= 總表 ================= */
+function sigFilterMatch(f) { return !sigFilter || sigFilter.includes(f.sig.code); }
+function dataBar(v, maxAbs) {
+  if (v == null || !isFinite(v) || !maxAbs) return '';
+  const w = Math.min(50, Math.abs(v) / maxAbs * 50).toFixed(1);
+  const c = v >= 0 ? 'rgba(74,222,128,0.17)' : 'rgba(248,113,113,0.17)';
+  const g = v >= 0
+    ? `linear-gradient(to right, transparent 50%, ${c} 50%, ${c} ${50 + +w}%, transparent ${50 + +w}%)`
+    : `linear-gradient(to right, transparent ${50 - w}%, ${c} ${50 - w}%, ${c} 50%, transparent 50%)`;
+  return `style="background-image:${g}"`;
+}
+function visibleRows(pool) {
+  return pool.filter(f => (catFilter === '全部' || f.cat === catFilter)
+    && (regionFilter === 'all' || regionGroup(f.region) === regionFilter)
+    && sigFilterMatch(f));
+}
 function renderTable(pool) {
-  const rows = pool.filter(f => catFilter === '全部' || f.cat === catFilter).map(f => ({
-    f, score: f.sig.score, dev: f.sig.dev, mom3: f.mom3, mom6: f.mom6, dd: f.sig.dd
+  const fnote = document.getElementById('filterNote');
+  fnote.innerHTML = sigFilter ? `<div class="filter-note">🔎 訊號篩選：${sigFilter.map(c => SIG_NAMES[c] || c).join(' / ')} <button id="clrSig">✕ 清除</button></div>` : '';
+  if (sigFilter) document.getElementById('clrSig').onclick = () => { sigFilter = null; renderTable(getFilteredFunds()); };
+
+  const rows = visibleRows(pool).map(f => ({
+    f, score: f.sig.score, dev: f.sig.dev, mom3: f.mom3, mom6: f.mom6, y1: f.y1, dd: f.sig.dd ?? (f.cat === '保守' || f.cat === '保證' ? null : f.mdd1y),
+    alpha: f.bench.type === 'self' ? null : f.a6, sig: SIG_ORDER[f.sig.code] ?? -1,
+    vol: f.risk ? f.risk.vol : null, rr: f.risk ? f.risk.rr : null
   }));
   const val = (r, k) => k === 'name' ? (r.f.zh || r.f.name) : r[k];
   rows.sort((a, b) => {
@@ -424,21 +786,51 @@ function renderTable(pool) {
     if (x == null && y == null) return 0; if (x == null) return 1; if (y == null) return -1;
     return (typeof x === 'string' ? x.localeCompare(y, 'zh-Hant') : x - y) * sortDir;
   });
-  const th = (k, label, cls = '') => `<th data-sort="${k}" class="${cls} ${sortKey === k ? 'sorted' : ''}">${label}${sortKey === k ? (sortDir > 0 ? ' ▲' : ' ▼') : ''}</th>`;
-  document.getElementById('fundTable').innerHTML =
-    `<tr>${th('name', '基金名稱')}<th style="text-align:center;">轉勢與牛熊訊號</th>${th('dev', '偏離10月線')}${th('mom3', '3月動能')}${th('mom6', '6月動能')}${th('dd', '距1年高點', 'col-hide')}</tr>` +
-    rows.map(r => {
-      const si = selected.indexOf(r.f.key);
-      const dot = si >= 0 ? `style="background:${SERIES_COLORS[si]};border-color:${SERIES_COLORS[si]}"` : '';
-      const pTag = providerFilter === 'all' ? `<span class="ptag">${esc(r.f.providerName)}</span>` : '';
-      return `<tr data-key="${r.f.key}" class="${si >= 0 ? 'sel' : ''}">
-        <td><div class="fname"><span class="dot" ${dot}></span><div>${pTag}${esc(r.f.zh || r.f.name)}<small>${esc(r.f.name)}</small></div></div></td>
-        <td style="text-align:center;"><span class="badge ${r.f.sig.cls}">${r.f.sig.label}</span></td>
-        <td class="${clsPct(r.dev)}">${fmtPct(r.dev)}</td>
-        <td class="${clsPct(r.mom3)}">${fmtPct(r.mom3)}</td>
-        <td class="${clsPct(r.mom6)}"><b>${fmtPct(r.mom6)}</b></td>
-        <td class="col-hide ${clsPct(r.dd)}">${fmtPct(r.dd)}</td></tr>`;
+  const th = (k, label, cls = '', style = '') => `<th data-sort="${k}" class="${cls} ${sortKey === k ? 'sorted' : ''}" style="${style}">${label}${sortKey === k ? (sortDir > 0 ? ' ▲' : ' ▼') : ''}</th>`;
+  const maxAbs = key => Math.max(0.0001, ...rows.map(r => Math.abs(r[key] ?? 0)));
+  const m6Max = maxAbs('mom6'), aMax = maxAbs('alpha');
+
+  const nameCell = r => {
+    const si = selected.indexOf(r.f.key);
+    const dot = si >= 0 ? `style="background:${SERIES_COLORS[si]};border-color:${SERIES_COLORS[si]}"` : '';
+    const pTag = providerFilter === 'all' ? `<span class="ptag">${esc(r.f.providerName)}</span>` : '';
+    const mBadge = viewMode === 'A' ? `<span class="badge ${r.f.sig.cls} m-only">${r.f.sig.label}</span>` : '';
+    return `<td><div class="fname"><span class="dot" ${dot}></span><div>${pTag}${esc(r.f.zh || r.f.name)}<small>${esc(r.f.name)}</small>${mBadge}</div></div></td>`;
+  };
+  const alphaCell = r => {
+    const b = r.f.bench;
+    if (b.type === 'self') return `<td ${''}><span class="ab a-bench">${b.label}</span></td>`;
+    if (b.type === 'none' || (r.f.a6 == null && r.f.a1 == null)) return `<td class="flat">—</td>`;
+    const scope = b.scope && b.scope !== '同計劃' ? `·${b.scope}` : '';
+    return `<td ${dataBar(r.f.a6, aMax)} title="基準：${esc(b.type === 'fund' ? b.fund.providerName + ' ' + b.fund.name : b.label)}">
+      <div class="astack">${alphaBadge(r.f.a6, '6月')}${alphaBadge(r.f.a1, '1年')}<small>vs ${esc(b.label)}${esc(scope)}</small></div></td>`;
+  };
+
+  let head, body;
+  if (viewMode === 'A') {
+    head = `<tr>${th('name', '基金名稱')}${th('sig', '轉勢與牛熊訊號', 'm-hide', 'text-align:center;')}${th('mom6', '6月回報')}${th('alpha', 'vs 大市基準')}${th('dev', '偏離10月線', 'col-hide')}</tr>`;
+    body = rows.map(r => `<tr data-key="${r.f.key}" class="${selected.includes(r.f.key) ? 'sel' : ''}">
+      ${nameCell(r)}
+      <td class="m-hide" style="text-align:center;"><span class="badge ${r.f.sig.cls}">${r.f.sig.label}</span></td>
+      <td class="${clsPct(r.mom6)}" ${dataBar(r.mom6, m6Max)}><b>${fmtPct(r.mom6)}</b></td>
+      ${alphaCell(r)}
+      <td class="col-hide ${clsPct(r.dev)}">${fmtPct(r.dev)}</td></tr>`).join('');
+  } else {
+    head = `<tr>${th('name', '基金名稱')}${th('mom3', '3月動能', 'col-hide')}${th('mom6', '6月動能', 'col-hide')}${th('y1', '1年回報')}${th('dd', '距1年高點 (MDD)')}${th('rr', '波幅 / 風險回報')}</tr>`;
+    body = rows.map(r => {
+      const rk = r.f.risk;
+      const pass = rk && r.f.coreRR != null && !/core\s*accumulation/i.test(r.f.name) ? (rk.rr >= r.f.coreRR ? ' <span class="up" title="高於 DIS 核心累積基金">✓</span>' : '') : '';
+      return `<tr data-key="${r.f.key}" class="${selected.includes(r.f.key) ? 'sel' : ''}">
+        ${nameCell(r)}
+        <td class="col-hide ${clsPct(r.mom3)}">${fmtPct(r.mom3)}</td>
+        <td class="col-hide ${clsPct(r.mom6)}">${fmtPct(r.mom6)}</td>
+        <td class="${clsPct(r.y1)}"><b>${fmtPct(r.y1)}</b></td>
+        <td class="${clsPct(r.dd)}">${fmtPct(r.dd)}<span class="sub2">最大 ${fmtPct1(r.f.mdd1y)}</span></td>
+        <td>${rk ? `${(rk.vol * 100).toFixed(1)}%<span class="sub2"><b class="${rk.rr >= 0 ? 'up' : 'down'}">${rk.rr.toFixed(2)}</b>${pass} · ${rk.years.toFixed(1)}年</span>` : '<span class="flat">—</span>'}</td></tr>`;
     }).join('');
+  }
+  document.getElementById('fundTable').innerHTML = head + (body || `<tr><td colspan="6" class="hint" style="text-align:center;padding:18px;">此篩選條件下沒有基金</td></tr>`);
+
   document.querySelectorAll('[data-sort]').forEach(h => h.onclick = ev => {
     ev.stopPropagation();
     const k = h.dataset.sort;
@@ -446,22 +838,64 @@ function renderTable(pool) {
     renderTable(pool);
   });
   document.querySelectorAll('#fundTable tr[data-key]').forEach(tr => tr.onclick = () => toggleSelect(tr.dataset.key));
-}
 
+  document.getElementById('btnRegionPk').onclick = () => {
+    const ranked = visibleRows(pool).filter(f => f.mom6 != null).sort((a, b) => (b.a6 ?? b.mom6) - (a.a6 ?? a.mom6)).slice(0, 5);
+    if (!ranked.length) return;
+    selected = ranked.map(f => f.key);
+    setChartMode('pct'); saveSelected();
+    renderTable(pool); renderChart();
+    document.getElementById('chartWrap').scrollIntoView({ behavior: 'smooth', block: 'center' });
+  };
+}
+document.querySelectorAll('#viewSeg .seg-btn').forEach(b => {
+  b.classList.toggle('active', b.dataset.view === viewMode);
+  b.onclick = () => {
+    viewMode = b.dataset.view;
+    try { localStorage.setItem('mpf_view_v2', viewMode); } catch (e) {}
+    document.querySelectorAll('#viewSeg .seg-btn').forEach(x => x.classList.toggle('active', x === b));
+    if (FUNDS.length) renderTable(getFilteredFunds());
+  };
+});
+
+function chartMsg(html) {
+  const el = document.getElementById('chartMsg');
+  el.innerHTML = html;
+  clearTimeout(chartMsg._t);
+  if (html) chartMsg._t = setTimeout(() => { el.innerHTML = ''; }, 6000);
+}
 function toggleSelect(k) {
   const i = selected.indexOf(k);
   if (i >= 0) selected.splice(i, 1);
   else {
-    if (selected.length >= 5) {
-      document.getElementById('chartNote').innerHTML = '<span class="nowin">圖表最多同時顯示 5 隻基金，請先取消其中一隻。</span>';
-      return;
-    }
+    if (selected.length >= 5) { chartMsg('<span class="nowin">圖表最多同時顯示 5 隻基金，請先取消其中一隻。</span>'); return; }
     selected.push(k);
   }
-  try { localStorage.setItem('mpf_selected_v2', JSON.stringify(selected)); } catch (e) {}
+  saveSelected();
   renderTable(getFilteredFunds());
   renderChart();
 }
+
+/* ================= 圖表 ================= */
+function setChartMode(m) {
+  chartMode = m;
+  document.querySelectorAll('#modeSeg .seg-btn').forEach(x => x.classList.toggle('active', x.dataset.mode === m));
+}
+document.getElementById('btnAddBench').onclick = () => {
+  const first = selected.map(k => FUNDS.find(f => f.key === k)).find(Boolean);
+  if (!first) { chartMsg('<span class="nowin">請先在總表或排行榜選取一隻基金。</span>'); return; }
+  const b = first.bench;
+  if (b.type === 'self') { chartMsg(`「${esc(first.zh || first.name)}」本身已是大市基準。`); return; }
+  if (b.type === 'peer') { chartMsg(`「${esc(first.zh || first.name)}」以${esc(b.label)}作基準，沒有單一基準基金可加入。`); return; }
+  if (b.type !== 'fund') { chartMsg('此基金未能找到對應大市基準。'); return; }
+  if (!selected.includes(b.fund.key)) {
+    if (selected.length >= 5) selected.pop();
+    selected.push(b.fund.key);
+  }
+  setChartMode('pct'); saveSelected();
+  renderTable(getFilteredFunds()); renderChart();
+  chartMsg(`已加入基準：<b>[${esc(b.fund.providerName)}] ${esc(b.fund.zh || b.fund.name)}</b>（${esc(b.scope)}）`);
+};
 
 function niceTicks(lo, hi, n = 5) {
   const span = hi - lo || Math.abs(hi) || 1, raw = span / n, mag = Math.pow(10, Math.floor(Math.log10(raw)));
@@ -469,6 +903,7 @@ function niceTicks(lo, hi, n = 5) {
   const out = []; for (let v = Math.ceil(lo / step) * step; v <= hi + 1e-9; v += step) out.push(+v.toFixed(10));
   return out;
 }
+const shortName = f => (f.zh || f.name).replace(/基金$/, '');
 
 function renderChart() {
   const wrap = document.getElementById('chartWrap'), tip = document.getElementById('tip');
@@ -491,11 +926,19 @@ function renderChart() {
       f, color: SERIES_COLORS[i],
       pts: pts.map(p => ({
         ...p,
+        pct: (p.v / base - 1) * 100,
         y: chartMode === 'pct' ? (p.v / base - 1) * 100 : p.v,
         smaY: p.sma ? (chartMode === 'pct' ? (p.sma / base - 1) * 100 : p.sma) : null
       }))
     };
   }).filter(s => s.pts.length);
+  // 配對：基金 ↔ 其基準（皆在圖中）
+  const pairs = [];
+  series.forEach(s => {
+    if (s.f.bench.type !== 'fund') return;
+    const sb = series.find(x => x.f === s.f.bench.fund);
+    if (sb) { pairs.push([s, sb]); sb.isBench = true; }
+  });
 
   const W = Math.max(300, Math.round(wrap.clientWidth || 700)), H = Math.round(Math.min(320, Math.max(220, W * 0.52)));
   const L = chartMode === 'pct' ? 46 : 52, R = 10, T = 12, B = 24;
@@ -520,8 +963,7 @@ function renderChart() {
     if (sPts.length < 2) return '';
     return `<path d="${sPts.map((p, i) => `${i ? 'L' : 'M'}${x(p.t).toFixed(1)},${y(p.smaY).toFixed(1)}`).join('')}" fill="none" stroke="${s.color}" stroke-width="1.4" stroke-dasharray="4 4" opacity="0.65"/>`;
   }).join('') : '';
-
-  const lines = series.map(s => `<path d="${s.pts.map((p, i) => `${i ? 'L' : 'M'}${x(p.t).toFixed(1)},${y(p.y).toFixed(1)}`).join('')}" fill="none" stroke="${s.color}" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>`).join('');
+  const lines = series.map(s => `<path d="${s.pts.map((p, i) => `${i ? 'L' : 'M'}${x(p.t).toFixed(1)},${y(p.y).toFixed(1)}`).join('')}" fill="none" stroke="${s.color}" stroke-width="${s.isBench ? 2.6 : 2.2}" stroke-linejoin="round" stroke-linecap="round" ${s.isBench ? 'opacity="0.9"' : ''}/>`).join('');
 
   wrap.insertAdjacentHTML('afterbegin', `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="基金長線走勢圖">${g}${smaLines}${lines}
     <line id="cross" y1="${T}" y2="${H - B}" stroke="rgba(255,255,255,0.35)" visibility="hidden"/>
@@ -529,24 +971,35 @@ function renderChart() {
 
   legend.innerHTML = series.map(s => {
     const last = s.pts[s.pts.length - 1].y;
-    return `<span><i style="background:${s.color}"></i>[${esc(s.f.providerName)}] ${esc(s.f.zh || s.f.name)} <b class="${chartMode === 'pct' ? clsPct(last) : ''}">${chartMode === 'pct' ? fmtPct(last / 100) : last.toFixed(4)}</b></span>`;
+    return `<span><i style="background:${s.color}"></i>[${esc(s.f.providerName)}] ${esc(s.f.zh || s.f.name)}${s.isBench ? ' <span class="ab a-bench" style="font-size:.64rem;">基準</span>' : ''} <b class="${chartMode === 'pct' ? clsPct(last) : ''}">${chartMode === 'pct' ? fmtPct(last / 100) : last.toFixed(4)}</b></span>`;
   }).join('') + (showSma ? `<span><i class="dashed"></i>虛線 = 10個月均線</span>` : '');
 
   const svg = wrap.querySelector('svg'), cross = svg.querySelector('#cross');
+  const nearest = (s, t) => s.pts.reduce((b, q) => Math.abs(q.t - t) < Math.abs(b.t - t) ? q : b, s.pts[0]);
+  const atOrBefore = (s, t) => { let b = null; for (const q of s.pts) { if (q.t <= t) b = q; else break; } return b || s.pts[0]; };
   const move = ev => {
     const pt = ev.touches ? ev.touches[0] : ev;
     const box = svg.getBoundingClientRect();
     const sx = (pt.clientX - box.left) * W / box.width;
     const t = x0 + (sx - L) / (W - L - R) * Math.max(DAY, tEnd - x0);
     let html = '', tx = null;
+    const hit = new Map();
     series.forEach((s, i) => {
-      const p = s.pts.reduce((b, q) => Math.abs(q.t - t) < Math.abs(b.t - t) ? q : b, s.pts[0]);
+      const p = nearest(s, t);
+      hit.set(s, p);
       const dot = svg.querySelector('#dot' + i);
       dot.setAttribute('cx', x(p.t)); dot.setAttribute('cy', y(p.y)); dot.setAttribute('visibility', 'visible');
       if (tx === null) tx = p.t;
-      html += `<div class="row"><span style="display:flex;align-items:center;gap:5px;"><i style="width:8px;height:8px;border-radius:50%;background:${s.color};display:inline-block"></i>[${esc(s.f.providerName)}] ${esc(s.f.zh || s.f.name)}</span>` +
+      html += `<div class="row"><span style="display:flex;align-items:center;gap:5px;"><i style="width:8px;height:8px;border-radius:50%;background:${s.color};display:inline-block;flex-shrink:0"></i>[${esc(s.f.providerName)}] ${esc(s.f.zh || s.f.name)}</span>` +
         `<b>${chartMode === 'pct' ? fmtPct(p.y / 100) : p.v.toFixed(4)}</b></div>`;
     });
+    if (pairs.length) {
+      html += `<div class="alpha"><div style="color:#94a3b8;">📐 相對大市超額表現（由區間起點計）</div>` + pairs.map(([s, sb]) => {
+        const p = hit.get(s), pb = atOrBefore(sb, p.t);
+        const diff = (p.pct - pb.pct) / 100;
+        return `<div class="row"><span>${esc(shortName(s.f))} vs ${esc(s.f.bench.label)}</span><b class="${clsPct(diff)}">${fmtPct(diff)}</b></div>`;
+      }).join('') + `</div>`;
+    }
     cross.setAttribute('x1', x(tx)); cross.setAttribute('x2', x(tx)); cross.setAttribute('visibility', 'visible');
     tip.innerHTML = `<div style="color:#94a3b8;margin-bottom:3px;">${fmtDate(new Date(tx).toISOString().slice(0, 10))}</div>${html}`;
     tip.style.display = 'block';
@@ -565,11 +1018,7 @@ document.querySelectorAll('#rangeSeg .seg-btn').forEach(b => b.onclick = () => {
   document.querySelectorAll('#rangeSeg .seg-btn').forEach(x => x.classList.toggle('active', x === b));
   renderChart();
 });
-document.querySelectorAll('#modeSeg .seg-btn').forEach(b => b.onclick = () => {
-  chartMode = b.dataset.mode;
-  document.querySelectorAll('#modeSeg .seg-btn').forEach(x => x.classList.toggle('active', x === b));
-  renderChart();
-});
+document.querySelectorAll('#modeSeg .seg-btn').forEach(b => b.onclick = () => { setChartMode(b.dataset.mode); renderChart(); });
 document.querySelectorAll('#smaSeg .seg-btn').forEach(b => b.onclick = () => {
   showSma = b.dataset.sma === '1';
   document.querySelectorAll('#smaSeg .seg-btn').forEach(x => x.classList.toggle('active', x === b));
@@ -578,35 +1027,94 @@ document.querySelectorAll('#smaSeg .seg-btn').forEach(b => b.onclick = () => {
 let rT = 0;
 window.addEventListener('resize', () => { clearTimeout(rT); rT = setTimeout(() => FUNDS.length && renderChart(), 200); });
 
-const money = v => 'HK$' + v.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+/* ================= 我的組合：雙軌再平衡 ================= */
 function renderPortfolio(pool) {
   const box = document.getElementById('pfInputs');
-  box.innerHTML = pool.map(f => `<div class="pf-row"><div><span class="ptag">${esc(f.providerName)}</span>${esc(f.zh || f.name)} <span class="badge ${f.sig.cls}" style="margin-left:4px;">${f.sig.label}</span><div class="hint" style="font-size:.72rem;">${esc(f.name)}</div></div>
-    <input type="number" inputmode="decimal" min="0" step="any" placeholder="單位" data-unit="${f.key}" value="${holdings[f.key] ?? ''}"></div>`).join('');
+  box.innerHTML = `<div class="pf-head"><span>基金</span><span>持有單位</span><span>目標 %</span></div>` +
+    pool.map(f => `<div class="pf-row"><div><span class="ptag">${esc(f.providerName)}</span>${esc(f.zh || f.name)} <span class="badge ${f.sig.cls}" style="margin-left:4px;">${f.sig.label}</span><div class="hint" style="font-size:.72rem;">${esc(f.name)}</div></div>
+    <input type="number" inputmode="decimal" min="0" step="any" placeholder="單位" data-unit="${f.key}" value="${holdings[f.key] ?? ''}">
+    <input type="number" inputmode="decimal" min="0" max="100" step="any" placeholder="%" data-target="${f.key}" value="${targets[f.key] ?? ''}"></div>`).join('');
   box.querySelectorAll('[data-unit]').forEach(inp => inp.oninput = () => {
     const v = parseFloat(inp.value);
     if (v > 0) holdings[inp.dataset.unit] = v; else delete holdings[inp.dataset.unit];
     try { localStorage.setItem('mpf_units_v2', JSON.stringify(holdings)); } catch (e) {}
-    updatePortfolioTiles();
+    updatePortfolio();
   });
-  updatePortfolioTiles();
+  box.querySelectorAll('[data-target]').forEach(inp => inp.oninput = () => {
+    const v = parseFloat(inp.value);
+    if (v > 0) targets[inp.dataset.target] = Math.min(100, v); else delete targets[inp.dataset.target];
+    try { localStorage.setItem('mpf_targets_v2', JSON.stringify(targets)); } catch (e) {}
+    updatePortfolio();
+  });
+  updatePortfolio();
 }
 
-function updatePortfolioTiles() {
-  const held = FUNDS.filter(f => holdings[f.key] > 0);
-  const tiles = document.getElementById('pfTiles');
-  if (!held.length) { tiles.innerHTML = '<div class="hint">尚未輸入持有單位（展開下方列表即可輸入）。</div>'; return; }
-  let now = 0, riskVal = 0;
-  held.forEach(f => {
-    const val = holdings[f.key] * f.pts[f.pts.length - 1].v;
-    now += val;
-    if (f.sig.code === 'BEAR' || f.sig.code === 'FADING') riskVal += val;
+function updatePortfolio() {
+  const tiles = document.getElementById('pfTiles'), adv = document.getElementById('pfAdvice'), rb = document.getElementById('pfRebal');
+  const items = FUNDS.filter(f => holdings[f.key] > 0 || targets[f.key] > 0).map(f => ({
+    f, val: (holdings[f.key] || 0) * f.pts[f.pts.length - 1].v, tgt: (targets[f.key] || 0) / 100
+  }));
+  const total = items.reduce((a, b) => a + b.val, 0);
+  if (!total) {
+    tiles.innerHTML = '<div class="hint">尚未輸入持有單位（展開下方列表即可輸入單位及目標佔比）。</div>';
+    adv.innerHTML = ''; rb.innerHTML = '';
+    return;
+  }
+  const tgtSum = items.reduce((a, b) => a + b.tgt, 0);
+  const hasTargets = tgtSum > 0;
+  let riskVal = 0;
+  items.forEach(it => {
+    it.act = it.val / total;
+    it.dev = it.act - it.tgt;
+    if (it.f.sig.code === 'BEAR' || it.f.sig.code === 'FADING') riskVal += it.val;
   });
-  const riskRatio = now > 0 ? riskVal / now : 0;
+  const needRb = hasTargets ? items.filter(it => Math.abs(it.dev) >= 0.05).length : 0;
+  const sumOk = Math.abs(tgtSum - 1) < 0.005;
+
   tiles.innerHTML = `
-    <div class="tile"><div>組合總值</div><b>${money(now)}</b></div>
-    <div class="tile"><div>處於「轉差 / 轉弱」風險資產</div><b class="${riskVal > 0 ? 'down' : 'up'}">${money(riskVal)}（${(riskRatio * 100).toFixed(0)}%）</b></div>
-  `;
+    <div class="tile"><div>組合總值</div><b>${money(total)}</b></div>
+    <div class="tile"><div>處於「轉差 / 轉弱」資產</div><b class="${riskVal > 0 ? 'down' : 'up'}">${money0(riskVal)}（${(riskVal / total * 100).toFixed(0)}%）</b></div>
+    <div class="tile"><div>目標佔比合計</div><b class="${!hasTargets ? 'flat' : sumOk ? 'up' : 'warn'}">${hasTargets ? (tgtSum * 100).toFixed(1) + '%' : '未設定'}</b>${hasTargets && !sumOk ? '<div class="warn" style="font-size:.7rem;">應合共 100%</div>' : ''}</div>
+    <div class="tile"><div>需再平衡基金</div><b class="${needRb ? 'warn' : 'up'}">${hasTargets ? needRb + ' 隻' : '—'}</b></div>`;
+
+  // 再平衡清單
+  items.sort((a, b) => b.val - a.val);
+  rb.innerHTML = items.map(it => {
+    const f = it.f;
+    let action = '';
+    if (hasTargets) {
+      if (it.dev >= 0.05) action = `<span class="act act-sell">建議減持鎖利 · 轉出 ${money0(it.dev * total)}</span>`;
+      else if (it.dev <= -0.05) action = `<span class="act act-buy">建議低位增持 · 轉入 ${money0(-it.dev * total)}</span>` +
+        (f.sig.code === 'BEAR' ? `<div class="warn" style="font-size:.72rem;margin-top:3px;">⚠️ 此基金處於長線轉弱，建議改以未來新供款分段增持，而非一次性轉入存量。</div>` : '');
+      else action = `<span class="act act-ok">✅ 配置合理</span>`;
+    }
+    return `<div class="rb-item">
+      <div class="rb-top"><div class="rb-name"><span class="ptag">${esc(f.providerName)}</span>${esc(f.zh || f.name)} <span class="badge ${f.sig.cls}">${f.sig.label}</span></div><div>${action}</div></div>
+      <div class="rb-meta">現值 <b>${money0(it.val)}</b> · 實際 <b>${(it.act * 100).toFixed(1)}%</b>${hasTargets ? ` / 目標 <b>${(it.tgt * 100).toFixed(1)}%</b> · 偏離 <b class="${Math.abs(it.dev) >= 0.05 ? 'warn' : ''}">${it.dev >= 0 ? '+' : ''}${(it.dev * 100).toFixed(1)}%</b>` : ''}</div>
+      <div class="track"><div class="fill" style="width:${Math.min(100, it.act * 100).toFixed(1)}%"></div>${hasTargets ? `<div class="mark" style="left:calc(${Math.min(100, it.tgt * 100).toFixed(1)}% - 1px)" title="目標"></div>` : ''}</div>
+    </div>`;
+  }).join('') + (hasTargets ? '' : '<div class="hint">💡 在下方輸入「目標 %」後，即可計算偏離值及轉換金額。</div>');
+
+  // 雙軌建議
+  const held = items.filter(it => it.val > 0);
+  const risky = held.filter(it => it.f.sig.code === 'BEAR' || it.f.sig.code === 'FADING');
+  const provs = [...new Set(risky.map(it => it.f.provider))];
+  const consNames = provs.map(p => { const c = consOf(p); return c ? `${PROVIDERS[p] || p}「${c.zh || c.name}」` : null; }).filter(Boolean);
+  const stockHtml = risky.length
+    ? `建議將 <b class="down">${money0(riskVal)}</b>（佔組合 ${(riskVal / total * 100).toFixed(0)}%）存量暫轉入${consNames.length ? consNames.join('、') : '同計劃強積金保守基金'}避險，待重新站穩 10 月線 +2% 再分段轉回。
+       <ul>${risky.map(it => `<li>${esc(it.f.zh || it.f.name)}：${it.f.sig.label} · ${money0(it.val)}</li>`).join('')}</ul>`
+    : `✅ 目前持倉沒有處於「動能轉差」或「長線轉弱」的基金，存量可維持現有配置。`;
+
+  const dips = items.filter(it => it.f.cat === '股票' && it.f.sig.dev != null && it.f.sig.dev < 0
+    && ((it.f.y1 != null && it.f.y1 > 0) || (it.f.a1 != null && it.f.a1 >= 0) || (it.f.risk && it.f.coreRR != null && it.f.risk.rr >= it.f.coreRR)));
+  const flowHtml = dips.length
+    ? `以下優質股票基金正處於 10 月均線下方的回調期，未來每月新供款可維持投入，利用平均成本法吸納廉價單位：
+       <ul>${dips.map(it => `<li>${esc(it.f.zh || it.f.name)}：偏離 ${fmtPct1(it.f.sig.dev)} · 1年 ${fmtPct1(it.f.y1)}${it.f.a1 != null ? ` · 1年Alpha ${fmtPct1(it.f.a1)}` : ''}</li>`).join('')}</ul>`
+    : `目前未見持有的優質股票基金處於回調期。未來新供款可${hasTargets ? '按目標佔比' : '按現有比例'}分配；若想做平均成本法，可優先投入跑贏大市（Alpha ≥ 0）的股票基金。`;
+
+  adv.innerHTML = `
+    <div class="adv stock"><h3>🏦 存量結餘建議</h3>${stockHtml}</div>
+    <div class="adv flow"><h3>💧 未來新供款建議</h3>${flowHtml}</div>`;
 }
 
 load();

@@ -1,0 +1,48 @@
+{
+  "hangseng": {
+    "Global Retirement Income Fund": "Manulife MPF Retirement Income Fund"
+  },
+  "manulife": {
+    "MPF保守基金": "Manulife MPF Conservative Fund",
+    "MPF康健護理基金": "Manulife MPF Healthcare Fund",
+    "MPF人民幣債券基金": "Manulife MPF RMB Bond Fund",
+    "MPF香港債券基金": "Manulife MPF Hong Kong Bond Fund",
+    "MPF穩健基金": "Manulife MPF Stable Fund",
+    "MPF退休收益基金": "Manulife MPF Retirement Income Fund",
+    "MPF 2025 退休基金": "Manulife MPF 2025 Retirement Fund",
+    "MPF日本股票基金": "Manulife MPF Japan Equity Fund",
+    "MPF歐洲股票基金": "Manulife MPF European Equity Fund",
+    "MPF核心累積基金": "Manulife MPF Core Accumulation Fund",
+    "MPF富達平穩增長基金": "Manulife MPF Fidelity Stable Growth Fund",
+    "MPF 2030 退休基金": "Manulife MPF 2030 Retirement Fund",
+    "MPF增長基金": "Manulife MPF Growth Fund",
+    "MPF 2035 退休基金": "Manulife MPF 2035 Retirement Fund",
+    "MPF恒指 ESG 基金": "Manulife MPF Hang Seng Index ESG Fund",
+    "MPF 2040 退休基金": "Manulife MPF 2040 Retirement Fund",
+    "MPF北美股票基金": "Manulife MPF North American Equity Fund",
+    "MPF 2045 退休基金": "Manulife MPF 2045 Retirement Fund",
+    "MPF富達增長基金": "Manulife MPF Fidelity Growth Fund",
+    "MPF香港股票基金": "Manulife MPF Hong Kong Equity Fund",
+    "MPF亞太股票基金": "Manulife MPF Pacific Asia Equity Fund",
+    "MPF可持續亞太債券基金": "Manulife MPF Sustainable Pacific Asia Bond Fund",
+    "MPF國際債券基金": "Manulife MPF International Bond Fund",
+    "MPF智優裕退休基金": "Manulife MPF 2020 Retirement Fund",
+    "MPF國際股票基金": "Manulife MPF International Equity Fund"
+  },
+  "aia": {
+    "亞洲債券基金": "Asian Bond Fund",
+    "強積金保守基金": "MPF Conservative Fund",
+    "65歲後基金": "Age 65 Plus Fund",
+    "退休收益基金": "Retirement Income Fund",
+    "核心累積基金": "Core Accumulation Fund",
+    "歐洲股票基金": "European Equity Fund",
+    "北美股票基金": "North American Equity Fund",
+    "亞歐基金": "Eurasia Fund",
+    "亞洲股票基金": "Asian Equity Fund",
+    "環球債券基金": "Global Bond Fund",
+    "美洲基金": "American Fund",
+    "大中華股票基金": "Greater China Equity Fund",
+    "中港基金": "Hong Kong and China Fund",
+    "全球基金": "World Fund"
+  }
+}

@@ -7,13 +7,13 @@ hangseng,2026-11-21,Core Accumulation Fund,30.4622,30.4622
 hangseng,2026-11-21,European Equity Fund,22.4974,22.4974
 hangseng,2026-11-21,Global Bond Fund,11.4839,11.4839
 hangseng,2026-11-21,Global Equity Fund,32.0713,32.0713
-hangseng,2026-11-21,Global Retirement Income Fund,9.5898,9.5898
 hangseng,2026-11-21,Growth Fund,30.5096,30.5096
 hangseng,2026-11-21,Guaranteed Fund,10.4583,10.4583
 hangseng,2026-11-21,Hang Seng China Enterprises Index Tracking Fund,8.1663,8.1663
 hangseng,2026-11-21,Hang Seng Index Tracking Fund,27.2486,27.2486
 hangseng,2026-11-21,Hong Kong and Chinese Equity Fund,23.4507,23.4507
 hangseng,2026-11-21,MPF Conservative Fund,14.4755,14.4755
+hangseng,2026-11-21,Manulife MPF Retirement Income Fund,9.5898,9.5898
 hangseng,2026-11-21,North American Equity Fund,40.7222,40.7222
 hangseng,2026-11-21,Stable Fund,13.5083,13.5083
 hangseng,2026-11-21,ValueChoice Asia Pacific Equity Tracker Fund,19.3005,19.3005
@@ -28,13 +28,13 @@ hangseng,2026-11-22,Core Accumulation Fund,30.4622,30.4622
 hangseng,2026-11-22,European Equity Fund,22.4974,22.4974
 hangseng,2026-11-22,Global Bond Fund,11.4839,11.4839
 hangseng,2026-11-22,Global Equity Fund,32.0713,32.0713
-hangseng,2026-11-22,Global Retirement Income Fund,9.5898,9.5898
 hangseng,2026-11-22,Growth Fund,30.5096,30.5096
 hangseng,2026-11-22,Guaranteed Fund,10.4583,10.4583
 hangseng,2026-11-22,Hang Seng China Enterprises Index Tracking Fund,8.1663,8.1663
 hangseng,2026-11-22,Hang Seng Index Tracking Fund,27.2486,27.2486
 hangseng,2026-11-22,Hong Kong and Chinese Equity Fund,23.4507,23.4507
 hangseng,2026-11-22,MPF Conservative Fund,14.4755,14.4755
+hangseng,2026-11-22,Manulife MPF Retirement Income Fund,9.5898,9.5898
 hangseng,2026-11-22,North American Equity Fund,40.7222,40.7222
 hangseng,2026-11-22,Stable Fund,13.5083,13.5083
 hangseng,2026-11-22,ValueChoice Asia Pacific Equity Tracker Fund,19.3005,19.3005
@@ -49,13 +49,13 @@ hangseng,2026-11-23,Core Accumulation Fund,29.8558,29.8558
 hangseng,2026-11-23,European Equity Fund,22.0685,22.0685
 hangseng,2026-11-23,Global Bond Fund,11.5308,11.5308
 hangseng,2026-11-23,Global Equity Fund,30.9329,30.9329
-hangseng,2026-11-23,Global Retirement Income Fund,9.5772,9.5772
 hangseng,2026-11-23,Growth Fund,29.7394,29.7394
 hangseng,2026-11-23,Guaranteed Fund,10.4282,10.4282
 hangseng,2026-11-23,Hang Seng China Enterprises Index Tracking Fund,8.0219,8.0219
 hangseng,2026-11-23,Hang Seng Index Tracking Fund,26.7366,26.7366
 hangseng,2026-11-23,Hong Kong and Chinese Equity Fund,23.0691,23.0691
 hangseng,2026-11-23,MPF Conservative Fund,14.4761,14.4761
+hangseng,2026-11-23,Manulife MPF Retirement Income Fund,9.5772,9.5772
 hangseng,2026-11-23,North American Equity Fund,39.1651,39.1651
 hangseng,2026-11-23,Stable Fund,13.4176,13.4176
 hangseng,2026-11-23,ValueChoice Asia Pacific Equity Tracker Fund,18.7248,18.7248
@@ -70,19 +70,33 @@ hangseng,2026-11-24,Core Accumulation Fund,30.4900,30.4900
 hangseng,2026-11-24,European Equity Fund,22.3499,22.3499
 hangseng,2026-11-24,Global Bond Fund,11.5298,11.5298
 hangseng,2026-11-24,Global Equity Fund,31.9675,31.9675
-hangseng,2026-11-24,Global Retirement Income Fund,9.6277,9.6277
 hangseng,2026-11-24,Growth Fund,30.0531,30.0531
 hangseng,2026-11-24,Guaranteed Fund,10.4580,10.4580
 hangseng,2026-11-24,Hang Seng China Enterprises Index Tracking Fund,7.9934,7.9934
 hangseng,2026-11-24,Hang Seng Index Tracking Fund,26.7027,26.7027
 hangseng,2026-11-24,Hong Kong and Chinese Equity Fund,23.0637,23.0637
 hangseng,2026-11-24,MPF Conservative Fund,14.4780,14.4780
+hangseng,2026-11-24,Manulife MPF Retirement Income Fund,9.6277,9.6277
 hangseng,2026-11-24,North American Equity Fund,41.0175,41.0175
 hangseng,2026-11-24,Stable Fund,13.4782,13.4782
 hangseng,2026-11-24,ValueChoice Asia Pacific Equity Tracker Fund,18.6429,18.6429
 hangseng,2026-11-24,ValueChoice Balanced Fund,19.4287,19.4287
 hangseng,2026-11-24,ValueChoice Europe Equity Tracker Fund,25.6821,25.6821
 hangseng,2026-11-24,ValueChoice North America Equity Tracker Fund,55.4356,55.4356
+aia,2026-11-25,Age 65 Plus Fund,1.2190,1.2190
+aia,2026-11-25,American Fund,471.9700,471.9700
+aia,2026-11-25,Asian Bond Fund,119.0200,119.0200
+aia,2026-11-25,Asian Equity Fund,479.4700,479.4700
+aia,2026-11-25,Core Accumulation Fund,1.8119,1.8119
+aia,2026-11-25,Eurasia Fund,253.8000,253.8000
+aia,2026-11-25,European Equity Fund,400.3100,400.3100
+aia,2026-11-25,Global Bond Fund,112.7800,112.7800
+aia,2026-11-25,Greater China Equity Fund,336.9100,336.9100
+aia,2026-11-25,Hong Kong and China Fund,160.3600,160.3600
+aia,2026-11-25,MPF Conservative Fund,127.4000,127.4000
+aia,2026-11-25,North American Equity Fund,548.1300,548.1300
+aia,2026-11-25,Retirement Income Fund,99.2400,99.2400
+aia,2026-11-25,World Fund,280.9600,280.9600
 hangseng,2026-11-25,Age 65 Plus Fund,14.0788,14.0788
 hangseng,2026-11-25,Asia Pacific Equity Fund,37.6951,37.6951
 hangseng,2026-11-25,Balanced Fund,27.2671,27.2671
@@ -91,19 +105,44 @@ hangseng,2026-11-25,Core Accumulation Fund,30.3873,30.3873
 hangseng,2026-11-25,European Equity Fund,22.2798,22.2798
 hangseng,2026-11-25,Global Bond Fund,11.5496,11.5496
 hangseng,2026-11-25,Global Equity Fund,31.9554,31.9554
-hangseng,2026-11-25,Global Retirement Income Fund,9.6264,9.6264
 hangseng,2026-11-25,Growth Fund,30.2255,30.2255
 hangseng,2026-11-25,Guaranteed Fund,10.4779,10.4779
 hangseng,2026-11-25,Hang Seng China Enterprises Index Tracking Fund,7.9133,7.9133
 hangseng,2026-11-25,Hang Seng Index Tracking Fund,26.4780,26.4780
 hangseng,2026-11-25,Hong Kong and Chinese Equity Fund,22.9245,22.9245
 hangseng,2026-11-25,MPF Conservative Fund,14.4789,14.4789
+hangseng,2026-11-25,Manulife MPF Retirement Income Fund,9.6264,9.6264
 hangseng,2026-11-25,North American Equity Fund,40.7868,40.7868
 hangseng,2026-11-25,Stable Fund,13.5100,13.5100
 hangseng,2026-11-25,ValueChoice Asia Pacific Equity Tracker Fund,19.2079,19.2079
 hangseng,2026-11-25,ValueChoice Balanced Fund,19.5525,19.5525
 hangseng,2026-11-25,ValueChoice Europe Equity Tracker Fund,25.6195,25.6195
 hangseng,2026-11-25,ValueChoice North America Equity Tracker Fund,55.1512,55.1512
+manulife,2026-11-25,Manulife MPF 2020 Retirement Fund,15.0130,15.0130
+manulife,2026-11-25,Manulife MPF 2025 Retirement Fund,16.9300,16.9300
+manulife,2026-11-25,Manulife MPF 2030 Retirement Fund,19.3210,19.3210
+manulife,2026-11-25,Manulife MPF 2035 Retirement Fund,20.6570,20.6570
+manulife,2026-11-25,Manulife MPF 2040 Retirement Fund,21.4350,21.4350
+manulife,2026-11-25,Manulife MPF 2045 Retirement Fund,21.6110,21.6110
+manulife,2026-11-25,Manulife MPF Conservative Fund,12.8170,12.8170
+manulife,2026-11-25,Manulife MPF Core Accumulation Fund,18.2940,18.2940
+manulife,2026-11-25,Manulife MPF European Equity Fund,18.2520,18.2520
+manulife,2026-11-25,Manulife MPF Fidelity Growth Fund,37.2700,37.2700
+manulife,2026-11-25,Manulife MPF Fidelity Stable Growth Fund,24.0940,24.0940
+manulife,2026-11-25,Manulife MPF Growth Fund,25.2660,25.2660
+manulife,2026-11-25,Manulife MPF Hang Seng Index ESG Fund,13.1140,13.1140
+manulife,2026-11-25,Manulife MPF Healthcare Fund,39.0010,39.0010
+manulife,2026-11-25,Manulife MPF Hong Kong Bond Fund,15.9600,15.9600
+manulife,2026-11-25,Manulife MPF Hong Kong Equity Fund,20.2280,20.2280
+manulife,2026-11-25,Manulife MPF International Bond Fund,15.2670,15.2670
+manulife,2026-11-25,Manulife MPF International Equity Fund,29.3180,29.3180
+manulife,2026-11-25,Manulife MPF Japan Equity Fund,29.4330,29.4330
+manulife,2026-11-25,Manulife MPF North American Equity Fund,35.1150,35.1150
+manulife,2026-11-25,Manulife MPF Pacific Asia Equity Fund,41.8450,41.8450
+manulife,2026-11-25,Manulife MPF RMB Bond Fund,13.0230,13.0230
+manulife,2026-11-25,Manulife MPF Retirement Income Fund,8.9270,8.9270
+manulife,2026-11-25,Manulife MPF Stable Fund,17.0790,17.0790
+manulife,2026-11-25,Manulife MPF Sustainable Pacific Asia Bond Fund,11.9810,11.9810
 hangseng,2026-11-26,Age 65 Plus Fund,14.0651,14.0651
 hangseng,2026-11-26,Asia Pacific Equity Fund,36.6606,36.6606
 hangseng,2026-11-26,Balanced Fund,27.0526,27.0526
@@ -112,16 +151,37 @@ hangseng,2026-11-26,Core Accumulation Fund,30.2025,30.2025
 hangseng,2026-11-26,European Equity Fund,22.0166,22.0166
 hangseng,2026-11-26,Global Bond Fund,11.5613,11.5613
 hangseng,2026-11-26,Global Equity Fund,31.7632,31.7632
-hangseng,2026-11-26,Global Retirement Income Fund,9.6268,9.6268
 hangseng,2026-11-26,Growth Fund,29.9101,29.9101
 hangseng,2026-11-26,Guaranteed Fund,10.4678,10.4678
 hangseng,2026-11-26,Hang Seng China Enterprises Index Tracking Fund,7.8412,7.8412
 hangseng,2026-11-26,Hang Seng Index Tracking Fund,26.1750,26.1750
 hangseng,2026-11-26,Hong Kong and Chinese Equity Fund,22.7033,22.7033
 hangseng,2026-11-26,MPF Conservative Fund,14.4796,14.4796
+hangseng,2026-11-26,Manulife MPF Retirement Income Fund,9.6268,9.6268
 hangseng,2026-11-26,North American Equity Fund,40.7271,40.7271
 hangseng,2026-11-26,Stable Fund,13.4677,13.4677
 hangseng,2026-11-26,ValueChoice Asia Pacific Equity Tracker Fund,18.6701,18.6701
 hangseng,2026-11-26,ValueChoice Balanced Fund,19.4025,19.4025
 hangseng,2026-11-26,ValueChoice Europe Equity Tracker Fund,25.3081,25.3081
 hangseng,2026-11-26,ValueChoice North America Equity Tracker Fund,55.0319,55.0319
+hangseng,2026-11-27,Age 65 Plus Fund,14.0651,14.0651
+hangseng,2026-11-27,Asia Pacific Equity Fund,36.6606,36.6606
+hangseng,2026-11-27,Balanced Fund,27.0526,27.0526
+hangseng,2026-11-27,Chinese Equity Fund,12.9148,12.9148
+hangseng,2026-11-27,Core Accumulation Fund,30.2025,30.2025
+hangseng,2026-11-27,European Equity Fund,22.0166,22.0166
+hangseng,2026-11-27,Global Bond Fund,11.5613,11.5613
+hangseng,2026-11-27,Global Equity Fund,31.7632,31.7632
+hangseng,2026-11-27,Growth Fund,29.9101,29.9101
+hangseng,2026-11-27,Guaranteed Fund,10.4678,10.4678
+hangseng,2026-11-27,Hang Seng China Enterprises Index Tracking Fund,7.8412,7.8412
+hangseng,2026-11-27,Hang Seng Index Tracking Fund,26.1750,26.1750
+hangseng,2026-11-27,Hong Kong and Chinese Equity Fund,22.7033,22.7033
+hangseng,2026-11-27,MPF Conservative Fund,14.4796,14.4796
+hangseng,2026-11-27,Manulife MPF Retirement Income Fund,9.6268,9.6268
+hangseng,2026-11-27,North American Equity Fund,40.7271,40.7271
+hangseng,2026-11-27,Stable Fund,13.4677,13.4677
+hangseng,2026-11-27,ValueChoice Asia Pacific Equity Tracker Fund,18.6701,18.6701
+hangseng,2026-11-27,ValueChoice Balanced Fund,19.4025,19.4025
+hangseng,2026-11-27,ValueChoice Europe Equity Tracker Fund,25.3081,25.3081
+hangseng,2026-11-27,ValueChoice North America Equity Tracker Fund,55.0319,55.0319

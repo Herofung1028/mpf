@@ -97,6 +97,15 @@
   .up { color: var(--up); } .down { color: var(--down); } .warn { color: var(--warn); } .flat { color: var(--muted); }
   .sub2 { display: block; font-size: 0.68rem; color: var(--muted); font-weight: 500; }
   .m-only { display: none; }
+  .sc { display: inline-flex; flex-direction: column; align-items: flex-end; line-height: 1.15; }
+  .sc b { font-size: 0.95rem; font-weight: 800; }
+  .sc small { font-size: 0.66rem; color: var(--muted); white-space: nowrap; }
+  .sc-hi { color: #4ade80; } .sc-mid { color: #fbbf24; } .sc-lo { color: #f87171; } .sc-na { color: var(--muted); }
+  .sc-pill { display: inline-block; padding: 1px 6px; border-radius: 6px; font-size: 0.7rem; font-weight: 700; background: rgba(255,255,255,0.06); white-space: nowrap; }
+  .dtag { display: inline-block; font-size: 0.66rem; color: var(--muted); border: 1px solid var(--border); border-radius: 5px; padding: 0 5px; margin-left: 4px; white-space: nowrap; font-weight: 500; }
+  .dtag.stale { color: var(--warn); border-color: rgba(251,191,36,0.35); }
+  .prov-dates { display: flex; flex-wrap: wrap; gap: 4px 12px; font-size: 0.74rem; color: var(--muted); margin-top: 10px; padding-top: 8px; border-top: 1px dashed var(--border); }
+  .prov-dates b { color: var(--text); font-weight: 600; }
   .filter-note { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin: 4px 0 8px; font-size: 0.78rem; color: var(--cyan); }
   .filter-note button { background: none; border: 1px solid rgba(56,189,248,0.4); color: var(--cyan); border-radius: 999px; padding: 2px 9px; font-size: 0.74rem; cursor: pointer; }
   .tbl-tools { display: flex; gap: 8px; align-items: center; justify-content: space-between; flex-wrap: wrap; margin-bottom: 8px; }
@@ -114,6 +123,20 @@
   .legend span { display: inline-flex; align-items: center; gap: 6px; }
   .legend i { width: 14px; height: 3px; border-radius: 2px; display: inline-block; }
   .legend i.dashed { background: transparent !important; border-top: 2px dashed var(--accent); height: 0; }
+  .k-tools { display: none; gap: 6px; align-items: center; flex-wrap: wrap; margin-top: 8px; }
+  .k-tools.on { display: flex; }
+  .k-tools select { background: var(--surface-2); color: var(--text); border: 1px solid var(--border); border-radius: 8px; padding: 6px 8px; font-size: 0.8rem; max-width: 100%; }
+  .chart-tip .ohlc { display: grid; grid-template-columns: auto auto; gap: 1px 12px; margin-top: 3px; }
+  .chart-tip .ohlc span { color: #94a3b8; }
+  /* 評分機制 */
+  .wbar { display: flex; height: 26px; border-radius: 8px; overflow: hidden; margin: 10px 0 6px; font-size: 0.68rem; font-weight: 700; }
+  .wbar div { display: flex; align-items: center; justify-content: center; color: #0b1120; white-space: nowrap; overflow: hidden; padding: 0 2px; }
+  .wlegend { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 6px 14px; font-size: 0.78rem; color: var(--muted); margin-top: 8px; }
+  .wlegend b { color: var(--text); }
+  .wlegend i { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; }
+  .scale { display: flex; gap: 10px; flex-wrap: wrap; font-size: 0.76rem; margin-top: 10px; }
+  .scale span { padding: 2px 9px; border-radius: 6px; background: var(--surface-2); border: 1px solid var(--border); }
+  .info-i { display: inline-block; margin-left: 3px; color: var(--cyan); cursor: pointer; font-weight: 700; }
   .chart-msg { font-size: 0.8rem; margin-top: 6px; min-height: 0; }
 
   /* 我的組合 */
@@ -156,6 +179,9 @@
     .fund-table { font-size: 0.76rem; }
     .fund-table td { padding: 8px 3px; }
     .fname small { display: none; }
+    .astack small { display: none; }
+    .fund-table th { font-size: 0.7rem; padding: 6px 2px; }
+    .dtag { display: table; margin: 2px 0 0; }
     .ab { font-size: 0.66rem; padding: 1px 5px; }
     .pulse { grid-template-columns: 1fr 1fr; gap: 8px; }
     .pc-main { font-size: 1.1rem; }
@@ -175,6 +201,7 @@
     <div id="status" class="hint" style="margin-bottom:10px;">載入最新數據中…</div>
     <div style="font-size:0.78rem; color:var(--muted); margin-bottom:6px;">🏢 選擇強積金受託人公司（平時可單看自己公司，選「全部公司」可跨受託人比較）：</div>
     <div class="chips" id="providerChips"></div>
+    <div class="prov-dates" id="provDates"></div>
   </div>
 
   <!-- 市場脈搏概覽 -->
@@ -193,6 +220,10 @@
     <div class="panel-head">
       <h2>同圖走勢比較與 10個月牛熊線</h2>
       <div style="display:flex; gap:6px; flex-wrap:wrap;">
+        <div class="segmented" id="typeSeg">
+          <button class="seg-btn active" data-type="line">📈 走勢線</button>
+          <button class="seg-btn" data-type="candle">🕯️ K線</button>
+        </div>
         <button class="btn-action cyan" id="btnAddBench">⚡ 加入對應大市基準</button>
         <div class="segmented" id="smaSeg">
           <button class="seg-btn active" data-sma="1">顯示 10月均線</button>
@@ -211,12 +242,35 @@
       <button class="seg-btn" data-r="1826">5年</button>
       <button class="seg-btn" data-r="all">全部</button>
     </div>
+    <div class="k-tools" id="kTools">
+      <select id="kFund" aria-label="選擇 K 線基金"></select>
+      <div class="segmented" id="kUnitSeg">
+        <button class="seg-btn active" data-k="auto">自動</button>
+        <button class="seg-btn" data-k="W">週K</button>
+        <button class="seg-btn" data-k="M">月K</button>
+      </div>
+    </div>
     <div class="chart-wrap" id="chartWrap"><div class="chart-tip" id="tip"></div></div>
     <div class="legend" id="legend"></div>
     <div class="chart-msg" id="chartMsg"></div>
     <div class="hint" style="margin-top:8px;">
-      💡 <b>轉勢指標說明：</b>「🚀 加速轉強」代表近 3 個月升幅已超越過去半年平均速度且均線向上；「⚠️ 動能轉差」代表從 1 年高點回撤超過 6% 或近一季轉跌；「🔴 長線轉弱」代表跌穿 10個月均線 -2%（建議存量轉入保守基金避險）。圖表同時有基金及其基準時，游標提示會顯示「相對大市超額表現」。
+      💡 <b>轉勢指標說明：</b>「🚀 加速轉強」代表近 3 個月升幅已超越過去半年平均速度且均線向上；「⚠️ 動能轉差」代表從 1 年高點回撤超過 6% 或近一季轉跌；「🔴 長線轉弱」代表跌穿 10個月均線 -2%（建議存量轉入保守基金避險）。圖表同時有基金及其基準時，游標提示會顯示「相對大市超額表現」。<br>
+      🕯️ <b>K線說明：</b>強積金每日只有一個單位價，K線以每週／每月價格組成：開市＝上一期收市、收市＝期內最後價格、最高／最低＝期內最高／最低價。綠色＝該期上升，紅色＝該期下跌。只有每月數據的期間，K線只有實體、沒有影線。
     </div>
+  </div>
+
+  <div class="panel" id="scorePanel">
+    <div class="panel-head"><h2>📐 綜合評分機制（0–100 分）</h2></div>
+    <div class="hint">每隻基金有兩個評分：<b style="color:var(--text)">公司內評分</b>只與同一間受託人的基金比較（適合揀自己計劃內的基金）；<b style="color:var(--text)">全港評分</b>與 11 間公司所有基金比較（適合跨公司比較）。每個項目先計算該基金在比較範圍內的排名百分位（0 = 最差、100 = 最好），再按以下權重加權：</div>
+    <div class="wbar" id="wbar"></div>
+    <div class="wlegend" id="wlegend"></div>
+    <div class="scale">
+      <span><b class="sc-hi">70–100</b> 同組前列</span>
+      <span><b class="sc-mid">40–69</b> 中等</span>
+      <span><b class="sc-lo">0–39</b> 同組落後</span>
+      <span><b class="sc-na">避險</b> 保守／保證基金不參與評分</span>
+    </div>
+    <div class="hint" style="margin-top:8px;font-size:.76rem;">⚠️ 評分屬相對排名：只代表在比較範圍內的位置，不代表絕對回報好壞（例如全部基金下跌時，跌得最少的仍會高分）。數據不足的項目（如未夠 3 年未能計風險回報比）會按比例把權重分配給其他項目。滑鼠停留／長按表格中的評分，可查看該基金各項分數。</div>
   </div>
 
   <div class="panel" id="tablePanel">
@@ -238,10 +292,11 @@
       <summary>ℹ️ 大市基準對應規則與指標定義</summary>
       <ul>
         <li>港股 / 中國 → 恒生指數基金；北美 / 美股 → 北美股票追蹤基金；歐洲 → 歐洲股票追蹤基金；亞太 → 亞太股票追蹤基金。</li>
-        <li>日本 / 韓國 / 台灣、康健護理 → 全港同類基金平均（同業平均）。</li>
-        <li>環球股票 / 混合資產 → 同計劃「核心累積基金」（DIS）；債券 / 保證 → 同計劃「強積金保守基金」。</li>
+        <li>日本 / 韓國 / 台灣、康健護理、環球股票 → 全港同類基金平均（同業平均）。環球股票不用核心累積做基準，因核心累積只有約六成股票，升市時股票基金必然「強於大市」，跌市時必然「弱於大市」。</li>
+        <li>混合資產（增長 / 平衡 / 穩定等）→ 同計劃「核心累積基金」（DIS）；債券 / 保證 → 同計劃「強積金保守基金」。</li>
         <li>優先使用同計劃內的基準基金；若無，則回退至恒生 ValueChoice 或其他計劃的同類追蹤基金。</li>
         <li>Alpha ＝ 基金回報 − 基準回報，兩者以<b>相同的結束日期</b>計算（避免每日與每月數據錯開）。≥ +1.5% 強於大市；≤ −1.5% 弱於大市。</li>
+        <li><b>綜合評分</b>：計法見上方「📐 綜合評分機制」。</li>
         <li>年化波幅：以近 3 年月末價格計算對數回報標準差，年化係數按實際平均數據間距動態調整（月度 ≈ √12）。風險回報比 ＝ 同期年化回報 ÷ 年化波幅；✓ 代表高於同計劃 DIS 核心累積基金。</li>
       </ul>
     </details>
@@ -476,7 +531,7 @@ const BENCH_RULES = {
 function benchTypeOf(f) {
   const r = f.region;
   if (r === 'hk' || r === 'na' || r === 'eu' || r === 'ap') return r;
-  if (r === 'jp' || r === 'health') return 'peer';
+  if (r === 'jp' || r === 'health' || r === 'glb') return 'peer'; // 環球股票改用同業平均：核心累積只有約六成股票，比較會有偏差
   if (r === 'safe') return 'cons';
   return 'core'; // glb / mix / eq-other / other
 }
@@ -539,6 +594,118 @@ function alphaOf(f, days) {
 const coreOf = provider => FUNDS.find(g => g.provider === provider && /core\s*accumulation/i.test(g.name));
 const consOf = provider => FUNDS.find(g => g.provider === provider && /conservative/i.test(g.name));
 
+/* ================= 新增：綜合評分（公司內 ＋ 全港） ================= */
+// 每項因子先換算成百分位（0–100），再按權重加權；缺少的因子會按比例重新分配權重
+const SCORE_FACTORS = [
+  { k: 'mom6', w: 0.20, label: '6月動能', get: f => f.mom6 },
+  { k: 'mom3', w: 0.10, label: '3月動能', get: f => f.mom3 },
+  { k: 'trend', w: 0.15, label: '趨勢訊號', get: f => f.sig.dev == null ? null : ({ RISING: 4, BULL: 3, WARN: 2, FADING: 1, BEAR: 0 }[f.sig.code] ?? 2) + Math.max(-0.5, Math.min(0.5, f.sig.dev * 5)) },
+  { k: 'alpha', w: 0.20, label: '跑贏大市', get: f => f.bench.type === 'self' ? 0 : (f.a6 != null && f.a1 != null ? (f.a6 + f.a1) / 2 : f.a6 ?? f.a1) },
+  { k: 'y1', w: 0.10, label: '1年回報', get: f => f.y1 },
+  { k: 'rr', w: 0.15, label: '風險回報比', get: f => f.risk ? f.risk.rr : null },
+  { k: 'mdd', w: 0.10, label: '回撤控制', get: f => f.mdd1y },
+];
+const FACTOR_UI = {
+  mom6: ['#38bdf8', '近 6 個月升跌幅，反映中期動能'],
+  alpha: ['#4ade80', '6 個月及 1 年 Alpha 平均，即跑贏／跑輸對應大市基準的幅度（基準基金本身計 0）'],
+  trend: ['#a78bfa', '轉勢訊號（加速轉強 > 穩步強勢 > 均線爭持 > 動能轉差 > 長線轉弱），再按偏離 10 月線微調'],
+  rr: ['#f59e0b', '近 3 年年化回報 ÷ 年化波幅，每承受一分波動換來幾多回報'],
+  mom3: ['#22d3ee', '近 3 個月升跌幅，反映短期動能'],
+  y1: ['#86efac', '近 1 年升跌幅'],
+  mdd: ['#f472b6', '近 1 年最大回撤，跌得愈少分數愈高'],
+};
+function renderScoreLegend() {
+  const order = ['mom6', 'alpha', 'trend', 'rr', 'mom3', 'y1', 'mdd'];
+  const fs = order.map(k => SCORE_FACTORS.find(f => f.k === k));
+  document.getElementById('wbar').innerHTML = fs.map(f => `<div style="width:${f.w * 100}%;background:${FACTOR_UI[f.k][0]}" title="${f.label} ${f.w * 100}%">${f.w >= 0.15 ? `<span class="m-hide">${f.label}&nbsp;</span>` : ''}${Math.round(f.w * 100)}%</div>`).join('');
+  document.getElementById('wlegend').innerHTML = fs.map(f => `<div><i style="background:${FACTOR_UI[f.k][0]}"></i><b>${f.label} ${Math.round(f.w * 100)}%</b>：${FACTOR_UI[f.k][1]}</div>`).join('');
+}
+renderScoreLegend();
+const scorable = f => f.cat !== '保守' && f.cat !== '保證' && f.sig.code !== 'NA';
+function pctRanks(funds, get) {
+  const vals = funds.map(f => ({ f, v: get(f) })).filter(x => x.v != null && isFinite(x.v)).sort((a, b) => a.v - b.v);
+  const out = new Map();
+  if (vals.length === 1) { out.set(vals[0].f, 50); return out; }
+  let i = 0;
+  while (i < vals.length) {
+    let j = i; while (j + 1 < vals.length && vals[j + 1].v === vals[i].v) j++;
+    const pr = ((i + j) / 2) / (vals.length - 1) * 100;
+    for (let k = i; k <= j; k++) out.set(vals[k].f, pr);
+    i = j + 1;
+  }
+  return out;
+}
+function scoreGroup(funds) {
+  const ranks = SCORE_FACTORS.map(fc => pctRanks(funds, fc.get));
+  const res = new Map();
+  funds.forEach(f => {
+    let sum = 0, wsum = 0; const parts = {};
+    SCORE_FACTORS.forEach((fc, i) => { const r = ranks[i].get(f); if (r != null) { sum += r * fc.w; wsum += fc.w; parts[fc.k] = r; } });
+    if (wsum >= 0.5) res.set(f, { score: sum / wsum, parts });
+  });
+  const ordered = [...res.entries()].sort((a, b) => b[1].score - a[1].score);
+  ordered.forEach(([f, v], idx) => { v.rank = idx + 1; v.n = ordered.length; });
+  return res;
+}
+function computeScores() {
+  const pool = FUNDS.filter(scorable);
+  const all = scoreGroup(pool);
+  FUNDS.forEach(f => { f.scA = all.get(f) || null; f.scP = null; });
+  [...new Set(pool.map(f => f.provider))].forEach(p => {
+    const g = scoreGroup(pool.filter(f => f.provider === p));
+    g.forEach((v, f) => { f.scP = v; });
+  });
+}
+const scCls = v => v == null ? 'sc-na' : v >= 70 ? 'sc-hi' : v >= 40 ? 'sc-mid' : 'sc-lo';
+const scTitle = sc => sc ? SCORE_FACTORS.filter(fc => sc.parts[fc.k] != null).map(fc => `${fc.label} ${Math.round(sc.parts[fc.k])}`).join(' · ') : '';
+
+/* ================= 合併被拆開的同一基金（恒生網頁名稱 vs 積金局名稱不同） ================= */
+const nameTokens = n => String(n).toLowerCase().replace(/\(.*?\)/g, ' ')
+  .replace(/mandatory\s*provident\s*fund|supertrust\s*plus|\bmpf\b|constituent|\bfund\b|\bthe\b/g, ' ')
+  .replace(/^[\s-]*hang\s*seng\s+(?=\S)/, ' ')
+  .replace(/[^a-z0-9]+/g, ' ').trim().split(/\s+/).filter(Boolean);
+function jaccard(a, b) {
+  const A = new Set(a), B = new Set(b);
+  const inter = [...A].filter(x => B.has(x)).length;
+  return inter / (new Set([...A, ...B]).size || 1);
+}
+function mergeSplitSeries(map) {
+  const all = [...map.values()];
+  const hasD = f => [...f.pts.values()].some(p => p.daily);
+  const hasM = f => [...f.pts.values()].some(p => !p.daily);
+  const dailyOnly = all.filter(f => hasD(f) && !hasM(f));
+  const monthlyOnly = all.filter(f => hasM(f) && !hasD(f));
+  const sorted = f => [...f.pts.values()].sort((a, b) => a.t - b.t);
+  const used = new Set();
+  for (const d of dailyOnly) {
+    const dp = sorted(d), dFirst = dp[0];
+    let best = null;
+    for (const m of monthlyOnly) {
+      if (m.provider !== d.provider || used.has(m)) continue;
+      const mp = sorted(m);
+      const ref = [...mp].reverse().find(p => p.t <= dFirst.t) || mp[mp.length - 1];
+      const ratio = dFirst.v / ref.v;
+      const gapDays = Math.abs(dFirst.t - ref.t) / DAY;
+      const sim = jaccard(nameTokens(d.name), nameTokens(m.name));
+      const priceOk = ratio > 0.88 && ratio < 1.12 && gapDays < 120;
+      if (!priceOk || sim < 0.34) continue;
+      const score = sim * 2 - Math.abs(Math.log(ratio)) * 5;
+      if (!best || score > best.score) best = { m, score };
+    }
+    if (!best) continue;
+    const m = best.m;
+    used.add(m);
+    d.pts.forEach((p, k) => m.pts.set(k, p));
+    m.name = d.name;
+    m.aliasKeys = [...(m.aliasKeys || []), d.key];
+    map.delete(d.key);
+    // 搬移用戶以舊 key 儲存的設定
+    if (holdings[d.key] != null && holdings[m.key] == null) holdings[m.key] = holdings[d.key];
+    if (targets[d.key] != null && targets[m.key] == null) targets[m.key] = targets[d.key];
+    selected = selected.map(k => k === d.key ? m.key : k);
+  }
+}
+
 /* ================= 載入 ================= */
 async function load() {
   const [daily, monthly, statusJson] = await Promise.all([
@@ -559,6 +726,12 @@ async function load() {
   monthly.forEach(r => add(r.provider, r.fund, r.date, +r.price, false));
   daily.forEach(r => add(r.provider, r.fund, r.date, +r.bid, true));
 
+  mergeSplitSeries(map);
+  try {
+    localStorage.setItem('mpf_units_v2', JSON.stringify(holdings));
+    localStorage.setItem('mpf_targets_v2', JSON.stringify(targets));
+    localStorage.setItem('mpf_selected_v2', JSON.stringify(selected));
+  } catch (e) {}
   FUNDS = [...map.values()].map(f => {
     const pts = [...f.pts.values()].sort((a, b) => a.t - b.t);
     pts.forEach(p => { p.sma = calcSma10M(pts, p.t); });
@@ -568,6 +741,9 @@ async function load() {
     obj.mom6 = changeOver(obj, 182);
     obj.y1 = changeOver(obj, 365);
     obj.sig = analyzeFund(obj);
+    obj.lastD = pts[pts.length - 1].d;
+    obj.firstD = pts[0].d;
+    obj.isDailyFeed = pts.slice(-5).some(p => p.daily);
     obj.mdd1y = maxDrawdown1y(obj);
     obj.risk = riskStats(obj);
     return obj;
@@ -582,6 +758,7 @@ async function load() {
     const core = coreOf(f.provider) || coreOf('hangseng');
     f.coreRR = core && core.risk ? core.risk.rr : null;
   });
+  computeScores();
 
   const st = document.getElementById('status');
   if (!FUNDS.length) {
@@ -594,6 +771,17 @@ async function load() {
   const lastAny = FUNDS.reduce((m, f) => f.pts[f.pts.length - 1].d > m ? f.pts[f.pts.length - 1].d : m, '');
   const syncTime = statusJson?.updated ? new Date(statusJson.updated).toLocaleString('zh-HK', { timeZone: 'Asia/Hong_Kong' }) : '未知';
   st.innerHTML = `已載入 <b>${availProviders.length}</b> 間受託人共 <b>${FUNDS.length}</b> 隻基金 ｜ 最新價格日期：<b>${fmtDate(lastAny)}</b>（最後檢查：${syncTime}）`;
+
+  // 各受託人數據更新日期
+  const todayT = Date.now();
+  document.getElementById('provDates').innerHTML = '📅 各公司數據更新至：' + Object.keys(PROVIDERS).concat(availProviders.filter(id => !PROVIDERS[id]))
+    .filter(id => availProviders.includes(id)).map(id => {
+      const fs = FUNDS.filter(f => f.provider === id);
+      const d = fs.reduce((m, f) => f.lastD > m ? f.lastD : m, '');
+      const daily = fs.some(f => f.isDailyFeed);
+      const stale = (todayT - toT(d)) / DAY > (daily ? 7 : 75);
+      return `<span>${esc(PROVIDERS[id] || id)} <b class="${stale ? 'warn' : ''}">${fmtDate(d)}</b>（${daily ? '每日' : '每月'}）</span>`;
+    }).join('');
 
   buildProviderChips(availProviders);
   refreshAllViews();
@@ -608,6 +796,7 @@ function buildProviderChips(availProviders) {
   document.querySelectorAll('[data-prov]').forEach(b => b.onclick = () => {
     providerFilter = b.dataset.prov;
     sigFilter = null;
+    if (sortKey === 'scP' || sortKey === 'scA') sortKey = providerFilter === 'all' ? 'scA' : 'scP';
     buildProviderChips(availProviders);
     refreshAllViews();
   });
@@ -716,7 +905,8 @@ function renderTop5(pool) {
     <div class="top-item" data-topkey="${f.key}">
       <div class="top-rank"><span>#${idx + 1} ${providerFilter === 'all' ? esc(f.providerName) : ''}</span><span>${f.sig.label}</span></div>
       <div class="top-name">${esc(f.zh || f.name)}</div>
-      <div class="top-meta">6月 <b class="${clsPct(f.mom6)}">${fmtPct(f.mom6)}</b> · 3月 <b class="${clsPct(f.mom3)}">${fmtPct(f.mom3)}</b></div>
+      <div class="top-meta">6月 <b class="${clsPct(f.mom6)}">${fmtPct(f.mom6)}</b> · 3月 <b class="${clsPct(f.mom3)}">${fmtPct(f.mom3)}</b> · 至 ${fmtDate(f.lastD)}</div>
+      <div class="top-meta">評分：公司 <b class="${scCls(f.scP?.score)}">${f.scP ? Math.round(f.scP.score) : '—'}</b> · 全港 <b class="${scCls(f.scA?.score)}">${f.scA ? Math.round(f.scA.score) : '—'}</b>${f.scA ? ` (#${f.scA.rank}/${f.scA.n})` : ''}</div>
       <div style="margin-top:4px;">${f.bench.type === 'self' ? `<span class="ab a-bench">${f.bench.label}</span>` : alphaBadge(f.a6, '6月')}</div>
     </div>`).join('');
   document.querySelectorAll('[data-topkey]').forEach(el => el.onclick = () => toggleSelect(el.dataset.topkey));
@@ -755,6 +945,10 @@ function buildRegionChips(pool) {
 }
 
 /* ================= 總表 ================= */
+function dateTag(f) {
+  const stale = (Date.now() - toT(f.lastD)) / DAY > (f.isDailyFeed ? 7 : 75);
+  return `<span class="dtag ${stale ? 'stale' : ''}" title="此基金最新價格日期（${f.isDailyFeed ? '每日' : '每月'}數據）">至 ${f.lastD.slice(5).replace('-', '/')}</span>`;
+}
 function sigFilterMatch(f) { return !sigFilter || sigFilter.includes(f.sig.code); }
 function dataBar(v, maxAbs) {
   if (v == null || !isFinite(v) || !maxAbs) return '';
@@ -778,7 +972,8 @@ function renderTable(pool) {
   const rows = visibleRows(pool).map(f => ({
     f, score: f.sig.score, dev: f.sig.dev, mom3: f.mom3, mom6: f.mom6, y1: f.y1, dd: f.sig.dd ?? (f.cat === '保守' || f.cat === '保證' ? null : f.mdd1y),
     alpha: f.bench.type === 'self' ? null : f.a6, sig: SIG_ORDER[f.sig.code] ?? -1,
-    vol: f.risk ? f.risk.vol : null, rr: f.risk ? f.risk.rr : null
+    vol: f.risk ? f.risk.vol : null, rr: f.risk ? f.risk.rr : null,
+    scP: f.scP ? f.scP.score : null, scA: f.scA ? f.scA.score : null
   }));
   const val = (r, k) => k === 'name' ? (r.f.zh || r.f.name) : r[k];
   rows.sort((a, b) => {
@@ -795,7 +990,7 @@ function renderTable(pool) {
     const dot = si >= 0 ? `style="background:${SERIES_COLORS[si]};border-color:${SERIES_COLORS[si]}"` : '';
     const pTag = providerFilter === 'all' ? `<span class="ptag">${esc(r.f.providerName)}</span>` : '';
     const mBadge = viewMode === 'A' ? `<span class="badge ${r.f.sig.cls} m-only">${r.f.sig.label}</span>` : '';
-    return `<td><div class="fname"><span class="dot" ${dot}></span><div>${pTag}${esc(r.f.zh || r.f.name)}<small>${esc(r.f.name)}</small>${mBadge}</div></div></td>`;
+    return `<td><div class="fname"><span class="dot" ${dot}></span><div>${pTag}${esc(r.f.zh || r.f.name)}${dateTag(r.f)}<small>${esc(r.f.name)}</small>${mBadge}</div></div></td>`;
   };
   const alphaCell = r => {
     const b = r.f.bench;
@@ -806,30 +1001,41 @@ function renderTable(pool) {
       <div class="astack">${alphaBadge(r.f.a6, '6月')}${alphaBadge(r.f.a1, '1年')}<small>vs ${esc(b.label)}${esc(scope)}</small></div></td>`;
   };
 
+  const scoreCell = r => {
+    const p = r.f.scP, a = r.f.scA;
+    if (!p && !a) return `<td class="sc-na" title="保守 / 保證基金不參與評分">${r.f.sig.code === 'SAFE' ? '<span class="sc-pill">避險</span>' : '—'}</td>`;
+    return `<td title="公司內：${esc(scTitle(p))}&#10;全港：${esc(scTitle(a))}"><div class="sc">
+      <b class="${scCls(p?.score)}">${p ? Math.round(p.score) : '—'}</b><small><span class="m-hide">公司 </span>#${p ? p.rank + '/' + p.n : '—'}</small>
+      <small>全港 <b class="${scCls(a?.score)}" style="font-size:.72rem">${a ? Math.round(a.score) : '—'}</b><span class="m-hide"> #${a ? a.rank + '/' + a.n : '—'}</span></small></div></td>`;
+  };
+  const scKey = providerFilter === 'all' ? 'scA' : 'scP';
+  const scLabel = `評分<span class="info-i" data-scinfo title="查看評分機制">ⓘ</span>`;
   let head, body;
   if (viewMode === 'A') {
-    head = `<tr>${th('name', '基金名稱')}${th('sig', '轉勢與牛熊訊號', 'm-hide', 'text-align:center;')}${th('mom6', '6月回報')}${th('alpha', 'vs 大市基準')}${th('dev', '偏離10月線', 'col-hide')}</tr>`;
+    head = `<tr>${th('name', '基金名稱')}${th(scKey, scLabel)}${th('sig', '轉勢與牛熊訊號', 'm-hide', 'text-align:center;')}${th('mom6', '6月回報')}${th('alpha', 'vs 大市基準')}${th('dev', '偏離10月線', 'col-hide')}</tr>`;
     body = rows.map(r => `<tr data-key="${r.f.key}" class="${selected.includes(r.f.key) ? 'sel' : ''}">
       ${nameCell(r)}
+      ${scoreCell(r)}
       <td class="m-hide" style="text-align:center;"><span class="badge ${r.f.sig.cls}">${r.f.sig.label}</span></td>
       <td class="${clsPct(r.mom6)}" ${dataBar(r.mom6, m6Max)}><b>${fmtPct(r.mom6)}</b></td>
       ${alphaCell(r)}
       <td class="col-hide ${clsPct(r.dev)}">${fmtPct(r.dev)}</td></tr>`).join('');
   } else {
-    head = `<tr>${th('name', '基金名稱')}${th('mom3', '3月動能', 'col-hide')}${th('mom6', '6月動能', 'col-hide')}${th('y1', '1年回報')}${th('dd', '距1年高點 (MDD)')}${th('rr', '波幅 / 風險回報')}</tr>`;
+    head = `<tr>${th('name', '基金名稱')}${th(scKey, scLabel)}${th('mom3', '3月動能', 'col-hide')}${th('mom6', '6月動能', 'col-hide')}${th('y1', '1年回報')}${th('dd', '距1年高點<span class="m-hide"> (MDD)</span>')}${th('rr', '波幅<span class="m-hide"> / 風險回報</span>')}</tr>`;
     body = rows.map(r => {
       const rk = r.f.risk;
       const pass = rk && r.f.coreRR != null && !/core\s*accumulation/i.test(r.f.name) ? (rk.rr >= r.f.coreRR ? ' <span class="up" title="高於 DIS 核心累積基金">✓</span>' : '') : '';
       return `<tr data-key="${r.f.key}" class="${selected.includes(r.f.key) ? 'sel' : ''}">
         ${nameCell(r)}
+        ${scoreCell(r)}
         <td class="col-hide ${clsPct(r.mom3)}">${fmtPct(r.mom3)}</td>
         <td class="col-hide ${clsPct(r.mom6)}">${fmtPct(r.mom6)}</td>
         <td class="${clsPct(r.y1)}"><b>${fmtPct(r.y1)}</b></td>
-        <td class="${clsPct(r.dd)}">${fmtPct(r.dd)}<span class="sub2">最大 ${fmtPct1(r.f.mdd1y)}</span></td>
+        <td class="${clsPct(r.dd)}">${fmtPct(r.dd)}<span class="sub2 m-hide">最大 ${fmtPct1(r.f.mdd1y)}</span></td>
         <td>${rk ? `${(rk.vol * 100).toFixed(1)}%<span class="sub2"><b class="${rk.rr >= 0 ? 'up' : 'down'}">${rk.rr.toFixed(2)}</b>${pass} · ${rk.years.toFixed(1)}年</span>` : '<span class="flat">—</span>'}</td></tr>`;
     }).join('');
   }
-  document.getElementById('fundTable').innerHTML = head + (body || `<tr><td colspan="6" class="hint" style="text-align:center;padding:18px;">此篩選條件下沒有基金</td></tr>`);
+  document.getElementById('fundTable').innerHTML = head + (body || `<tr><td colspan="7" class="hint" style="text-align:center;padding:18px;">此篩選條件下沒有基金</td></tr>`);
 
   document.querySelectorAll('[data-sort]').forEach(h => h.onclick = ev => {
     ev.stopPropagation();
@@ -838,6 +1044,7 @@ function renderTable(pool) {
     renderTable(pool);
   });
   document.querySelectorAll('#fundTable tr[data-key]').forEach(tr => tr.onclick = () => toggleSelect(tr.dataset.key));
+  document.querySelectorAll('[data-scinfo]').forEach(el => el.onclick = ev => { ev.stopPropagation(); document.getElementById('scorePanel').scrollIntoView({ behavior: 'smooth', block: 'start' }); });
 
   document.getElementById('btnRegionPk').onclick = () => {
     const ranked = visibleRows(pool).filter(f => f.mom6 != null).sort((a, b) => (b.a6 ?? b.mom6) - (a.a6 ?? a.mom6)).slice(0, 5);
@@ -877,8 +1084,23 @@ function toggleSelect(k) {
 }
 
 /* ================= 圖表 ================= */
+let chartType = 'line', kUnit = 'auto', kFundKey = null;
+function setChartType(t) {
+  chartType = t;
+  document.querySelectorAll('#typeSeg .seg-btn').forEach(x => x.classList.toggle('active', x.dataset.type === t));
+  document.getElementById('kTools').classList.toggle('on', t === 'candle');
+  document.getElementById('modeSeg').style.display = t === 'candle' ? 'none' : '';
+}
+document.querySelectorAll('#typeSeg .seg-btn').forEach(b => b.onclick = () => { setChartType(b.dataset.type); renderChart(); });
+document.querySelectorAll('#kUnitSeg .seg-btn').forEach(b => b.onclick = () => {
+  kUnit = b.dataset.k;
+  document.querySelectorAll('#kUnitSeg .seg-btn').forEach(x => x.classList.toggle('active', x === b));
+  renderChart();
+});
+document.getElementById('kFund').onchange = e => { kFundKey = e.target.value; renderChart(); };
 function setChartMode(m) {
   chartMode = m;
+  if (chartType !== 'line') setChartType('line'); // 比較／加入基準時自動切回走勢線
   document.querySelectorAll('#modeSeg .seg-btn').forEach(x => x.classList.toggle('active', x.dataset.mode === m));
 }
 document.getElementById('btnAddBench').onclick = () => {
@@ -905,6 +1127,99 @@ function niceTicks(lo, hi, n = 5) {
 }
 const shortName = f => (f.zh || f.name).replace(/基金$/, '');
 
+/* ================= K線圖 ================= */
+function buildCandles(f, unit) {
+  const keyOfPt = p => {
+    if (unit === 'M') return p.d.slice(0, 7);
+    const d = new Date(p.t); const dow = (d.getUTCDay() + 6) % 7;
+    return new Date(p.t - dow * DAY).toISOString().slice(0, 10);
+  };
+  const candles = [];
+  let cur = null, prevClose = null;
+  for (const p of f.pts) {
+    const k = keyOfPt(p);
+    if (!cur || cur.k !== k) {
+      if (cur) { prevClose = cur.c; candles.push(cur); }
+      const o = prevClose ?? p.v;
+      cur = { k, o, h: Math.max(o, p.v), l: Math.min(o, p.v), c: p.v, t0: p.t, t: p.t, d0: p.d, d: p.d, n: 1, daily: !!p.daily, sma: p.sma };
+    } else {
+      cur.h = Math.max(cur.h, p.v); cur.l = Math.min(cur.l, p.v); cur.c = p.v;
+      cur.t = p.t; cur.d = p.d; cur.n++; cur.daily = cur.daily || !!p.daily; cur.sma = p.sma;
+    }
+  }
+  if (cur) candles.push(cur);
+  return candles;
+}
+function renderCandle(sel) {
+  const wrap = document.getElementById('chartWrap'), tip = document.getElementById('tip'), legend = document.getElementById('legend');
+  if (!kFundKey || !sel.some(f => f.key === kFundKey)) kFundKey = sel[0].key;
+  document.getElementById('kFund').innerHTML = sel.map(f => `<option value="${f.key}" ${f.key === kFundKey ? 'selected' : ''}>[${esc(f.providerName)}] ${esc(f.zh || f.name)}</option>`).join('');
+  const f = sel.find(x => x.key === kFundKey);
+  const last = f.pts[f.pts.length - 1];
+  const tStart = rangeDays === 'all' ? f.pts[0].t : last.t - +rangeDays * DAY;
+  const unit = kUnit !== 'auto' ? kUnit : (rangeDays === '182' || rangeDays === '365') ? 'W' : 'M';
+  let cs = buildCandles(f, unit).filter(c => c.t >= tStart);
+  if (!cs.length) { wrap.insertAdjacentHTML('afterbegin', '<svg viewBox="0 0 300 60"><text x="150" y="34" fill="#94a3b8" font-size="12" text-anchor="middle">此範圍沒有數據</text></svg>'); legend.innerHTML = ''; return; }
+
+  const W = Math.max(300, Math.round(wrap.clientWidth || 700)), H = Math.round(Math.min(340, Math.max(230, W * 0.55)));
+  const L = 52, R = 10, T = 12, B = 24;
+  const ys = cs.flatMap(c => [c.h, c.l, ...(showSma && c.sma ? [c.sma] : [])]);
+  let lo = Math.min(...ys), hi = Math.max(...ys);
+  const pad = (hi - lo) * 0.08 || hi * 0.01 || 1; lo -= pad; hi += pad;
+  const n = cs.length, slot = (W - L - R) / n;
+  const cx = i => L + slot * (i + 0.5);
+  const y = v => T + (hi - v) / (hi - lo) * (H - T - B);
+  const bw = Math.max(1, Math.min(14, slot * 0.68));
+  const UP = '#4ade80', DN = '#f87171';
+
+  let g = '';
+  niceTicks(lo, hi).forEach(v => {
+    g += `<line x1="${L}" x2="${W - R}" y1="${y(v)}" y2="${y(v)}" stroke="rgba(255,255,255,0.06)"/><text x="${L - 6}" y="${y(v) + 4}" fill="#94a3b8" font-size="11" text-anchor="end">${+v.toFixed(4)}</text>`;
+  });
+  [0, Math.floor((n - 1) / 2), n - 1].filter((v, i, a) => a.indexOf(v) === i).forEach((i, j, arr) => {
+    g += `<text x="${cx(i)}" y="${H - 6}" fill="#94a3b8" font-size="11" text-anchor="${arr.length === 1 ? 'middle' : ['start', 'middle', 'end'][j]}">${fmtDate(cs[i].d)}</text>`;
+  });
+  const bodies = cs.map((c, i) => {
+    const col = c.c >= c.o ? UP : DN;
+    const top = y(Math.max(c.o, c.c)), bot = y(Math.min(c.o, c.c));
+    const hgt = Math.max(1, bot - top);
+    return `<line x1="${cx(i).toFixed(1)}" x2="${cx(i).toFixed(1)}" y1="${y(c.h).toFixed(1)}" y2="${y(c.l).toFixed(1)}" stroke="${col}" stroke-width="1"/>` +
+      `<rect x="${(cx(i) - bw / 2).toFixed(1)}" y="${top.toFixed(1)}" width="${bw.toFixed(1)}" height="${hgt.toFixed(1)}" fill="${col}" ${c.c >= c.o ? 'fill-opacity="0.85"' : ''} rx="${bw > 4 ? 1 : 0}"/>`;
+  }).join('');
+  const smaPts = cs.map((c, i) => c.sma ? [cx(i), y(c.sma)] : null).filter(Boolean);
+  const smaLine = showSma && smaPts.length > 1 ? `<path d="${smaPts.map((p, i) => `${i ? 'L' : 'M'}${p[0].toFixed(1)},${p[1].toFixed(1)}`).join('')}" fill="none" stroke="var(--accent)" stroke-width="1.6" stroke-dasharray="5 4"/>` : '';
+
+  wrap.insertAdjacentHTML('afterbegin', `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="基金 K 線圖">${g}${smaLine}${bodies}
+    <line id="cross" y1="${T}" y2="${H - B}" stroke="rgba(255,255,255,0.35)" visibility="hidden"/></svg>`);
+
+  const chg = cs[n - 1].c / cs[0].o - 1;
+  const monthlyOnly = cs.filter(c => !c.daily).length;
+  legend.innerHTML = `<span>🕯️ [${esc(f.providerName)}] ${esc(f.zh || f.name)} · ${unit === 'W' ? '週K' : '月K'} ${n} 根 · 區間 <b class="${clsPct(chg)}">${fmtPct(chg)}</b> · 至 ${fmtDate(f.lastD)}</span>` +
+    (showSma ? `<span><i class="dashed"></i>10個月均線</span>` : '') +
+    (monthlyOnly ? `<span class="hint" style="font-size:.74rem;">${monthlyOnly === n ? '此範圍只有每月數據，K線只有實體' : `其中 ${monthlyOnly} 根只有每月數據`}</span>` : '');
+
+  const svg = wrap.querySelector('svg'), cross = svg.querySelector('#cross');
+  const move = ev => {
+    const pt = ev.touches ? ev.touches[0] : ev;
+    const box = svg.getBoundingClientRect();
+    const sx = (pt.clientX - box.left) * W / box.width;
+    const i = Math.max(0, Math.min(n - 1, Math.floor((sx - L) / slot)));
+    const c = cs[i], pc = c.c / c.o - 1;
+    cross.setAttribute('x1', cx(i)); cross.setAttribute('x2', cx(i)); cross.setAttribute('visibility', 'visible');
+    tip.innerHTML = `<div style="color:#94a3b8;margin-bottom:3px;">${fmtDate(c.d0)}${c.d !== c.d0 ? ' – ' + fmtDate(c.d) : ''}（${c.n} 個價格${c.daily ? '' : '，每月數據'}）</div>
+      <div class="ohlc"><span>開市</span><b>${c.o.toFixed(4)}</b><span>最高</span><b>${c.h.toFixed(4)}</b><span>最低</span><b>${c.l.toFixed(4)}</b><span>收市</span><b>${c.c.toFixed(4)}</b>
+      <span>本期升跌</span><b class="${clsPct(pc)}">${fmtPct(pc)}</b>${c.sma ? `<span>10月線</span><b>${c.sma.toFixed(4)} <small class="${clsPct(c.c / c.sma - 1)}">(${fmtPct1(c.c / c.sma - 1)})</small></b>` : ''}</div>`;
+    tip.style.display = 'block';
+    const px = cx(i) * box.width / W;
+    tip.style.left = Math.max(0, Math.min(box.width - tip.offsetWidth, px + 12 + tip.offsetWidth > box.width ? px - tip.offsetWidth - 12 : px + 12)) + 'px';
+    tip.style.top = '0px';
+  };
+  const leave = () => { tip.style.display = 'none'; cross.setAttribute('visibility', 'hidden'); };
+  svg.addEventListener('mousemove', move); svg.addEventListener('mouseleave', leave);
+  svg.addEventListener('touchstart', move, { passive: true }); svg.addEventListener('touchmove', move, { passive: true });
+  svg.addEventListener('touchend', () => setTimeout(leave, 2000));
+}
+
 function renderChart() {
   const wrap = document.getElementById('chartWrap'), tip = document.getElementById('tip');
   wrap.querySelectorAll('svg').forEach(s => s.remove());
@@ -915,6 +1230,7 @@ function renderChart() {
     wrap.insertAdjacentHTML('afterbegin', '<svg viewBox="0 0 300 60"><text x="150" y="34" fill="#94a3b8" font-size="12" text-anchor="middle">請點選基金加入比較</text></svg>');
     return;
   }
+  if (chartType === 'candle') return renderCandle(sel);
   const tEnd = Math.max(...sel.map(f => f.pts[f.pts.length - 1].t));
   const tStart = rangeDays === 'all' ? Math.min(...sel.map(f => f.pts[0].t)) : tEnd - +rangeDays * DAY;
   const series = sel.map((f, i) => {
@@ -971,7 +1287,9 @@ function renderChart() {
 
   legend.innerHTML = series.map(s => {
     const last = s.pts[s.pts.length - 1].y;
-    return `<span><i style="background:${s.color}"></i>[${esc(s.f.providerName)}] ${esc(s.f.zh || s.f.name)}${s.isBench ? ' <span class="ab a-bench" style="font-size:.64rem;">基準</span>' : ''} <b class="${chartMode === 'pct' ? clsPct(last) : ''}">${chartMode === 'pct' ? fmtPct(last / 100) : last.toFixed(4)}</b></span>`;
+    const startNote = s.pts[0].t > tStart + 20 * DAY ? `<span class="warn" style="font-size:.72rem;">（數據由 ${fmtDate(s.pts[0].d)} 起）</span>` : '';
+    const endNote = `<span class="flat" style="font-size:.72rem;">至 ${fmtDate(s.f.lastD)}</span>`;
+    return `<span><i style="background:${s.color}"></i>[${esc(s.f.providerName)}] ${esc(s.f.zh || s.f.name)}${s.isBench ? ' <span class="ab a-bench" style="font-size:.64rem;">基準</span>' : ''} <b class="${chartMode === 'pct' ? clsPct(last) : ''}">${chartMode === 'pct' ? fmtPct(last / 100) : last.toFixed(4)}</b> ${endNote}${startNote}</span>`;
   }).join('') + (showSma ? `<span><i class="dashed"></i>虛線 = 10個月均線</span>` : '');
 
   const svg = wrap.querySelector('svg'), cross = svg.querySelector('#cross');
@@ -1090,7 +1408,7 @@ function updatePortfolio() {
     }
     return `<div class="rb-item">
       <div class="rb-top"><div class="rb-name"><span class="ptag">${esc(f.providerName)}</span>${esc(f.zh || f.name)} <span class="badge ${f.sig.cls}">${f.sig.label}</span></div><div>${action}</div></div>
-      <div class="rb-meta">現值 <b>${money0(it.val)}</b> · 實際 <b>${(it.act * 100).toFixed(1)}%</b>${hasTargets ? ` / 目標 <b>${(it.tgt * 100).toFixed(1)}%</b> · 偏離 <b class="${Math.abs(it.dev) >= 0.05 ? 'warn' : ''}">${it.dev >= 0 ? '+' : ''}${(it.dev * 100).toFixed(1)}%</b>` : ''}</div>
+      <div class="rb-meta">${f.scP ? `評分 公司 <b class="${scCls(f.scP.score)}">${Math.round(f.scP.score)}</b> · 全港 <b class="${scCls(f.scA?.score)}">${f.scA ? Math.round(f.scA.score) : '—'}</b> ｜ ` : ''}現值 <b>${money0(it.val)}</b> · 實際 <b>${(it.act * 100).toFixed(1)}%</b>${hasTargets ? ` / 目標 <b>${(it.tgt * 100).toFixed(1)}%</b> · 偏離 <b class="${Math.abs(it.dev) >= 0.05 ? 'warn' : ''}">${it.dev >= 0 ? '+' : ''}${(it.dev * 100).toFixed(1)}%</b>` : ''}</div>
       <div class="track"><div class="fill" style="width:${Math.min(100, it.act * 100).toFixed(1)}%"></div>${hasTargets ? `<div class="mark" style="left:calc(${Math.min(100, it.tgt * 100).toFixed(1)}% - 1px)" title="目標"></div>` : ''}</div>
     </div>`;
   }).join('') + (hasTargets ? '' : '<div class="hint">💡 在下方輸入「目標 %」後，即可計算偏離值及轉換金額。</div>');

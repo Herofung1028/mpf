@@ -56,7 +56,7 @@ function parseDate(t) {
   if (m) return `${m[3]}-${String(MON[m[2].toLowerCase()]).padStart(2, '0')}-${m[1].padStart(2, '0')}`;
   m = t.match(/(\d{4})[-\/年](\d{1,2})[-\/月](\d{1,2})/);
   if (m) return `${m[1]}-${m[2].padStart(2, '0')}-${m[3].padStart(2, '0')}`;
-  m = t.match(/(\d{1,2})\/(\d{1,2})\/(\d{4})/);
+  m = t.match(/(\d{1,2})[\/-](\d{1,2})[\/-](\d{4})/);
   if (m) return `${m[3]}-${m[2].padStart(2, '0')}-${m[1].padStart(2, '0')}`;
   return '';
 }
@@ -129,6 +129,171 @@ async function scrapeHangSeng() {
   });
   console.log(`  ✔ 恒生網頁：成功取得 ${out.length} 隻基金，價格日期 ${date}`);
   return out;
+}
+
+// ---------- 1b. 其他受託人每日價格（香港經濟日報每日價目表 ＋ 信安官網） ----------
+// 註：海通暫未找到公開每日價目來源，繼續使用積金局每月數據
+const DAILY_SOURCES = [
+  { id: 'manulife', urls: ['https://invest.hket.com/fundmpf/daily/MPF_manulife.html'] },
+  { id: 'hsbc', urls: ['https://invest.hket.com/fundmpf/daily/MPF_hsbc.html'] },
+  { id: 'sunlife', urls: ['https://invest.hket.com/fundmpf/daily/MPF_sunlife.html'] },
+  { id: 'aia', urls: ['https://invest.hket.com/fundmpf/daily/MPF_aia.html'] },
+  { id: 'bocp', urls: ['https://invest.hket.com/fundmpf/daily/MPF_bociptl.html', 'https://invest.hket.com/fundmpf/daily/MPF_bocipam.html'] },
+  { id: 'bct', urls: ['https://invest.hket.com/fundmpf/daily/MPF_bct.html'] },
+  { id: 'fidelity', urls: ['https://invest.hket.com/fundmpf/daily/MPF_fidelity.html'] },
+  { id: 'bea', urls: ['https://invest.hket.com/fundmpf/daily/MPF_bea.html'] },
+  { id: 'principal', urls: ['https://www.principal.com.hk/products/mpf-schemes/daily-constituent-fund-prices'] },
+];
+
+async function scrapeOtherDaily() {
+  const { chromium } = await import('playwright');
+  const browser = await chromium.launch({ args: ['--disable-blink-features=AutomationControlled', '--no-sandbox'] });
+  const context = await browser.newContext({ userAgent: UA, locale: 'zh-HK', timezoneId: 'Asia/Hong_Kong' });
+  const page = await context.newPage();
+  const out = [];
+  for (const src of DAILY_SOURCES) {
+    for (const url of src.urls) {
+      try {
+        await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 });
+        await page.waitForTimeout(3000);
+        const rows = await page.evaluate(() => {
+          const res = [];
+          document.querySelectorAll('tr').forEach(tr => {
+            const cells = [...tr.querySelectorAll('th,td')].map(c => c.innerText.replace(/\s+/g, ' ').trim());
+            if (cells.length < 2) return;
+            const date = cells.find(c => /^\d{1,2}[\/-]\d{1,2}[\/-]\d{4}$/.test(c)) || '';
+            const nums = cells.filter(c => /^(HK)?\$?\s*\d{1,5}\.\d+$/.test(c.replace(/,/g, '')));
+            const name = cells.find(c => /[一-鿿A-Za-z]{2,}/.test(c) && !/^(HK\$|HKD|港元)$/i.test(c));
+            if (name && nums.length) res.push({ name, nums, date });
+          });
+          return res;
+        });
+        let n = 0;
+        rows.forEach(r => {
+          const date = parseDate(r.date);
+          const v = num(r.nums[0]);
+          if (!date || !(v > 0)) return;
+          out.push({ provider: src.id, date, fund: cleanName(r.name), bid: v.toFixed(4), offer: v.toFixed(4), src: url });
+          n++;
+        });
+        console.log(`  ${n ? '✔' : '⚠'} ${src.id}：${url.split('/').pop()} 讀取 ${n} 行`);
+      } catch (e) {
+        console.log(`  ⚠ ${src.id} 讀取失敗：${e.message.split('\n')[0]}`);
+      }
+    }
+  }
+  await browser.close();
+  return out;
+}
+
+// ---------- 1c. 基金名稱配對：把每日來源的名稱統一為積金局（MPFA）名稱 ----------
+// 解決「同一隻基金在不同來源寫法不同 → 被拆成兩條走勢線」的問題
+const ZH_DICT = [
+  [/核心累積/g, ' core accumulation '], [/65歲後/g, ' age 65 plus '], [/恒指|恒生指數/g, ' hang seng index '],
+  [/國企|中國企業/g, ' china enterprises '], [/北美|美洲/g, ' north america '], [/美國/g, ' united states '],
+  [/香港/g, ' hong kong '], [/大中華|中華|中國|中港/g, ' china chinese '], [/亞太/g, ' asia pacific '],
+  [/亞洲/g, ' asia asian '], [/亞歐/g, ' eurasia '], [/歐洲/g, ' europe european '], [/日本/g, ' japan '],
+  [/環球|全球|國際|世界/g, ' global international world '], [/債券/g, ' bond '], [/保守/g, ' conservative '],
+  [/保證|保本/g, ' guaranteed '], [/增長/g, ' growth '], [/平衡|均衡/g, ' balanced '], [/穩定|穩健|平穩/g, ' stable '],
+  [/股票/g, ' equity '], [/追蹤/g, ' tracker '], [/指數/g, ' index '], [/人民幣/g, ' rmb '], [/退休/g, ' retirement '],
+  [/入息|收益/g, ' income '], [/康健|醫療|健康/g, ' healthcare '], [/科技/g, ' tech '], [/港元/g, ' hkd '],
+];
+const STOP = new Set(['fund', 'funds', 'mpf', 'the', 'and', 'of', 'class', 'scheme', 'portfolio', 'manulife', 'aia', 'principal', 'bea', 'bct', 'sun', 'life', 'fidelity', 'boc', 'prudential', 'hsbc', 'haitong', 'supertrust', 'mandatory', 'provident', 'constituent']);
+function nameTokens(name) {
+  let s = String(name).replace(/\(.*?\)|（.*?）/g, ' ');
+  ZH_DICT.forEach(([re, en]) => { s = s.replace(re, en); });
+  s = s.toLowerCase().replace(/基金|計劃|強積金/g, ' ').replace(/^[\s-]*hang\s*seng\s+(?!index|china)/, ' ');
+  const toks = s.replace(/[^a-z0-9]+/g, ' ').trim().split(/\s+/).filter(t => t && !STOP.has(t));
+  return toks.map(t => ({ american: 'america', european: 'europe', asian: 'asia', chinese: 'china', us: 'united', 'u': 'united' }[t] || t));
+}
+function similarity(a, b) {
+  const A = new Set(nameTokens(a)), B = new Set(nameTokens(b));
+  const inter = [...A].filter(x => B.has(x)).length;
+  return inter / (new Set([...A, ...B]).size || 1);
+}
+// history: Map(provider|fund → [{t,v}]) 已排序
+function priceNear(hist, t) {
+  let best = null;
+  for (const p of hist) { if (p.t <= t) best = p; else break; }
+  return best || hist[0];
+}
+function buildHistory(monthlyRows, canonDailyRows) {
+  const h = new Map();
+  const push = (p, f, d, v) => { if (!(v > 0)) return; const k = p + '|' + f; if (!h.has(k)) h.set(k, []); h.get(k).push({ t: Date.parse(d + 'T00:00:00Z'), v }); };
+  monthlyRows.forEach(r => push(r.provider || 'hangseng', r.fund, r.date, +r.price));
+  canonDailyRows.forEach(r => push(r.provider || 'hangseng', r.fund, r.date, +r.bid));
+  h.forEach(arr => arr.sort((a, b) => a.t - b.t));
+  return h;
+}
+// 為一批 { name, date, v } 找出對應的積金局名稱（同一受託人內，一對一）
+function matchNames(provider, items, hist, nameMap) {
+  const cands = [...hist.keys()].filter(k => k.startsWith(provider + '|')).map(k => k.slice(provider.length + 1));
+  const result = new Map(), log = [];
+  const pairs = [];
+  for (const it of items) {
+    const t = Date.parse(it.date + 'T00:00:00Z');
+    for (const c of cands) {
+      const ref = priceNear(hist.get(provider + '|' + c), t);
+      const ratio = it.v / ref.v, gap = Math.abs(t - ref.t) / 86400000;
+      const tol = gap <= 10 ? 0.05 : gap <= 40 ? 0.12 : 0.2;
+      if (Math.abs(Math.log(ratio)) > tol) continue;
+      const sim = similarity(it.name, c);
+      const remembered = nameMap[it.name] === c;
+      if (!remembered && sim < 0.25 && !(gap <= 10 && Math.abs(ratio - 1) < 0.003)) continue;
+      pairs.push({ it, c, score: sim * 2 - Math.abs(Math.log(ratio)) * 6 + (remembered ? 3 : 0), sim, ratio, gap });
+    }
+  }
+  pairs.sort((a, b) => b.score - a.score);
+  const usedC = new Set();
+  for (const p of pairs) {
+    if (result.has(p.it.name) || usedC.has(p.c)) continue;
+    result.set(p.it.name, p.c); usedC.add(p.c);
+    log.push({ provider, source: p.it.name, matched: p.c, sim: +p.sim.toFixed(2), priceRatio: +p.ratio.toFixed(4), gapDays: Math.round(p.gap) });
+  }
+  items.forEach(it => { if (!result.has(it.name)) log.push({ provider, source: it.name, matched: null, price: it.v, date: it.date }); });
+  return { result, log };
+}
+// 把每日行的 fund 名稱統一為積金局名稱；無法配對的保留原名（若該受託人沒有積金局數據）或剔除
+function canonicalizeDaily(rows, monthlyRows) {
+  const mapFile = 'data/name_map.json';
+  const nameMap = fs.existsSync(mapFile) ? JSON.parse(fs.readFileSync(mapFile, 'utf8')) : {};
+  const monthlyNames = new Set(monthlyRows.map(r => (r.provider || 'hangseng') + '|' + r.fund));
+  const isCanon = r => monthlyNames.has(r.provider + '|' + r.fund);
+  const hist = buildHistory(monthlyRows, rows.filter(isCanon));
+  const byProv = new Map();
+  rows.filter(r => !isCanon(r)).forEach(r => {
+    if (!byProv.has(r.provider)) byProv.set(r.provider, new Map());
+    const m = byProv.get(r.provider);
+    // 以該名稱最早一行做配對（與積金局歷史重疊最多）
+    if (!m.has(r.fund) || r.date < m.get(r.fund).date) m.set(r.fund, { name: r.fund, date: r.date, v: +r.bid });
+  });
+  const rename = new Map(), fullLog = [];
+  byProv.forEach((m, provider) => {
+    const hasMonthly = [...hist.keys()].some(k => k.startsWith(provider + '|'));
+    if (!hasMonthly) return; // 該受託人未有積金局數據：保留原名
+    nameMap[provider] = nameMap[provider] || {};
+    const { result, log } = matchNames(provider, [...m.values()], hist, nameMap[provider]);
+    result.forEach((c, src) => { rename.set(provider + '|' + src, c); nameMap[provider][src] = c; });
+    fullLog.push(...log);
+  });
+  const out = [];
+  let dropped = 0;
+  rows.forEach(r => {
+    if (isCanon(r)) return out.push(r);
+    const c = rename.get(r.provider + '|' + r.fund);
+    if (c) return out.push({ ...r, fund: c });
+    const hasMonthly = [...hist.keys()].some(k => k.startsWith(r.provider + '|'));
+    if (!hasMonthly || r.provider === 'hangseng') return out.push(r); // 恒生原有每日數據不刪除
+    dropped++;
+  });
+  fs.writeFileSync(mapFile, JSON.stringify(nameMap, null, 2) + '\n');
+  fs.writeFileSync('debug/daily_name_match.json', JSON.stringify(fullLog, null, 2) + '\n');
+  const unmatched = fullLog.filter(x => !x.matched).length;
+  console.log(`  名稱配對：統一 ${rename.size} 個名稱，未能配對 ${unmatched} 個（略過 ${dropped} 行，詳見 debug/daily_name_match.json）`);
+  // 同一 provider|date|fund 只保留一行（優先保留較新來源）
+  const dedup = new Map();
+  out.forEach(r => dedup.set(r.provider + '|' + r.date + '|' + r.fund, r));
+  return [...dedup.values()];
 }
 
 // ---------- 2. 積金局：11大公司每月綜合價格表 ----------
@@ -340,22 +505,8 @@ async function sendTelegram(text) {
 }
 
 // ---------- 主程式 ----------
-console.log('▶ 1. 抓取最新每日價格（恒生網頁）');
-try {
-  const today = await scrapeHangSeng();
-  const rows = readCsv('data/daily.csv');
-  const key = r => (r.provider || 'hangseng') + '|' + r.date + '|' + r.fund;
-  const map = new Map(rows.map(r => [{ ...r, provider: r.provider || 'hangseng' }].map(x => [key(x), x])[0]));
-  let added = 0;
-  today.forEach(r => { if (!map.has(key(r))) added++; map.set(key(r), r); });
-  const all = [...map.values()].sort((a, b) => a.date < b.date ? -1 : a.date > b.date ? 1 : a.fund < b.fund ? -1 : 1);
-  writeCsv('data/daily.csv', ['provider', 'date', 'fund', 'bid', 'offer'], all);
-  console.log(`  每日資料：新加入 ${added} 行，總計 ${all.length} 行`);
-} catch (e) {
-  console.log('✘ 恒生網頁讀取失敗：' + e.message);
-}
-
-console.log('▶ 2. 檢查積金局 11 大受託人每月價格表');
+// 先更新積金局每月數據（作為名稱配對的基準），再處理每日價格
+console.log('▶ 1. 檢查積金局 11 大受託人每月價格表');
 const monthly = await monthlyUpdate();
 if (monthly.length) {
   const rows = readCsv('data/monthly.csv');
@@ -364,6 +515,22 @@ if (monthly.length) {
   monthly.forEach(r => map.set(key(r), r));
   const all = [...map.values()].sort((a, b) => a.date < b.date ? -1 : a.date > b.date ? 1 : a.fund < b.fund ? -1 : 1);
   writeCsv('data/monthly.csv', ['provider', 'date', 'fund', 'price'], all);
+}
+
+console.log('▶ 2. 抓取最新每日價格（恒生網頁 ＋ 經濟日報／信安每日價目）');
+const newDaily = [];
+try { newDaily.push(...await scrapeHangSeng()); } catch (e) { console.log('✘ 恒生網頁讀取失敗：' + e.message); }
+try { newDaily.push(...await scrapeOtherDaily()); } catch (e) { console.log('✘ 其他受託人每日價格讀取失敗：' + e.message); }
+{
+  const oldRows = readCsv('data/daily.csv').map(r => ({ ...r, provider: r.provider || 'hangseng' }));
+  const key = r => r.provider + '|' + r.date + '|' + r.fund;
+  const before = new Set(oldRows.map(key));
+  // 統一名稱（包括修正舊數據中被拆開的恒生基金名稱）
+  const merged = canonicalizeDaily([...oldRows, ...newDaily.map(({ src, ...r }) => r)], readCsv('data/monthly.csv'));
+  const added = merged.filter(r => !before.has(key(r))).length;
+  const all = merged.sort((a, b) => a.date < b.date ? -1 : a.date > b.date ? 1 : a.provider < b.provider ? -1 : a.provider > b.provider ? 1 : a.fund < b.fund ? -1 : 1);
+  writeCsv('data/daily.csv', ['provider', 'date', 'fund', 'bid', 'offer'], all);
+  console.log(`  每日資料：新加入 ${added} 行，總計 ${all.length} 行`);
 }
 
 console.log('▶ 3. 執行全港 11 間公司長線趨勢與轉勢預警分析');
@@ -392,7 +559,7 @@ const topAll = analysis
 fs.writeFileSync(prevFile, JSON.stringify({ updated: new Date().toISOString(), funds: analysis }, null, 2) + '\n');
 fs.writeFileSync('data/status.json', JSON.stringify({ updated: new Date().toISOString(), flipsCount: flips.length }) + '\n');
 
-const latestDate = analysis[0]?.date || new Date().toISOString().slice(0, 10);
+const latestDate = analysis.reduce((m, f) => f.date > m ? f.date : m, '') || new Date().toISOString().slice(0, 10);
 let reportLines = [
   `📊 <b>全港 MPF 長線趨勢與轉勢預警 (${latestDate})</b>`,
   ``,

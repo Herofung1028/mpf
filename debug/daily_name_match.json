@@ -4,208 +4,208 @@
     "source": "Global Retirement Income Fund",
     "matched": "Manulife MPF Retirement Income Fund",
     "sim": 0.67,
-    "priceRatio": 1.0466,
-    "gapDays": 22
-  },
-  {
-    "provider": "manulife",
-    "source": "MPF保守基金",
-    "matched": "Manulife MPF Conservative Fund",
-    "sim": 1,
-    "priceRatio": 1.0014,
-    "gapDays": 26
-  },
-  {
-    "provider": "manulife",
-    "source": "MPF康健護理基金",
-    "matched": "Manulife MPF Healthcare Fund",
-    "sim": 1,
-    "priceRatio": 0.9981,
-    "gapDays": 26
-  },
-  {
-    "provider": "manulife",
-    "source": "MPF人民幣債券基金",
-    "matched": "Manulife MPF RMB Bond Fund",
-    "sim": 1,
-    "priceRatio": 0.9975,
-    "gapDays": 26
-  },
-  {
-    "provider": "manulife",
-    "source": "MPF香港債券基金",
-    "matched": "Manulife MPF Hong Kong Bond Fund",
-    "sim": 1,
-    "priceRatio": 1.0044,
-    "gapDays": 26
-  },
-  {
-    "provider": "manulife",
-    "source": "MPF穩健基金",
-    "matched": "Manulife MPF Stable Fund",
-    "sim": 1,
-    "priceRatio": 0.9893,
-    "gapDays": 26
-  },
-  {
-    "provider": "manulife",
-    "source": "MPF退休收益基金",
-    "matched": "Manulife MPF Retirement Income Fund",
-    "sim": 1,
-    "priceRatio": 0.9742,
-    "gapDays": 26
-  },
-  {
-    "provider": "manulife",
-    "source": "MPF 2025 退休基金",
-    "matched": "Manulife MPF 2025 Retirement Fund",
-    "sim": 1,
-    "priceRatio": 0.9727,
-    "gapDays": 26
-  },
-  {
-    "provider": "manulife",
-    "source": "MPF日本股票基金",
-    "matched": "Manulife MPF Japan Equity Fund",
-    "sim": 1,
-    "priceRatio": 0.9712,
-    "gapDays": 26
-  },
-  {
-    "provider": "manulife",
-    "source": "MPF歐洲股票基金",
-    "matched": "Manulife MPF European Equity Fund",
-    "sim": 1,
-    "priceRatio": 0.9685,
-    "gapDays": 26
-  },
-  {
-    "provider": "manulife",
-    "source": "MPF核心累積基金",
-    "matched": "Manulife MPF Core Accumulation Fund",
-    "sim": 1,
-    "priceRatio": 0.9663,
-    "gapDays": 26
-  },
-  {
-    "provider": "manulife",
-    "source": "MPF富達平穩增長基金",
-    "matched": "Manulife MPF Fidelity Stable Growth Fund",
-    "sim": 1,
-    "priceRatio": 0.9615,
-    "gapDays": 26
-  },
-  {
-    "provider": "manulife",
-    "source": "MPF 2030 退休基金",
-    "matched": "Manulife MPF 2030 Retirement Fund",
-    "sim": 1,
-    "priceRatio": 0.9579,
-    "gapDays": 26
-  },
-  {
-    "provider": "manulife",
-    "source": "MPF增長基金",
-    "matched": "Manulife MPF Growth Fund",
-    "sim": 1,
-    "priceRatio": 0.9556,
-    "gapDays": 26
-  },
-  {
-    "provider": "manulife",
-    "source": "MPF 2035 退休基金",
-    "matched": "Manulife MPF 2035 Retirement Fund",
-    "sim": 1,
-    "priceRatio": 0.9491,
-    "gapDays": 26
-  },
-  {
-    "provider": "manulife",
-    "source": "MPF恒指 ESG 基金",
-    "matched": "Manulife MPF Hang Seng Index ESG Fund",
-    "sim": 1,
-    "priceRatio": 0.9449,
-    "gapDays": 26
-  },
-  {
-    "provider": "manulife",
-    "source": "MPF 2040 退休基金",
-    "matched": "Manulife MPF 2040 Retirement Fund",
-    "sim": 1,
-    "priceRatio": 0.9406,
-    "gapDays": 26
-  },
-  {
-    "provider": "manulife",
-    "source": "MPF北美股票基金",
-    "matched": "Manulife MPF North American Equity Fund",
-    "sim": 1,
-    "priceRatio": 0.9381,
-    "gapDays": 26
-  },
-  {
-    "provider": "manulife",
-    "source": "MPF 2045 退休基金",
-    "matched": "Manulife MPF 2045 Retirement Fund",
-    "sim": 1,
-    "priceRatio": 0.9381,
-    "gapDays": 26
-  },
-  {
-    "provider": "manulife",
-    "source": "MPF富達增長基金",
-    "matched": "Manulife MPF Fidelity Growth Fund",
-    "sim": 1,
-    "priceRatio": 0.9344,
-    "gapDays": 26
+    "priceRatio": 1.0006,
+    "gapDays": 0
   },
   {
     "provider": "manulife",
     "source": "MPF香港股票基金",
     "matched": "Manulife MPF Hong Kong Equity Fund",
     "sim": 1,
-    "priceRatio": 0.9246,
-    "gapDays": 26
+    "priceRatio": 1,
+    "gapDays": 0
+  },
+  {
+    "provider": "manulife",
+    "source": "MPF恒指 ESG 基金",
+    "matched": "Manulife MPF Hang Seng Index ESG Fund",
+    "sim": 1,
+    "priceRatio": 1,
+    "gapDays": 0
+  },
+  {
+    "provider": "manulife",
+    "source": "MPF日本股票基金",
+    "matched": "Manulife MPF Japan Equity Fund",
+    "sim": 1,
+    "priceRatio": 1,
+    "gapDays": 0
+  },
+  {
+    "provider": "manulife",
+    "source": "MPF北美股票基金",
+    "matched": "Manulife MPF North American Equity Fund",
+    "sim": 1,
+    "priceRatio": 1,
+    "gapDays": 0
   },
   {
     "provider": "manulife",
     "source": "MPF亞太股票基金",
     "matched": "Manulife MPF Pacific Asia Equity Fund",
     "sim": 1,
-    "priceRatio": 0.9229,
-    "gapDays": 26
+    "priceRatio": 1,
+    "gapDays": 0
+  },
+  {
+    "provider": "manulife",
+    "source": "MPF歐洲股票基金",
+    "matched": "Manulife MPF European Equity Fund",
+    "sim": 1,
+    "priceRatio": 1,
+    "gapDays": 0
+  },
+  {
+    "provider": "manulife",
+    "source": "MPF康健護理基金",
+    "matched": "Manulife MPF Healthcare Fund",
+    "sim": 1,
+    "priceRatio": 1,
+    "gapDays": 0
+  },
+  {
+    "provider": "manulife",
+    "source": "MPF退休收益基金",
+    "matched": "Manulife MPF Retirement Income Fund",
+    "sim": 1,
+    "priceRatio": 1,
+    "gapDays": 0
+  },
+  {
+    "provider": "manulife",
+    "source": "MPF 2025 退休基金",
+    "matched": "Manulife MPF 2025 Retirement Fund",
+    "sim": 1,
+    "priceRatio": 1,
+    "gapDays": 0
+  },
+  {
+    "provider": "manulife",
+    "source": "MPF 2030 退休基金",
+    "matched": "Manulife MPF 2030 Retirement Fund",
+    "sim": 1,
+    "priceRatio": 1,
+    "gapDays": 0
+  },
+  {
+    "provider": "manulife",
+    "source": "MPF 2035 退休基金",
+    "matched": "Manulife MPF 2035 Retirement Fund",
+    "sim": 1,
+    "priceRatio": 1,
+    "gapDays": 0
+  },
+  {
+    "provider": "manulife",
+    "source": "MPF 2040 退休基金",
+    "matched": "Manulife MPF 2040 Retirement Fund",
+    "sim": 1,
+    "priceRatio": 1,
+    "gapDays": 0
+  },
+  {
+    "provider": "manulife",
+    "source": "MPF 2045 退休基金",
+    "matched": "Manulife MPF 2045 Retirement Fund",
+    "sim": 1,
+    "priceRatio": 1,
+    "gapDays": 0
+  },
+  {
+    "provider": "manulife",
+    "source": "MPF富達增長基金",
+    "matched": "Manulife MPF Fidelity Growth Fund",
+    "sim": 1,
+    "priceRatio": 1,
+    "gapDays": 0
+  },
+  {
+    "provider": "manulife",
+    "source": "MPF富達平穩增長基金",
+    "matched": "Manulife MPF Fidelity Stable Growth Fund",
+    "sim": 1,
+    "priceRatio": 1,
+    "gapDays": 0
+  },
+  {
+    "provider": "manulife",
+    "source": "MPF增長基金",
+    "matched": "Manulife MPF Growth Fund",
+    "sim": 1,
+    "priceRatio": 1,
+    "gapDays": 0
+  },
+  {
+    "provider": "manulife",
+    "source": "MPF穩健基金",
+    "matched": "Manulife MPF Stable Fund",
+    "sim": 1,
+    "priceRatio": 1,
+    "gapDays": 0
+  },
+  {
+    "provider": "manulife",
+    "source": "MPF人民幣債券基金",
+    "matched": "Manulife MPF RMB Bond Fund",
+    "sim": 1,
+    "priceRatio": 1,
+    "gapDays": 0
+  },
+  {
+    "provider": "manulife",
+    "source": "MPF香港債券基金",
+    "matched": "Manulife MPF Hong Kong Bond Fund",
+    "sim": 1,
+    "priceRatio": 1,
+    "gapDays": 0
+  },
+  {
+    "provider": "manulife",
+    "source": "MPF保守基金",
+    "matched": "Manulife MPF Conservative Fund",
+    "sim": 1,
+    "priceRatio": 1,
+    "gapDays": 0
+  },
+  {
+    "provider": "manulife",
+    "source": "MPF核心累積基金",
+    "matched": "Manulife MPF Core Accumulation Fund",
+    "sim": 1,
+    "priceRatio": 1,
+    "gapDays": 0
   },
   {
     "provider": "manulife",
     "source": "MPF可持續亞太債券基金",
     "matched": "Manulife MPF Sustainable Pacific Asia Bond Fund",
     "sim": 0.75,
-    "priceRatio": 1.0006,
-    "gapDays": 26
-  },
-  {
-    "provider": "manulife",
-    "source": "MPF國際債券基金",
-    "matched": "Manulife MPF International Bond Fund",
-    "sim": 0.5,
-    "priceRatio": 0.9973,
-    "gapDays": 26
-  },
-  {
-    "provider": "manulife",
-    "source": "MPF智優裕退休基金",
-    "matched": "Manulife MPF 2020 Retirement Fund",
-    "sim": 0.5,
-    "priceRatio": 1.0113,
-    "gapDays": 2155
+    "priceRatio": 1,
+    "gapDays": 0
   },
   {
     "provider": "manulife",
     "source": "MPF國際股票基金",
     "matched": "Manulife MPF International Equity Fund",
     "sim": 0.5,
-    "priceRatio": 0.945,
-    "gapDays": 26
+    "priceRatio": 1,
+    "gapDays": 0
+  },
+  {
+    "provider": "manulife",
+    "source": "MPF智優裕退休基金",
+    "matched": "Manulife MPF 2020 Retirement Fund",
+    "sim": 0.5,
+    "priceRatio": 1,
+    "gapDays": 0
+  },
+  {
+    "provider": "manulife",
+    "source": "MPF國際債券基金",
+    "matched": "Manulife MPF International Bond Fund",
+    "sim": 0.5,
+    "priceRatio": 1,
+    "gapDays": 0
   },
   {
     "provider": "manulife",
@@ -230,115 +230,115 @@
   },
   {
     "provider": "aia",
+    "source": "亞歐基金",
+    "matched": "Eurasia Fund",
+    "sim": 1,
+    "priceRatio": 1,
+    "gapDays": 0
+  },
+  {
+    "provider": "aia",
     "source": "亞洲債券基金",
     "matched": "Asian Bond Fund",
     "sim": 1,
-    "priceRatio": 1.0011,
-    "gapDays": 26
+    "priceRatio": 1,
+    "gapDays": 0
   },
   {
     "provider": "aia",
     "source": "強積金保守基金",
     "matched": "MPF Conservative Fund",
     "sim": 1,
-    "priceRatio": 1.0016,
-    "gapDays": 26
-  },
-  {
-    "provider": "aia",
-    "source": "65歲後基金",
-    "matched": "Age 65 Plus Fund",
-    "sim": 1,
-    "priceRatio": 0.9918,
-    "gapDays": 26
-  },
-  {
-    "provider": "aia",
-    "source": "退休收益基金",
-    "matched": "Retirement Income Fund",
-    "sim": 1,
-    "priceRatio": 0.9797,
-    "gapDays": 26
-  },
-  {
-    "provider": "aia",
-    "source": "核心累積基金",
-    "matched": "Core Accumulation Fund",
-    "sim": 1,
-    "priceRatio": 0.9649,
-    "gapDays": 26
-  },
-  {
-    "provider": "aia",
-    "source": "歐洲股票基金",
-    "matched": "European Equity Fund",
-    "sim": 1,
-    "priceRatio": 0.9517,
-    "gapDays": 26
-  },
-  {
-    "provider": "aia",
-    "source": "北美股票基金",
-    "matched": "North American Equity Fund",
-    "sim": 1,
-    "priceRatio": 0.9479,
-    "gapDays": 26
-  },
-  {
-    "provider": "aia",
-    "source": "亞歐基金",
-    "matched": "Eurasia Fund",
-    "sim": 1,
-    "priceRatio": 0.9284,
-    "gapDays": 26
+    "priceRatio": 1,
+    "gapDays": 0
   },
   {
     "provider": "aia",
     "source": "亞洲股票基金",
     "matched": "Asian Equity Fund",
     "sim": 1,
-    "priceRatio": 0.9021,
-    "gapDays": 26
+    "priceRatio": 1,
+    "gapDays": 0
   },
   {
     "provider": "aia",
-    "source": "環球債券基金",
-    "matched": "Global Bond Fund",
-    "sim": 0.5,
-    "priceRatio": 0.9977,
-    "gapDays": 26
+    "source": "歐洲股票基金",
+    "matched": "European Equity Fund",
+    "sim": 1,
+    "priceRatio": 1,
+    "gapDays": 0
   },
   {
     "provider": "aia",
-    "source": "美洲基金",
-    "matched": "American Fund",
-    "sim": 0.5,
-    "priceRatio": 0.9475,
-    "gapDays": 26
+    "source": "北美股票基金",
+    "matched": "North American Equity Fund",
+    "sim": 1,
+    "priceRatio": 1,
+    "gapDays": 0
+  },
+  {
+    "provider": "aia",
+    "source": "退休收益基金",
+    "matched": "Retirement Income Fund",
+    "sim": 1,
+    "priceRatio": 1,
+    "gapDays": 0
+  },
+  {
+    "provider": "aia",
+    "source": "核心累積基金",
+    "matched": "Core Accumulation Fund",
+    "sim": 1,
+    "priceRatio": 1,
+    "gapDays": 0
+  },
+  {
+    "provider": "aia",
+    "source": "65歲後基金",
+    "matched": "Age 65 Plus Fund",
+    "sim": 1,
+    "priceRatio": 1,
+    "gapDays": 0
   },
   {
     "provider": "aia",
     "source": "大中華股票基金",
     "matched": "Greater China Equity Fund",
     "sim": 0.67,
-    "priceRatio": 0.8872,
-    "gapDays": 26
+    "priceRatio": 1,
+    "gapDays": 0
+  },
+  {
+    "provider": "aia",
+    "source": "美洲基金",
+    "matched": "American Fund",
+    "sim": 0.5,
+    "priceRatio": 1,
+    "gapDays": 0
+  },
+  {
+    "provider": "aia",
+    "source": "環球債券基金",
+    "matched": "Global Bond Fund",
+    "sim": 0.5,
+    "priceRatio": 1,
+    "gapDays": 0
   },
   {
     "provider": "aia",
     "source": "中港基金",
     "matched": "Hong Kong and China Fund",
     "sim": 0.33,
-    "priceRatio": 0.9457,
-    "gapDays": 26
+    "priceRatio": 1,
+    "gapDays": 0
   },
   {
     "provider": "aia",
     "source": "全球基金",
     "matched": "World Fund",
     "sim": 0.33,
-    "priceRatio": 0.9391,
-    "gapDays": 26
+    "priceRatio": 1,
+    "gapDays": 0
   },
   {
     "provider": "aia",
